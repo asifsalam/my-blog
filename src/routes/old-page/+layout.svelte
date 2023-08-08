@@ -1,6 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import '../styles.css';
+	//This is a test
 </script>
 
 <div class="app">
