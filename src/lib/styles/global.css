@@ -1,0 +1,62 @@
+@import url('fonts.css');
+@import url('gruvbox-light-scribe.css');
+
+:root {
+	/* colors */
+	--main-color: hsl(250, 100%, 25%);
+	--main-text-color: 250, 100%, 25%;
+	--hue1: 250;
+	--heading-text: var(--hue) 100% 21% --text: var(--hue) 4.8% 28.9%;
+	--accent1: var(--hue) 43.6% 57.5%;
+	--accent2: var(--hue) 71.4% 95.9%;
+	--bg: hsl(55, 100%, 98%);
+	--bg-highlight: hsl(60, 56%, 91%);
+	--bg-accent1: var(--hue) 100% 99.6%;
+	--color_white: #fff;
+	--color_prime: #5ad67d;
+	--color_grey: #e2e2e2;
+	--color_grey_dark: #a2a2a2;
+	--color_link: #b7ffbc;
+
+	/* box-shadows */
+	--boxs-sm: 4px 6px 8px hsl(var(--accent1) / 14%), -3px 3px 18px 2px hsl(var(--accent1) / 12%),
+		2px 5px 10px -3px hsl(var(--accent1) / 20%);
+	--boxs-lg: 0px 8px 10px hsl(var(--accent1) / 14%), 0px 3px 14px 2px hsl(var(--accent1) / 12%),
+		0px 5px 5px -3px hsl(var(--accent1) / 20%);
+}
+
+body {
+	/* background-color: rgb(255, 254, 243); */
+	background-color: var(--bg);
+	margin: 0;
+	width: 1200px;
+	margin: auto;
+	/* align-items: center; */
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Libre Baskerville', 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+	font-weight: 200;
+}
+
+h4,
+a,
+p,
+li {
+	font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
+	font-weight: normal;
+}
+
+q {
+	font-family: 'Lancelot', 'Bukhari';
+}
+
+blockquote {
+	font-family: 'Lancelot', 'Bad Script', 'Libre Baskerville', 'Delius', Georgia, 'Times New Roman', Times, serif;
+}
+
+code {
+	font-size: large;
+}

@@ -1,53 +1,39 @@
 <script>
-	import Header from './Header.svelte';
-	import './styles.css';
+	import {
+		articleList,
+		postList,
+		themes,
+		categories,
+		tags,
+		excerptLength
+	} from '$lib/json/stores.js';
+	import '$lib/styles/global.css';
+	import MainTitle from '$lib/components/main-title.svelte';
+	import Navbar from '$lib/components/navbar.svelte';
+	import Footer from '$lib/components/footer.svelte';
+
+	export let data;
+	// export let errors;
+	let numArticles = data.articles.length;
+
+	const articleData = data.articles.slice(0, numArticles);
+	$articleList = articleData;
+	$postList = data.posts;
+	$themes = data.themes;
+	$categories = data.categories;
+	$tags = data.tags;
+	$excerptLength = 100;
 </script>
 
-<div class="app">
-	<Header />
+<svelte:head><title>asifsalam</title></svelte:head>
+<MainTitle />
+<Navbar />
 
-	<main>
-		<slot />
-	</main>
+<main>
+	<slot />
+</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
-</div>
+<Footer />
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
 </style>
