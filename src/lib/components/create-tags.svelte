@@ -71,7 +71,7 @@ tags as tag}
 		font-family: 'Pridi', Georgia, 'Times New Roman', Times, serif;
 		font-size: 1.2rem;
 		/* font-weight: 300; */
-		color: hsla(251, 100%, 20%, 0.9);
+		color: hsla(251, 100%, 20%, 0.8);
 	}
 	.tag-box {
 		display: inline-block;
@@ -93,7 +93,7 @@ tags as tag}
 		color: hsl(253, 39%, 95%);
 		font-weight: bold;
 		/* background-color: #bff0ff; */
-		background-color: hsl(251, 100%, 15%);
+		background-color: hsl(251, 100%, 15%, 0.5);
 		cursor: pointer;
 	}
 </style>
