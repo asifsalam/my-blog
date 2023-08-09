@@ -77,7 +77,7 @@
 		outline: 0.2px solid hsla(252, 32%, 44%, 0.2);
 		cursor: pointer;
 		color: hsl(253, 39%, 95%);
-		background-color: hsl(251, 100%, 15%);
+		background-color: hsl(251, 100%, 15%, 0.6);
 	}
 
 	.logo-container.size-2 {
