@@ -34,6 +34,7 @@
 
 	const searchItems = () => {
 		articles = searchArticles(articles, searchTerm, $clickedTheme, $articleList);
+		console.log('theme-searchItems: ', articles.length);
 	};
 	/** @type {string}*/
 	const headingText = 'Theme: ';
@@ -69,7 +70,7 @@
 			bind:searchTerm
 			{searchItems}
 		/>
-		{#key theme}
+		{#key articles}
 			<PaginationList {articles} category={theme} {totalQuantity} />
 		{/key}
 	</div>

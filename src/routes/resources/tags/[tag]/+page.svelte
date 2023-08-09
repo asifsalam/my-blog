@@ -53,14 +53,13 @@
 	<div class="posts">
 		<div class="posts-list">
 			<!-- <SectionHeadingBasic selectedTag={topic} {totalQuantity} headingTitle={headingText} /> -->
-			{#key topic}
+			{#key articles}
 				<SectionHeadingBasic
 					selectedTag={topic}
 					{totalQuantity}
 					headingTitle={headingText}
 					bind:searchTerm
 					{searchItems}
-					{articles}
 				/>
 
 				<PaginationList {articles} category={topic} {totalQuantity} />

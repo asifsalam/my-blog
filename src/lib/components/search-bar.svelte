@@ -17,7 +17,7 @@
 */
 	const searchEventInitiated = (e) => {
 		// Execute on the search event, rather than keypress or click
-		// console.log('search event: ', e.target.value);
+		console.log('search event: ', e.target.value);
 		searchItems(searchTerm);
 	};
 </script>

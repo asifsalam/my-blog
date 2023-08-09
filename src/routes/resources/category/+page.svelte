@@ -72,7 +72,7 @@
 			bind:searchTerm
 			{searchItems}
 		/>
-		{#key category}
+		{#key articles}
 			<PaginationList {articles} {category} {totalQuantity} />
 		{/key}
 	</div>

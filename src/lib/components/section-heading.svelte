@@ -14,6 +14,12 @@
 		$clickedCategory = selectedCategory;
 		goto('/resources/category');
 	}
+	const handleKeydown = (e) => {
+		console.log('sectionheading-e: ', e);
+		if (e.key === 'Enter') {
+			moreItemsClicked(category);
+		}
+	};
 </script>
 
 <div class="heading">
@@ -26,17 +32,23 @@
 		{/if}
 		of
 		<span
+			role="button"
+			tabindex="0"
 			class="view-all"
 			on:click={() => {
 				moreItemsClicked(category);
-			}}>{totalQuantity}</span
+			}}
+			on:keydown={handleKeydown}>{totalQuantity}</span
 		>
 		items<br />
 		<p
+			role="button"
+			tabindex="0"
 			class="article-count view-all"
 			on:click={() => {
 				moreItemsClicked(category);
 			}}
+			on:keydown={handleKeydown}
 		>
 			view all
 		</p>

@@ -18,7 +18,12 @@ tags as tag}
 				}}>{tag.name}</button
 			>
 		{:else}
-			<p class="topic tag-box" on:click={tagClicked('untagged')}>untagged</p>
+			<button
+				class="topic tag-box"
+				on:click={() => {
+					tagClicked('untagged');
+				}}>{'untagged'}</button
+			>
 		{/if}
 	{:else if tagType == 'theme'}
 		{#if tag != 'NA'}
@@ -29,7 +34,13 @@ tags as tag}
 				}}>{tag.name}</button
 			>
 		{:else}
-			<p class="topic tag-box" on:click={tagClicked('untagged')}>untagged</p>
+			<!-- <p class="topic tag-box" on:click={tagClicked('untagged')}>untagged</p> -->
+			<button
+				class="topic tag-box"
+				on:click={() => {
+					tagClicked('untagged');
+				}}>{'untagged'}</button
+			>
 		{/if}
 	{:else if tagType == 'tag'}
 		<div class="tag-group">
@@ -45,7 +56,13 @@ tags as tag}
 						}}>{subTag}</button
 					>
 				{:else}
-					<p class="tag-box" on:click={tagClicked('untagged')}>untagged</p>
+					<!-- <p class="tag-box" on:click={tagClicked('untagged')}>untagged</p> -->
+					<button
+						class="topic tag-box"
+						on:click={() => {
+							tagClicked('untagged');
+						}}>{'untagged'}</button
+					>
 				{/if}
 			{/each}
 		</div>
@@ -91,7 +108,7 @@ tags as tag}
 
 	.tag-box:hover {
 		color: hsl(253, 39%, 95%);
-		font-weight: bold;
+		/* font-weight: bold; */
 		/* background-color: #bff0ff; */
 		background-color: hsl(251, 100%, 15%, 0.5);
 		cursor: pointer;

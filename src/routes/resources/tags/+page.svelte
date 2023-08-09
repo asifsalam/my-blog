@@ -80,7 +80,7 @@
 					bind:searchTerm
 					{searchItems}
 				/>
-				{#key selectedTopic}
+				{#key articles}
 					<PaginationList {articles} category={selectedTopic} {totalQuantity} />
 				{/key}
 			</div>
