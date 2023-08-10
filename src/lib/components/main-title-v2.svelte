@@ -6,13 +6,18 @@
 <div class="main-title-wrap">
 	<div class="main-title">
 		<p class="main-title-header">
-			<span class="main-title-minor">the digital &nbsp </span>
-			<span class="main-title-left">peregrinations</span>
-			<span class="main-title-minor">&nbsp of a&nbsp</span>
-			<span class="main-title-right">data scribe</span>
+			<!-- <span class="main-title-minor">the digital &nbsp </span> -->
+			<span class="main-title-left">Normally unsupervised</span>
+			<!-- <span class="main-title-minor">&nbsp of a&nbsp</span> -->
+			<!-- <span class="main-title-right">data scribe</span> -->
 		</p>
+		<!-- <div class="sub-title"> -->
+		<!-- <p class="title-name">Asif Salam</p> -->
+
+		<!-- </div> -->
 		<div class="title-name-wrap">
-			<!-- <p class="title-name">Asif Salam</p> -->
+			<!-- <p class="sub-title-text">Mostly about data.</p> -->
+			<p class="sub-title-text">Mostly about data.</p>
 			<p class="title-name">Asif Salam</p>
 		</div>
 	</div>
@@ -23,7 +28,6 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-	/* @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Lancelot&family=Maiden+Orange&family=Noto+Serif+Thai:wght@300;400&family=Offside&family=Scope+One&display=swap'); */
 	:root {
 		--heading-color: hsla(251, 100%, 21%, 1);
 	}
@@ -38,17 +42,10 @@
 		align-content: center;
 		justify-content: space-evenly;
 		justify-items: center;
-		padding: 0 0px;
+		padding: 20px 0 0 0;
 		margin: 0;
 		background-color: beige;
 	}
-
-	/* .site-title {
-		width: 100%;
-		display: grid;
-		background-color: beige;
-		justify-content: center;
-	} */
 
 	.main-title {
 		height: 100%;
@@ -64,9 +61,9 @@
 		padding: 0;
 	}
 
-	.main-title-minor {
+	/* .main-title-minor {
 		font-size: 0.85em;
-	}
+	} */
 
 	.main-title-left {
 		height: 100%;
@@ -92,10 +89,17 @@
 		margin: 0;
 		padding: 0;
 	}
+	.sub-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
 
 	.title-name-wrap {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 		align-items: end;
 	}
 	.title-name {
@@ -105,6 +109,15 @@
 		/* rotate: -34deg; */
 		/* color: var(--heading-color); */
 		color: hsla(251, 100%, 21%, 0.4);
+		margin-top: -15px;
+	}
+	.sub-title-text {
+		font-family: 'Comfortaa', 'Great Vibes', MuseoModerno, 'Pacifico';
+		font-size: 0.8em;
+		margin: 0;
+		/* rotate: -34deg; */
+		/* color: var(--heading-color); */
+		color: hsla(251, 100%, 21%, 0.7);
 		margin-top: -15px;
 	}
 

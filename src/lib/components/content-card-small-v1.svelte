@@ -21,7 +21,7 @@
 	// article.excerpt = article.excerpt.split(' ').slice(0, 15).join(' ').concat('...');
 </script>
 
-<div class="post-card">
+<div class="post-container {article.link_type}">
 	<!-- <div class="content"> -->
 	<div class="content">
 		<div class="main-content">
@@ -56,7 +56,7 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&display=swap');
 
-	.post-card {
+	.post-container {
 		width: 100%;
 		min-height: 20px;
 		max-height: 200px;
@@ -69,6 +69,9 @@
 		position: relative;
 	}
 
+	.post-container.my-post {
+		border-top: solid hsl(13.02deg 100% 79.22% / 66%) 2px;
+	}
 	.main-content {
 		margin: 0;
 		padding: 0;

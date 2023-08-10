@@ -76,7 +76,7 @@ tags as tag}
 		font-family: 'Pridi', Georgia, 'Times New Roman', Times, serif;
 		font-size: 1.4rem;
 		font-weight: 300;
-		color: hsla(251, 100%, 20%, 0.9);
+		color: hsla(251, 100%, 20%, 0.6);
 		border-bottom: 1px solid hsla(251, 100%, 20%, 0.2);
 	}
 	.tag-group {
@@ -88,7 +88,7 @@ tags as tag}
 		font-family: 'Pridi', Georgia, 'Times New Roman', Times, serif;
 		font-size: 1.2rem;
 		/* font-weight: 300; */
-		color: hsla(251, 100%, 20%, 0.8);
+		color: hsla(251, 100%, 20%, 0.7);
 	}
 	.tag-box {
 		display: inline-block;
@@ -100,7 +100,7 @@ tags as tag}
 		font-weight: normal;
 		/* font-size: 16em; */
 		font-size: 16px;
-		color: hsl(251, 100%, 15%);
+		color: hsl(251, 100%, 15%, 0.6);
 		border-radius: 4px;
 		text-decoration: none;
 		border: 1px solid hsla(251, 32%, 44%, 0.2);

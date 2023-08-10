@@ -7,6 +7,8 @@
 	export let article;
 	let tags = cleanTags(article.tags);
 	let img_url = getImageUrl(article);
+
+	//link_type
 </script>
 
 <div class="post-container {article.link_type}">
@@ -67,7 +69,7 @@
 	}
 
 	.post-container.my-post {
-		border-top: solid hsl(13.02deg 100% 79.22% / 66%) 2px;
+		border-top: solid hsl(13.02deg 100% 79.22% / 66%) 4px;
 	}
 	.left-container {
 		width: 100%;

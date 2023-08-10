@@ -11,7 +11,7 @@
 	tags = cleanTags(article.tags);
 </script>
 
-<div class="post-container">
+<div class="post-container {article.link_type}">
 	<div class="left-container">
 		<div class="articleId-container">
 			<a class="articleId-link" href={article.link} target="_blank" rel="noopener noreferrer">
@@ -62,6 +62,10 @@
 		max-height: 250px;
 		border-top: solid 2px #9999808a;
 		overflow: overlay;
+	}
+
+	.post-container.my-post {
+		border-top: solid hsl(13.02deg 100% 79.22% / 66%) 4px;
 	}
 
 	.left-container {

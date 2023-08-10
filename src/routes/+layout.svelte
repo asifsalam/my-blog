@@ -8,7 +8,7 @@
 		excerptLength
 	} from '$lib/json/stores.js';
 	import '$lib/styles/global.css';
-	import MainTitle from '$lib/components/main-title.svelte';
+	import MainTitle from '$lib/components/main-title-v2.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
 	import Footer from '$lib/components/footer.svelte';
 

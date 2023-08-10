@@ -1,8 +1,6 @@
 <script>
 	export let data;
 	import { page } from '$app/stores';
-	// import '$lib/styles/global.css';
-	// import '$lib/styles/gruvbox-light-scribe.css';
 	import '$lib/styles/blog.css';
 	import { cleanTags } from '$lib/modules/utility_functions.js';
 

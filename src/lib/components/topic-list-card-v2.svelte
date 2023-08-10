@@ -64,7 +64,7 @@
 		padding: 0px 4px;
 		margin: 3px 5px 3px 0px;
 		background-color: hsla(196, 67%, 54%, 0.05);
-		color: hsl(251, 100%, 15%);
+		color: hsl(251, 100%, 15%, 0.7);
 		border-radius: 5px;
 		text-decoration: none;
 		border: 1px solid hsla(251, 32%, 44%, 0.2);

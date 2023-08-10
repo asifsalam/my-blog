@@ -1,7 +1,6 @@
 <script>
 	import { themes, categories, tags, allThemes, allCategories, allTopics } from '$lib/json/stores';
 	import KeyTags from '$lib/components/key-tags.svelte';
-	// import '/src/styles/global.css';
 
 	export let useThemes = 'no';
 	export let useCategories = 'no';

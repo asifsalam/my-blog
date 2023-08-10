@@ -15,7 +15,7 @@
 		article.excerpt = article.excerpt.substring(0, $excerptLengthL);
 </script>
 
-<div class="post-main">
+<div class="post-container {article.link_type}">
 	<div class="post-title">
 		<a style="text-decoration:none" href={article.link}>
 			<h3 class="article-title">{article.title}</h3></a
@@ -47,7 +47,7 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&display=swap');
 
-	.post-main {
+	.post-container {
 		display: grid;
 		grid-template-rows: auto;
 		grid-template-columns: 1fr;
@@ -65,6 +65,9 @@
 		transition: all ease-in-out 0.2s;
 	}
 
+	.post-container.my-post {
+		border-top: solid hsl(13.02deg 100% 79.22% / 66%) 4px;
+	}
 	.post-title {
 		font-family: 'Roboto Slab', Poppins, sans-serif;
 		border-bottom: 1px dotted hsla(251, 100%, 30%, 0.3);

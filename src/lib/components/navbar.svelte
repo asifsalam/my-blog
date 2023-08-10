@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	// import '/src/lib/styles/global.css';
 
 	const menuItems = [
 		{ name: 'Home', url: '/' },

@@ -21,7 +21,7 @@
 	$: selectedCategory = '';
 	$: category = 'all';
 	$: articles = [];
-	$: searchTerm = 'data-viz';
+	$: searchTerm = '';
 	// $: console.log('page: ', searchTerm, category);
 	let categoryObj = {};
 	// console.log($articleList[1]);

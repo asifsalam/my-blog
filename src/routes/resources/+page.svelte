@@ -80,7 +80,8 @@
 
 	.resources-container {
 		display: grid;
-		gap: 40px;
+		/* gap: 40px; */
+		gap: 3em;
 		grid-template-columns: 1fr 1fr;
 		padding-top: 5px;
 		justify-content: center;
