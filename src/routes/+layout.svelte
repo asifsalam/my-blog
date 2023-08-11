@@ -26,8 +26,10 @@
 </script>
 
 <svelte:head><title>asifsalam</title></svelte:head>
-<MainTitle />
-<Navbar />
+<section class="header">
+	<MainTitle />
+	<Navbar />
+</section>
 
 <main>
 	<slot />
@@ -36,4 +38,10 @@
 <Footer />
 
 <style>
+	.header {
+		margin: 0 10px;
+	}
+	main {
+		margin: 0 10px;
+	}
 </style>
