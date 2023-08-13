@@ -51,7 +51,7 @@
 		<SidebarHeading
 			sidebarLeadinText={'Select articles and resources from the categories below.'}
 		/>
-		<p class="topics">
+		<p class="tags">
 			<CreateTags
 				tags={$themes}
 				tagClicked={themeClicked}
@@ -89,7 +89,7 @@
 		flex-flow: column;
 	}
 
-	.topics {
+	.tags {
 		display: inline;
 		line-height: 1.5;
 		margin: 0 0 50px 0px;
@@ -101,6 +101,9 @@
 			/* display: grid; */
 			grid-template-columns: 1fr;
 			/* flex-direction: row; */
+		}
+		.sidebar {
+			margin-right: 10px;
 		}
 	}
 </style>

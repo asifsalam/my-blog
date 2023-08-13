@@ -63,10 +63,23 @@
 		margin: 0;
 		padding: 0;
 		display: grid;
-		/* grid-template-columns: 1fr 1fr; */
 		grid-template-columns: 1fr 1fr;
 		align-items: start;
 		column-gap: 1.5rem;
 		row-gap: 1.5rem;
+	}
+
+	@media (max-width: 768px) {
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 1fr;
+			/* flex-direction: row; */
+		}
+		div.sidebar-container {
+			margin: 0px;
+		}
+		div.posts {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>

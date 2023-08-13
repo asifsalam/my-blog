@@ -134,4 +134,18 @@
 		background-color: #bff0ff;
 		cursor: pointer;
 	} */
+
+	@media (max-width: 768px) {
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 1fr;
+			/* flex-direction: row; */
+		}
+		.sidebar {
+			margin-right: 10px;
+		}
+		.resources-container {
+			grid-template-columns: 1fr;
+		}
+	}
 </style>

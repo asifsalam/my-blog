@@ -30,7 +30,7 @@
 				<SidebarTags useThemes={'yes'} useCategories={'yes'} />
 			</p>
 		</div>
-		<div>
+		<div class="content">
 			<slot />
 		</div>
 	</div>
@@ -51,5 +51,21 @@
 		margin: 10px 30px 00px 0px;
 		/* flex-flow: column; */
 		/* overflow-y: visible; */
+	}
+	@media (max-width: 768px) {
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 1fr;
+			/* flex-direction: row; */
+			min-width: 500px;
+		}
+		div.sidebar {
+			margin: 0px;
+			padding-bottom: 20px;
+			border-bottom: 2px dotted var(--main-color);
+		}
+		.content {
+			min-width: 500px;
+		}
 	}
 </style>
