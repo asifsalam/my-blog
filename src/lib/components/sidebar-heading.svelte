@@ -7,6 +7,11 @@
 	 * @type {string | any[]}
 	 */
 	export let sidebarBulletText = [];
+	let showCollapsible = false;
+	const readMoreClicked = () => {
+		document.getElementsByClassName('collapsible')[0].style.display = 'block';
+		document.getElementsByClassName('read-more')[0].style.display = 'none';
+	};
 </script>
 
 <div class="sidebar-header">
@@ -14,12 +19,20 @@
 		<p class="sidebar-title">{sidebarTitle}</p>
 	{/if}
 	{#if sidebarLeadinText.length > 0}
-		<p class="sidebar-leadin-text">{@html sidebarLeadinText}</p>
+		<p class="sidebar-leadin-text">
+			{@html sidebarLeadinText}
+			<!-- <button class="read-more" on:click={readMoreClicked}> read more...</button> -->
+		</p>
+		<!-- <button class="sidebar-leadin-text" on:click={readMoreClicked}>
+			{@html sidebarLeadinText} <span class="read-more"> read more...</span>
+		</button> -->
 	{/if}
 	{#if sidebarBulletText.length > 0}
-		{#each sidebarBulletText as bulletText, i}
-			<p class="sidebar-bullet">{sidebarBulletText[i]}</p>
-		{/each}
+		<div class="collapsible">
+			{#each sidebarBulletText as bulletText, i}
+				<p class="sidebar-bullet">{sidebarBulletText[i]}</p>
+			{/each}
+		</div>
 	{/if}
 </div>
 
@@ -43,11 +56,20 @@
 		padding: 0;
 		margin: 0px 0 5px 0;
 		font-family: 'Crete Round';
-		font-size: 1.4em;
+		font-size: 1.3em;
 		font-weight: 100;
-		color: hsla(251, 100%, 15%, 1);
+		color: hsla(251, 100%, 15%, 0.5);
 		text-align: left;
 	}
+
+	.collapsible {
+		display: block;
+	}
+
+	.read-more {
+		display: none;
+	}
+
 	.sidebar-leadin-text {
 		display: inline;
 		padding: 0;
@@ -57,6 +79,8 @@
 		font-weight: 100;
 		color: hsla(251, 100%, 15%, 1);
 		text-align: left;
+		background-color: rgba(0, 0, 0, 0);
+		border: none;
 	}
 
 	.sidebar-bullet {
@@ -73,5 +97,19 @@
 		content: '□';
 		position: absolute;
 		left: 0;
+	}
+
+	@media (max-width: 1200px) {
+		/* .collapsible {
+			display: none;
+		}
+		.read-more {
+			display: contents;
+			cursor: pointer;
+			color: hsla(14, 86%, 37%, 0.8);
+			font-family: Roboto, sans-serif;
+			font-style: italic;
+			font-size: 1em;
+		} */
 	}
 </style>

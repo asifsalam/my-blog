@@ -16,9 +16,31 @@
 
 <header>
 	<div class="nav-container">
-		<nav class="middle-section">
+		<nav class="middle-section large">
 			<ul>
 				{#each menuItems as { url, name }}
+					<li class="nav-item">
+						<!-- we are using the class directive here -->
+						{#if currentPage === '/theme'}
+							{#if url === '/'}
+								<a class:active={true} data-sveltekit-prefetch href={'/'}>Home</a>
+							{:else}
+								<a class:active={false} data-sveltekit-prefetch href={url}>{name}</a>
+							{/if}
+						{:else}
+							<a
+								class:active={url !== '/' ? currentPage.match(url) : url === currentPage}
+								data-sveltekit-prefetch
+								href={url}>{name}</a
+							>
+						{/if}
+					</li>
+				{/each}
+			</ul>
+		</nav>
+		<nav class="middle-section medium">
+			<ul>
+				{#each [0, 1, 2, 3].map((d) => menuItems[d]) as { url, name }}
 					<li class="nav-item">
 						<!-- we are using the class directive here -->
 						{#if currentPage === '/theme'}
@@ -101,7 +123,8 @@
 
 	.nav-container {
 		width: 100%;
-		margin: 0 0 0 0;
+		display: block;
+		margin: 0;
 		border-bottom: 2px solid #999980;
 		position: sticky;
 		top: 0;
@@ -109,5 +132,20 @@
 
 	.middle-section {
 		width: 100%;
+	}
+	.medium {
+		display: none;
+	}
+
+	@media (max-width: 1200px) {
+		.nav-container {
+			font-size: 0.9em;
+		}
+		.large {
+			display: none;
+		}
+		.medium {
+			display: contents;
+		}
 	}
 </style>

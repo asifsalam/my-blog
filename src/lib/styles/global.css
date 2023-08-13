@@ -20,9 +20,9 @@
 
 	/* Sizes */
 	/* Viewport */
-	--vp-w-l: 1000px;
-	--vp-w-m: 800px;
-	--vp-w-s: 601px;
+	--vp-w-l: 1200px;
+	--vp-w-m: 1024px;
+	--vp-w-s: 768px;
 
 	/* box-shadows */
 	--boxs-sm: 4px 6px 8px hsl(var(--accent1) / 14%), -3px 3px 18px 2px hsl(var(--accent1) / 12%),
@@ -30,6 +30,24 @@
 	--boxs-lg: 0px 8px 10px hsl(var(--accent1) / 14%), 0px 3px 14px 2px hsl(var(--accent1) / 12%),
 		0px 5px 5px -3px hsl(var(--accent1) / 20%);
 }
+
+/* @media (max-width:768px) {
+	html * {
+		font-size: 16px;
+	}
+}
+
+@media (max-width:1024px) {
+	html * {
+		font-size: 19px;
+	}
+}
+
+@media (min-width:1280px) {
+	html * {
+		font-size: 24px;
+	}
+} */
 
 body {
 	/* background-color: rgb(255, 254, 243); */
@@ -67,10 +85,22 @@ code {
 	font-size: large;
 }
 
+
+
 @media (max-width: 1200px) {
 	body {
 		width: auto;
 		margin: auto;
 		/* align-items: center; */
 	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 16px;
+		width: auto;
+		margin: auto;
+		/* align-items: center; */
+	}
+
 }

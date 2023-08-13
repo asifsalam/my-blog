@@ -1,6 +1,7 @@
 <script>
 	import { fade, slide, fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import '$lib/styles/global.css';
 	import { itemsPerPage } from '$lib/json/stores';
 	import ContentCardMedium from '$lib/components/content-card-medium-v3.svelte';
 	import Pagination from '$lib/components/pagination.svelte';
@@ -107,5 +108,18 @@
 		row-gap: 1.5rem;
 		align-content: start;
 		/* margin-bottom: 15px; */
+	}
+	@media (max-width: 768px) {
+		.pagination-container {
+			grid-template-columns: 1fr;
+			justify-items: center;
+			height: auto;
+		}
+		.page-info {
+			margin: 5px 0;
+		}
+		.category-container {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>

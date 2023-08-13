@@ -1,4 +1,5 @@
 <script>
+	import '$lib/styles/global.css';
 	import { articleList, clickedTheme } from '$lib/json/stores';
 	import { goto } from '$app/navigation';
 	import { fade } from 'svelte/transition';
@@ -13,15 +14,11 @@
 	// const themes = $allThemes;
 	// console.log('home-page:');
 	let sidebarTitle = '';
-	let sidebarLeadinText =
-		'Greetings! In case you are here unwittingly, I am Asif, and this is my personal site. It is:';
+	let sidebarLeadinText = 'Greetings! In case you are here unwittingly, I am Asif, and this is:';
 	let sidebarBulletText = [
-		'Something of a personal bookmark manager',
-		'Mostly about data',
-		'And how enterprises can become "data-driven"',
-		'Mostly links that I have found interesting, useful, or even somewhat unsavoury',
-		'With some original posts',
-		'Send an email or a message on LinkedIn if you have a comment or just want to connect'
+		'My personal blog',
+		'And bookmark manager',
+		'Generally about becoming "data-driven"'
 	];
 	let headingTitleItems = 'Latest posts';
 	let displayQuantityItems = 20;
@@ -38,7 +35,9 @@
 {#key $articleList.length}
 	<div class="container" transition:fade={{ delay: 250, duration: 300 }}>
 		<div class="sidebar-container">
-			<SidebarHeading {sidebarTitle} {sidebarLeadinText} {sidebarBulletText} />
+			<div class="sidebar-heading">
+				<SidebarHeading {sidebarTitle} {sidebarLeadinText} {sidebarBulletText} />
+			</div>
 			<SidebarTags useThemes={'yes'} useCategories={'yes'} />
 		</div>
 		<div class="main-content">
@@ -104,5 +103,21 @@
 
 	.articles {
 		margin-bottom: 20px;
+	}
+
+	@media (max-width: 768px) {
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 1fr;
+			/* flex-direction: row; */
+		}
+		div.posts {
+			grid-template-columns: 1fr;
+		}
+		.sidebar-heading {
+			display: none;
+			margin: 0;
+			padding: 0;
+		}
 	}
 </style>

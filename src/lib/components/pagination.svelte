@@ -109,9 +109,11 @@
 	<button class="page-nav previous-set" on:click={prevSet} class:disabled={startPage === 1}>
 		&laquo;
 	</button>
+
 	<button class="page-nav previous-page" on:click={prevPage} class:disabled={currentPage === 1}>
-		Previous <br /> page
+		Prev. <br /> page
 	</button>
+
 	{#each pageList as page}
 		{#if page > 0}
 			<button class="page-link" on:click={() => gotoPage(page)} class:active={page === currentPage}>
@@ -145,6 +147,7 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 15px 0;
+		width: 100%;
 	}
 	.pagination button {
 		background-color: hsla(0, 0%, 96%, 0.5);
@@ -163,7 +166,7 @@
 		color: #fff;
 	}
 	.previous-page {
-		width: 4rem;
+		width: 3rem;
 		padding: 0;
 		margin: 0;
 	}
@@ -172,7 +175,7 @@
 		width: 3rem;
 	}
 	.next-page {
-		width: 4rem;
+		width: 3rem;
 	}
 	.next-set {
 		width: 3rem;
@@ -216,5 +219,52 @@
 	}
 	.page-link.hide {
 		visibility: hidden;
+	}
+
+	.medium {
+		display: none;
+	}
+
+	@media (max-width: 786px) {
+		/* .large {
+			display: none;
+		}
+		.medium {
+			display: contents;
+		} */
+		.pagination {
+			width: 500px;
+		}
+		.previous-page {
+			width: 2.5rem;
+			padding: 0;
+			margin: 0;
+		}
+
+		.previous-set {
+			width: 2.5rem;
+		}
+		.next-page {
+			width: 2.5rem;
+		}
+		.next-set {
+			width: 2.5rem;
+		}
+
+		.page-nav {
+			height: 2.5rem;
+			cursor: pointer;
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		.page-link {
+			height: 2.5rem;
+			width: 2.5rem;
+			margin: 0 0.5rem;
+			cursor: pointer;
+			color: #007bff;
+			text-decoration: none;
+		}
 	}
 </style>

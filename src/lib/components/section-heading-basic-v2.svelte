@@ -20,7 +20,8 @@
 		<TopicBox category={selectedTag} size={1} type={'heading'} />
 	</h1>
 	<SearchBar bind:searchTerm {searchItems} />
-	<h3 class="article-count">{totalQuantity} <br /> items</h3>
+	<h3 class="article-count large">{totalQuantity} <br /> items</h3>
+	<h3 class="article-count medium">{totalQuantity} items</h3>
 </div>
 
 <style>
@@ -58,5 +59,36 @@
 		text-align: right;
 		color: hsla(251, 100%, 20%, 1);
 		margin: 0 0 0 0;
+	}
+
+	.medium {
+		display: none;
+	}
+
+	@media (max-width: 1024px) {
+		.heading {
+			height: auto;
+			width: auto;
+		}
+		.heading-title {
+			font-size: x-large;
+		}
+	}
+	@media (max-width: 768px) {
+		.heading {
+			height: auto;
+			grid-template-columns: 1fr;
+			justify-items: center;
+			grid-row-gap: 10px;
+			padding: 10px 0;
+			border-top: dotted 2px gray;
+		}
+
+		.large {
+			display: none;
+		}
+		.medium {
+			display: contents;
+		}
 	}
 </style>

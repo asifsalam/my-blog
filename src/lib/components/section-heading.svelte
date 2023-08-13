@@ -99,4 +99,27 @@
 		text-decoration: underline 4px;
 		color: hsla(251, 100%, 20%, 1);
 	}
+
+	@media (max-width: 1200px) {
+		.heading {
+			grid-template-columns: 2fr 1fr;
+		}
+		.heading-title {
+			font-size: x-large;
+		}
+	}
+	@media (max-width: 768px) {
+		.heading {
+			grid-template-columns: 2fr 1fr;
+			border-top: 2px solid lightgray;
+			margin: 10px 0;
+			padding: 5px 0;
+		}
+		.heading-title {
+			font-size: x-large;
+		}
+		.article-count {
+			font-size: medium;
+		}
+	}
 </style>

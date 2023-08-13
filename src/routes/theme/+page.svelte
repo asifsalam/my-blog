@@ -96,4 +96,11 @@
 		font-size: 1.2rem;
 		font-weight: bold;
 	}
+	@media (max-width: 768px) {
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 1fr;
+			/* flex-direction: row; */
+		}
+	}
 </style>
