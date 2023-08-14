@@ -233,7 +233,7 @@
 			display: contents;
 		} */
 		.pagination {
-			width: 500px;
+			min-width: 400px;
 		}
 		.previous-page {
 			width: 2.5rem;

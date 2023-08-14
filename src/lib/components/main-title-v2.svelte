@@ -13,7 +13,8 @@
 		</p>
 
 		<div class="title-name-wrap">
-			<p class="sub-title-text">Mostly about data</p>
+			<p class="sub-title-text">Mostly about data.</p>
+			<p class="sub-title-text" style="font-size:smaller">And how to use it effectively.</p>
 			<p class="title-name">Asif Salam</p>
 		</div>
 	</div>

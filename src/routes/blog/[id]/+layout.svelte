@@ -57,7 +57,7 @@
 			/* display: grid; */
 			grid-template-columns: 1fr;
 			/* flex-direction: row; */
-			min-width: 500px;
+			min-width: 400px;
 		}
 		div.sidebar {
 			margin: 0px;
@@ -65,7 +65,7 @@
 			border-bottom: 2px dotted var(--main-color);
 		}
 		.content {
-			min-width: 500px;
+			min-width: 400px;
 		}
 	}
 </style>
