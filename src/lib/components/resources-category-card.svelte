@@ -70,7 +70,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 0px 15px;
-		max-height: 1000px;
+		/* max-height: 1000px; */
 		overflow: hidden;
 		align-content: start;
 		margin-bottom: 15px;
@@ -78,8 +78,8 @@
 	.category-header {
 		/* background-image: url('https://picsum.photos/200/300'); */
 		display: grid;
-		grid-template-columns: 2fr 5fr 3fr;
-		height: 3em;
+		grid-template-columns: 2fr 5fr 5fr;
+		height: 3.5em;
 		padding: 0px 0px 10px 0px;
 		align-items: center;
 		vertical-align: middle;
@@ -95,7 +95,7 @@
 	}
 	.article-count {
 		font-family: 'Scope One', Roboto, Arial, Helvetica, sans-serif;
-		font-size: 1em;
+		font-size: 0.9em;
 		font-weight: bold;
 		text-align: right;
 		color: hsla(251, 100%, 20%, 0.6);

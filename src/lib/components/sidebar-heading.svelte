@@ -99,7 +99,7 @@
 		left: 0;
 	}
 
-	@media (max-width: 1200px) {
+	@media (max-width: 600px) {
 		/* .collapsible {
 			display: none;
 		}

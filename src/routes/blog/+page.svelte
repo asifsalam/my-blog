@@ -69,17 +69,22 @@
 		row-gap: 1.5rem;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
 		div.container {
-			/* display: grid; */
+			grid-template-columns: 2fr 4fr;
+		}
+
+		div.posts {
 			grid-template-columns: 1fr;
-			/* flex-direction: row; */
+		}
+	}
+
+	@media (max-width: 600px) {
+		div.container {
+			grid-template-columns: 1fr;
 		}
 		div.sidebar-container {
 			margin: 0px;
-		}
-		div.posts {
-			grid-template-columns: 1fr;
 		}
 	}
 </style>

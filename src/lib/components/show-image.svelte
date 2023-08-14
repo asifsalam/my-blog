@@ -11,7 +11,7 @@
 	<br />
 {:else}
 	<!-- svelte-ignore a11y-media-has-caption -->
-	<video width="640" height="360" controls>
+	<video class="post-video" width="640" height="360" controls>
 		<source src={mediaPath} type="video/mp4" />
 	</video>
 	<p class="caption">Video {mediaNumber}. {mediaCaption}</p>

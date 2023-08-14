@@ -225,16 +225,7 @@
 		display: none;
 	}
 
-	@media (max-width: 786px) {
-		/* .large {
-			display: none;
-		}
-		.medium {
-			display: contents;
-		} */
-		.pagination {
-			min-width: 400px;
-		}
+	@media (max-width: 1000px) {
 		.previous-page {
 			width: 2.5rem;
 			padding: 0;
@@ -242,29 +233,22 @@
 		}
 
 		.previous-set {
-			width: 2.5rem;
+			width: 2rem;
 		}
 		.next-page {
 			width: 2.5rem;
 		}
 		.next-set {
-			width: 2.5rem;
+			width: 2rem;
 		}
 
 		.page-nav {
 			height: 2.5rem;
-			cursor: pointer;
-			color: #007bff;
-			text-decoration: none;
 		}
 
 		.page-link {
-			height: 2.5rem;
-			width: 2.5rem;
-			margin: 0 0.5rem;
-			cursor: pointer;
-			color: #007bff;
-			text-decoration: none;
+			width: 2rem;
+			margin: 0 0.2rem;
 		}
 	}
 </style>

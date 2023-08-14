@@ -39,33 +39,23 @@
 <!-- </main> -->
 <style>
 	div.container {
-		/* width: 100%; */
 		display: grid;
-		/* grid-template-columns: 300px 900px; */
 		grid-template-columns: 3fr 5fr;
 		margin: 0px 0px 5px 0px;
 	}
-	.sidebar {
-		/* position: fixed; */
-		/* float: left; */
-		margin: 10px 30px 00px 0px;
-		/* flex-flow: column; */
-		/* overflow-y: visible; */
-	}
-	@media (max-width: 768px) {
+	/* .sidebar {
+		margin: 10px 30px 0px 0px;
+	} */
+	@media (max-width: 1000px) {
 		div.container {
-			/* display: grid; */
+			display: block;
 			grid-template-columns: 1fr;
-			/* flex-direction: row; */
-			min-width: 400px;
+			/* min-width: 300px; */
 		}
 		div.sidebar {
 			margin: 0px;
 			padding-bottom: 20px;
 			border-bottom: 2px dotted var(--main-color);
-		}
-		.content {
-			min-width: 400px;
 		}
 	}
 </style>

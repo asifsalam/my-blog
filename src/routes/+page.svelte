@@ -105,19 +105,28 @@
 		margin-bottom: 20px;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
+		/* main content container */
 		div.container {
 			/* display: grid; */
-			grid-template-columns: 1fr;
+			grid-template-columns: 2fr 4fr;
 			/* flex-direction: row; */
 		}
 		div.posts {
 			grid-template-columns: 1fr;
 		}
 		.sidebar-heading {
-			display: none;
+			/* display: none; */
 			margin: 0;
 			padding: 0;
+		}
+	}
+
+	@media (max-width: 600px) {
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 1fr;
+			/* flex-direction: row; */
 		}
 	}
 </style>

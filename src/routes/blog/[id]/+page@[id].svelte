@@ -42,4 +42,8 @@
 		font-style: oblique;
 		margin: 5px;
 	}
+
+	.main-content {
+		width: auto;
+	}
 </style>

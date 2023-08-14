@@ -47,7 +47,7 @@
 <Breadcrumbs />
 
 <div class="container">
-	<div class="sidebar">
+	<div class="sidebar-container">
 		<SidebarHeading
 			sidebarLeadinText={'Select articles and resources from the categories below.'}
 		/>
@@ -83,7 +83,7 @@
 		grid-template-columns: 2fr 5fr;
 		margin: 10px 0px 5px 0px;
 	}
-	.sidebar {
+	.sidebar-container {
 		float: left;
 		margin: 10px 30px 00px 0px;
 		flex-flow: column;
@@ -96,14 +96,29 @@
 		font-size: 1.2rem;
 		font-weight: bold;
 	}
-	@media (max-width: 768px) {
+	/* @media (max-width: 768px) {
+		div.container {
+			grid-template-columns: 1fr;
+			
+		}
+		.sidebar-container {
+			margin: 0;
+		}
+	} */
+	@media (max-width: 900px) {
+		/* main content container */
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 2fr 4fr;
+			/* flex-direction: row; */
+		}
+	}
+
+	@media (max-width: 600px) {
 		div.container {
 			/* display: grid; */
 			grid-template-columns: 1fr;
 			/* flex-direction: row; */
-		}
-		.sidebar {
-			margin-right: 10px;
 		}
 	}
 </style>

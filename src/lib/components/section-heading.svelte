@@ -108,9 +108,8 @@
 			font-size: x-large;
 		}
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 600px) {
 		.heading {
-			grid-template-columns: 2fr 1fr;
 			border-top: 2px solid lightgray;
 			margin: 10px 0;
 			padding: 5px 0;

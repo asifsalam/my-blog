@@ -109,7 +109,7 @@
 		align-content: start;
 		/* margin-bottom: 15px; */
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 950px) {
 		.pagination-container {
 			grid-template-columns: 1fr;
 			justify-items: center;

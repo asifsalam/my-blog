@@ -134,18 +134,19 @@
 		background-color: #bff0ff;
 		cursor: pointer;
 	} */
-
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
+		div.container {
+			grid-template-columns: 2fr 4fr;
+		}
+	}
+	@media (max-width: 600px) {
 		div.container {
 			/* display: grid; */
 			grid-template-columns: 1fr;
 			/* flex-direction: row; */
 		}
 		.sidebar {
-			margin-right: 10px;
-		}
-		.resources-container {
-			grid-template-columns: 1fr;
+			margin-right: 0px;
 		}
 	}
 </style>

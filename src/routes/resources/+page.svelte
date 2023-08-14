@@ -93,17 +93,26 @@
 		border-bottom-color: rgb(77, 2, 2);
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
 		div.container {
 			/* display: grid; */
-			grid-template-columns: 1fr;
+			grid-template-columns: 2fr 4fr;
 			/* flex-direction: row; */
 		}
-		.sidebar-container {
+		/* .sidebar-container {
 			margin-right: 10px;
-		}
+		} */
 		.resources-container {
 			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 600px) {
+		div.container {
+			grid-template-columns: 1fr;
+		}
+		div.sidebar-container {
+			margin-right: 0;
 		}
 	}
 </style>
