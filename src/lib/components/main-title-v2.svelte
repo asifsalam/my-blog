@@ -1,6 +1,5 @@
 <script>
 	import '$lib/styles/global.css';
-	// let backgroundImage = '/img/islamic-geometric-pattern-14.jpg';
 </script>
 
 <div class="main-title-wrap">
@@ -13,8 +12,8 @@
 		</p>
 
 		<div class="title-name-wrap">
-			<p class="sub-title-text">Mostly about data.</p>
-			<p class="sub-title-text" style="font-size:smaller">And how to use it effectively.</p>
+			<p class="sub-title-text">Mostly about data &#8212; and how to use it effectively.</p>
+			<!-- <p class="sub-title-text">And how to use it effectively.</p> -->
 			<p class="title-name">Asif Salam</p>
 		</div>
 	</div>
@@ -45,11 +44,6 @@
 	}
 
 	.main-title {
-		/* height: 100%; */
-		/* font-family: 'Roboto';
-		color: hsla(251, 100%, 21%, 0.5);
-		font-size: 2em;
-		text-align: center; */
 		margin: 0;
 		padding: 0px 0;
 	}
@@ -60,7 +54,7 @@
 
 	.main-title-left {
 		height: 100%;
-		font-family: 'Dista Calista';
+		font-family: 'Dista Calista', cursive;
 		/* font-family: 'Test 1'; */
 		color: hsla(251, 100%, 25%);
 		/* color: var(--heading-color); */
@@ -93,24 +87,34 @@
 
 	.title-name-wrap {
 		display: flex;
-		justify-content: space-around;
+		/* justify-content: space-around; */
+		/* justify-content: flex-start; */
+		/* align-items: end; */
+		justify-content: space-between;
 		align-items: end;
+		margin: -15px 0 10px 0;
 	}
 	.title-name {
 		font-family: 'Great Vibes', MuseoModerno, 'Pacifico';
-		font-size: 2em;
+		font-size: 1.5em;
 		margin: 0;
-		color: hsla(251, 100%, 21%, 0.4);
-		margin-top: -15px;
+		/* color: hsla(251, 100%, 21%, 0.4); */
+		/* margin-top: -30px; */
+		text-align: right;
+		padding: 3px 5px;
+		color: hsla(54, 100%, 98%, 0.8);
+		/* text-align: right; */
+		/* background-color: #ed143d75; */
+		background-color: hsla(250.78deg 100% 25.1% / 66%);
 	}
 	.sub-title-text {
 		font-family: 'Comfortaa', 'Great Vibes', MuseoModerno, 'Pacifico';
-		font-size: 2em;
+		font-size: 1.5em;
 		margin: 0;
 		/* rotate: -34deg; */
 		/* color: var(--heading-color); */
 		color: hsla(251, 100%, 21%, 0.7);
-		margin-top: -15px;
+		/* margin-top: -15px; */
 	}
 
 	.title-border {
@@ -140,16 +144,16 @@
 			display: flex;
 			font-size: 1em;
 			flex-direction: column;
-			justify-content: space-around;
+			/* justify-content: space-around; */
 			align-items: center;
 		}
 		.title-name {
-			font-size: 1.4em;
-			margin: 0;
+			font-size: 1.1em;
+			margin: -10px 0px;
 		}
 		.sub-title-text {
-			font-size: 1.4em;
-			margin: 0;
+			font-size: 1em;
+			margin: 15px 0px;
 		}
 	}
 </style>

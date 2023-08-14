@@ -112,7 +112,6 @@ Amiri - light serif - too basic
 	font-weight: 400;
 }
 
-
 @font-face {
 	font-family: 'Bukhari';
 	src: url('/fonts/BukhariScript-lemD.ttf');
@@ -134,7 +133,6 @@ Amiri - light serif - too basic
 	font-weight: 400;
 }
 
-
 @font-face {
 	font-family: 'Montserrat';
 	src: url('/fonts/Montserrat/MontserratAlternates-Bold.ttf');
@@ -145,6 +143,13 @@ Amiri - light serif - too basic
 @font-face {
 	font-family: 'Audiowide';
 	src: url('/fonts/Audiowide/Audiowide-Regular.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'AlexBrush';
+	src: url('/fonts/AlexBrush-7XGA.ttf');
 	font-style: normal;
 	font-weight: 400;
 }
