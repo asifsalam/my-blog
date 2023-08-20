@@ -13,7 +13,7 @@
 			title: d.title
 		}))
 		.slice(0, 5);
-	// console.log(posts);
+	// console.log(posts.length);
 </script>
 
 <!-- <RandomQuote /> -->
@@ -40,12 +40,12 @@
 <style>
 	div.container {
 		display: grid;
-		grid-template-columns: 3fr 5fr;
+		grid-template-columns: 2fr 5fr;
 		margin: 0px 0px 5px 0px;
 	}
-	/* .sidebar {
+	.sidebar {
 		margin: 10px 30px 0px 0px;
-	} */
+	}
 	@media (max-width: 1000px) {
 		div.container {
 			display: block;

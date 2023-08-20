@@ -189,11 +189,11 @@ export const quotes = [
     {
         quoteID: 21,
         type: "quote",
-        quotation: `One of the hardest parts of my job is to connect Iraq to the war on terror.`,
+        quotation: `Some things in life cannot be fixed. They can only be carried.`,
         spokenBy: "",
         sourceTitle: "",
         sourceDate: "",
-        attributedTo: "George W. Bush"
+        attributedTo: "Megan Devine"
     },
     {
         quoteID: 22,
@@ -275,6 +275,29 @@ export const quotes = [
         sourceTitle: "",
         sourceDate: "",
         attributedTo: "J. L. McCafferty"
+    },
+    {
+        quoteID: 31,
+        type: "poem",
+        quotation: `there's a bluebird in my heart that
+        wants to get out
+        but I'm too tough for him,
+        I say, stay in there, I'm not going
+        to let anybody see
+        you.
+        there's a bluebird in my heart that
+        wants to get out
+        but I pour whiskey on him and inhale
+        cigarette smoke
+        and the whores and the bartenders
+        and the grocery clerks
+        never know that
+        he's
+        in there.`,
+        spokenBy: "",
+        sourceTitle: "Bluebird",
+        sourceDate: "",
+        attributedTo: "Charles Bukowski"
     },
 
 

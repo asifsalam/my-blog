@@ -85,14 +85,19 @@ pre {
 	background-color: #321506;
 	border: hsla(20, 79%, 11%, 0.5) 2px solid;
 	border-radius: 10px;
+	width: 95%;
+	padding: 0;
+	display: grid;
+	overflow-x: scroll;
 }
 
 code {
 	box-sizing: border-box;
 	font-size: 1.3rem;
 	/* width: 850px; */
-	overflow-x: scroll;
+	/* overflow-x: scroll; */
 	/* background-color: #dda384; */
+	min-width: 300px;
 }
 
 a {

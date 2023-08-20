@@ -5,18 +5,22 @@
 	let baseImgUrl = '/img/images/geometric-pattern-';
 
 	export let posts;
-	// console.log(posts);
+	// console.log(posts.length);
 </script>
 
 <div class="post-card">
 	<h3>Recent posts</h3>
-	{#each posts as post}
-		<a class="main-link" href={post.link}>
-			<p class="article-title">
-				{post.title}
-			</p>
-		</a>
-	{/each}
+	{#if posts.length > 0}
+		{#each posts as post}
+			<a class="main-link" href={post.link}>
+				<p class="article-title">
+					{post.title}
+				</p>
+			</a>
+		{/each}
+	{:else}
+		<p class="empty-list">No posts found</p>
+	{/if}
 </div>
 
 <style>
