@@ -278,7 +278,7 @@ Now that we have a firm grasp of the basic principles of creating **PowerPoint**
 
 The code and the PowerPoint file created are available from [GitHub](https://github.com/asifsalam/r_and_powerpoint).
 
-Coming up:<br>
+## Coming up:<br>
 
 - [Part 2][31], where we scrape some data using [`rvest`][7] and create a dataset of Clint Eastwood's movies.
 - [Part 3][32], where we use the data to create a complex, _"data-driven"_ slide with more advanced animation and interaction in PowerPoint.
