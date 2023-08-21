@@ -20,23 +20,19 @@ categories:
 
 ## Introduction
 
-Companies talk about "data-driven decision making", but a slick PowerPoint deck is how decisions are really made. A good slide can find its way into all kinds of decision material, and be viewed by many more decision-makers than any dashboard. Even if you use **R** (or **Python**) for data analysis, PowerPoint is how you distribute and communicate results, so learning to to create those decks as part of the analysis workflow can be worthwhile. Recreating and customizing slides based on scenarios or updates to the analysis becomes fairly straightforward, with effective version control and reproducibility. Beyond efficiency and repeatability, programmatic access enables you to do things that just would not be possible with point and click.
+Companies talk about _"data-driven decision making"_, but a slick **PowerPoint** deck is how decisions are really made. A good slide can find its way into all kinds of decision material, and be viewed by many more decision-makers than any dashboard. Even if you use **R** (or **Python**) for data analysis, **PowerPoint** is how you distribute and communicate results, so learning to to create those decks as part of the analysis workflow can be worthwhile. Recreating and customizing slides based on scenarios or updates to the analysis becomes fairly straightforward, with effective version control and reproducibility. Beyond efficiency and repeatability, programmatic access enables you to do things that just would not be possible with point and click.
 
 The [**Windows COM**][2] is an interface standard that allows applications such as **Excel**, **PowerPoint** and **Word** to expose functionality to other applications, such as **Python** or **R**. The [**pywin**][3] package enables **Python** to communicate to other applications through _COM_. [In this talk][1], S Anand uses **Python** to create some impressive effects in a **PowerPoint** slide using **Python**, scraping data from [_IMDB_][10] and creating a PowerPoint slide using the data. [**RDCOMClient**][4] by Duncan Temple Lang provided similar functionality for **R**. Unfortunately that project is not maintained regularly, and is not part of the CRAN distribution. It can also be somewhat challenging to load, and there is no support available.
 
-The [**`reticulate`**][5] package, however, provides an alternative way of accessing the [`COM`][2]. It provides **R** with an interface to **Python**, which means that the [**`pywin`**][3] package can be used with **R**.
+The [**`reticulate`**][5] package by Yuan Tang, however, provides an alternative way of accessing the [**COM**][2]. It provides **R** with an interface to **Python**, which means that the [**`pywin`**][3] package can be used with **R**.
 
-In this series of 3 posts, we will use these tools to create a **PowerPoint** slide with **R**. We will try to recreate some of the elements of [S Anand's talk][1], and add a few things, with a focus on interaction and animation. We will go through the basics of accessing methods and properties of **PowerPoint VBA** objects ([Part 1][30]), scrape data on Clint Eastwood's movies from [IMDB][13] ([Part 2][31]), and use it to create a slide ([Part 3][32]). The end result should be a fairly complex, and fun, **PowerPoint** slide with Clint Eastwood's filmography.
+In this series of 3 posts, we will use these tools to create a _"data-driven"_ **PowerPoint** slide on Clint Eastwood's filmography, with **R**, focusing on interaction and animation. This first part ([Part 1][30]) is about the the basics - how to access the methods and properties of the **PowerPoint object model**. A _data-driven_ slide needs data, so in [Part 2][31] we scrape some data on **Clint Eastwood's** movies from [IMDB][13]. And finally, in [Part 3][32] we use the data to create a slide programmatically. The end result should be a fairly complex, and somewhat entertaining, **PowerPoint** slide with **Clint Eastwood's** filmography.
 
-The goal here is to learn and explore a bit so there will be code and animation that's not strictly necessary.
+([Here's a short video of what we're aiming for][33].)
 
-([Here's a short video of what we're aiming for][16], [how it was created][15] and [the R code.][17])
+(Clearly **PowerPoint** has a powerful animation engine, and the [object model][12] allows you to programmatically manipulate almost everything. The [Microsoft documentation][11], however, seems to be organized as something of a mystery.)
 
-(Clearly **PowerPoint VBA** has a powerful animation engine, and the [object model][12] allows you to programmatically manipulate almost everything. The [Microsoft documentation][11], however, seems to be organized as a mystery.)
-
-In this first part, we look at the basics of manipulating **PowerPoint VBA** with **R**.
-
-Let's get started.
+Let's start with the basics of manipulating the **PowerPoint** object model with **R**.
 
 ## Setup
 
@@ -49,10 +45,10 @@ I am using:
 
 We also need:
 
-- `Python`
-- pywin32
+- **Python**
+- `pywin32`
 
-If you don't have `Python`, there are a few ways of installing it, but I think the [official site][15] is simple enough. If everything goes well, both `Python` and `pip` should be in the Windows `PATH`. The [pywin32 documentation][3] recommends installation via `pip`, so open a terminal (`Powershell`, or the `Command Prompt`), and type the following:
+If you don't have **Python**, there are a few ways of installing it, but I think the [official site][15] is simple enough. If everything goes well, both **Python** and `pip` should be in the Windows **PATH**. The [`pywin32` documentation][3] recommends installation via `pip`, so open a terminal (**Powershell**, or the **Command Prompt**), and type the following:
 
 ```console
 > pip install --upgrade pywin32
@@ -86,16 +82,16 @@ pywin <- import("win32com.client")
 
 For the purposes of this post, we only need to understand how to do three things:
 
-- Starting a new instance of an application, `PowerPoint` in this case: `pywin$Dispatch('PowerPoint.Application')` <br>
+- Starting a new instance of an application, **PowerPoint** in this case: `pywin$Dispatch('PowerPoint.Application')` <br>
   This provides access to the objects, methods and properties exposed by the application API:
 - Executing methods, which takes the form: `myObj$methodName(arg1,arg2,arg3,...)`
 - Setting properties, which takes the form: `myObj[["Property"]] = TRUE`
 
 With these basic capabilities, we can access and manipulate the objects exposed by the PowerPoint API. (More in-depth information is provided [here][16] and [here][17].)
 
-Let's create a new `PowerPoint` presentation from `R`.
+Let's create a new **PowerPoint** presentation from **R**.
 
-Execute the following commands in `R`.
+Execute the following commands in **R**.
 
 ```r
 # Start up PowerPoint
@@ -116,7 +112,7 @@ slide1 <- presentation[["Slides"]]$Add(1,12)
 
 This will create a presentation with a blank slide. We will use this slide in the next sections.
 
-The critical part is, of course, knowing what methods and properties are available. This is where the [PowerPoint Developer Reference][5] is a handy, but not terribly user-friendly, resource. (You can also get this information from the `Object Browser` in the VBA editor, as shown in figure 1. below).
+The critical part is, of course, knowing what methods and properties are available. This is where the [**PowerPoint Developer Reference**][11] is a handy, but not terribly user-friendly, resource. (You can also get this information from the **Object Browser** in the VBA editor, as shown in figure 1. below).
 
 <ShowImage
 mediaType = "image"
@@ -128,7 +124,7 @@ mediaCaption="VBA Object Browser"
 
 ## Using VBA to create and animate shapes
 
-To understand how to go from VBA to R, let's recreate one of the basic examples in some of the older, and somewhat better, PowerPoint documentation, [Applying Animations to Shapes in Office 2010][7], which works with the latest MS Office versions as well. Let's walk through the VBA code, implement it in `PowerPoint` and see what it does. We will then implement the same code in `R`.
+To understand how to go from VBA to R, let's recreate one of the basic examples in some of the older, and somewhat better, **PowerPoint** documentation, [Applying Animations to Shapes in Office 2010][13], which works with the latest MS Office versions as well. Let's walk through the VBA code, implement it in **PowerPoint** and see what it does. We will then implement the same code in **R**.
 
 The VBA code:
 
@@ -147,7 +143,7 @@ End Sub
 
 <br/>
 
-Let's go through the code in this module.
+Let's go through the code:
 
 - `ActivePresentation.Slides(1)` [(documentation)][22] selects the first slide in the current presentation
 - Three variables of the type `Shape` [(documentation)][19] are defined. The `Shape` object represents a single shape on a slide, and has a set of associated methods and properties.
@@ -156,7 +152,11 @@ Let's go through the code in this module.
 - The `PickupAnimation` [(documentation)][18] method of the `Shape` object picks up the animation from the `shp1` object.
 - Finally, `shp2` and `shp3`, an hexagon and a cloud, are created, shifted along the x-axis, and the animation sequence from `shp1` is applied to each.
 
-In summary, three objects are created, and the same animation sequence is applied to each. In presentation mode, the three animation effects will be auto-triggered in sequence which they were added, for each object, also in sequence.
+In summary:
+
+- Three objects are created on slide 1 of the active presentation.
+- The same animation sequence is applied to each.
+- In presentation mode, the three animation effects will be auto-triggered in the sequence in which they were added, for each object, also in sequence.
 
 [This Microsoft article][13] has the step-by-step instructions, on creating a standard VBA module, inserting the code and running it. We can use the deck created earlier to execute the code and we get these shapes and animation (Video 1).
 
@@ -164,16 +164,16 @@ In summary, three objects are created, and the same animation sequence is applie
 mediaType="video"
 mediaPath={"/post_assets/0001/animation_1.mp4"}
 mediaNumber=2
-mediaCaption="This is a video"
+mediaCaption="Animating shapes in PowerPoint"
 />
 
 ## Using R to create and animate shapes
 
-Now let's do the same thing with `R`.
+Now let's do the same thing with **R**.
 
-The VBA code above has constants that Microsoft has defined for each element of the presentation, such as shape, animation, trigger, and so on. [This site][23] has the enumerations listed. I created [a file][24], which we can use to load the enumerations into `R`. (You can also download it to your working directory and load it from there.)
+The VBA code above has constants that Microsoft has defined for each element of the presentation, such as shape, animation, trigger, and so on. [This site][23] has the enumerations listed. I created [a file][24], which we can use to load the enumerations into **R**. (You can also download it to your working directory and load it from there.)
 
-Assuming that the statements in the earlier `R` script was successfully executed, and the presentation exists, delete the shapes created with the VBA code so `slide1` is empty. The script below is the `R` equivalent of the statements in the VBA code above. Execute the script, preferably one statement at a time in order to see what each statement accomplishes.
+Assuming that the statements in the earlier **R** script was successfully executed, and the presentation exists, _delete the shapes created with the_ **VBA** code so `slide1` is empty. The script below is the **R** equivalent of the statements in the VBA code above. Execute the script, preferably one statement at a time in order to see what each statement accomplishes.
 
 ```r
 # Read in the enumerations into the "ms" variable
@@ -272,26 +272,27 @@ mediaPath="/post_assets/0001/animation_2.mp4"
 mediaNumber=2
 mediaCaption="Animated shapes in R"
 />
-
 <br/>
 
-The code and the PowerPoint file created are available from [GitHub](https://github.com/asifsalam/PowerPoint_from_R).
+Now that we have a firm grasp of the basic principles of creating **PowerPoint** slides using **R**, we can attempt something more sophisticated than shapes dancing around. But before that, in [Part 2][31] we collect some data on **Clint Eastwood's** movies for our _"data-driven"_ slide.
+
+The code and the PowerPoint file created are available from [GitHub](https://github.com/asifsalam/r_and_powerpoint).
 
 Coming up:<br>
-In <a href="/blog/2023-06-16-R-and-PowerPoint-Part-2/">Part 2</a>, we scrape some data using [`rvest`][4] and create a dataset of Clint Eastwood's movies.
 
-[Part 3][14] - Then some fun! We'll use the data to play around with more advanced animation and interaction in PowerPoint.
+- [Part 2][31], where we scrape some data using [`rvest`][7] and create a dataset of Clint Eastwood's movies.
+- [Part 3][32], where we use the data to create a complex, _"data-driven"_ slide with more advanced animation and interaction in PowerPoint.
 
 [1]: https://www.youtube.com/watch?v=aKCXj1DyEhM 'S Anand'
 [2]: https://learn.microsoft.com/en-us/windows/win32/com/com-technical-overview 'COM Overview'
 [3]: https://pypi.org/project/pywin32/ 'pywin32'
-[4]: http://www.omegahat.org/RDCOMClient/ 'RCDOMClient'
+[4]: http://www.omegahat.net/RDCOMClient/ 'RCDOMClient'
 [5]: https://rstudio.github.io/reticulate/ 'reticulate'
 [6]: https://cran.r-project.org/web/views/WebTechnologies.html 'CRAN Task View: Web Technologies and Services'
-[7]: mailto:tomasz@rstudio.com
-[8]: https://posit.co/ 'Posit'
+[7]: https://rvest.tidyverse.org/ 'rvest'
+[8]: https://posit.co/ 'Posit XX'
 [9]: http://www.omegahat.org/RSXML/ 'XML Package for R'
-[10]: http://www.imdb.org/ 'IMDB'
+[10]: http://www.imdb.com/ 'IMDB'
 [11]: https://learn.microsoft.com/en-us/office/client-developer/powerpoint-home 'PowerPoint Developer Reference'
 [12]: https://learn.microsoft.com/en-us/office/vba/api/overview/powerpoint/object-model 'PowerPoint Object Model'
 [13]: https://msdn.microsoft.com/en-us/library/office/gg190747(v=office.14).aspx 'Applying Animations to Shapes in Office 2010'
@@ -304,11 +305,12 @@ In <a href="/blog/2023-06-16-R-and-PowerPoint-Part-2/">Part 2</a>, we scrape som
 [20]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shapes 'Shapes Object'
 [21]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.timeline 'TimeLine Object'
 [22]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.application.activepresentation 'ActivePresentation'
-[23]: https://bettersolutions.com/powerpoint/macros/enumerations-complete-list.htm 'PowerPoint Enumerations'
-[24]: https://raw.githubusercontent.com/asifsalam/PowerPoint_from_R/master/mso.txt 'mso.txt'
+[23]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint(enumerations) 'PowerPoint Enumerations'
+[24]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/mso.txt 'mso.txt'
 [25]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.textframe 'TextFrame property'
 [26]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.fill 'Fill property'
 [27]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.line 'Line property'
 [30]: /blog/23-06-12-R-and-PowerPoint-Part-1 'R and PowerPoint - Part 1 - The basics'
-[31]: /blog/23-06-12-R-and-PowerPoint-Part-2 'R and PowerPoint - Part 2 - Getting data'
-[32]: /blog/23-06-12-R-and-PowerPoint-Part-3 'R and PowerPoint - Part 3 - Creating an stellar slide'
+[31]: /blog/23-08-25-R-and-PowerPoint-Part-2 'R and PowerPoint - Part 2 - Getting data'
+[32]: /blog/23-09-01-R-and-PowerPoint-Part-3 'R and PowerPoint - Part 3 - Creating a stellar slide'
+[33]: /post_assets/0001/final_slide.mp4
