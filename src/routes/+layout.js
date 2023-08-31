@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import { parseArticle, parsePosts } from '/src/lib/modules/utility_functions';
 import { themes, categories, tags, allThemes, allCategories, allTopics } from '$lib/json/categories';
-const dataFile = '/data/link_data_full-v2.csv';
+const dataFile = '/data/link_data_full-v3.csv';
 // const dataFile = 'https://raw.githubusercontent.com/asifsalam/datasets/master/processed_links-small.csv';
 
 export const ssr = false;

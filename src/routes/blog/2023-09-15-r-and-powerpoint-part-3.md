@@ -1,10 +1,10 @@
 ---
-title: Create amazing PowerPoint slides using R - Part 1(3) - The basics
+title: Create amazing PowerPoint slides using R &#151 Part 1(3) &#151 The basics
 preview_image: '/img/images/geometric-pattern-07.jpg'
 author: Asif Salam
 id: 'L02141'
 published: true
-post_date: '2023-06-22'
+post_date: '2023-08-05'
 excerpt: 'Automate the creation of PowerPoint presentations with R, reticulate, python and pywin32. This post, the first of three, introduces the basics.'
 categories:
   - 'rstats'
@@ -48,7 +48,7 @@ We also need:
 - **Python**
 - `pywin32`
 
-If you don't have **Python**, there are a few ways of installing it, but I think the [official site][15] is simple enough. If everything goes well, both **Python** and `pip` should be in the Windows **PATH**. The [`pywin32` documentation][3] recommends installation via `pip`, so open a terminal (**Powershell**, or the **Command Prompt**), and type the following:
+If you don't have **Python**, there are a few ways of installing it, but I think the [official site][15] is simple enough. If everything goes well, both **Python** and `pip` should be in the **Windows PATH**. The [`pywin32` documentation][3] recommends installation via `pip`, so open a terminal (**Powershell**, or the **Command Prompt**), and type the following:
 
 ```console
 > pip install --upgrade pywin32
@@ -71,7 +71,7 @@ install.packages("reticulate")
 library(reticulate)
 ```
 
-You may need to specify the path to the _Python_ directory, if it is not in the windows **_PATH_**.
+You may need to specify the path to the **Python** directory, if it is not in the **Windows PATH**.
 
 ```R
 # Use this if necessary
@@ -82,10 +82,10 @@ pywin <- import("win32com.client")
 
 For the purposes of this post, we only need to understand how to do three things:
 
-- Starting a new instance of an application, **PowerPoint** in this case: `pywin$Dispatch('PowerPoint.Application')` <br>
-  This provides access to the objects, methods and properties exposed by the application API:
-- Executing methods, which takes the form: `myObj$methodName(arg1,arg2,arg3,...)`
-- Setting properties, which takes the form: `myObj[["Property"]] = TRUE`
+- Start a new instance of an application, **PowerPoint** in this case: `pywin$Dispatch('PowerPoint.Application')` <br>
+  This provides access to the objects, methods and properties exposed by the application API
+- Execute methods, which takes the form: `myObj$methodName(arg1,arg2,arg3,...)`
+- Set properties, which takes the form: `myObj[["Property"]] = TRUE`
 
 With these basic capabilities, we can access and manipulate the objects exposed by the PowerPoint API. (More in-depth information is provided [here][16] and [here][17].)
 

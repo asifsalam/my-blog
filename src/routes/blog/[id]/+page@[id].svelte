@@ -6,14 +6,16 @@
 
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 	let postData = data.postData;
+	console.log(data, $page);
 	// const tags = postData.metadata.categories;
 	const tags = cleanTags(data.posts.filter((d) => d.link_id === postData.metadata.id)[0].tags);
+	// const tags = ['a', 'b', 'c'];
 	// console.log('[id-page] ', $page.params.id, tags);
 </script>
 
 {#key $page.params.id}
 	<div class="heading">
-		<h1>{postData.metadata.title}</h1>
+		<h1>{@html postData.metadata.title}</h1>
 	</div>
 	<div class="meta-info">
 		<p class="author">{postData.metadata.author}</p>

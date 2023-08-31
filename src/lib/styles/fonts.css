@@ -153,3 +153,13 @@ Amiri - light serif - too basic
 	font-style: normal;
 	font-weight: 400;
 }
+
+@font-face {
+	font-family: 'DejavuSerif';
+	src: url('/fonts/Dejavu/DejaVuSerif.ttf');
+}
+
+@font-face {
+	font-family: 'DejavuSans';
+	src: url('/fonts/Dejavu/DejaVuSans.ttf');
+}

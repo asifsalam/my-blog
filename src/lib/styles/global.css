@@ -62,8 +62,16 @@ body {
 	/* align-items: center; */
 }
 
-h1,
-h2,
+h1 {
+	font-family: 'Poiret One', Overlock, Asap, 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata;
+	font-weight: 200;
+}
+
+h2 {
+	font-family: Montserrat, Galdeano, Alata, 'Cherry Swash', Roboto;
+	font-weight: bold;
+}
+
 h3 {
 	font-family: 'Libre Baskerville', 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
 	font-weight: 200;
@@ -72,6 +80,11 @@ h3 {
 h4,
 p,
 li {
+	font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
+	font-weight: normal;
+}
+
+a {
 	font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
 	font-weight: normal;
 }
@@ -88,6 +101,17 @@ code {
 	font-size: large;
 }
 
+kbd {
+	font-family: monospace;
+	color: inherit;
+	font-size: 80%;
+	background-color: #fff;
+	border: 1px solid #a6a6a6;
+	border-radius: 4px;
+	box-shadow: 0 2px grey;
+	padding: 2.4px 6px;
+	margin: auto 0;
+}
 
 
 @media (max-width: 1200px) {

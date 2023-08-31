@@ -17,6 +17,19 @@
 
 /* Asap, Capriola, Electrolize, Gotu, KoHo, 'M PLUS Code Latin', 'Palanquin Dark', Ruloko, 'Sulphur Point',
 Syne, 'Tsukimi Rounded' 'Alegreya Sans', 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata; */
+
+* {
+	font-family: 'Scope One',
+		'Libre Baskerville',
+		'Roboto Slab',
+		Georgia,
+		'Times New Roman',
+		Times,
+		serif;
+	color: hsla(var(--main-text-color), 1);
+
+}
+
 h1 {
 	font-family: 'Poiret One', Overlock, Asap, 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata;
 	font-size: 3rem;
@@ -28,6 +41,13 @@ h2 {
 	font-family: Montserrat, Galdeano, Alata, 'Cherry Swash', Roboto;
 	font-weight: bold;
 	font-size: 2.5rem;
+	color: hsla(251, 100%, 15%, 0.7);
+}
+
+h3 {
+	font-family: 'Titillium Web', Demora, RedThinker, Alata, 'Cherry Swash', Roboto;
+	font-weight: bold;
+	font-size: 2rem;
 	color: hsla(251, 100%, 15%, 0.7);
 }
 
@@ -46,10 +66,13 @@ h2 {
 	padding: 0em .15em;
 	border-radius: 2px;
 	border: 0.5px solid rgb(221, 216, 216);
-	font-size: inherit;
+	/* font-size: inherit; */
+	font-size: 0.9em;
 	line-height: 1 !important;
 	white-space: nowrap;
 	color: hsla(var(--main-text-color), 0.9);
+	/* background: linear-gradient(to bottom, hsla(0, 0%, 20%, 0), hsla(0, 0%, 20%, 0) 15%,
+			hsl(35, 73%, 94%, 1) 30%, hsl(35, 73%, 94%, 1) 75%, hsla(0, 0%, 20%, 0) 100%); */
 
 }
 
@@ -62,11 +85,30 @@ h2 {
 	font-size: inherit;
 	line-height: 1 !important;
 	white-space: nowrap;
+	font-size: 0.85em;
 
 }
 
 .main-content img {
-	max-width: 90%;
+	max-width: 100%;
+}
+
+@counter-style circles {
+	system: cyclic;
+	/* symbols: "\278A" "\278B" "\278C" "\278D" "\278E" "\278F"; */
+	symbols: "\2776" "\2777" "\2778" "\2779" "\277A" "\277B";
+	/* symbols: "a", "b", "c"; */
+	suffix: " ";
+}
+
+ol {
+	/* list-style: decimal; */
+	list-style-type: circles;
+	line-height: 1.4em;
+}
+
+li::marker {
+	font-size: 1.1em;
 }
 
 li {
@@ -75,34 +117,149 @@ li {
 	letter-spacing: 0.012em;
 	word-spacing: 0.15em;
 	font-size: 1.2rem;
+	list-style-position: outside;
+	padding-left: 10px;
+	/* margin: 10px 0px; */
+	line-height: 1.3em;
+
+}
+
+li::marker {
+	/* font-family: DejavuSans; */
+	/* list-style-type: "\2680"; */
+	/* content: "\21F3"; */
+}
+
+ul {
+	/* font-family: DejavuSerif; */
+	list-style-type: "\27BA";
+	line-height: 1.4em;
 }
 
 pre {
-	/* width: 850px; */
 	box-sizing: border-box;
-	/* width: 100%; */
 	overflow-x: scroll;
 	background-color: #321506;
-	border: hsla(20, 79%, 11%, 0.5) 2px solid;
-	border-radius: 10px;
+	/* background-blend-mode: multiply; */
+	border: hsla(20, 79%, 11%, 0.1) 1px solid;
+	border-radius: 5px;
 	width: 95%;
 	padding: 0;
 	display: grid;
 	overflow-x: scroll;
 }
 
+pre[class*='language-'] {
+	margin: 1em 0;
+}
+
 code {
 	box-sizing: border-box;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	/* width: 850px; */
 	/* overflow-x: scroll; */
 	/* background-color: #dda384; */
 	min-width: 300px;
 }
 
-a {
-	color: hsla(var(--main-text-color), 0.7);
+.main-content a {
+	font-family: 'Scope One', 'Libre Baskerville', 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+	/* color: hsla(var(--main-text-color), 0.7); */
+	font-weight: normal;
+	letter-spacing: 0.012em;
+	word-spacing: 0.15em;
+	font-size: 1.3rem;
+	color: hsla(var(--main-text-color), 1);
 }
+
+dingbat {
+	/* font-size: 1em; */
+	/* color: black; */
+	position: relative;
+	/* top: 3px; */
+}
+
+
+
+html-el {
+	font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+	box-sizing: border-box;
+	font-size: 1.1rem;
+	color: hsl(251, 100%, 8%);
+	/* width: 850px; */
+	/* overflow-x: scroll; */
+	background-color: #ffffff;
+	border-radius: 2px;
+	padding: 0px 5px;
+	border: 0.1px solid #e3e3e3;
+	min-width: 300px;
+}
+
+html-el::after {
+	content: ">"
+}
+
+html-el::before {
+	content: "<"
+}
+
+html-attr {
+	font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+	box-sizing: border-box;
+	font-size: 1.1rem;
+	color: hsl(251, 100%, 8%);
+	/* width: 850px; */
+	/* overflow-x: scroll; */
+	background-color: #ffffff;
+	border-radius: 2px;
+	padding: 0px 5px;
+	border: 0.3px dotted hsla(0, 0%, 0%, 0.4);
+	min-width: 300px;
+}
+
+html-attr>code {
+	background-color: #670b0b;
+	border-radius: 2px;
+	padding: 0px 5px;
+	border: 0.5px solid #cacaca;
+}
+
+.language-bash pre {
+	color: #f8f8f2;
+	font-display: swap;
+	/* background: hsla(251, 100%, 15%, 0.7); */
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+.language-bash code::before {
+	content: "Console";
+	background: brown;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.language-bash code {
+	color: rgb(255, 255, 255);
+	background: hsla(251, 100%, 15%, 1);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1em;
+	padding: 10px;
+	text-shadow: 0 1px rgba(0, 0, 0, .3);
+}
+
+.language-bash .token,
+.string,
+.operator .punctuation {
+	color: white;
+	font-weight: normal;
+	/* font-size: 1rem; */
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
 
 @media (max-width: 900px) {
 	h1 {
