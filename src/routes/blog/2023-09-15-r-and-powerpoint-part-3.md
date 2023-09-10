@@ -275,7 +275,7 @@ image <- NULL
 
 <br/>
 
-With the necessary parameters set, let's see images look on the slide.
+With the necessary parameters set, let's see how the images look on the slide.
 
 ```r
 for (i in 1:nrow(films)) {
@@ -294,6 +294,15 @@ for (i in 1:nrow(films)) {
 ```
 
 <br/>
+
+<ShowImage
+mediaType="image"
+mediaPath={"/post_assets/0003/figure-1-static-slide.png"}
+mediaNumber=1
+mediaCaption="Slide with poster images"
+/>
+
+Looks good. We have created a slide with three rows of film poster images and some title elements, using code. But it's all very static. And somewhat useless. Let's add some animation. And by some I mean, of course, a lot. But meaningful. And tasteful.
 
 [1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
 [2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Scraping Data'
