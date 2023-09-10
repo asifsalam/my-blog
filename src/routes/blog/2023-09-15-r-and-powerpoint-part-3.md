@@ -16,9 +16,7 @@ categories:
 
 <script>
   import ShowImage from "$lib/components/show-image.svelte"
-  import ConsoleOutput from "$lib/components/console-output.svelte"
-  const consoleOutput1 = ['> nrow(films)',
-'[1] 60']
+
 </script>
 
 <br/>
