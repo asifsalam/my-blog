@@ -145,7 +145,7 @@ slide_height <- presentation[["PageSetup"]]$SlideHeight
 
 ### Set some slide properties
 
-The [slide object][4] has a many attributes, but we'll just use a few. We can set the slide background and a few other properties, like the colour and font.
+The [slide object][7] has a many attributes, but we'll just use a few. We can set the slide background and a few other properties, like the colour and font.
 
 ```r
 # Set some slide attributes
@@ -706,14 +706,12 @@ Previous posts:<br>
 [Part 2 - Getting some data][2]
 
 [1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
-[2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Scraping Data'
+[2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Getting some data'
 [3]: https://github.com/asifsalam/r_and_powerpoint 'R and PowerPoint - Github'
 [4]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P1-Basics.pptx 'P1-Basics.pptx'
 [5]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P3-A-Basic-Slide-Step-by-Step.pptx 'P3-A-Basic-Slide-Step-by-Step.pptx'
 [6]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P3-B-Complete-Slide.pptx 'P3-B-Complete-Slide.pptx'
 [7]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.slide 'Slide Object'
-[8]: https://msdn.microsoft.com/EN-US/library/office/ff744153(v=office.15).aspx 'Property enumerations'
-[9]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P1-The-Basics.R 'Part 1 - The Basics'
 [10]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P2-Scraping-Data.R 'Part 2 - Scraping Data'
 [11]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P3-A-Basic-Slide-Step-By-Step.R 'Part 3A - Basic Slide - Step by Step'
 [12]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P3-B-Complete-Slide.R 'Part 3B - Complete Slide'

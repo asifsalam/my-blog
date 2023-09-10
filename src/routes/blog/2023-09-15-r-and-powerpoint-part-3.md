@@ -315,9 +315,9 @@ PowerPoint has a number of animation types for shapes. Entrance, exit, emphasis 
 With these, the following pattern can be used to create the animation effects:
 
 1. Add an effect to the shape using the `Sequence.AddEffect` method of _Sequence_ object. An optional _trigger_ type can be included.
-2. The `Effect` object can then be used to set the desired attributes of the effect, such as the duration, path, trigger, and trigger shape. The attributes depend on the type of animation. Obviously.
+2. The `Effect` object can then be used to set the desired parameters of the effect, such as the duration, path, trigger, and trigger shape. The parameters available depend on the type of animation. Obviously.
 
-In this exercise, we will use animations in two ways: _entrance_ animations in slideshow mode, and _interactive_ animations triggered by a click on a shape. The _entrance_ animations go on the `MainSequence` of the animation timeline, and the _interactive_ animations are placed on a sequence defined using the `InteractiveSequences` property of the `TimeLine` object.
+In this exercise, we will use animations in two ways: _entrance_ animations in slideshow mode, and _interactive_ animations triggered by clicking on a shape. The _entrance_ animations go on the `MainSequence` of the animation timeline, and the _interactive_ animations are placed on a sequence defined using the `InteractiveSequences` property of the `TimeLine` object.
 
 For the _interactive_ animations, including the ability sort the poster images by release date and film title should be interesting.
 
