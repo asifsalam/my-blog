@@ -1,5 +1,5 @@
 ---
-title: Create amazing PowerPoint slides using R &#151 Part 2(3) &#151 Getting data
+title: Create amazing PowerPoint slides using R &#151 Part 2(3) &#151 Getting some data
 preview_image: '/img/images/geometric-pattern-07.jpg'
 author: Asif Salam
 id: 'L02146'
@@ -39,7 +39,6 @@ const consoleOutput3 =['> film_titles[1:3]',
 '[3] "Clint%20Eastwood%20-%20IMDb_files/MV5BMTkxNzI3ODI4Nl5BMl5BanBnXkFtZTgwMjkwMjY4MjE@._V1_QL75_UX.jpg"]',
 '> additional_info_text[1:3]',
 '[1] "Cry Macho;Mike Milo"                      "The Mule;Earl Stone"                      "American Sniper;Church Goer (uncredited)"'];
-console.log("r-and-powerpoint-part-1",consoleOutput1.length);
 </script>
 
 ## Introduction
@@ -280,17 +279,17 @@ Next up:
 Previously:  
 [Part 1][1] - The basics of using R to create PowerPoint slides.
 
-[1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'PowerPoint using R - Part 1'
+[1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
 [2]: http://www.imdb.org/ 'IMDB'
 [3]: http://www.imdb.com/name/nm0000142/ 'Clint Eastwood'
-[4]: /blog/2023-09-15-r-and-powerpoint-part-3/ 'PowerPoint using R - Part 3'
+[4]: /blog/2023-09-15-r-and-powerpoint-part-3/ 'R and PowerPoint - P3 - Creating a stellar slide'
 [5]: https://www.tidyverse.org/ 'tidyverse'
 [6]: https://rvest.tidyverse.org/ 'rvest'
 [7]: https://stringr.tidyverse.org/ 'stringr'
 [8]: https://github.com/hadley/plyr 'plyr'
 [9]: https://github.com/asifsalam/r_and_powerpoint 'R and PowerPoint Github'
 [11]: https://dplyr.tidyverse.org/ 'dplyr'
-[12]: https://github.com/asifsalam/PowerPoint_from_R 'PowerPoint from R'
+[12]: https://github.com/asifsalam/r_and_powerpoint 'R and PowerPoint - Github'
 [15]: https://youtu.be/kCxBTPDiN08 'How to create amazing PowerPoint slides - video'
 [16]: https://youtu.be/XoAanIO8zbM 'PowerPoint Slide created using R - video'
 [17]: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset 'The Movies Dataset'

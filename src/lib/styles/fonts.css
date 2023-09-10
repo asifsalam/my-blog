@@ -163,3 +163,8 @@ Amiri - light serif - too basic
 	font-family: 'DejavuSans';
 	src: url('/fonts/Dejavu/DejaVuSans.ttf');
 }
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	src: url('/fonts/jetbrainsmono/ttf/JetBrainsMono-Regular.ttf');
+}

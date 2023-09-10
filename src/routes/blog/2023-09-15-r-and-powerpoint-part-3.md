@@ -1,5 +1,5 @@
 ---
-title: Create amazing PowerPoint slides using R &#151 Part 1(3) &#151 The basics
+title: Create amazing PowerPoint slides using R &#151 Part 3(3) &#151 Putting it together
 preview_image: '/img/images/geometric-pattern-07.jpg'
 author: Asif Salam
 id: 'L02141'

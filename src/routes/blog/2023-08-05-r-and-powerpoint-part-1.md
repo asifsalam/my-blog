@@ -69,7 +69,7 @@ For now we just need one R package:
 
 There is more information on the `reticulate` package [here](https://rstudio.github.io/reticulate/), but we only need the `import()` function that allows us to import the `pywin32` module for the `COM` client.
 
-Load the package (I use RStudio):
+Load the `R`´package (I use RStudio):
 
 ```R
 install.packages("reticulate")
@@ -313,6 +313,6 @@ The code and the PowerPoint file created are available from [GitHub](https://git
 [26]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.fill 'Fill property'
 [27]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.line 'Line property'
 [30]: /blog/23-06-12-R-and-PowerPoint-Part-1 'R and PowerPoint - Part 1 - The basics'
-[31]: /blog/23-08-25-R-and-PowerPoint-Part-2 'R and PowerPoint - Part 2 - Getting data'
+[31]: /blog/23-08-25-R-and-PowerPoint-Part-2 'R and PowerPoint - Part 2 - Scraping data'
 [32]: /blog/23-09-01-R-and-PowerPoint-Part-3 'R and PowerPoint - Part 3 - Creating a stellar slide'
 [33]: /post_assets/0001/final_slide.mp4

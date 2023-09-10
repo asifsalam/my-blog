@@ -34,7 +34,7 @@ h1 {
 	font-family: 'Poiret One', Overlock, Asap, 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata;
 	font-size: 3rem;
 	font-weight: 200;
-	color: hsla(251, 100%, 15%, 0.7);
+	color: hsla(251, 100%, 15%, 0.9);
 }
 
 h2 {
@@ -103,9 +103,10 @@ h3 {
 
 ol {
 	/* list-style: decimal; */
-	list-style-type: circles;
+	/* list-style-type: circles; */
 	line-height: 1.4em;
 }
+
 
 li::marker {
 	font-size: 1.1em;
@@ -143,7 +144,7 @@ pre {
 	/* background-blend-mode: multiply; */
 	border: hsla(20, 79%, 11%, 0.1) 1px solid;
 	border-radius: 5px;
-	width: 95%;
+	width: 100%;
 	padding: 0;
 	display: grid;
 	overflow-x: scroll;
@@ -188,7 +189,7 @@ html-el {
 	color: hsl(251, 100%, 8%);
 	/* width: 850px; */
 	/* overflow-x: scroll; */
-	background-color: #ffffff;
+	background-color: hsl(168, 48%, 63%, 15%);
 	border-radius: 2px;
 	padding: 0px 5px;
 	border: 0.1px solid #e3e3e3;
@@ -210,7 +211,7 @@ html-attr {
 	color: hsl(251, 100%, 8%);
 	/* width: 850px; */
 	/* overflow-x: scroll; */
-	background-color: #ffffff;
+	background-color: hsl(168, 48%, 63%, 15%);
 	border-radius: 2px;
 	padding: 0px 5px;
 	border: 0.3px dotted hsla(0, 0%, 0%, 0.4);

@@ -32,7 +32,7 @@ export async function load({ fetch }) {
     })
 
     const posts = articles.filter((d) => d.link_type === "my-post");
-
+    // console.log("layout-js", posts)
     return {
         articles, posts, themes, categories, tags
     }

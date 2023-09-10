@@ -299,7 +299,24 @@ export const quotes = [
         sourceDate: "",
         attributedTo: "Charles Bukowski"
     },
-
+    {
+        quoteID: 32,
+        type: "poem",
+        quotation: `Our revels now are ended.These our actors,
+        As I foretold you, were all spirits and 
+        Are melted into air, into thin air:
+        And, like the baseless fabric of this vision,
+        The cloud - capp'd towers, the gorgeous palaces, 
+        The solemn temples, the great globe itself,
+        Yea, all which it inherit, shall dissolve 
+        And, like this insubstantial pageant faded,
+        Leave not a rack behind. We are such stuff 
+        As dreams are made on, and our little life 
+        Is rounded with a sleep.`,
+        spokenBy: "",
+        sourceTitle: "The Tempest, Act 4 Scene 1",
+        attributedTo: "William Shakespeare "
+    },
 
 ]
 

@@ -16,7 +16,7 @@
 <div class="container">
 	<div class="sidebar">
 		<SidebarHeading
-			sidebarLeadinText={'Data has its place, but the soul craves a more substantial kindlling.'}
+			sidebarLeadinText={'Data has its place, but the soul craves a more substantial kindling.'}
 		/>
 		<SidebarTags useThemes={'yes'} />
 	</div>
