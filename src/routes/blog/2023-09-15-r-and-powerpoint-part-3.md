@@ -35,6 +35,41 @@ library(reticulate)
 library(tidyverse)
 ```
 
+## Data and Images
+
+We will, of course, use the data and images gathered in [Part 2][2]. To create the slide we need:
+
+1. Clint Eastwood's filmography data, in the <html-attr>/data</html-attr> sub-folder
+2. Box office return data, in the <html-attr>/data</html-attr> sub-folder
+3. Poster images for all the films, in the <html-attr>/posters</html-attr> sub-folder
+
+If you followed parts [1][1] & [2][2], the data we will use, <a href="https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/data/clint_eastwood_films.tsv">Clint Eastwood's filmography (tsv)</a>, and <a href="https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/data/clint_eastwood_box_office.csv">box office receipts (csv)</a> should be available in the **R** environment, and the film poster images stored in a folder in the working directory. If not, the data and the images are available on [Github][3]. Clone the repo, and copy the two folders into your working directory.
+
+```R
+# Download and read in the data files
+# If downloading the files from the github repo
+# download.file("https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/data/clint_eastwood_films.tsv",
+#              destfile = "clint_eastwood_films.tsv")
+# download.file("https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/data/clint_eastwood_box_office.csv",
+#              destfile = "clint_eastwood_box_office.csv")
+
+# Output directory and file to save the created PowerPoint presentation
+# Requires some path gymnastics to get this to work. The R path strings don't seem to work.
+output_dir <- file.path(getwd(),"output")
+# Create the directory
+dir.create(file.path(getwd(), output_dir))
+output_file <- gsub("/","\\\\",file.path(output_dir,"clint_eastwood_filmogrpahy.pptx"))
+
+clint_films <- read.table("./data/clint_eastwood_films.tsv",header=TRUE, stringsAsFactors=FALSE)
+box_office <- read.table("./data/clint_eastwood_box_office.csv",header=TRUE, stringsAsFactors=FALSE)
+```
+
+<br/>
+
+The `clint_films` data frame includes the title, year of release, name of the character played by <em>Clint Eastwood</em>, the <em>url</em> of the IMDB film page, and the local path to the poster image file. The `box_office` data frame has the box office receipts for most of the films.
+
+The <html-attr>/posters</html-attr> folder, with the poster images, was created in [Part 2][2]. Make sure the folder and images exist in the project directory, either by going through [Part 2][2] or by cloning the [Github repo][3], and copying the folders to the working directory.
+
 [1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
 [2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Scraping Data'
 [3]: https://github.com/asifsalam/r_and_powerpoint 'R and PowerPoint - Github'
