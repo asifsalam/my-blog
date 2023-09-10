@@ -1,8 +1,9 @@
 ---
+layout: post
 title: Create amazing PowerPoint slides using R &#151 Part 3(3) &#151 Putting it together
 preview_image: '/img/images/geometric-pattern-07.jpg'
 author: Asif Salam
-id: 'L02141'
+id: 'L02146'
 published: true
 post_date: '2023-08-05'
 excerpt: 'Automate the creation of PowerPoint presentations with R, reticulate, python and pywin32. This post, the first of three, introduces the basics.'
@@ -15,302 +16,715 @@ categories:
 
 <script>
   import ShowImage from "$lib/components/show-image.svelte"
-  // import CodeHighlight from "$lib/components/code-highlight.svelte"
+  import ConsoleOutput from "$lib/components/console-output.svelte"
+  const consoleOutput1 = ['> nrow(films)',
+'[1] 60']
 </script>
 
-## Introduction
+<br/>
 
-Companies talk about _"data-driven decision making"_, but a slick **PowerPoint** deck is how decisions are really made. A good slide can find its way into all kinds of decision material, and be viewed by many more decision-makers than any dashboard. Even if you use **R** (or **Python**) for data analysis, **PowerPoint** is how you distribute and communicate results, so learning to to create those decks as part of the analysis workflow can be worthwhile. Recreating and customizing slides based on scenarios or updates to the analysis becomes fairly straightforward, with effective version control and reproducibility. Beyond efficiency and repeatability, programmatic access enables you to do things that just would not be possible with point and click.
+Time to finally create the slide. [Part 1][1] was about understanding how to use `reticulate` & `pywin32` to manipulate _PowerPoint_, and the optional [Part 2][2] was about scraping some data about _Clint Eastwood's_ films from [IMDB][14].
 
-The [**Windows COM**][2] is an interface standard that allows applications such as **Excel**, **PowerPoint** and **Word** to expose functionality to other applications, such as **Python** or **R**. The [**pywin**][3] package enables **Python** to communicate to other applications through _COM_. [In this talk][1], S Anand uses **Python** to create some impressive effects in a **PowerPoint** slide using **Python**, scraping data from [_IMDB_][10] and creating a PowerPoint slide using the data. [**RDCOMClient**][4] by Duncan Temple Lang provided similar functionality for **R**. Unfortunately that project is not maintained regularly, and is not part of the CRAN distribution. It can also be somewhat challenging to load, and there is no support available.
-
-The [**`reticulate`**][5] package by Yuan Tang, however, provides an alternative way of accessing the [**COM**][2]. It provides **R** with an interface to **Python**, which means that the [**`pywin`**][3] package can be used with **R**.
-
-In this series of 3 posts, we will use these tools to create a _"data-driven"_ **PowerPoint** slide on Clint Eastwood's filmography, with **R**, focusing on interaction and animation. This first part ([Part 1][30]) is about the the basics - how to access the methods and properties of the **PowerPoint object model**. A _data-driven_ slide needs data, so in [Part 2][31] we scrape some data on **Clint Eastwood's** movies from [IMDB][13]. And finally, in [Part 3][32] we use the data to create a slide programmatically. The end result should be a fairly complex, and somewhat entertaining, **PowerPoint** slide with **Clint Eastwood's** filmography.
-
-([Here's a short video of what we're aiming for][33].)
-
-(Clearly **PowerPoint** has a powerful animation engine, and the [object model][12] allows you to programmatically manipulate almost everything. The [Microsoft documentation][11], however, seems to be organized as something of a mystery.)
-
-Let's start with the basics of manipulating the **PowerPoint** object model with **R**.
+Let's put it all together.
 
 ## Setup
 
-I am using:
-
-- Windows 10 Version 22H2 (64bit)
-- Microsoft PowerPoint Version 2304 (64bit)
-- R Version 4.3.0
-- RStudio Version 2023.06.0
-
-We also need:
-
-- **Python**
-- `pywin32`
-
-If you don't have **Python**, there are a few ways of installing it, but I think the [official site][15] is simple enough. If everything goes well, both **Python** and `pip` should be in the **Windows PATH**. The [`pywin32` documentation][3] recommends installation via `pip`, so open a terminal (**Powershell**, or the **Command Prompt**), and type the following:
-
-```console
-> pip install --upgrade pywin32
-```
-
-I am using:
-
-- Python 3.10.6
-
-For now we just need one R package:
-
-- [`reticulate`][5]
-
-There is more information on the `reticulate` package [here](https://rstudio.github.io/reticulate/), but we only need the `import()` function that allows us to import the `pywin32` module for the `COM` client.
-
-Load the package (I use RStudio):
-
-```R
-install.packages("reticulate")
-library(reticulate)
-```
-
-You may need to specify the path to the **Python** directory, if it is not in the **Windows PATH**.
-
-```R
-# Use this if necessary
-# pypath <- "C:/path_to_python_dir/"
-# use_python(pypath, required = T)
-pywin <- import("win32com.client")
-```
-
-For the purposes of this post, we only need to understand how to do three things:
-
-- Start a new instance of an application, **PowerPoint** in this case: `pywin$Dispatch('PowerPoint.Application')` <br>
-  This provides access to the objects, methods and properties exposed by the application API
-- Execute methods, which takes the form: `myObj$methodName(arg1,arg2,arg3,...)`
-- Set properties, which takes the form: `myObj[["Property"]] = TRUE`
-
-With these basic capabilities, we can access and manipulate the objects exposed by the PowerPoint API. (More in-depth information is provided [here][16] and [here][17].)
-
-Let's create a new **PowerPoint** presentation from **R**.
-
-Execute the following commands in **R**.
+We begin by loading the necessary libraries in your .
 
 ```r
-# Start up PowerPoint
-pp <- pywin$Dispatch("Powerpoint.Application")
-
-# Make the application visible
-pp[["Visible"]] = 1
-
-# Add a new presentation
-presentation <- pp[["Presentations"]]$Add()
-
-# The presentation is empty.  Add a slide to it.
-# We'll get to the enumerated constants defined by Microsoft.
-# For now, let's use the value (12) that results in a blank layout.
-# slide1 <- presentation[["Slides"]]$Add(1,ms$ppLayoutBlank)
-slide1 <- presentation[["Slides"]]$Add(1,12)
+library(reticulate)
+library(tidyverse)
 ```
 
-This will create a presentation with a blank slide. We will use this slide in the next sections.
+## Data and Images
 
-The critical part is, of course, knowing what methods and properties are available. This is where the [**PowerPoint Developer Reference**][11] is a handy, but not terribly user-friendly, resource. (You can also get this information from the **Object Browser** in the VBA editor, as shown in figure 1. below).
+We will, of course, use the data and images gathered in [Part 2][2]. To create the slide we need:
 
-<ShowImage
-mediaType = "image"
-mediaPath={"/post_assets/0001/vba_object_browser.png"}
-mediaNumber=1
-mediaCaption="VBA Object Browser"
-/>
-<br />
+1. Clint Eastwood's filmography data, in the <html-attr>/data</html-attr> sub-folder
+2. Box office return data, in the <html-attr>/data</html-attr> sub-folder
+3. Poster images for all the films, in the <html-attr>/posters</html-attr> sub-folder
 
-## Using VBA to create and animate shapes
+If you followed parts [1][1] & [2][2], the data we will use, <a href="https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/data/clint_eastwood_films.tsv">Clint Eastwood's filmography (tsv)</a>, and <a href="https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/data/clint_eastwood_box_office.csv">box office receipts (csv)</a> should be available in the **R** environment, and the film poster images stored in a folder in the working directory. If not, the data and the images are available on [Github][3]. Clone the repo, and copy the two folders into your working directory.
 
-To understand how to go from VBA to R, let's recreate one of the basic examples in some of the older, and somewhat better, **PowerPoint** documentation, [Applying Animations to Shapes in Office 2010][13], which works with the latest MS Office versions as well. Let's walk through the VBA code, implement it in **PowerPoint** and see what it does. We will then implement the same code in **R**.
+```R
+# Download and read in the data files
+# If downloading the files from the github repo
+# download.file("https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/data/clint_eastwood_films.tsv",
+#              destfile = "clint_eastwood_films.tsv")
+# download.file("https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/data/clint_eastwood_box_office.csv",
+#              destfile = "clint_eastwood_box_office.csv")
 
-The VBA code:
+# Output directory and file to save the created PowerPoint presentation
+# Requires some path gymnastics to get this to work. The R path strings don't seem to work.
+output_dir <- file.path(getwd(),"output")
+# Create the directory
+dir.create(file.path(getwd(), output_dir))
+output_file <- gsub("/","\\\\",file.path(output_dir,"clint_eastwood_filmogrpahy.pptx"))
 
-```vb
-Sub TestPickupAnimation()
-  With ActivePresentation.Slides(1)
-    Dim shp1, shp2, shp3 As Shape
-    Set shp1 = .Shapes.AddShape(msoShape12pointStar, 20, 20, 100, 100)
-    .TimeLine.MainSequence.AddEffect shp1, msoAnimEffectFadedSwivel, ,
-    msoAnimTriggerAfterPrevious
-    .TimeLine.MainSequence.AddEffect shp1, msoAnimEffectPathBounceRight, ,
-    msoAnimTriggerAfterPrevious
-  End With
-End Sub
+clint_films <- read.table("./data/clint_eastwood_films.tsv",header=TRUE, stringsAsFactors=FALSE)
+box_office <- read.table("./data/clint_eastwood_box_office.csv",header=TRUE, stringsAsFactors=FALSE)
 ```
 
 <br/>
 
-Let's go through the code:
+The <html-attr>clint_films</html-attr> data frame includes the title, year of release, name of the character played by <em>Clint Eastwood</em>, the <em>url</em> of the IMDB film page, and the local path to the poster image file. The <html-attr>box_office</html-attr> data frame has the box office receipts for most of the films.
 
-- `ActivePresentation.Slides(1)` [(documentation)][22] selects the first slide in the current presentation
-- Three variables of the type `Shape` [(documentation)][19] are defined. The `Shape` object represents a single shape on a slide, and has a set of associated methods and properties.
-- `shp1` is created using a method on the `Shapes` (documentation)[20] object, which represents all the `Shape` objects on the specified slide. The `AddObjects` method adds a shape and returns a `Shape` object. In this case a 12 pointed star is added, positioned 20 points to the left, 20 points from the top, with a width and height of 100 points.
-- The `TimeLine` object [(documentation)][21] is a key component for animation sequences on a slide. The object is used to add an effect to `shp1` on the main animation sequence of the slide. Which implies that additional animation sequences can be added to a slide. Three animation effects are added to `shp1`, _swivel, bounce, and spin,_ each triggered after the previous one.
-- The `PickupAnimation` [(documentation)][18] method of the `Shape` object picks up the animation from the `shp1` object.
-- Finally, `shp2` and `shp3`, an hexagon and a cloud, are created, shifted along the x-axis, and the animation sequence from `shp1` is applied to each.
+The <html-attr>/posters</html-attr> folder, with the poster images, was created in [Part 2][2]. Make sure the folder and images exist in the project directory, either by going through [Part 2][2] or by cloning the [Github repo][3], and copying the folders to the working directory.
 
-In summary:
+### Minor data prep
 
-- Three objects are created on slide 1 of the active presentation.
-- The same animation sequence is applied to each.
-- In presentation mode, the three animation effects will be auto-triggered in the sequence in which they were added, for each object, also in sequence.
-
-[This Microsoft article][13] has the step-by-step instructions, on creating a standard VBA module, inserting the code and running it. We can use the deck created earlier to execute the code and we get these shapes and animation (Video 1).
-
-<ShowImage
-mediaType="video"
-mediaPath={"/post_assets/0001/animation_1.mp4"}
-mediaNumber=2
-mediaCaption="Animating shapes in PowerPoint"
-/>
-
-## Using R to create and animate shapes
-
-Now let's do the same thing with **R**.
-
-The VBA code above has constants that Microsoft has defined for each element of the presentation, such as shape, animation, trigger, and so on. [This site][23] has the enumerations listed. I created [a file][24], which we can use to load the enumerations into **R**. (You can also download it to your working directory and load it from there.)
-
-Assuming that the statements in the earlier **R** script was successfully executed, and the presentation exists, _delete the shapes created with the_ **VBA** code so `slide1` is empty. The script below is the **R** equivalent of the statements in the VBA code above. Execute the script, preferably one statement at a time in order to see what each statement accomplishes.
+A bit of preparation is required for combining the box office revenue data with the films data.
 
 ```r
-# Read in the enumerations into the "ms" variable
-mso_url <- "https://raw.githubusercontent.com/asifsalam/PowerPoint_from_R/master/mso.txt"
+# Remove tv series
+films <- clint_films %>% filter(!grepl("series",str_to_lower(additional_info)))
+# Remove some films where the roles are uncredited - American Sniper, Casper, Breezy
+films <- films[-which(films$key %in% c("americansniper","casper","breezy")),]
 
-# If you want to download the file, uncomment the following code:
-# download(mso_url)
-# source("mso.txt")
-source(mso_url)
+film_revenue <- left_join(films,box_office[,c("key","adjusted_gross")],by="key")
+film_revenue$adjusted_gross[film_revenue$key=="crymacho"] <- 16510734
+film_revenue$adjusted_gross[film_revenue$key=="themule"] <- 174800000
+# clint_films_revenue$adjusted_gross[clint_films_revenue$key=="breezy"] <- 200000
 
-# Add the first to slide 1
-shp1 <- slide1[["Shapes"]]$AddShape(ms$msoShape12pointStar,20,20,100,100)
-# Add the swivel effect to the shape, on the main timeline
-slide1[["TimeLine"]][["MainSequence"]]$AddEffect(shp1,ms$msoAnimEffectFadedSwivel,
-                                                        trigger=ms$msoAnimTriggerAfterPrevious)
-# Add the bounce effect
-slide1[["TimeLine"]][["MainSequence"]]$AddEffect(shp1,ms$msoAnimEffectPathBounceRight,
-                                                        trigger=ms$msoAnimTriggerAfterPrevious)
-# Add the spin effect
-slide1[["TimeLine"]][["MainSequence"]]$AddEffect(shp1,ms$msoAnimEffectSpin,
-                                                        trigger=ms$msoAnimTriggerAfterPrevious)
-# Pickup the animation
-shp1$PickupAnimation()
-
-# Add the second shape to slide 1
-shp2 <- slide1[["Shapes"]]$AddShape(ms$msoShapeHexagon,100,20,100,100)
-# Apply the sequence of animations to shape 2
-shp2$ApplyAnimation()
-
-# Add the third shape to slide 1
-shp3 <- slide1[["Shapes"]]$AddShape(ms$msoShapeCloud,180,20,100,200)
-# Apply the sequence of animation to shape 3
-shp3$ApplyAnimation()
+film_revenue <- film_revenue %>% filter(!is.na(adjusted_gross)) %>% filter(adjusted_gross > 0) %>% arrange(desc(adjusted_gross))
 
 ```
 
-This should create, as previously, a slide with the three shapes. Again, if you go into animation mode, the shapes should appear, with the animations triggered.
+<br/>
 
-Let's try a few more things. The [`shape` object comes with a long list of properties and methods][19]. Let's see how to use some of them. We'll add text, and change colors.
+We are left with 60 films.
+<ConsoleOutput consoleType='R Console' inputCode = {consoleOutput1} />
+<br/>
 
-Each [`shape` object][19] has an associated [`TextFrame property`][25], which returns an object containing all the text related elements of the shape.
+## Create the PowerPoint Slide
 
-```r
-# Add text to the shapes.  While this works, R files a complaint
-shp1[["TextFrame"]][["TextRange"]][["Text"]] <- "Shp1"
-
-# This way seems to function better
-shp1_tr <- shp1[["TextFrame"]][["TextRange"]]
-shp1_tr[["Text"]] <- "ONE"
-```
-
-Let's set some shape attributes.  
-The [`Fill`][26] property is used for the colors, and the [`Line`][27] property for the border.
+We can now construct the slide. We begin by loading the necessary functions and setting up some parameters.
 
 ```r
-shp1_color <- shp1[["Fill"]]
-shp1_color[["ForeColor"]][["RGB"]] <- (0+170*256+170*256^2)
-# That's how the RGB value is calculated: r +  g*256 + b*256*256
+actor_name <- "Clint Eastwood"
 
-# Remove the line
-shp1_line <- shp1[["Line"]]
-shp1_line[["Visible"]] <- 0
-```
+# Set up pywin
+# Must install pywin32 through > pip install pywin32
+# Use this if required
+# pypath <- "C:/Program Files/Python310/"
+use_python(pypath, required = T)
+pywin <- import("win32com.client")
 
-Now, let's do it for the other shapes as well. We can create a function to handle the color encoding:
-
-```r
-# Create function for the rgb calculation
+# Some prep. See Part 1.
+# Create the RGB function
 pp_rgb <- function(r,g,b) {
     return(r + g*256 + b*256^2)
 }
 
-shp2_tr <- shp2[["TextFrame"]][["TextRange"]]
-shp2_tr[["Text"]] <- "TWO"
-shp2_color <- shp2[["Fill"]]
-shp2_color[["ForeColor"]][["RGB"]] <- pp_rgb(170,170,0)
-shp2_line <- shp2[["Line"]]
-shp2_line[["Visible"]] <- 0
-
-shp3_tr <- shp3[["TextFrame"]][["TextRange"]]
-shp3_tr[["Text"]] <- "THREE"
-shp3_color <- shp3[["Fill"]]
-shp3_color[["ForeColor"]][["RGB"]] <- pp_rgb(170,0,170)
-shp3_line <- shp3[["Line"]]
-shp3_line[["Visible"]] <- 0
-
-# Finally, save the file in the working directory
-presentation$SaveAs(paste0(getwd(),"/PowerPoint_R_Part_1.pptx"))
+# Load the Microsoft parameters
+source("mso.txt")
+# Some utility functions
+source("utility_functions.R")
 ```
 
-The video below shows the result of this sequence of commands.
-
-<ShowImage
-mediaType="video"
-mediaPath="/post_assets/0001/animation_2.mp4"
-mediaNumber=2
-mediaCaption="Animated shapes in R"
-/>
 <br/>
 
-Now that we have a firm grasp of the basic principles of creating **PowerPoint** slides using **R**, we can attempt something more sophisticated than shapes dancing around. But before that, in [Part 2][31] we collect some data on **Clint Eastwood's** movies for our _"data-driven"_ slide.
+### Create an blank slide
 
-The code and the PowerPoint file created are available from [GitHub](https://github.com/asifsalam/r_and_powerpoint).
+Start PowerPoint and create an empty slide, from R.
 
-## Coming up:<br>
+```r
+# Create the PowerPoint slide
+pp = pywin$Dispatch('Powerpoint.Application')
+pp[["Visible"]] = 1
+presentation <- pp[["Presentations"]]$Add()
 
-- [Part 2][31], where we scrape some data using [`rvest`][7] and create a dataset of Clint Eastwood's movies.
-- [Part 3][32], where we use the data to create a complex, _"data-driven"_ slide with more advanced animation and interaction in PowerPoint.
+#slide1 <- presentation[["Slides"]]$Add(1,ms$ppLayoutBlank)
+slide1 <- presentation[["Slides"]]$Add(1,ms$ppLayoutTitleOnly)
+# The slide dimensions will be needed to place objects
+slide_width <- presentation[["PageSetup"]]$SlideWidth
+slide_height <- presentation[["PageSetup"]]$SlideHeight
 
-[1]: https://www.youtube.com/watch?v=aKCXj1DyEhM 'S Anand'
-[2]: https://learn.microsoft.com/en-us/windows/win32/com/com-technical-overview 'COM Overview'
-[3]: https://pypi.org/project/pywin32/ 'pywin32'
-[4]: http://www.omegahat.net/RDCOMClient/ 'RCDOMClient'
-[5]: https://rstudio.github.io/reticulate/ 'reticulate'
-[6]: https://cran.r-project.org/web/views/WebTechnologies.html 'CRAN Task View: Web Technologies and Services'
-[7]: https://rvest.tidyverse.org/ 'rvest'
-[8]: https://posit.co/ 'Posit XX'
-[9]: http://www.omegahat.org/RSXML/ 'XML Package for R'
-[10]: http://www.imdb.com/ 'IMDB'
-[11]: https://learn.microsoft.com/en-us/office/client-developer/powerpoint-home 'PowerPoint Developer Reference'
-[12]: https://learn.microsoft.com/en-us/office/vba/api/overview/powerpoint/object-model 'PowerPoint Object Model'
-[13]: https://msdn.microsoft.com/en-us/library/office/gg190747(v=office.14).aspx 'Applying Animations to Shapes in Office 2010'
-[14]: https://msdn.microsoft.com/en-us/library/office/aa211626(v=office.11).aspx 'AddEffect Method'
-[15]: https://www.python.org/ 'Python'
-[16]: https://pbpython.com/windows-com.html 'Automating Windows Applications Using COM'
-[17]: http://timgolden.me.uk/python/index.html "Tim Golden's Python Stuff"
-[18]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.pickupanimation 'PickupAnimation'
-[19]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape 'Shape Object'
-[20]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shapes 'Shapes Object'
-[21]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.timeline 'TimeLine Object'
-[22]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.application.activepresentation 'ActivePresentation'
-[23]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint(enumerations) 'PowerPoint Enumerations'
-[24]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/mso.txt 'mso.txt'
-[25]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.textframe 'TextFrame property'
-[26]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.fill 'Fill property'
-[27]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.line 'Line property'
-[30]: /blog/23-06-12-R-and-PowerPoint-Part-1 'R and PowerPoint - Part 1 - The basics'
-[31]: /blog/23-08-25-R-and-PowerPoint-Part-2 'R and PowerPoint - Part 2 - Getting data'
-[32]: /blog/23-09-01-R-and-PowerPoint-Part-3 'R and PowerPoint - Part 3 - Creating a stellar slide'
-[33]: /post_assets/0001/final_slide.mp4
+```
+
+<br/>
+
+### Set some slide properties
+
+The [slide object][4] has a many attributes, but we'll just use a few. We can set the slide background and a few other properties, like the colour and font.
+
+```r
+# Set some slide attributes
+slide_color <- slide1[["ColorScheme"]]$Colors(ms$ppBackground)
+slide_color[["RGB"]] <- pp_rgb(0,0,0)
+
+# Create a background for the slide
+img_file <- gsub("/","\\\\",paste(getwd(),"/","posters/clint_background_1.png",sep=""))
+bg_image <- slide1[["Shapes"]]$AddPicture(img_file,TRUE,FALSE,0,0,slide_width,slide_height)
+bg_rect <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,0, 0,slide_width, slide_height)
+bg_rect_fill <- bg_rect[["Fill"]]
+bg_rect_fill[["ForeColor"]][["RGB"]] <- pp_rgb(102, 25, 13)
+bg_rect_fill[["Transparency"]] <- 0.1
+bg_rect_line <- bg_rect[["Line"]]
+bg_rect_line[["ForeColor"]][["RGB"]] <- pp_rgb(102,25,13)
+
+slide_title <- slide1[["Shapes"]][["Title"]]
+slide_title_color <- slide1[["ColorScheme"]]$Colors(ms$ppTitle)
+slide_title_color[["RGB"]] <- pp_rgb(243,211,129)
+slide_title$ZOrder(ms$msoBringToFront)
+
+```
+
+<br/>
+
+### Slide title
+
+Let's give the slide a clever title: **Filmography: Clint Eastwood**
+
+```r
+# Add a title
+# AutoSize: https://msdn.microsoft.com/EN-US/library/office/ff745311(v=office.15).aspx
+slide_title_frame <- slide_title[["TextFrame"]]
+slide_title_frame[["AutoSize"]] <- ms$ppAutoSizeNone
+slide_title_frame[["AutoSize"]] <- ms$ppAutoSizeShapeToFitText
+
+# Place the title on thhe edge
+slide_title[["Top"]] <- 0
+slide_title[["Left"]] <- 0
+title_text <- slide_title[["TextFrame"]][["TextRange"]]
+title_text[["Text"]] <- paste("Filmography: ",actor_name,sep="")
+title_font <- title_text[["Font"]]
+title_font[["Color"]][["RGB"]] <- pp_rgb(243,211,129)
+title_font[["Size"]] <- 36
+title_font[["Name"]] <- "Calibri"
+
+```
+
+<br/>
+
+### Some decorative elements
+
+Let's add line and a circle that shows Clint Eastwood's calculated total box office earnings (approximate, of course).
+
+```r
+diameter <- 100
+# Add a line
+line1 <- slide1[["Shapes"]]$AddLine(0,diameter/2,slide_width,diameter/2)
+line1_attr <- line1[["Line"]]
+line1_attr[["Weight"]] <- 1
+line1_attr[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+# Add a circle, showing total box office earnings
+circle1 <- slide1[["Shapes"]]$AddShape(ms$msoShapeOval,slide_width-diameter,0,diameter,diameter)
+circle1[["Top"]] <- 0
+circle1[["Left"]] <- slide_width - diameter
+circle1[["Width"]] <- diameter
+circle1[["Height"]] <- diameter
+circle1_color <- circle1[["Fill"]]
+circle1_color[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+# Calculate the total earnings of the movies from the data set
+total_earnings <- format(sum(as.numeric(film_revenue$adjusted_gross))/1000000000,digits=3)
+circle_frame <- circle1[["TextFrame"]]
+circle_frame[["MarginTop"]] <- 0
+circle_frame[["MarginLeft"]] <- 0
+circle_frame[["MarginRight"]] <- 0
+circle_frame[["MarginBottom"]] <- 0
+circle_text <- circle1[["TextFrame"]][["TextRange"]]
+circle_text[["Text"]] <- paste(total_earnings,"BUSD","")
+circle_font <- circle_text[["Font"]]
+circle_font[["Name"]] <- "Calibri"
+circle_font[["Size"]] <- 24
+circle_font[["Color"]][["RGB"]] <- pp_rgb(102,25,13)
+circle_font[["Bold"]] <- 1
+circle_line <- circle1[["Line"]]
+circle_line[["Weight"]] <- 2
+circle_line[["ForeColor"]][["RGB"]] <- pp_rgb(102,25,13)
+
+earnings_text <- slide1[["Shapes"]]$AddTextbox(ms$msoTextOrientationHorizontal,
+                                               slide_width-4*diameter,diameter/2-25,diameter*3+1,20)
+earnings_range <- earnings_text[["TextFrame"]][["TextRange"]]
+earnings_range[["Text"]] <- "Total Box Office Earnings"
+earnings_font <- earnings_range[["Font"]]
+earnings_font[["Color"]] <- pp_rgb(243,211,129)
+earnings_font[["Size"]] <- 20
+
+# When you are returning an object, you need to create a variable, and then set the properties
+# This doesn't work
+# earnings_range[["ParagraphFormat"]][["Alignment"]] <- ms$ppAlignRight
+earnings_para <- earnings_range[["ParagraphFormat"]]
+earnings_para[["Alignment"]] <- ms$ppAlignRight
+```
+
+### Insert the poster images
+
+Placing the poster images manually would be really tedious, and doing it more than once, well, that would just not get done. With bit of math, we can create a pattern that can be repeated with little effort. To the images precisely on the slide, we need to set some parameters.
+
+There are 60 images, so 20 images in three rows should work.
+
+```r
+num_cols <- 20
+num_rows <- ceiling(nrow(films)/num_cols)
+
+# Based on the number of rows and columns, calculate the image height and width
+image_width=floor(slide_width/num_cols)
+
+# We want to leave some space on the top for other things. The bottom half will contain the images.
+image_offset <- 3
+image_height=floor(slide_height/(num_rows+image_offset))
+
+# We'll store a reference to the images in order to manipulate them later
+images <- list()
+image <- NULL
+
+```
+
+<br/>
+
+With the necessary parameters set, let's see images look on the slide.
+
+```r
+for (i in 1:nrow(films)) {
+    x = 0 + image_width * ((i-1) %% num_cols)
+    y = image_height*image_offset + image_height * ((i-1) %/% num_cols)
+	# Assuming that the poster folder is in the working directory are in the working directory
+    image_file <- gsub("/","\\\\",paste(getwd(),"/",films$img_file[i],sep=""))
+    images[[as.character(i)]] <- slide1[["Shapes"]]$AddPicture(image_file,TRUE,FALSE,x+1,y+1,image_width-2,image_height-2)
+    image <- images[[as.character(i)]]
+
+    line <- image[["Line"]]
+    line[["Style"]] <- ms$msoLineSingle
+    line[["Weight"]] <- 2
+    line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+}
+```
+
+<br/>
+
+<ShowImage
+mediaType="image"
+mediaPath={"/post_assets/0003/figure-1-static-slide.png"}
+mediaNumber=1
+mediaCaption="Slide with poster images"
+/>
+
+Excellent! We have created a slide with three rows of film poster images and some title elements, using code. But it's all very static. And somewhat useless. Let's add some animation. And by some I mean, of course, a lot. But meaningful. And tasteful.
+
+## Animation basics
+
+PowerPoint has a number of animation types for shapes. Entrance, exit, emphasis and path are the main categories. Animation requires three things:
+
+1. An object to animate, such as a shape
+2. An effect to apply to the above mentioned shape
+3. A timeline sequence in which the effect will be played. This dictates how and when the effect will be played.
+
+With these, the following pattern can be used to create the animation effects:
+
+1. Add an effect to the shape using the `Sequence.AddEffect` method of _Sequence_ object. An optional _trigger_ type can be included.
+2. The `Effect` object can then be used to set the desired attributes of the effect, such as the duration, path, trigger, and trigger shape. The attributes depend on the type of animation. Obviously.
+
+In this exercise, we will use animations in two ways: _entrance_ animations in slideshow mode, and _interactive_ animations triggered by a click on a shape. The _entrance_ animations go on the `MainSequence` of the animation timeline, and the _interactive_ animations are placed on a sequence defined using the `InteractiveSequences` property of the `TimeLine` object.
+
+For the _interactive_ animations, including the ability sort the poster images by release date and film title should be interesting.
+
+Let's create a couple functions for applying the different animation effects to the different shapes.
+
+This first one applies motion effects to the major objects when the slideshow starts.
+
+```r
+animation_start <- function(seq,shape,effectID,trigger,from_x,from_y,to_x,to_y,duration,delay_time) {
+
+    effect <- seq$AddEffect(Shape=shape,effectId=effectID,trigger=trigger)
+    cat("EffectType: ",effect$EffectType)
+    print(effect$EffectInformation)
+    ani <- effect[["Behaviors"]]$Add(ms$msoAnimTypeMotion)
+    # MotionEffect Object: https://msdn.microsoft.com/EN-US/library/office/ff745317(v=office.15).aspx
+    aniMotionEffect <- ani[["MotionEffect"]]
+    # https://msdn.microsoft.com/EN-US/library/office/ff745317.aspx
+    aniMotionEffect[["FromX"]] <- from_x
+    aniMotionEffect[["ToX"]] <- to_x
+    aniMotionEffect[["FromY"]] <- from_y
+    aniMotionEffect[["ToY"]] <- to_y
+    effectTiming <- effect[["Timing"]]
+    effectTiming[["Duration"]] <- duration
+    effectTiming[["TriggerDelayTime"]] <- delay_time
+
+}
+```
+
+<br/>
+
+This function applies a trigger based path animation that moves an object along a path, when a trigger shape is clicked.
+
+```r
+animate_image <- function(seq,image,trigger,path,duration=1.5) {
+
+    effect <- seq$AddEffect(Shape=image,effectID=ms$msoAnimEffectPathDown,
+                            trigger=ms$msoAnimTriggerOnShapeClick)
+    ani <- effect[["Behaviors"]]$Add(ms$msoAnimTypeMotion)
+    aniMotionEffect <- ani[["MotionEffect"]]
+    aniMotionEffect[["Path"]] <- path
+    effectTiming <- effect[["Timing"]]
+    effectTiming[["TriggerType"]] <- ms$msoAnimTriggerWithPrevious
+    effectTiming[["TriggerShape"]] <- trigger
+    effectTiming[["Duration"]] <- duration
+
+}
+```
+
+<br/>
+
+## Animating shapes - Entrance
+
+Let's start with a basic _entrance_ animation, which should be familiar to most PowerPoint users. We need the `MainSequence` for these animations.
+
+```r
+# Get the main sequence of the slides timeline
+seq_main <- slide1[["TimeLine"]][["MainSequence"]]
+
+# Apply animation effects to the four title objects:
+# Start off screen, descend from top (0 means original position)
+animation_start(seq_main,slide_title,ms$msoAnimEffectDescend,ms$msoAnimTriggerWithPrevious,
+                0, -20,0,0,1,0)
+# Start off screen, slide to left
+animation_start(seq_main,line1,ms$msoAnimEffectFly,ms$msoAnimTriggerAfterPrevious,
+                100, diameter/slide_height,0,diameter/slide_height,1,0)
+# Start off screen, fly in from left
+animation_start(seq_main,circle1,ms$msoAnimEffectFly,ms$msoAnimTriggerWithPrevious,
+                -100, diameter/slide_height,0,diameter/slide_height,1,0)
+# Start off screen, fly in from the bottom
+animation_start(seq_main,earnings_text,ms$msoAnimEffectFly,ms$msoAnimTriggerWithPrevious,
+                0, 100,(slide_width-4*diameter)/slide_width,diameter/slide_height,1,0)
+```
+
+<br/>
+
+Let's create the sort buttons - <html-attr>Title</html-attr> and <html-attr>Release Year</html-attr> and apply the path animations:
+
+```r
+# Add buttons which will sort the images by title or release year
+# Some explanatory text
+sort_text <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,slide_width - 400,10,100,40)
+sort_range <- sort_text[["TextFrame"]][["TextRange"]]
+sort_para <- sort_range[["ParagraphFormat"]]
+sort_para[["Alignment"]] <- ms$ppAlignLeft
+sort_range[["Text"]] <- "Sort posters by: "
+sort_font <- sort_range[["Font"]]
+sort_font[["Size"]] <- 14
+sort_font[["Color"]] <- pp_rgb(233,174,27)
+sort_text[["Width"]] <- 110
+sort_text[["Height"]] <- 15
+sort_text[["Top"]] <- image_height*image_offset - 20 - 3
+#sort_text[["Left"]] <- slide_width - 205
+sort_text[["Left"]] <- 0
+sort_fill <- sort_text[["Fill"]]
+sort_fill[["Visible"]] <- 0
+sort_line <- sort_text[["Line"]]
+sort_line[["Visible"]] <- 0
+
+# Create buttons that will sort and animate the poster images - alphanumeric
+button_alpha <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,slide_width - 300,10,100,40)
+bta_fill <- button_alpha[["Fill"]]
+bta_fill[["Visible"]] <- 1
+bta_fill[["Transparency"]] <- 0.95
+# bta_rgb <- bta_fill[["ForeColor"]][["RGB"]]
+
+bta_line <- button_alpha[["Line"]]
+bta_line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+bta <- button_alpha[["TextFrame"]][["TextRange"]]
+bta[["Text"]] <- "Title"
+bta_font <- bta[["Font"]]
+bta_font[["Size"]] <- 14
+bta_font[["Color"]] <- pp_rgb(243,211,129)
+
+button_alpha[["Width"]] <- 90
+button_alpha[["Height"]] <- 15
+button_alpha[["Top"]] <- image_height*image_offset - 20 - 3
+button_alpha[["Left"]] <- sort_text[["Width"]] - 2
+
+# Create buttons that will sort and animate the poster images - date
+button_date <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,slide_width - 350+160,10,150,40)
+btd <- button_date[["TextFrame"]][["TextRange"]]
+btd[["Text"]] <- "Release Year"
+
+btd_fill <- button_date[["Fill"]]
+btd_fill[["Visible"]] <-1
+btd_fill[["Transparency"]] <- 0.95
+btd_line <- button_date[["Line"]]
+btd_line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+btd_font <- btd[["Font"]]
+btd_font[["Size"]] <- 14
+btd_font[["Color"]] <- pp_rgb(243,211,129)
+
+button_date[["Width"]] <- 90
+button_date[["Height"]] <- 15
+button_date[["Top"]] <- image_height*image_offset - 20 - 3
+button_date[["Left"]] <- sort_text[["Width"]] - 2 + button_alpha[["Width"]] + 20
+
+```
+
+<br/>
+
+Animate the entrance of these elements as well:
+
+```r
+animation_start(seq_main,sort_text,ms$msoAnimEffectWipe,ms$msoAnimTriggerAfterPrevious,
+                0, 0,0,0,1,0)
+animation_start(seq_main,button_alpha,ms$msoAnimEffectDissolve,ms$msoAnimTriggerWithPrevious,
+                0, 0,0,0,1,0)
+animation_start(seq_main,button_date,ms$msoAnimEffectDissolve,ms$msoAnimTriggerWithPrevious,
+                0, 0,0,0,1,0)
+```
+
+<br/>
+
+## Animating shapes - trigger
+
+We can now animate the poster images. Recall that the goal is to sort the images either by the title (alphanumeric) or the release year. When the appropriate sort button is clicked, the images should reorder themselves accordingly, and this movement should be animated. All the images moving at the same time to the new positions.
+
+While we're at it, we can add a couple of enhancements. In data visualization, a tooltip can be used to to provide some [details on demand][23]. Let's create a tooltip with the film title, name of the character played by Clint Eastwood, and the release year. A hyperlink to the film's IMDB page could also be useful. Let's add that as well.
+
+Since we want to sort in two different ways, we need two `InteractiveSequences`, one for the alphanumeric sort, and one for the release year sort.
+
+```r
+seq_alpha = slide1[["TimeLine"]][["InteractiveSequences"]]$Add()
+seq_date = slide1[["TimeLine"]][["InteractiveSequences"]]$Add()
+```
+
+<br/>
+
+The tricky bit is to get the paths right. The documentation on the motion animation refuses to help.
+
+```r
+for (i in 1:nrow(films)) {
+
+    x = 1 + image_width * ((i-1) %% num_cols)
+    y = image_height*image_offset + image_height * ((i-1) %/% num_cols)
+    image <- images[[as.character(i)]]
+
+    # The position of this title, when sorted alphanumerically. That will dictate the positioning, and therefore the path to follow
+    index <- which(films$title[order(films$title)]==films$title[i]) - 1
+        # Percentage of the slide_width the image must move in order to get to the new position
+    l1 <- format((0 + image_width * (index %% num_cols) - x)/slide_width,digits=3)
+    # Percentage of slide_height the image must move in order to get to the new position
+    l2 <- format((image_height*image_offset + image_height * (index %/% num_cols) - y)/slide_height,digits=3)
+    # Path - from current location (0,0) to new location (l1,l2)
+    path <- paste0("M0,0 L",l1,",",l2)
+    # cat("i: ",i," - index: ",index ," - path: ",path,"\n")
+
+    # Set the motion path to new location on alphanumeric sort
+    animate_image(seq_alpha,image,button_alpha,path,2.0)
+    # Set the motion path back to original location on release year sort
+    path <- paste0("M",l1,",",l2," L0,0")
+    animate_image(seq_date,image,button_date,path,2.0)
+    # All images must move at the same time
+    trigger_seq <- ms$msoAnimTriggerWithPrevious
+    # Except for the first one
+    if (i == 1) trigger_seq <- ms$msoAnimTriggerAfterPrevious
+
+    # Set the entrance animation
+    animation_start(seq_main,image,ms$msoAnimEffectDissolve,trigger_seq,
+                    0, 0,0,0,0.5,0.1*i)
+
+    # Link to the film's site, and create a tooltip
+    link <- image$ActionSettings(ms$ppMouseClick)[["Hyperlink"]]
+    link[["Address"]] <- films$film_url[i]
+    link[["ScreenTip"]] <- paste0(films$title[i],"\nCharacter: ",films$character[i],"\nRelease Year: ",films$release_year[i])
+}
+```
+
+<br/>
+
+<ShowImage
+mediaType="image"
+mediaPath={"/post_assets/0003/figure-2-sortable.png"}
+mediaNumber=2
+mediaCaption="Slide with poster images, and sort buttons"
+/>
+
+We now have a reasonable slide with some nice animations. The coordinated movement of the images on the click of a button is quite impressive. But there is one major flaw. If the wrong sort button is clicked, the images animate from the start of the path back to their current positions. Very tacky.
+
+I fixed this is by removing the offending button and offering only the relevant sort button. So if the images are sorted by <html-attr>Title</html-attr>, only the <html-attr>Release Year</html-attr> is visible. The requires the addition of two more `InteractiveSequences` to move the buttons in and out.
+
+```r
+seq_alpha2 = slide1[["TimeLine"]][["InteractiveSequences"]]$Add()
+seq_date2 = slide1[["TimeLine"]][["InteractiveSequences"]]$Add()
+```
+
+Now we toggle the buttons. If a button is clicked, it disappears, the images sort themselves, and the other button appears. Both effects happen simultaneously. Problem solved. Or dissolved, since we use the _dissolve_ effect.
+
+For the effect to work, we need to delete and recreate the buttons and the text, since they have some existing entrance animation, and we want the <html-attr>Release Year</html-attr> button to be hidden since the starting sort is by release year. It should appear after the <html-attr>Title</html-attr> button has been clicked. Also, the buttons should be positioned on top of each other, so they both appear and disappear at the same location.
+
+```r
+button_alpha$Delete()
+button_date$Delete()
+sort_text$Delete()
+
+# Recreate the text and buttons, on the same location
+sort_text <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,slide_width - 400,10,100,40)
+sort_range <- sort_text[["TextFrame"]][["TextRange"]]
+sort_para <- sort_range[["ParagraphFormat"]]
+sort_para[["Alignment"]] <- ms$ppAlignLeft
+sort_range[["Text"]] <- "Sort posters by: "
+sort_font <- sort_range[["Font"]]
+sort_font[["Size"]] <- 14
+sort_font[["Color"]] <- pp_rgb(233,174,27)
+sort_text[["Width"]] <- 110
+sort_text[["Height"]] <- 15
+sort_text[["Top"]] <- image_height*image_offset - 20 - 3
+#sort_text[["Left"]] <- slide_width - 205
+sort_text[["Left"]] <- 0
+sort_fill <- sort_text[["Fill"]]
+sort_fill[["Visible"]] <- 0
+sort_line <- sort_text[["Line"]]
+sort_line[["Visible"]] <- 0
+
+button_alpha <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,120,150,120,30)
+bta <- button_alpha[["TextFrame"]][["TextRange"]]
+bta[["Text"]] <- "Title"
+
+bta_line <- button_alpha[["Line"]]
+bta_line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+bta_fill <- button_alpha[["Fill"]]
+bta_fill[["Visible"]] <- 1
+bta_fill[["Transparency"]] <- 0.95
+bta_rgb <- bta_fill[["ForeColor"]][["RGB"]]
+
+bta_font <- bta[["Font"]]
+bta_font[["Size"]] <- 14
+bta_font[["Color"]] <- pp_rgb(243,211,129)
+
+button_alpha[["Width"]] <- 90
+button_alpha[["Height"]] <- 15
+button_alpha[["Top"]] <- image_height*image_offset - 20 - 3
+button_alpha[["Left"]] <- sort_text[["Width"]] - 2
+
+button_date[["Width"]] <- 90
+button_date[["Height"]] <- 15
+button_date[["Top"]] <- image_height*image_offset - 20 - 3
+#button_date[["Left"]] <- slide_width - button_date[["Width"]] - 10
+button_date[["Left"]] <- sort_text[["Width"]] - 2
+
+button_date <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,200+160,100,150,30)
+btd <- button_date[["TextFrame"]][["TextRange"]]
+btd[["Text"]] <- "Release Year"
+
+btd_fill <- button_date[["Fill"]]
+btd_fill[["Visible"]] <- 1
+btd_fill[["Transparency"]] <- 0.95
+
+btd_line <- button_date[["Line"]]
+btd_line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+btd_font <- btd[["Font"]]
+btd_font[["Size"]] <- 14
+btd_font[["Color"]] <- pp_rgb(243,211,129)
+
+button_date[["Width"]] <- 90
+button_date[["Height"]] <- 15
+button_date[["Top"]] <- image_height*image_offset - 20 - 3
+button_date[["Left"]] <- sort_text[["Width"]] - 2
+
+# Entrance animation for the text and title button
+animation_start(seq_main,sort_text,ms$msoAnimEffectWipe,ms$msoAnimTriggerAfterPrevious,
+                0, 0,0,0,1,0)
+animation_start(seq_main,button_alpha,ms$msoAnimEffectDissolve,ms$msoAnimTriggerWithPrevious,
+                0, 0,0,0,1,0)
+
+toggle_button <- function(seq,button1,button2,duration=1.5) {
+    # Enable exit effect on button1 when it is clicked
+    # https://learn.microsoft.com/en-us/office/vba/api/powerpoint.effect
+    effect <- seq$AddEffect(Shape=button1,effectId=ms$msoAnimEffectDissolve,
+                            trigger=ms$msoAnimTriggerOnShapeClick)
+    # https://learn.microsoft.com/en-us/office/vba/api/powerpoint.effect.exit
+    effect[["Exit"]] <- 1
+    effectTiming <- effect[["Timing"]]
+    effectTiming[["TriggerType"]] <- ms$msoAnimTriggerOnShapeClick
+    effectTiming[["TriggerShape"]] <- button1
+    effectTiming[["Duration"]] <- duration
+
+    # Disable the exit effect on button2 when button1 is clicked
+    effect <- seq$AddEffect(Shape=button2,effectId=ms$msoAnimEffectDissolve,
+                            trigger=ms$msoAnimTriggerOnShapeClick)
+    effect[["Exit"]] <- 0
+    effectTiming <- effect[["Timing"]]
+    effectTiming[["TriggerType"]] <- ms$msoAnimTriggerWithPrevious
+    effectTiming[["TriggerShape"]] <- button1
+    effectTiming[["Duration"]] <- duration
+}
+
+# Call the function for both buttons
+toggle_button(seq_alpha2,button_alpha,button_date,1)
+toggle_button(seq_date2,button_date,button_alpha,1)
+```
+
+<br/>
+
+Since buttons had been deleted, the animations have to be applied again to the images.
+
+```r
+for (i in 1:nrow(films)) {
+
+    x = 1 + image_width * ((i-1) %% num_cols)
+    y = image_height*image_offset + image_height * ((i-1) %/% num_cols)
+    image <- images[[as.character(i)]]
+
+    # The position of this title, when sorted alphanumerically. That will dictate the positioning, and therefore the path to follow
+    index <- which(films$title[order(films$title)]==films$title[i]) - 1
+    # Percentage of the slide_width the image must move in order to get to the new position
+    l1 <- format((0 + image_width * (index %% num_cols) - x)/slide_width,digits=3)
+    # Percentage of slide_height the image must move in order to get to the new position
+    l2 <- format((image_height*image_offset + image_height * (index %/% num_cols) - y)/slide_height,digits=3)
+    # Path - from current location (0,0) to new location (l1,l2)
+    path <- paste0("M0,0 L",l1,",",l2)
+    cat("i: ",i," - index: ",index ," - path: ",path,"\n")
+    # Set the motion path to new location on alphanumeric sort
+    animate_image(seq_alpha,image,button_alpha,path,2.0)
+    # Set the motion path back to original location on release year sort
+    path <- paste0("M",l1,",",l2," L0,0")
+    animate_image(seq_date,image,button_date,path,2.0)
+
+}
+
+# Save the PowerPoint file
+presentation$SaveAs(output_file)
+```
+
+<br/>
+
+The trigger buttons and animations now function as expected and the slide looks good. But it does have a rather noticeable space in the top half. I created an sortable bar chart of the box office earnings of the films there. The code to construct the bar chart is included in a the file that constructs the full slide, [here][12], but you now have the knowledge to create create it yourself. Give it a shot.
+
+This is what the final slide looks like.
+<ShowImage
+mediaType="image"
+mediaPath={"/post_assets/0003/figure-3-complete-slide.png"}
+mediaNumber=3
+mediaCaption="Slide with poster images, and sort buttons"
+/>
+
+Download the [R code for this part here][11], and the [resulting PowerPoint slide here][5].
+
+The final version fixes this problem with a bit of a hack, making only the relevant sort button visible. This version which includes a sortable bar chart of earnings per movie, and some initial animation. You can get the code [here][8] and the slide [here][9] (there are no macros, only animation). Also, see what happens when you click on one of the bars in the bar chart!
+
+Previous posts:<br>
+[Part 1 - The basics][1]
+[Part 2 - Getting some data][2]
+
+[1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
+[2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Scraping Data'
+[3]: https://github.com/asifsalam/r_and_powerpoint 'R and PowerPoint - Github'
+[4]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P1-Basics.pptx 'P1-Basics.pptx'
+[5]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P3-A-Basic-Slide-Step-by-Step.pptx 'P3-A-Basic-Slide-Step-by-Step.pptx'
+[6]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P3-B-Complete-Slide.pptx 'P3-B-Complete-Slide.pptx'
+[7]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.slide 'Slide Object'
+[8]: https://msdn.microsoft.com/EN-US/library/office/ff744153(v=office.15).aspx 'Property enumerations'
+[9]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P1-The-Basics.R 'Part 1 - The Basics'
+[10]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P2-Scraping-Data.R 'Part 2 - Scraping Data'
+[11]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P3-A-Basic-Slide-Step-By-Step.R 'Part 3A - Basic Slide - Step by Step'
+[12]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P3-B-Complete-Slide.R 'Part 3B - Complete Slide'
+[13]: https://doi.org/10.1109/VL.1996.545307 'The eyes have it, by Ben Schneiderman'
+[14]: http://www.imdb.org/ 'IMDB'
+[15]: http://www.imdb.com/name/nm0000142/ 'Clint Eastwood'
+[16]: https://www.tidyverse.org/ 'tidyverse'
+[17]: https://rvest.tidyverse.org/ 'rvest'
+[18]: https://stringr.tidyverse.org/ 'stringr'
+[19]: https://dplyr.tidyverse.org/ 'dplyr'
+[20]: http://xxx 'R code for the bar chart'
