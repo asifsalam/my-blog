@@ -13,7 +13,7 @@
 			title: d.title
 		}))
 		.slice(0, 5);
-	// console.log(posts.length);
+	console.log('Blog layout-posts: ', posts);
 </script>
 
 <!-- <RandomQuote /> -->

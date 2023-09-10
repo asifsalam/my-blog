@@ -5,7 +5,7 @@ author: Asif Salam
 id: 'L02146'
 published: true
 post_date: '2023-08-30'
-excerpt: 'Automate the creation of PowerPoint presentations with R, reticulate, python and pywin32. This post, the second of three, where we scrape data and create a dataset of movies starring Clint Eastwood.'
+excerpt: 'Automate the creation of PowerPoint presentations with R, reticulate, python and pywin32. In this post, the second of three, we scrape data and create a dataset of movies starring Clint Eastwood.'
 categories:
   - 'rstats'
   - 'method'

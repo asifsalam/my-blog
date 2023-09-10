@@ -1,7 +1,7 @@
 <script>
 	export let consoleType = 'R Console';
 	export let inputCode;
-	console.log('inputCode: ', inputCode.length);
+	// console.log('inputCode: ', inputCode.length);
 </script>
 
 <div class="console-box {consoleType}" content={consoleType}>
