@@ -699,9 +699,7 @@ mediaNumber=3
 mediaCaption="Slide with poster images, and sort buttons"
 />
 
-Download the [R code for this part here][11], and the [resulting PowerPoint slide here][5].
-
-The final version fixes this problem with a bit of a hack, making only the relevant sort button visible. This version which includes a sortable bar chart of earnings per movie, and some initial animation. You can get the code [here][8] and the slide [here][9] (there are no macros, only animation). Also, see what happens when you click on one of the bars in the bar chart!
+Download the [R code for this part here][11], and the [resulting PowerPoint slide here][5]. The complete slide with the animated poster images and earnings bar chart is [available here][6]. [This Github repository][3] contains the R project with the code and persentations for each part.
 
 Previous posts:<br>
 [Part 1 - The basics][1]

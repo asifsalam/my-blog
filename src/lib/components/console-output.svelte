@@ -23,7 +23,7 @@
 		/* overflow-x: scroll; */
 		background-blend-mode: color-burn;
 		/* border-radius: 25px; */
-		width: 95%;
+		width: 100%;
 		display: grid;
 		word-wrap: break-word;
 	}

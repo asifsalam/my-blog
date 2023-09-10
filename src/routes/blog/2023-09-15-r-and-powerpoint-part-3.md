@@ -302,7 +302,412 @@ mediaNumber=1
 mediaCaption="Slide with poster images"
 />
 
-Looks good. We have created a slide with three rows of film poster images and some title elements, using code. But it's all very static. And somewhat useless. Let's add some animation. And by some I mean, of course, a lot. But meaningful. And tasteful.
+Looks good. We have created a slide with three rows of film poster images and some title elements, using code. But it's all very _static_. And lacks narrative. We can improve the slide with some interesting animation. And by some I mean, of course, a lot. But meaningful. And tasteful.
+
+## Animation basics
+
+PowerPoint has a number of animation types for shapes. Entrance, exit, emphasis and path are the main categories. Animation requires three things:
+
+1. An object to animate, such as a shape
+2. An effect to apply to the above mentioned shape
+3. A timeline sequence in which the effect will be played. This dictates how and when the effect will be played.
+
+With these, the following pattern can be used to create the animation effects:
+
+1. Add an effect to the shape using the `Sequence.AddEffect` method of _Sequence_ object. An optional _trigger_ type can be included.
+2. The `Effect` object can then be used to set the desired attributes of the effect, such as the duration, path, trigger, and trigger shape. The attributes depend on the type of animation. Obviously.
+
+In this exercise, we will use animations in two ways: _entrance_ animations in slideshow mode, and _interactive_ animations triggered by a click on a shape. The _entrance_ animations go on the `MainSequence` of the animation timeline, and the _interactive_ animations are placed on a sequence defined using the `InteractiveSequences` property of the `TimeLine` object.
+
+For the _interactive_ animations, including the ability sort the poster images by release date and film title should be interesting.
+
+Let's create a couple functions for applying the different animation effects to the different shapes.
+
+This first one applies motion effects to the major objects when the slideshow starts.
+
+```r
+animation_start <- function(seq,shape,effectID,trigger,from_x,from_y,to_x,to_y,duration,delay_time) {
+
+    effect <- seq$AddEffect(Shape=shape,effectId=effectID,trigger=trigger)
+    cat("EffectType: ",effect$EffectType)
+    print(effect$EffectInformation)
+    ani <- effect[["Behaviors"]]$Add(ms$msoAnimTypeMotion)
+    # MotionEffect Object: https://msdn.microsoft.com/EN-US/library/office/ff745317(v=office.15).aspx
+    aniMotionEffect <- ani[["MotionEffect"]]
+    # https://msdn.microsoft.com/EN-US/library/office/ff745317.aspx
+    aniMotionEffect[["FromX"]] <- from_x
+    aniMotionEffect[["ToX"]] <- to_x
+    aniMotionEffect[["FromY"]] <- from_y
+    aniMotionEffect[["ToY"]] <- to_y
+    effectTiming <- effect[["Timing"]]
+    effectTiming[["Duration"]] <- duration
+    effectTiming[["TriggerDelayTime"]] <- delay_time
+
+}
+```
+
+<br/>
+
+This function applies a trigger based path animation that moves an object along a path, when a trigger shape is clicked.
+
+```r
+animate_image <- function(seq,image,trigger,path,duration=1.5) {
+
+    effect <- seq$AddEffect(Shape=image,effectID=ms$msoAnimEffectPathDown,
+                            trigger=ms$msoAnimTriggerOnShapeClick)
+    ani <- effect[["Behaviors"]]$Add(ms$msoAnimTypeMotion)
+    aniMotionEffect <- ani[["MotionEffect"]]
+    aniMotionEffect[["Path"]] <- path
+    effectTiming <- effect[["Timing"]]
+    effectTiming[["TriggerType"]] <- ms$msoAnimTriggerWithPrevious
+    effectTiming[["TriggerShape"]] <- trigger
+    effectTiming[["Duration"]] <- duration
+
+}
+```
+
+<br/>
+
+## Animating shapes - Entrance
+
+Let's start with a basic _entrance_ animation, which should be familiar to most PowerPoint users. We need the `MainSequence` for these animations.
+
+```r
+# Get the main sequence of the slides timeline
+seq_main <- slide1[["TimeLine"]][["MainSequence"]]
+
+# Apply animation effects to the four title objects:
+# Start off screen, descend from top (0 means original position)
+animation_start(seq_main,slide_title,ms$msoAnimEffectDescend,ms$msoAnimTriggerWithPrevious,
+                0, -20,0,0,1,0)
+# Start off screen, slide to left
+animation_start(seq_main,line1,ms$msoAnimEffectFly,ms$msoAnimTriggerAfterPrevious,
+                100, diameter/slide_height,0,diameter/slide_height,1,0)
+# Start off screen, fly in from left
+animation_start(seq_main,circle1,ms$msoAnimEffectFly,ms$msoAnimTriggerWithPrevious,
+                -100, diameter/slide_height,0,diameter/slide_height,1,0)
+# Start off screen, fly in from the bottom
+animation_start(seq_main,earnings_text,ms$msoAnimEffectFly,ms$msoAnimTriggerWithPrevious,
+                0, 100,(slide_width-4*diameter)/slide_width,diameter/slide_height,1,0)
+```
+
+<br/>
+
+Let's create the sort buttons - <html-attr>Title</html-attr> and <html-attr>Release Year</html-attr> and apply the path animations:
+
+```r
+# Add buttons which will sort the images by title or release year
+# Some explanatory text
+sort_text <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,slide_width - 400,10,100,40)
+sort_range <- sort_text[["TextFrame"]][["TextRange"]]
+sort_para <- sort_range[["ParagraphFormat"]]
+sort_para[["Alignment"]] <- ms$ppAlignLeft
+sort_range[["Text"]] <- "Sort posters by: "
+sort_font <- sort_range[["Font"]]
+sort_font[["Size"]] <- 14
+sort_font[["Color"]] <- pp_rgb(233,174,27)
+sort_text[["Width"]] <- 110
+sort_text[["Height"]] <- 15
+sort_text[["Top"]] <- image_height*image_offset - 20 - 3
+#sort_text[["Left"]] <- slide_width - 205
+sort_text[["Left"]] <- 0
+sort_fill <- sort_text[["Fill"]]
+sort_fill[["Visible"]] <- 0
+sort_line <- sort_text[["Line"]]
+sort_line[["Visible"]] <- 0
+
+# Create buttons that will sort and animate the poster images - alphanumeric
+button_alpha <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,slide_width - 300,10,100,40)
+bta_fill <- button_alpha[["Fill"]]
+bta_fill[["Visible"]] <- 1
+bta_fill[["Transparency"]] <- 0.95
+# bta_rgb <- bta_fill[["ForeColor"]][["RGB"]]
+
+bta_line <- button_alpha[["Line"]]
+bta_line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+bta <- button_alpha[["TextFrame"]][["TextRange"]]
+bta[["Text"]] <- "Title"
+bta_font <- bta[["Font"]]
+bta_font[["Size"]] <- 14
+bta_font[["Color"]] <- pp_rgb(243,211,129)
+
+button_alpha[["Width"]] <- 90
+button_alpha[["Height"]] <- 15
+button_alpha[["Top"]] <- image_height*image_offset - 20 - 3
+button_alpha[["Left"]] <- sort_text[["Width"]] - 2
+
+# Create buttons that will sort and animate the poster images - date
+button_date <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,slide_width - 350+160,10,150,40)
+btd <- button_date[["TextFrame"]][["TextRange"]]
+btd[["Text"]] <- "Release Year"
+
+btd_fill <- button_date[["Fill"]]
+btd_fill[["Visible"]] <-1
+btd_fill[["Transparency"]] <- 0.95
+btd_line <- button_date[["Line"]]
+btd_line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+btd_font <- btd[["Font"]]
+btd_font[["Size"]] <- 14
+btd_font[["Color"]] <- pp_rgb(243,211,129)
+
+button_date[["Width"]] <- 90
+button_date[["Height"]] <- 15
+button_date[["Top"]] <- image_height*image_offset - 20 - 3
+button_date[["Left"]] <- sort_text[["Width"]] - 2 + button_alpha[["Width"]] + 20
+
+```
+
+<br/>
+
+Animate the entrance of these elements as well:
+
+```r
+animation_start(seq_main,sort_text,ms$msoAnimEffectWipe,ms$msoAnimTriggerAfterPrevious,
+                0, 0,0,0,1,0)
+animation_start(seq_main,button_alpha,ms$msoAnimEffectDissolve,ms$msoAnimTriggerWithPrevious,
+                0, 0,0,0,1,0)
+animation_start(seq_main,button_date,ms$msoAnimEffectDissolve,ms$msoAnimTriggerWithPrevious,
+                0, 0,0,0,1,0)
+```
+
+<br/>
+
+## Animating shapes - trigger
+
+We can now animate the poster images. Recall that the goal is to sort the images either by the title (alphanumeric) or the release year. When the appropriate sort button is clicked, the images should reorder themselves accordingly, and this movement should be animated. All the images moving at the same time to the new positions.
+
+While we're at it, we can add a couple of enhancements. In data visualization, a tooltip can be used to to provide some [details on demand][23]. Let's create a tooltip with the film title, name of the character played by Clint Eastwood, and the release year. A hyperlink to the film's IMDB page could also be useful. Let's add that as well.
+
+Since we want to sort in two different ways, we need two `InteractiveSequences`, one for the alphanumeric sort, and one for the release year sort.
+
+```r
+seq_alpha = slide1[["TimeLine"]][["InteractiveSequences"]]$Add()
+seq_date = slide1[["TimeLine"]][["InteractiveSequences"]]$Add()
+```
+
+<br/>
+
+The tricky bit is to get the paths right. The documentation on the motion animation refuses to help.
+
+```r
+for (i in 1:nrow(films)) {
+
+    x = 1 + image_width * ((i-1) %% num_cols)
+    y = image_height*image_offset + image_height * ((i-1) %/% num_cols)
+    image <- images[[as.character(i)]]
+
+    # The position of this title, when sorted alphanumerically. That will dictate the positioning, and therefore the path to follow
+    index <- which(films$title[order(films$title)]==films$title[i]) - 1
+        # Percentage of the slide_width the image must move in order to get to the new position
+    l1 <- format((0 + image_width * (index %% num_cols) - x)/slide_width,digits=3)
+    # Percentage of slide_height the image must move in order to get to the new position
+    l2 <- format((image_height*image_offset + image_height * (index %/% num_cols) - y)/slide_height,digits=3)
+    # Path - from current location (0,0) to new location (l1,l2)
+    path <- paste0("M0,0 L",l1,",",l2)
+    # cat("i: ",i," - index: ",index ," - path: ",path,"\n")
+
+    # Set the motion path to new location on alphanumeric sort
+    animate_image(seq_alpha,image,button_alpha,path,2.0)
+    # Set the motion path back to original location on release year sort
+    path <- paste0("M",l1,",",l2," L0,0")
+    animate_image(seq_date,image,button_date,path,2.0)
+    # All images must move at the same time
+    trigger_seq <- ms$msoAnimTriggerWithPrevious
+    # Except for the first one
+    if (i == 1) trigger_seq <- ms$msoAnimTriggerAfterPrevious
+
+    # Set the entrance animation
+    animation_start(seq_main,image,ms$msoAnimEffectDissolve,trigger_seq,
+                    0, 0,0,0,0.5,0.1*i)
+
+    # Link to the film's site, and create a tooltip
+    link <- image$ActionSettings(ms$ppMouseClick)[["Hyperlink"]]
+    link[["Address"]] <- films$film_url[i]
+    link[["ScreenTip"]] <- paste0(films$title[i],"\nCharacter: ",films$character[i],"\nRelease Year: ",films$release_year[i])
+}
+```
+
+<br/>
+
+<ShowImage
+mediaType="image"
+mediaPath={"/post_assets/0003/figure-2-sortable.png"}
+mediaNumber=2
+mediaCaption="Slide with poster images, and sort buttons"
+/>
+
+We now have a reasonable slide with some nice animations. The coordinated movement of the images on the click of a button is quite impressive. But there is one major flaw. If the wrong sort button is clicked, the images animate from the start of the path back to their current positions. Very tacky.
+
+I fixed this is by removing the offending button and offering only the relevant sort button. So if the images are sorted by <html-attr>Title</html-attr>, only the <html-attr>Release Year</html-attr> is visible. The requires the addition of two more `InteractiveSequences` to move the buttons in and out.
+
+```r
+seq_alpha2 = slide1[["TimeLine"]][["InteractiveSequences"]]$Add()
+seq_date2 = slide1[["TimeLine"]][["InteractiveSequences"]]$Add()
+```
+
+<br/>
+
+Now we toggle the buttons. If a button is clicked, it disappears, the images sort themselves, and the other button appears. Both effects happen simultaneously. Problem solved. Or dissolved, since we use the _dissolve_ effect.
+
+For the effect to work, we need to delete and recreate the buttons and the text, since they have some existing entrance animation, and we want the <html-attr>Release Year</html-attr> button to be hidden since the starting sort is by release year. It should appear after the <html-attr>Title</html-attr> button has been clicked. Also, the buttons should be positioned on top of each other, so they both appear and disappear at the same location.
+
+```r
+button_alpha$Delete()
+button_date$Delete()
+sort_text$Delete()
+
+# Recreate the text and buttons, on the same location
+sort_text <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,slide_width - 400,10,100,40)
+sort_range <- sort_text[["TextFrame"]][["TextRange"]]
+sort_para <- sort_range[["ParagraphFormat"]]
+sort_para[["Alignment"]] <- ms$ppAlignLeft
+sort_range[["Text"]] <- "Sort posters by: "
+sort_font <- sort_range[["Font"]]
+sort_font[["Size"]] <- 14
+sort_font[["Color"]] <- pp_rgb(233,174,27)
+sort_text[["Width"]] <- 110
+sort_text[["Height"]] <- 15
+sort_text[["Top"]] <- image_height*image_offset - 20 - 3
+#sort_text[["Left"]] <- slide_width - 205
+sort_text[["Left"]] <- 0
+sort_fill <- sort_text[["Fill"]]
+sort_fill[["Visible"]] <- 0
+sort_line <- sort_text[["Line"]]
+sort_line[["Visible"]] <- 0
+
+button_alpha <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,120,150,120,30)
+bta <- button_alpha[["TextFrame"]][["TextRange"]]
+bta[["Text"]] <- "Title"
+
+bta_line <- button_alpha[["Line"]]
+bta_line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+bta_fill <- button_alpha[["Fill"]]
+bta_fill[["Visible"]] <- 1
+bta_fill[["Transparency"]] <- 0.95
+bta_rgb <- bta_fill[["ForeColor"]][["RGB"]]
+
+bta_font <- bta[["Font"]]
+bta_font[["Size"]] <- 14
+bta_font[["Color"]] <- pp_rgb(243,211,129)
+
+button_alpha[["Width"]] <- 90
+button_alpha[["Height"]] <- 15
+button_alpha[["Top"]] <- image_height*image_offset - 20 - 3
+button_alpha[["Left"]] <- sort_text[["Width"]] - 2
+
+button_date[["Width"]] <- 90
+button_date[["Height"]] <- 15
+button_date[["Top"]] <- image_height*image_offset - 20 - 3
+#button_date[["Left"]] <- slide_width - button_date[["Width"]] - 10
+button_date[["Left"]] <- sort_text[["Width"]] - 2
+
+button_date <- slide1[["Shapes"]]$AddShape(ms$msoShapeRectangle,200+160,100,150,30)
+btd <- button_date[["TextFrame"]][["TextRange"]]
+btd[["Text"]] <- "Release Year"
+
+btd_fill <- button_date[["Fill"]]
+btd_fill[["Visible"]] <- 1
+btd_fill[["Transparency"]] <- 0.95
+
+btd_line <- button_date[["Line"]]
+btd_line[["ForeColor"]][["RGB"]] <- pp_rgb(243,211,129)
+
+btd_font <- btd[["Font"]]
+btd_font[["Size"]] <- 14
+btd_font[["Color"]] <- pp_rgb(243,211,129)
+
+button_date[["Width"]] <- 90
+button_date[["Height"]] <- 15
+button_date[["Top"]] <- image_height*image_offset - 20 - 3
+button_date[["Left"]] <- sort_text[["Width"]] - 2
+
+# Entrance animation for the text and title button
+animation_start(seq_main,sort_text,ms$msoAnimEffectWipe,ms$msoAnimTriggerAfterPrevious,
+                0, 0,0,0,1,0)
+animation_start(seq_main,button_alpha,ms$msoAnimEffectDissolve,ms$msoAnimTriggerWithPrevious,
+                0, 0,0,0,1,0)
+
+toggle_button <- function(seq,button1,button2,duration=1.5) {
+    # Enable exit effect on button1 when it is clicked
+    # https://learn.microsoft.com/en-us/office/vba/api/powerpoint.effect
+    effect <- seq$AddEffect(Shape=button1,effectId=ms$msoAnimEffectDissolve,
+                            trigger=ms$msoAnimTriggerOnShapeClick)
+    # https://learn.microsoft.com/en-us/office/vba/api/powerpoint.effect.exit
+    effect[["Exit"]] <- 1
+    effectTiming <- effect[["Timing"]]
+    effectTiming[["TriggerType"]] <- ms$msoAnimTriggerOnShapeClick
+    effectTiming[["TriggerShape"]] <- button1
+    effectTiming[["Duration"]] <- duration
+
+    # Disable the exit effect on button2 when button1 is clicked
+    effect <- seq$AddEffect(Shape=button2,effectId=ms$msoAnimEffectDissolve,
+                            trigger=ms$msoAnimTriggerOnShapeClick)
+    effect[["Exit"]] <- 0
+    effectTiming <- effect[["Timing"]]
+    effectTiming[["TriggerType"]] <- ms$msoAnimTriggerWithPrevious
+    effectTiming[["TriggerShape"]] <- button1
+    effectTiming[["Duration"]] <- duration
+}
+
+# Call the function for both buttons
+toggle_button(seq_alpha2,button_alpha,button_date,1)
+toggle_button(seq_date2,button_date,button_alpha,1)
+```
+
+<br/>
+
+Since buttons had been deleted, the animations have to be applied again to the images.
+
+```r
+for (i in 1:nrow(films)) {
+
+    x = 1 + image_width * ((i-1) %% num_cols)
+    y = image_height*image_offset + image_height * ((i-1) %/% num_cols)
+    image <- images[[as.character(i)]]
+
+    # The position of this title, when sorted alphanumerically. That will dictate the positioning, and therefore the path to follow
+    index <- which(films$title[order(films$title)]==films$title[i]) - 1
+    # Percentage of the slide_width the image must move in order to get to the new position
+    l1 <- format((0 + image_width * (index %% num_cols) - x)/slide_width,digits=3)
+    # Percentage of slide_height the image must move in order to get to the new position
+    l2 <- format((image_height*image_offset + image_height * (index %/% num_cols) - y)/slide_height,digits=3)
+    # Path - from current location (0,0) to new location (l1,l2)
+    path <- paste0("M0,0 L",l1,",",l2)
+    cat("i: ",i," - index: ",index ," - path: ",path,"\n")
+    # Set the motion path to new location on alphanumeric sort
+    animate_image(seq_alpha,image,button_alpha,path,2.0)
+    # Set the motion path back to original location on release year sort
+    path <- paste0("M",l1,",",l2," L0,0")
+    animate_image(seq_date,image,button_date,path,2.0)
+
+}
+
+# Save the PowerPoint file
+presentation$SaveAs(output_file)
+```
+
+<br/>
+
+The trigger buttons and animations now function as expected and the slide looks good. But it does have a rather noticeable space in the top half. I created an sortable bar chart of the box office earnings of the films there. The code to construct the bar chart is included in a the file that constructs the full slide, [here][12], but you now have the knowledge to create create it yourself. Give it a shot.
+
+This is what the completed slide looks like.
+<ShowImage
+mediaType="image"
+mediaPath={"/post_assets/0003/figure-3-complete-slide.png"}
+mediaNumber=3
+mediaCaption="Slide with poster images, and sort buttons"
+/>
+
+<br/>
+
+Download the [R code for this part here][11], and the [resulting PowerPoint slide here][5]. The complete slide with the animated poster images and earnings bar chart is [available here][6]. [This Github repository][3] contains the R project with the code and persentations for each part.
+
+Previous posts:<br>
+[Part 1 - The basics][1]
+[Part 2 - Getting some data][2]
 
 [1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
 [2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Scraping Data'
