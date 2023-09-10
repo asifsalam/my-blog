@@ -145,7 +145,7 @@ slide_height <- presentation[["PageSetup"]]$SlideHeight
 
 ### Set some slide properties
 
-The [slide object][4] has a many attributes, but we'll just use a few. We can set the slide background and a few other properties, like the colour and font.
+The [slide object][7] has a many attributes, but we'll just use a few. We can set the slide background and a few other properties, like the colour and font.
 
 ```r
 # Set some slide attributes
@@ -478,7 +478,7 @@ animation_start(seq_main,button_date,ms$msoAnimEffectDissolve,ms$msoAnimTriggerW
 
 We can now animate the poster images. Recall that the goal is to sort the images either by the title (alphanumeric) or the release year. When the appropriate sort button is clicked, the images should reorder themselves accordingly, and this movement should be animated. All the images moving at the same time to the new positions.
 
-While we're at it, we can add a couple of enhancements. In data visualization, a tooltip can be used to to provide some [details on demand][23]. Let's create a tooltip with the film title, name of the character played by Clint Eastwood, and the release year. A hyperlink to the film's IMDB page could also be useful. Let's add that as well.
+While we're at it, we can add a couple of enhancements. In data visualization, a tooltip can be used to to provide some [details on demand][13]. Let's create a tooltip with the film title, name of the character played by Clint Eastwood, and the release year. A hyperlink to the film's IMDB page could also be useful. Let's add that as well.
 
 Since we want to sort in two different ways, we need two `InteractiveSequences`, one for the alphanumeric sort, and one for the release year sort.
 
@@ -706,19 +706,16 @@ mediaCaption="Slide with poster images, and sort buttons"
 Download the [R code for this part here][11], and the [resulting PowerPoint slide here][5]. The complete slide with the animated poster images and earnings bar chart is [available here][6]. [This Github repository][3] contains the R project with the code and persentations for each part.
 
 Previous posts:<br>
-[Part 1 - The basics][1]
+[Part 1 - The basics][1]  
 [Part 2 - Getting some data][2]
 
 [1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
-[2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Scraping Data'
+[2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Getting the Data'
 [3]: https://github.com/asifsalam/r_and_powerpoint 'R and PowerPoint - Github'
 [4]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P1-Basics.pptx 'P1-Basics.pptx'
 [5]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P3-A-Basic-Slide-Step-by-Step.pptx 'P3-A-Basic-Slide-Step-by-Step.pptx'
 [6]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/output/P3-B-Complete-Slide.pptx 'P3-B-Complete-Slide.pptx'
 [7]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.slide 'Slide Object'
-[8]: https://msdn.microsoft.com/EN-US/library/office/ff744153(v=office.15).aspx 'Property enumerations'
-[9]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P1-The-Basics.R 'Part 1 - The Basics'
-[10]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P2-Scraping-Data.R 'Part 2 - Scraping Data'
 [11]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P3-A-Basic-Slide-Step-By-Step.R 'Part 3A - Basic Slide - Step by Step'
 [12]: https://raw.githubusercontent.com/asifsalam/r_and_powerpoint/main/P3-B-Complete-Slide.R 'Part 3B - Complete Slide'
 [13]: https://doi.org/10.1109/VL.1996.545307 'The eyes have it, by Ben Schneiderman'
