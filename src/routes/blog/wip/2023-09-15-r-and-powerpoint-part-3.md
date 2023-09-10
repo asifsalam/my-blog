@@ -1,12 +1,11 @@
 ---
-layout: post
 title: Create amazing PowerPoint slides using R &#151 Part 3(3) &#151 Putting it together
 preview_image: '/img/images/geometric-pattern-07.jpg'
 author: Asif Salam
-id: 'L02146'
+id: 'L02157'
 published: true
-post_date: '2023-08-05'
-excerpt: 'Automate the creation of PowerPoint presentations with R, reticulate, python and pywin32. This post, the first of three, introduces the basics.'
+post_date: '2023-09-15'
+excerpt: 'Automate the creation of PowerPoint presentations with R, reticulate, python and pywin32. In this final post, we put evreything together and create a stellar slide.'
 categories:
   - 'rstats'
   - 'method'
