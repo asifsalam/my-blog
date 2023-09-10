@@ -393,7 +393,7 @@ animation_start(seq_main,earnings_text,ms$msoAnimEffectFly,ms$msoAnimTriggerWith
 
 <br/>
 
-Let's create the sort buttons - <html-attr>Title</html-attr> and <html-attr>Release Year</html-attr> and apply the path animations:
+Let's create the sort buttons - <html-attr>Title</html-attr> and <html-attr>Release Year</html-attr> and apply the _entrance_ animations to them. We will work on the path animations in the next section.
 
 ```r
 # Add buttons which will sort the images by title or release year
