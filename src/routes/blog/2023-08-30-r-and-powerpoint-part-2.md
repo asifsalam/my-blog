@@ -273,11 +273,13 @@ The code and resulting data frame is available on [Github][12]
 
 That was a bit of work! It does provide a glimpse into the effort it sometimes takes to create even a small bespoke dataset. In a real project, getting the right dataset with the right quality often constitutes the bulk of work required. But that's a discussion for another day. For now we have some basic data for creating a slide on _Clint Eastwood_. On to the slide.
 
-Next up:  
-[Part 3][4] - About time! We'll use the data to create some advanced animation and interaction in PowerPoint.
+Next up:
 
-Previously:  
-[Part 1][1] - The basics of using R to create PowerPoint slides.
+- [Part 3][4] - About time! We'll use the data to create a PowerPoint slide with some advanced animation and interaction.
+
+Previously:
+
+- [Part 1][1] - The basics of using R to create PowerPoint slides.
 
 [1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
 [2]: http://www.imdb.org/ 'IMDB'

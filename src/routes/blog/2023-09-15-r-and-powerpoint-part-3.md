@@ -719,8 +719,8 @@ The complete slide with the animated poster images and earnings bar chart is [av
 [This Github repository][3] contains the R project with the code and persentations for each part.
 
 Previous posts:<br>
-[Part 1 - The basics][1]  
-[Part 2 - Getting some data][2]
+[Part 1][1] - The basics  
+[Part 2][2] - Getting some data
 
 [1]: /blog/2023-08-05-r-and-powerpoint-part-1/ 'R and PowerPoint - P1 - The Basics'
 [2]: /blog/2023-08-30-r-and-powerpoint-part-2 'R and PowerPoint - P2 - Getting the Data'
