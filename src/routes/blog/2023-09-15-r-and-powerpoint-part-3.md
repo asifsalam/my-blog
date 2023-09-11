@@ -28,9 +28,10 @@ Let's put it all together.
 
 ## Setup
 
-We begin by loading the necessary libraries in your .
+I am using the _R Studio Desktop_, and we begin by loading the necessary packages.
 
 ```r
+# install.packages(c("reticulate", "tidyverse"))
 library(reticulate)
 library(tidyverse)
 ```
