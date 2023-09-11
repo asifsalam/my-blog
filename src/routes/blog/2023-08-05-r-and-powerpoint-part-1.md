@@ -312,7 +312,7 @@ The code and the PowerPoint file created are available from [GitHub](https://git
 [25]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.textframe 'TextFrame property'
 [26]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.fill 'Fill property'
 [27]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.line 'Line property'
-[30]: /blog/23-06-12-R-and-PowerPoint-Part-1 'R and PowerPoint - Part 1 - The basics'
-[31]: /blog/23-08-25-R-and-PowerPoint-Part-2 'R and PowerPoint - Part 2 - Scraping data'
-[32]: /blog/23-09-01-R-and-PowerPoint-Part-3 'R and PowerPoint - Part 3 - Creating a stellar slide'
+[30]: /blog/2023-06-12-r-and-powerpoint-part-1 'R and PowerPoint - Part 1 - The basics'
+[31]: /blog/2023-08-25-r-and-powerpoint-part-2 'R and PowerPoint - Part 2 - Scraping data'
+[32]: /blog/2023-09-15-r-and-powerpoint-part-3/ 'R and PowerPoint - Part 3 - Putting it together'
 [33]: /post_assets/0001/final_slide.mp4
