@@ -1,5 +1,6 @@
 @import url('fonts.css');
 @import url('gruvbox-light-scribe.css');
+/* @import url('gruvbox-light.css'); */
 
 :global(:root) {
 	--vp-w-s1: 768px;

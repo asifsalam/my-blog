@@ -698,12 +698,24 @@ This is what the completed slide looks like.
 mediaType="image"
 mediaPath={"/post_assets/0003/figure-3-complete-slide.png"}
 mediaNumber=3
-mediaCaption="Slide with poster images, and sort buttons"
+mediaCaption="Complete slide, with sortable earnings bar chart"
 />
 
 <br/>
 
-Download the [R code for this part here][11], and the [resulting PowerPoint slide here][5]. The complete slide with the animated poster images and earnings bar chart is [available here][6]. [This Github repository][3] contains the R project with the code and persentations for each part.
+And this is a short video with the interactive elements and animations.
+<ShowImage
+mediaType="video"
+mediaPath={"/post_assets/0003/P3-B-Complete-Slide.mp4"}
+mediaNumber=1
+mediaCaption="Interactvie elements and animations"
+/>
+
+Download the [R code for this part here][11], and the [resulting PowerPoint slide here][5].
+
+The complete slide with the animated poster images and earnings bar chart is [available here][6].
+
+[This Github repository][3] contains the R project with the code and persentations for each part.
 
 Previous posts:<br>
 [Part 1 - The basics][1]  
@@ -725,4 +737,3 @@ Previous posts:<br>
 [17]: https://rvest.tidyverse.org/ 'rvest'
 [18]: https://stringr.tidyverse.org/ 'stringr'
 [19]: https://dplyr.tidyverse.org/ 'dplyr'
-[20]: http://xxx 'R code for the bar chart'
