@@ -51,7 +51,7 @@
 		font-size: 1.4rem;
 		font-weight: 300;
 		/* color: hsla(251, 100%, 20%, 0.9); */
-		color: hsla(0, 0%, 56%, 80%);
+		color: hsla(0, 0%, 32%, 0.8);
 	}
 
 	.main-link {

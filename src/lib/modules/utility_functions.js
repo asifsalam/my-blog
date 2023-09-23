@@ -48,6 +48,51 @@ function loadPosts(postApi = '/api/posts.json') {
 /** @type {Array}*/
 function searchArticles(articles, searchTerm, selection, articleList) {
     // console.log(articles, searchTerm, selection);
+    const searchTermArray = searchTerm.split(" ");
+    console.log("SearchArticles: ", searchTermArray);
+
+    if (typeof articles === "undefined") {
+        return "undefined error"
+    }
+    if (searchTerm === '') {
+        if (selection === 'all') {
+            articles = articleList;
+            return articles
+            // console.log('page-searchItems-0: ', searchTerm, $clickedCategory, articles);
+        } else {
+            articles = articleList.filter((d) => {
+                return d.tags.includes(selection);
+            });
+        }
+        // console.log('page-searchItems-1: ', searchTerm, $clickedCategory, articles);
+    } else {
+        if (selection === "all") {
+            articles = articleList
+        } else {
+            articles = articleList.filter((d) => {
+                return d.tags.includes(selection)
+            })
+        }
+        articles = articles.filter((d) => {
+            let termMatch = true;
+            searchTermArray.forEach((term) => {
+                if (!d.search_text.includes(term)) termMatch = false;
+
+            })
+            return termMatch;
+        })
+        // articles = articles.filter((d) => {
+        //     return d.tags.includes(searchTerm.toLowerCase());
+        // });
+        // console.log('page-searchItems-2: ', searchTerm, articles);
+    }
+    return articles;
+}
+
+/** @type {Array}*/
+function searchArticles2(articles, searchTerm, selection, articleList) {
+    // console.log(articles, searchTerm, selection);
+
     if (typeof articles === "undefined") {
         return "undefined error"
     }
@@ -70,6 +115,8 @@ function searchArticles(articles, searchTerm, selection, articleList) {
     }
     return articles;
 }
+
+
 
 
 /** @type {Array}*/
@@ -150,7 +197,8 @@ function parseArticle(d) {
         img_type: d.img_type,
         img_url: d.img_url,
         author_image: d.author_image,
-        author_url: d.author_url
+        author_url: d.author_url,
+
         // img_file: d.img_file,        
         // media_type: d.media_type,
         // processed_date: d.processed_date,

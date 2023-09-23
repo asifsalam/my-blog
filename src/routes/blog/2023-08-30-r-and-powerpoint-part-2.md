@@ -1,6 +1,6 @@
 ---
 title: Create amazing PowerPoint slides using R &#151 Part 2(3) &#151 Getting some data
-preview_image: '/img/images/geometric-pattern-07.jpg'
+preview_image: '/post_assets/0002/post-0002-image-02.png'
 author: Asif Salam
 id: 'L02146'
 published: true

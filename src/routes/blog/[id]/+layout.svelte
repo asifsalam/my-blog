@@ -21,18 +21,16 @@
 <!-- <main> -->
 {#key $page.params.id}
 	<div class="container">
-		<div class="sidebar">
-			<!-- <p>this is a test</p> -->
+		<slot />
+		<!-- <div class="sidebar">
 			<PostsListCard {posts} />
-			<!-- <SidebarThemeHeading /> -->
-			<!-- <SidebarHeading sidebarLeadinText={leadinText} /> -->
 			<p class="topics">
 				<SidebarTags useThemes={'yes'} useCategories={'yes'} />
 			</p>
 		</div>
 		<div class="content">
 			<slot />
-		</div>
+		</div> -->
 	</div>
 {/key}
 

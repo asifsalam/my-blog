@@ -1,6 +1,6 @@
 ---
-title: Create amazing PowerPoint slides using R &#151 Part 3(3) &#151 Getting some data
-preview_image: '/img/images/geometric-pattern-07.jpg'
+title: Create amazing PowerPoint slides using R &#151 Part 3(3) &#151 Putting it together
+preview_image: '/post_assets/0003/post-0003-image-02.png'
 author: Asif Salam
 id: 'L02157'
 published: true
@@ -107,7 +107,7 @@ actor_name <- "Clint Eastwood"
 # Must install pywin32 through > pip install pywin32
 # Use this if required
 # pypath <- "C:/Program Files/Python310/"
-use_python(pypath, required = T)
+# use_python(pypath, required = T)
 pywin <- import("win32com.client")
 
 # Some prep. See Part 1.

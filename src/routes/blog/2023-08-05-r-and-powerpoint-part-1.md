@@ -1,6 +1,6 @@
 ---
 title: Create amazing PowerPoint slides using R &#151 Part 1(3) &#151 The basics
-preview_image: '/img/images/geometric-pattern-07.jpg'
+preview_image: '/post_assets/0001/post-0001-image-02.png'
 author: Asif Salam
 id: 'L02141'
 published: true
@@ -25,7 +25,7 @@ The [**Windows COM**][2] is an interface standard that allows applications such 
 
 The [`reticulate`][5] package by Yuan Tang, however, provides an alternative way of accessing the [**COM**][2]. It provides **R** with an interface to **Python**, which means that the [`pywin`][3] package can be used with **R**.
 
-In this series of 3 posts, we will use these tools to create a _"data-driven"_ **PowerPoint** slide on Clint Eastwood's filmography, with **R**, focusing on interaction and animation. This first part ([Part 1][30]) is about the the basics - how to access the methods and properties of the **PowerPoint object model**. A _data-driven_ slide needs data, so in [Part 2][31] we scrape some data on **Clint Eastwood's** movies from [IMDB][13]. And finally, in [Part 3][32] we use the data to create a slide programmatically. The end result should be a fairly complex, and somewhat entertaining, **PowerPoint** slide with **Clint Eastwood's** filmography.
+In this series of three posts, we will use these tools to create a _"data-driven"_ **PowerPoint** slide on Clint Eastwood's filmography, with **R**, focusing on interaction and animation. This first part ([Part 1][30]) is about the the basics - how to access the methods and properties of the **PowerPoint object model**. A _data-driven_ slide needs data, so in [Part 2][31] we scrape some data on **Clint Eastwood's** movies from [IMDB][13]. And finally, in [Part 3][32] we use the data to create a slide programmatically. The end result should be a fairly complex, and somewhat entertaining, **PowerPoint** slide with **Clint Eastwood's** filmography.
 
 Here's a short video of what we're aiming for.
 <ShowImage
@@ -92,9 +92,9 @@ For the purposes of this post, we only need to understand how to do three things
 - Execute methods, which takes the form: `myObj$methodName(arg1,arg2,arg3,...)`
 - Set properties, which takes the form: `myObj[["Property"]] = TRUE`
 
-With these basic capabilities, we can access and manipulate the objects exposed by the PowerPoint API. (More in-depth information is provided [here][16] and [here][17].)
+With these basic capabilities, we can access and manipulate the objects exposed by the PowerPoint API. (There is more in-depth information [here][16] and [here][17].)
 
-Let's create a new **PowerPoint** presentation from **R**.
+Let's create a new **PowerPoint** presentation using **R**.
 
 Execute the following commands in **R**.
 
