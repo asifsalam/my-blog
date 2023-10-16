@@ -317,6 +317,20 @@ export const quotes = [
         sourceTitle: "The Tempest, Act 4 Scene 1",
         attributedTo: "William Shakespeare "
     },
+    {
+        quoteID: 33,
+        type: "quote",
+        quotation: `It's so much darker when a light goes out than it would have been if it had never shone. `,
+        sourceTitll: "The Winter of Our Discontent",
+        attributedTo: "John Steinbeck"
+    },
+    {
+        quoteID: 34,
+        type: "quote",
+        quotation: `Mostly it is loss which teaches us about the worth of things.`,
+        sourceTitll: " Parerga and Paralipomena",
+        attributedTo: "Arthur Schopenhauer"
+    },
 
 ]
 

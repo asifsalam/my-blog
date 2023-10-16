@@ -13,7 +13,7 @@ export async function load({ fetch }) {
         .filter((d) => d.link_type !== "blog")
         .filter((d) => d.link_type !== "site");
 
-    console.log(articleData[1]);
+    // console.log(articleData[1]);
 
     /**
      * @type {any[]}
@@ -39,7 +39,7 @@ export async function load({ fetch }) {
     })
 
     const posts = articles.filter((d) => d.link_type === "my-post");
-    console.log("layout-js", articles[1], articleData[1]);
+    // console.log("layout-js", articles[1], articleData[1]);
     return {
         articles, posts, themes, categories, tags
     }

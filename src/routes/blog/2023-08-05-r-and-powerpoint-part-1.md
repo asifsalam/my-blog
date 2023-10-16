@@ -15,6 +15,8 @@ categories:
 
 <script>
   import ShowImage from "$lib/components/show-image.svelte"
+  import ConsoleOutput from "$lib/components/console-output.svelte"
+  const consoleOutput1 = ["> pip install --upgrade pywin32"]
 </script>
 
 ## Introduction
@@ -31,8 +33,8 @@ Here's a short video of what we're aiming for.
 <ShowImage
 mediaType="video"
 mediaPath={"/post_assets/0001/final_slide.mp4"}
-mediaNumber=2
-mediaCaption="Video 1. Final slide"
+mediaNumber=1
+mediaCaption="Final slide"
 />
 
 (Clearly **PowerPoint** has a powerful animation engine, and the [object model][12] allows you to programmatically manipulate almost everything. The [Microsoft documentation][11], however, seems to be organized as something of a mystery.)
@@ -53,11 +55,10 @@ We also need:
 - **Python**
 - `pywin32`
 
-If you don't have **Python**, there are a few ways of installing it, but I think the [official site][15] is simple enough. If everything goes well, both **Python** and `pip` should be in the **Windows PATH**. The [`pywin32` documentation][3] recommends installation via `pip`, so open a terminal (**Powershell**, or the **Command Prompt**), and type the following:
+If you don't have **Python**, there are a few ways of installing it, but the instructions on the [official site][15] are fairly straightforward. If everything goes well, both **Python** and `pip` should be in the **Windows PATH**. The [`pywin32` documentation][3] recommends installation via `pip`, so open a terminal (**Powershell**, or the **Command Prompt** in **Windows**), and type the following:
 
-```console
-> pip install --upgrade pywin32
-```
+<ConsoleOutput consoleType='Terminal' inputCode = {consoleOutput1} />
+<br/>
 
 I am using:
 
@@ -98,7 +99,7 @@ Let's create a new **PowerPoint** presentation using **R**.
 
 Execute the following commands in **R**.
 
-```r
+```R
 # Start up PowerPoint
 pp <- pywin$Dispatch("Powerpoint.Application")
 
@@ -115,7 +116,7 @@ presentation <- pp[["Presentations"]]$Add()
 slide1 <- presentation[["Slides"]]$Add(1,12)
 ```
 
-This will create a presentation with a blank slide. We will use this slide in the next sections.
+This will create a presentation with a blank slide. We will use this slide in the sections that follow.
 
 The critical part is, of course, knowing what methods and properties are available. This is where the [**PowerPoint Developer Reference**][11] is a handy, but not terribly user-friendly, resource. (You can also get this information from the **Object Browser** in the VBA editor, as shown in figure 1. below).
 
@@ -129,7 +130,7 @@ mediaCaption="VBA Object Browser"
 
 ## Using VBA to create and animate shapes
 
-To understand how to go from VBA to R, let's recreate one of the basic examples in some of the older, and somewhat better, **PowerPoint** documentation, [Applying Animations to Shapes in Office 2010][13], which works with the latest MS Office versions as well. Let's walk through the VBA code, implement it in **PowerPoint** and see what it does. We will then implement the same code in **R**.
+To understand how to go from VBA to R, let's recreate one of the basic examples in some of the older, and somewhat better, **PowerPoint** documentation, [Applying Animations to Shapes in Office 2010][13], which works with the latest MS Office versions as well. Let's walk through the VBA code, implement it in **PowerPoint** and see what it does. We can then try to implement the same code in **R**.
 
 The VBA code:
 
@@ -148,7 +149,7 @@ End Sub
 
 <br/>
 
-Let's go through the code:
+Let's walk through the code:
 
 - `ActivePresentation.Slides(1)` [(documentation)][22] selects the first slide in the current presentation
 - Three variables of the type `Shape` [(documentation)][19] are defined. The `Shape` object represents a single shape on a slide, and has a set of associated methods and properties.
@@ -161,9 +162,9 @@ In summary:
 
 - Three objects are created on slide 1 of the active presentation.
 - The same animation sequence is applied to each.
-- In presentation mode, the three animation effects will be auto-triggered in the sequence in which they were added, for each object, also in sequence.
+- In presentation mode, the three animation effects are auto-triggered in the sequence in which they were added, for each object, also in sequence.
 
-[This Microsoft article][13] has the step-by-step instructions, on creating a standard VBA module, inserting the code and running it. We can use the deck created earlier to execute the code and we get these shapes and animation (Video 1).
+[This Microsoft article][13] has the step-by-step instructions, on creating a standard VBA module, inserting the code and running it. We can use the deck created earlier to execute the code, which results in the shapes and animation shown in Video 2.
 
 <ShowImage
 mediaType="video"
@@ -274,7 +275,7 @@ The video below shows the result of this sequence of commands.
 <ShowImage
 mediaType="video"
 mediaPath="/post_assets/0001/animation_2.mp4"
-mediaNumber=2
+mediaNumber=3
 mediaCaption="Animated shapes in R"
 />
 <br/>
@@ -299,7 +300,7 @@ The code and the PowerPoint file created are available from [GitHub](https://git
 [12]: https://learn.microsoft.com/en-us/office/vba/api/overview/powerpoint/object-model 'PowerPoint Object Model'
 [13]: https://msdn.microsoft.com/en-us/library/office/gg190747(v=office.14).aspx 'Applying Animations to Shapes in Office 2010'
 [14]: https://msdn.microsoft.com/en-us/library/office/aa211626(v=office.11).aspx 'AddEffect Method'
-[15]: https://www.python.org/ 'Python'
+[15]: https://wiki.python.org/moin/BeginnersGuide/Download 'Python'
 [16]: https://pbpython.com/windows-com.html 'Automating Windows Applications Using COM'
 [17]: http://timgolden.me.uk/python/index.html "Tim Golden's Python Stuff"
 [18]: https://learn.microsoft.com/en-us/office/vba/api/powerpoint.shape.pickupanimation 'PickupAnimation'

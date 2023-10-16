@@ -9,7 +9,7 @@
 
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 	let postData = data.postData;
-	console.log(data, $postList, $page);
+	// console.log(data, $postList, $page);
 	// const tags = cleanTags(data.posts.filter((d) => d.link_id === postData.metadata.id)[0].tags);
 	const tags = cleanTags($postList.filter((d) => d.link_id === postData.metadata.id)[0].tags);
 	let posts = $postList
@@ -19,7 +19,7 @@
 			title: d.title
 		}))
 		.slice(0, 5);
-	console.log('other posts: ', posts);
+	// console.log('other posts: ', posts);
 </script>
 
 {#key $page.params.id}
@@ -39,6 +39,7 @@
 			<p class="date">Posted: {postData.metadata.post_date}</p>
 			<TopicListCard {tags} size={3} tagType={'light-tag'} />
 		</div>
+		<br />
 		<img class="preview-image" src={postData.metadata.preview_image} alt="" />
 		<div class="main-content">
 			<svelte:component this={postData.content} />
@@ -73,7 +74,7 @@
 	}
 
 	.preview-image {
-		width: 90%;
+		width: 100%;
 	}
 	@media (max-width: 1000px) {
 		div.sidebar {

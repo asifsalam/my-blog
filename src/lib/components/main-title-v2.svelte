@@ -102,10 +102,11 @@
 		/* margin-top: -30px; */
 		text-align: right;
 		padding: 3px 5px;
-		color: hsla(54, 100%, 98%, 0.8);
+		/* color: hsla(54, 100%, 98%, 0.8); */
+		color: hsla(250.78deg 100% 25.1% / 66%);
 		/* text-align: right; */
 		/* background-color: #ed143d75; */
-		background-color: hsla(250.78deg 100% 25.1% / 66%);
+		/* background-color: hsla(250.78deg 100% 25.1% / 66%); */
 	}
 	.sub-title-text {
 		font-family: 'Comfortaa', 'Great Vibes', MuseoModerno, 'Pacifico';
