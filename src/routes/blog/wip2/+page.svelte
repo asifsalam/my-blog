@@ -5,6 +5,7 @@
 	import { postList } from '$lib/json/stores';
 	import PostsListCard from '$lib/components/posts-list-card.svelte';
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
+	import LetterBars from './letter-bars.svelte';
 	import Modal from '$lib/components/modal-1.svelte';
 	import { shuffle } from 'd3-array';
 	import { cleanTags } from '$lib/modules/utility_functions.js';
@@ -42,7 +43,7 @@
 		'You have heretofore been completely ineffectual. It is time to prove your worth. Telltale signs indicate a grand plot to hinder the visit of the Premier with a march of freedom. Find the when, where, and culprits. Fail me and the consequences will be dire.';
 
 	// 'It pains me to say that you have been completely ineffectual. It is time to prove your worth. There are telltale signs that a grand scheme is afoot to impede the visit of the Premier by staging a large freedom march. Your task is to ascertain the time, place and the manner of implementation. And, of course, the traitorous masterminds behind this insidious intrigue. Should you falter, the repurcussions will be correspondingly dire.';
-	console.log(letterFrequencies);
+	// console.log(letterFrequencies);
 	$: console.log('string length: ', plaintextInput.length);
 
 	function createCipher() {
@@ -244,6 +245,14 @@
 				created from a set of texts, and one from a dictionary. We can call this effort to break the
 				encryption, deciphering or decoding.
 			</p>
+			<div class="letter-charts">
+				<div class="chart">
+					<LetterBars letterData={letterFrequencies} yKey="texts" />
+				</div>
+				<div class="chart">
+					<LetterBars letterData={letterFrequencies} yKey="dictionaries" />
+				</div>
+			</div>
 			<button
 				class="general-button"
 				disabled={!messageEncrypted || !messageDecrypted}
@@ -293,6 +302,12 @@
 
 	textarea {
 		padding: 5px;
+	}
+
+	.letter-charts {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 
 	#plaintext-textarea {
