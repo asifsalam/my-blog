@@ -1,131 +1,131 @@
 export default [
     {
-        "Letter": "A",
+        "letter": "A",
         "texts": "8,2",
         "dictionaries": "7,8"
     },
     {
-        "Letter": "B",
+        "letter": "B",
         "texts": "1,5",
         "dictionaries": 2
     },
     {
-        "Letter": "C",
+        "letter": "C",
         "texts": "2,8",
         "dictionaries": 4
     },
     {
-        "Letter": "D",
+        "letter": "D",
         "texts": "4,3",
         "dictionaries": "3,8"
     },
     {
-        "Letter": "E",
+        "letter": "E",
         "texts": "12,7",
         "dictionaries": 11
     },
     {
-        "Letter": "F",
+        "letter": "F",
         "texts": "2,2",
         "dictionaries": "1,4"
     },
     {
-        "Letter": "G",
+        "letter": "G",
         "texts": 2,
         "dictionaries": 3
     },
     {
-        "Letter": "H",
+        "letter": "H",
         "texts": "6,1",
         "dictionaries": "2,3"
     },
     {
-        "Letter": "I",
+        "letter": "I",
         "texts": 7,
         "dictionaries": "8,6"
     },
     {
-        "Letter": "J",
+        "letter": "J",
         "texts": "0,15",
         "dictionaries": "0,21"
     },
     {
-        "Letter": "K",
+        "letter": "K",
         "texts": "0,77",
         "dictionaries": "0,97"
     },
     {
-        "Letter": "L",
+        "letter": "L",
         "texts": 4,
         "dictionaries": "5,3"
     },
     {
-        "Letter": "M",
+        "letter": "M",
         "texts": "2,4",
         "dictionaries": "2,7"
     },
     {
-        "Letter": "N",
+        "letter": "N",
         "texts": "6,7",
         "dictionaries": "7,2"
     },
     {
-        "Letter": "O",
+        "letter": "O",
         "texts": "7,5",
         "dictionaries": "6,1"
     },
     {
-        "Letter": "P",
+        "letter": "P",
         "texts": "1,9",
         "dictionaries": "2,8"
     },
     {
-        "Letter": "Q",
+        "letter": "Q",
         "texts": "0,095",
         "dictionaries": "0,19"
     },
     {
-        "Letter": "R",
+        "letter": "R",
         "texts": 6,
         "dictionaries": "7,3"
     },
     {
-        "Letter": "S",
+        "letter": "S",
         "texts": "6,3",
         "dictionaries": "8,7"
     },
     {
-        "Letter": "T",
+        "letter": "T",
         "texts": "9,1",
         "dictionaries": "6,7"
     },
     {
-        "Letter": "U",
+        "letter": "U",
         "texts": "2,8",
         "dictionaries": "3,3"
     },
     {
-        "Letter": "V",
+        "letter": "V",
         "texts": "0,98",
         "dictionaries": 1
     },
     {
-        "Letter": "W",
+        "letter": "W",
         "texts": "2,4",
         "dictionaries": "0,91"
     },
     {
-        "Letter": "X",
+        "letter": "X",
         "texts": "0,15",
         "dictionaries": "0,27"
     },
     {
-        "Letter": "Y",
+        "letter": "Y",
         "texts": 2,
         "dictionaries": "1,6"
     },
     {
-        "Letter": "Z",
+        "letter": "Z",
         "texts": "0,074",
         "dictionaries": "0,44"
     }

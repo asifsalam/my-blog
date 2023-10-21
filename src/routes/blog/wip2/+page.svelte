@@ -1,5 +1,6 @@
 <script>
 	export let data;
+	import { max, shuffle } from 'd3';
 	import '$lib/styles/blog.css';
 	import { page } from '$app/stores';
 	import { postList } from '$lib/json/stores';
@@ -7,44 +8,131 @@
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
 	import LetterBars from './letter-bars.svelte';
 	import Modal from '$lib/components/modal-1.svelte';
-	import { shuffle } from 'd3-array';
+	// import { shuffle } from 'd3-array';
 	import { cleanTags } from '$lib/modules/utility_functions.js';
 	import letterFrequencies from './letter-frequency';
-
+	// console.log('data: ', data);
 	let showModal = false;
 
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 	let postData = data.postData;
+	const sourceText = data.sourceText;
 
 	let posts = $postList.slice(0, 5);
 
 	const alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 	let cipher = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
-	let textFrequency = [...'JKLMNOPQRSTUVWXYZABCDEFGHI'];
-	let dictFrequency = [...'ABCDEFGHSTUVWXYZIJKLMNOPQR'];
+	let textKey = [];
+	let dictKey = [];
+	let decodeKey = [];
+
+	let plaintextFrequency = [];
+	let ciphertextFrequency = [];
+	let sourceFrequency = [];
+	let textFrequency = [];
+	let dictFrequency = [];
+	let frequency = [];
+
 	let cipherGenerated = false;
 	let messageEncrypted = false;
 	let messageDecrypted = false;
 	let messageDictDecoded = false;
 	let messageTextDecoded = false;
-	// console.log('page.js, alphabet: ', alphabet);
-	// $: console.log(cipher);
-	// const yPos = 50;
-	// const letterSpacing = 25;
-	// const boxHeight = letterSpacing * 1.5;
-	// const alphabetOffset = 100;
+
 	let encryptedMessage = '';
 	let decryptedMessage = '';
 	let decodedMessage = '';
 	let dictDecodedMessage = '';
 	let textDecodedMessage = '';
-	let plaintextMessage = '';
-	$: plaintextInput =
-		'You have heretofore been completely ineffectual. It is time to prove your worth. Telltale signs indicate a grand plot to hinder the visit of the Premier with a march of freedom. Find the when, where, and culprits. Fail me and the consequences will be dire.';
 
-	// 'It pains me to say that you have been completely ineffectual. It is time to prove your worth. There are telltale signs that a grand scheme is afoot to impede the visit of the Premier by staging a large freedom march. Your task is to ascertain the time, place and the manner of implementation. And, of course, the traitorous masterminds behind this insidious intrigue. Should you falter, the repurcussions will be correspondingly dire.';
-	// console.log(letterFrequencies);
-	$: console.log('string length: ', plaintextInput.length);
+	const cleanInput = function (input) {
+		return input.replace(/[^a-zA-Z ]+/g, '').toUpperCase();
+	};
+
+	function calculateFrequency(message) {
+		let textFrequency = [];
+		let frequency = [...message].reduce((acc, chr) => {
+			acc[chr] = (acc[chr] || 0) + 1;
+			return acc;
+		}, {});
+		Object.keys(frequency).forEach((d) => {
+			let x = { letter: d, frequency: frequency[d] };
+			if (d != ' ') textFrequency.push(x);
+		});
+		console.log('calculate-text-frequency: ', textFrequency);
+		let sum = textFrequency.reduce((acc, curr) => {
+			console.log('calculate-acc: ', acc);
+			return acc + curr.frequency;
+		}, 0);
+		textFrequency.forEach((d) => {
+			d.frequency = (d.frequency * 100) / sum;
+		});
+		textFrequency.sort((a, b) => b.frequency - a.frequency);
+		return textFrequency;
+	}
+
+	let plaintextInput =
+		"I must convey to you my profound concern regarding your recent performance, which has left much to be desired. It is now of utmost importance that you demonstrate your competence in a substantial and effective manner. Recent developments have given rise to compelling evidence, which strongly suggests that a significant operation is currently underway, with the clear intent to disrupt the upcoming visit of the Premier by organizing a large-scale demonstration under the banner of 'freedom.' 	Your primary mission, given the gravity of the situation, is to engage in a meticulous and comprehensive gathering of critical intelligence.";
+
+	// let plaintextMessage = plaintextInput.replace(/[^a-zA-Z ]+/g, '').toUpperCase();
+	let plaintextMessage = cleanInput(plaintextInput);
+	$: console.log('Input length: ', plaintextMessage.length);
+
+	// Calculate character frequency of input message
+
+	frequency = [...plaintextMessage].reduce((acc, chr) => {
+		acc[chr] = (acc[chr] || 0) + 1;
+		return acc;
+	}, {});
+
+	Object.keys(frequency).forEach((d) => {
+		let x = { letter: d, frequency: frequency[d] };
+		if (d != ' ') plaintextFrequency.push(x);
+	});
+
+	let sum = plaintextFrequency.reduce((acc, curr) => {
+		return acc + curr.frequency;
+	}, 0);
+	plaintextFrequency.forEach((d) => {
+		d.frequency = (d.frequency * 100) / sum;
+	});
+	plaintextFrequency.sort((a, b) => b.frequency - a.frequency);
+	// console.log('plaintextFrequency: ', plaintextFrequency, 'sum: ', sum);
+
+	let testFrequency = calculateFrequency(plaintextMessage);
+	console.log('test-frequency', testFrequency);
+	console.log('plaintext-frequency', plaintextFrequency);
+
+	letterFrequencies.forEach((d) => {
+		let x = { letter: d.letter, frequency: +String(d['texts']).replace(',', '.') };
+		let y = { letter: d.letter, frequency: +String(d['dictionaries']).replace(',', '.') };
+		// console.log('chartdata-', typeof y);
+		textFrequency.push(x);
+		dictFrequency.push(y);
+	});
+
+	textFrequency
+		.sort((a, b) => b.frequency - a.frequency)
+		.forEach((d) => {
+			textKey.push(d.letter);
+		});
+	dictFrequency
+		.sort((a, b) => b.frequency - a.frequency)
+		.forEach((d) => {
+			dictKey.push(d.letter);
+		});
+
+	// console.log('textFrequency: ', textFrequency, 'dictFrequency: ', dictFrequency);
+
+	function convertStringToFrequency(textMessage) {
+		const cleanMessage = textMessage.replace(/[^a-zA-Z ]+/g, '').toUpperCase();
+		let result = [...cleanMessage].reduce((a, e) => {
+			a[e] = a[e] ? a[e] + 1 : 1;
+			return a;
+		}, {});
+		console.log('convertStringToFrequency: ', result);
+		return result;
+	}
 
 	function createCipher() {
 		cipherGenerated = true;
@@ -78,50 +166,48 @@
 	}
 
 	function decodeDictMessage() {
+		dictFrequency.forEach((d) => {
+			dictKey.push(d.letter);
+		});
 		messageDictDecoded = true;
-		dictDecodedMessage = encodeMessage(encryptedMessage, cipher, dictFrequency);
+		dictDecodedMessage = encodeMessage(encryptedMessage, decodeKey, dictKey);
 		// console.log('dict decode: ', dictDecodedMessage);
 	}
 
 	function decodeTextMessage() {
 		messageTextDecoded = true;
-		textDecodedMessage = encodeMessage(encryptedMessage, cipher, textFrequency);
+		textDecodedMessage = encodeMessage(encryptedMessage, decodeKey, textKey);
 		// console.log('text decode: ', textDecodedMessage);
 	}
 
-	// function encryptMessage() {
-	// 	encryptedMessage = '';
-	// 	messageEncrypted = true;
-	// 	plaintextMessage = plaintextInput.replace(/[^a-zA-Z ]+/g, '').toUpperCase();
-	// 	plaintextMessage.split('').forEach((d) => {
-	// 		let index = alphabet.indexOf(d);
-	// 		if (index === -1) encryptedMessage = encryptedMessage + ' ';
-	// 		else encryptedMessage = encryptedMessage + cipher[index];
-	// 	});
-	// 	console.log(plaintextMessage, '\n', encryptedMessage);
-	// }
+	$: {
+		if (messageEncrypted) {
+			frequency = [...encryptedMessage].reduce((acc, chr) => {
+				//accumulator (acc), and current value (chr)
+				//add 1 to the chr array element, if chr
+				acc[chr] = (acc[chr] || 0) + 1;
+				return acc;
+			}, {});
 
-	// function decryptMessage() {
-	// 	decryptedMessage = '';
-	// 	encryptedMessage.split('').forEach((d) => {
-	// 		let index = cipher.indexOf(d);
-	// 		if (index === -1) decryptedMessage = decryptedMessage + ' ';
-	// 		else decryptedMessage = decryptedMessage + alphabet[index];
-	// 	});
-	// 	console.log('decryptedMessage:\n ', decryptedMessage);
-	// 	messageDecrypted = true;
-	// }
+			Object.keys(frequency).forEach((d, i) => {
+				if (d != ' ') {
+					let x = { letter: d, frequency: frequency[d] / 2 };
+					ciphertextFrequency.push(x);
+				}
+			});
+			ciphertextFrequency
+				.sort((a, b) => {
+					return b.frequency - a.frequency;
+				})
+				.forEach((d) => decodeKey.push(d.letter));
 
-	// function decodeMessage() {
-	// 	decodedMessage = '';
-	// 	encryptedMessage.split('').forEach((d) => {
-	// 		let index = cipher.indexOf(d);
-	// 		if (index === -1) decryptedMessage = decryptedMessage + ' ';
-	// 		else decryptedMessage = decryptedMessage + alphabet[index];
-	// 	});
-	// 	console.log('decryptedMessage:\n ', decryptedMessage);
-	// 	messageDecrypted = true;
-	// }
+			// ciphertextFrequency.forEach((d, i) => {
+			// 	decodeKey[i] = d.letter;
+			// });
+			console.log('CipherText: ', ciphertextFrequency);
+			console.log('decodeKey: ', decodeKey);
+		}
+	}
 </script>
 
 {#key $page.params.id}
@@ -242,27 +328,33 @@
 			<p>
 				The discarded ciphertext has found its way to the resistence. Their codebreaker has read
 				Al-Kindi, and immediately goes to work. She takes out two letter frequency tables, one
-				created from a set of texts, and one from a dictionary. We can call this effort to break the
-				encryption, deciphering or decoding.
+				created from a set of texts, and one from a dictionary. Then she creates a frequency table
+				from the ciphertext, and begins to decode the message. The process of codebreaking is part
+				of crytpanalysis, the field of encryption, cipher and code analysis.
 			</p>
 			<div class="letter-charts">
 				<div class="chart">
-					<LetterBars letterData={letterFrequencies} yKey="texts" />
+					<LetterBars letterData={textFrequency} chartOptions={{ title: 'Texts' }} />
 				</div>
 				<div class="chart">
-					<LetterBars letterData={letterFrequencies} yKey="dictionaries" />
+					<LetterBars letterData={dictFrequency} chartOptions={{ title: 'Dictionary' }} />
 				</div>
+				{#if messageEncrypted}
+					<div class="chart">
+						<LetterBars letterData={ciphertextFrequency} chartOptions={{ title: 'Ciphertext' }} />
+					</div>
+				{/if}
 			</div>
 			<button
 				class="general-button"
-				disabled={!messageEncrypted || !messageDecrypted}
+				disabled={!messageEncrypted}
 				on:click={() => {
 					decodeDictMessage();
 				}}>Deccode (dictionary frequency)<br /><small>Encrypt to enable</small></button
 			>
 			<div class="encrypt-container">
 				<p class="decoded-header header-text">Decoded message</p>
-				{#if messageDecrypted}
+				{#if messageEncrypted}
 					<p class="decoded-message message-text">{dictDecodedMessage}</p>
 				{:else}
 					&nbsp
@@ -271,14 +363,14 @@
 
 			<button
 				class="general-button"
-				disabled={!messageEncrypted || !messageDecrypted}
+				disabled={!messageEncrypted}
 				on:click={() => {
 					decodeTextMessage();
 				}}>Deccode (text frequency)<br /><small>Encrypt to enable</small></button
 			>
 			<div class="encrypt-container">
 				<p class="decoded-header header-text">Decoded message</p>
-				{#if messageDecrypted}
+				{#if messageEncrypted}
 					<p class="decoded-message message-text">{textDecodedMessage}</p>
 				{:else}
 					&nbsp
@@ -294,10 +386,10 @@
 		margin-bottom: 10px;
 	}
 	.content {
-		width: 90%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 	}
 
 	textarea {
@@ -307,7 +399,7 @@
 	.letter-charts {
 		width: 100%;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 	#plaintext-textarea {
@@ -319,7 +411,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 90%;
+		width: 100%;
 		justify-self: center;
 	}
 
@@ -351,14 +443,14 @@
 
 	.decrypted-header {
 		border-bottom: 1px solid rgba(1, 115, 156, 0.8);
-		font-family: 'Marck Script', Macondo, Georgia, 'Times New Roman', Times, serif;
+		font-family: 'Georgia', Macondo, Georgia, 'Times New Roman', Times, serif;
 		color: rgba(1, 115, 156, 0.8);
 	}
 
 	.decoded-header {
-		border-bottom: 1px solid rgba(156, 1, 102, 0.8);
-		font-family: 'Marck Script', Macondo, Georgia, 'Times New Roman', Times, serif;
-		color: rgba(1, 115, 156, 0.8);
+		border-bottom: 1px solid rgba(193, 84, 1, 0.8);
+		font-family: Delius, 'Crete Round', Macondo, Georgia, 'Times New Roman', Times, serif;
+		color: rgba(193, 84, 1, 1);
 	}
 
 	.plaintext-box {
@@ -389,8 +481,8 @@
 		/* border: 0.5px solid rgba(117, 37, 177, 0); */
 	}
 	.decoded-message {
-		font-family: Lancelot, Georgia, 'Times New Roman', Times, serif;
-		color: rgba(1, 156, 138, 1);
+		font-family: Delius, Lancelot, Georgia, 'Times New Roman', Times, serif;
+		color: rgb(193, 84, 1);
 		/* border: 0.5px solid rgba(1, 156, 138, 0.8); */
 	}
 

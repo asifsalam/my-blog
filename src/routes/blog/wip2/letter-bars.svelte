@@ -1,33 +1,24 @@
 <script>
 	export let letterData;
 	export let yKey = 'texts';
-	console.log('yKey', yKey);
+	export let chartOptions = {
+		title: 'Frequency Chart'
+	};
+	export let fontColor = 'rgba(193, 84, 1, 1);';
 
-	let chartData = [];
-	letterData.forEach((d) => {
-		// let y = d[yKey];
-		let x = { x: d.Letter, y: +String(d[yKey]).replace(',', '.') };
-		// console.log('chartdata-', typeof y);
-		chartData.push(x);
-	});
-
-	chartData.sort((a, b) => {
-		return b.y - a.y;
-	});
-	console.log('chart data: ', chartData);
-
-	//     x.forEach(d => delete d["a"])
-	//     x.forEach(function(x) {
-	//   obj.label = obj.text;
-	//   delete obj.text; }
+	// letterData.sort((a, b) => {
+	// 	return b.frequency - a.frequency;
+	// });
 </script>
 
 <div class="chart-container">
-	{#each chartData as letter, i}
-		<p class="frequency-box" style="width:{(letter.y + 1) * 8}px">{letter.x}</p>
+	<p class="chart-title">{chartOptions.title}</p>
+	{#each letterData as letter, i}
+		<p class="frequency-box" style="width:{(letter.frequency + 1) * 8}px;font-color:{fontColor}">
+			{letter.letter}
+		</p>
 	{/each}
 </div>
-<p>This is where the chart will go</p>
 
 <style>
 	.chart-container {
@@ -37,16 +28,18 @@
 	}
 
 	.frequency-box {
-		display: inline-block;
-		padding: 2px 5px;
-		margin: 3px 10px 3px 0;
+		/* display: inline-block; */
+		/* padding: 2px 2px;
+		margin: 3px 10px 5px 5px; */
+		padding: 1px 2px 3px 2px;
+		margin: 3px 3px;
 		/* background-color: #eafaff; */
-		background-color: hsla(196, 67%, 54%, 0.07);
-		font-family: Roboto, Arial, Helvetica, sans-serif;
+		background-color: hsla(16, 100%, 43%, 0.07);
+		font-family: Delius, Roboto, Arial, Helvetica, sans-serif;
 		font-weight: normal;
 		/* font-size: 16em; */
 		font-size: 16px;
-		color: hsl(251, 100%, 15%, 0.6);
+		color: hsl(251, 100%, 15%, 0.8);
 		border-radius: 4px;
 		text-decoration: none;
 		border: 1px solid hsla(251, 32%, 44%, 0.2);

@@ -2,25 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&display=swap');
 
 /* Allura, Delius, Great Vibes */
-/*@import url('https://fonts.googleapis.com/css2?family=Allura&family=Delius&family=Great+Vibes&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Delius&family=Great+Vibes&display=swap');
 
 /* Libre Baskerville */
-/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 /* DM Sans */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap');
 
 /* Yellowtail */
-/* @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 /* Pacifico */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* Crimson Pro, Meddon */
-/* @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Crimson+Pro:wght@300;500&family=Meddon&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Crimson+Pro:wght@300;500&family=Meddon&display=swap');
 
 /* Antic Slab */
-/* @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 
 /* Amiri */
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
@@ -31,7 +31,7 @@
 /* Noto Sans */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 
-/* Cherry Swash, Lancelot, Maiden Orange, Noto Serif Thai, Offisde, Scope One */
+/* Cherry Swash, Lancelot, Maiden Orange, Noto Serif Thai, Offside, Scope One */
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Lancelot&family=Maiden+Orange&family=Noto+Serif+Thai:wght@300;400&family=Offside&family=Scope+One&display=swap');
 
 /* Crete Round, Pridi, Sanchez */
@@ -71,8 +71,8 @@
 /* Capriola, Electrolize, Gotu, KoHo, 'M PLUS Code Latin', 'Palanquin Dark', Ruloko, 'Sulphur Point', Syne, 'Tsukimi Rounded' */
 @import url('https://fonts.googleapis.com/css2?family=Capriola&family=Electrolize&family=Gotu&family=KoHo:wght@200;300;400&family=M+PLUS+Code+Latin:wght@200;300;400;500&family=Palanquin+Dark:wght@400;600&family=Ruluko&family=Sulphur+Point:wght@300;400&family=Syne:wght@400;600&family=Tsukimi+Rounded:wght@300;400;600&display=swap');
 
-/* Comfortaa, Flamenco, Goldman, Gugi, Iceland, Macondo, MuseoModerno, Overlock, 'Poiret One', Righteous, Skranji, Wellfleet*/
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Flamenco:wght@300;400&family=Goldman&family=Gugi&family=Iceland&family=Macondo&family=MuseoModerno:wght@100;200;300;400&family=Overlock:wght@400;700&family=Poiret+One&family=Righteous&family=Skranji&family=Wellfleet&display=swap');
+/* Comfortaa, Flamenco, Goldman, Gugi, Iceland, MuseoModerno, Overlock, 'Poiret One', Righteous, Skranji, Wellfleet*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Flamenco:wght@300;400&family=Goldman&family=Gugi&family=Iceland&family=MuseoModerno:wght@100;200;300;400&family=Overlock:wght@400;700&family=Poiret+One&family=Righteous&family=Skranji&family=Wellfleet&display=swap');
 
 /* Carattere & Macondo */
 @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Macondo&display=swap');
@@ -170,4 +170,9 @@ Amiri - light serif - too basic
 @font-face {
 	font-family: 'JetBrainsMono';
 	src: url('/fonts/jetbrainsmono/ttf/JetBrainsMono-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Hidayat';
+	src: url('/fonts/HidayatullahDemo-mLp39.ttf');
 }
