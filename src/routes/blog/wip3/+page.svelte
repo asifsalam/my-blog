@@ -1,20 +1,19 @@
 <script>
 	export let data;
-	import { max, shuffle } from 'd3';
+	import { max, shuffle, shuffler, randomLcg } from 'd3';
 	import '$lib/styles/blog.css';
 	import { page } from '$app/stores';
 	import { postList } from '$lib/json/stores';
 	import PostsListCard from '$lib/components/posts-list-card.svelte';
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
 	import LetterBars from './letter-bars.svelte';
+	import LetterDisplay from './letter-display.svelte';
 	import Modal from '$lib/components/modal-1.svelte';
-	// import { shuffle } from 'd3-array';
-	import { cleanTags } from '$lib/modules/utility_functions.js';
+	import { cleanTags, calculateLetterFrequency } from '$lib/modules/utility_functions.js';
 	import letterFrequencies from './letter-frequency';
-	// console.log('data: ', data);
-	let showModal = false;
-
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
+
+	let showModal = false;
 	let postData = data.postData;
 	const sourceText = data.sourceText;
 
@@ -23,52 +22,26 @@
 	const alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 	let cipher = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 	let textKey = [];
-	let dictKey = [];
-	let decodeKey = [];
+	$: decodeKey = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 
 	let plaintextFrequency = [];
 	let ciphertextFrequency = [];
 	let sourceFrequency = [];
 	let textFrequency = [];
-	let dictFrequency = [];
 	let frequency = [];
 
 	let cipherGenerated = false;
 	let messageEncrypted = false;
 	let messageDecrypted = false;
-	let messageDictDecoded = false;
-	let messageTextDecoded = false;
+	let messageDecoded = false;
 
 	let encryptedMessage = '';
 	let decryptedMessage = '';
-	let decodedMessage = '';
-	let dictDecodedMessage = '';
-	let textDecodedMessage = '';
+	$: decodedMessage = '';
 
 	const cleanInput = function (input) {
 		return input.replace(/[^a-zA-Z ]+/g, '').toUpperCase();
 	};
-
-	function calculateFrequency(message) {
-		let textFrequency = [];
-		let frequency = [...message].reduce((acc, chr) => {
-			acc[chr] = (acc[chr] || 0) + 1;
-			return acc;
-		}, {});
-		Object.keys(frequency).forEach((d) => {
-			let x = { letter: d, frequency: frequency[d] };
-			if (d != ' ') textFrequency.push(x);
-		});
-		let sum = textFrequency.reduce((acc, curr) => {
-			return acc + curr.frequency;
-		}, 0);
-		textFrequency.forEach((d) => {
-			let x = (d.frequency * 100) / sum;
-			d.frequency = x.toFixed(2);
-		});
-		textFrequency.sort((a, b) => b.frequency - a.frequency);
-		return textFrequency;
-	}
 
 	let plaintextInput =
 		'First, you must import your data into R. This typically means that you take data stored in a file, database, or web application programming interface (API) and load it into a data frame in R. If you can’t get your data into R, you can’t do data science on it! Once you’ve imported your data, it is a good idea to tidy it. Tidying your data means storing it in a consistent form that matches the semantics of the dataset with how it is stored.';
@@ -76,21 +49,17 @@
 	plaintextInput = sourceText.join(' ');
 
 	// Calculate character frequency of input message
-	const sourceCleanText = cleanInput(sourceText.join(' '));
-	sourceFrequency = calculateFrequency(cleanInput(sourceText.join(' ')));
-	console.log('source-frequency: ', sourceFrequency);
+	// const sourceCleanText = cleanInput(sourceText.join(' '));
+	// sourceFrequency = calculateLetterFrequency(cleanInput(sourceText.join(' ')));
+	// console.log('source-frequency: ', sourceFrequency);
 
-	// let plaintextMessage = plaintextInput.replace(/[^a-zA-Z ]+/g, '').toUpperCase();
 	let plaintextMessage = cleanInput(plaintextInput);
-	plaintextFrequency = calculateFrequency(plaintextMessage);
-	$: console.log('Input length: ', plaintextMessage.length, plaintextFrequency);
+	plaintextFrequency = calculateLetterFrequency(plaintextMessage);
+	// $: console.log('Input length: ', plaintextMessage.length, plaintextFrequency);
 
 	letterFrequencies.forEach((d) => {
 		let x = { letter: d.letter, frequency: +String(d['texts']).replace(',', '.') };
-		let y = { letter: d.letter, frequency: +String(d['dictionaries']).replace(',', '.') };
-		// console.log('chartdata-', typeof y);
 		textFrequency.push(x);
-		dictFrequency.push(y);
 	});
 
 	textFrequency
@@ -98,27 +67,19 @@
 		.forEach((d) => {
 			textKey.push(d.letter);
 		});
-	dictFrequency
-		.sort((a, b) => b.frequency - a.frequency)
-		.forEach((d) => {
-			dictKey.push(d.letter);
-		});
-
-	// console.log('textFrequency: ', textFrequency, 'dictFrequency: ', dictFrequency);
 
 	function createCipher() {
 		cipherGenerated = true;
 		cipher = shuffle(cipher.slice());
+		// cipher = shuffler(randomLcg(cipher));
 	}
 
-	function encodeMessage(inputMessage, inputLetters, decodeKey) {
+	function encodeMessage(inputMessage, letterFrequency, decodeFrequency) {
 		let outputMessage = '';
-		// console.log('Encode Message ', decodeKey, '\n', inputMessage);
 		inputMessage.split('').forEach((d) => {
-			let index = inputLetters.indexOf(d);
-			// console.log(d, index);
+			let index = letterFrequency.indexOf(d);
 			if (index === -1) outputMessage = outputMessage + ' ';
-			else outputMessage = outputMessage + decodeKey[index];
+			else outputMessage = outputMessage + decodeFrequency[index];
 		});
 		// console.log('Encode Message', inputMessage, '\n', outputMessage);
 		return outputMessage;
@@ -134,26 +95,53 @@
 	function decryptMessage() {
 		messageDecrypted = true;
 		decryptedMessage = encodeMessage(encryptedMessage, cipher, alphabet);
-		// console.log(decryptedMessage);
 	}
 
-	function decodeDictMessage() {
-		messageDictDecoded = true;
-		dictDecodedMessage = encodeMessage(encryptedMessage, decodeKey, dictKey);
-		// console.log('dict decode: ', dictDecodedMessage);
-	}
-
-	function decodeTextMessage() {
-		messageTextDecoded = true;
-		textDecodedMessage = encodeMessage(encryptedMessage, decodeKey, textKey);
-		// console.log('text decode: ', textDecodedMessage);
+	function decodeMessage() {
+		messageDecoded = true;
+		decodedMessage = encodeMessage(encryptedMessage, decodeKey, textKey);
 	}
 
 	function tweakDecodeKey() {}
 
+	let sourceId = '';
+	let sourceLetter = '';
+	function handleDragStart(e) {
+		e.dataTransfer.setData('Text', e.target.id);
+		sourceId = e.target.id;
+		console.log('handleDragStart-sourceLetter: ', sourceLetter);
+	}
+
+	let targetId = '';
+	let targetLetter = '';
+	function handleDrop(e) {
+		targetId = e.target.id;
+		console.log('Drag entered at: ', e, e.target.id);
+		sourceLetter = sourceId.split('-')[1];
+		targetLetter = targetId.split('-')[1];
+		let sourceIndex = decodeKey.indexOf(sourceLetter);
+		let targetIndex = decodeKey.indexOf(targetLetter);
+		decodeKey[sourceIndex] = targetLetter;
+		decodeKey[targetIndex] = sourceLetter;
+		console.log(
+			'page:',
+			sourceIndex,
+			sourceLetter,
+			targetIndex,
+			targetLetter,
+			decodeKey[sourceIndex],
+			decodeKey[targetIndex]
+		);
+	}
+
+	function allowDrop(e) {
+		e.preventDefault();
+	}
+
 	$: {
 		if (messageEncrypted) {
-			ciphertextFrequency = calculateFrequency(encryptedMessage);
+			decodeKey = [];
+			ciphertextFrequency = calculateLetterFrequency(encryptedMessage);
 			ciphertextFrequency
 				.sort((a, b) => {
 					return b.frequency - a.frequency;
@@ -174,12 +162,6 @@
 	</div>
 
 	<div class="content">
-		<p>
-			The natives are restless. You are responible for collecting intelligence on their activities.
-			The local staff have recruited an asset who is close to the resistence movement. You will meet
-			with him on your next visit to the wretched place. You will give him a cipher key and explain
-			to him how use it so your communicaitons remain secure.
-		</p>
 		<div class="cipher-container">
 			<h3 class="section-header">Create cipher key</h3>
 			<div class="letters-list">
@@ -214,13 +196,6 @@
 		</div>
 		<div class="text-container">
 			<h3 class="section-header">Encrypt message</h3>
-			<p>
-				Now that the key has been provided to the asset, messages can be exchanged without fear of
-				discovery. The upcoming visit of the Premier to the territory is a prime candidate for
-				disruption. Let's squeeze our mole for information. In the text box below, create a new
-				message, (maximum of 256 characters) or use the existing one, and click the button to
-				encrypt it.
-			</p>
 			<textarea
 				name="plaintext-input"
 				id="plaintext-textarea"
@@ -280,22 +255,9 @@
 		</div>
 		<div class="text-container">
 			<h3 class="section-header">Break cipher</h3>
-			<p>
-				The discarded ciphertext has found its way to the resistence. Their codebreaker has read
-				Al-Kindi, and immediately goes to work. She takes out two letter frequency tables, one
-				created from a set of texts, and one from a dictionary. Then she creates a frequency table
-				from the ciphertext, and begins to decode the message. The process of codebreaking is part
-				of crytpanalysis, the field of encryption, cipher and code analysis.
-			</p>
 			<div class="letter-charts">
 				<div class="chart">
 					<LetterBars letterData={textFrequency} chartOptions={{ title: 'Texts' }} />
-				</div>
-				<!-- <div class="chart">
-					<LetterBars letterData={dictFrequency} chartOptions={{ title: 'Dictionary' }} />
-				</div> -->
-				<div class="chart">
-					<LetterBars letterData={sourceFrequency} chartOptions={{ title: 'Sourcetext' }} />
 				</div>
 				<div class="chart">
 					<LetterBars letterData={plaintextFrequency} chartOptions={{ title: 'Plaintext' }} />
@@ -306,37 +268,39 @@
 					</div>
 				{/if}
 			</div>
-			<!-- <button
-				class="general-button"
-				disabled={!messageEncrypted}
-				on:click={() => {
-					decodeDictMessage();
-				}}>Deccode (dictionary frequency)<br /><small>Encrypt to enable</small></button
-			>
-			<div class="encrypt-container">
-				<p class="decoded-header header-text">Decoded message</p>
-				{#if messageEncrypted}
-					<p class="decoded-message message-text">{dictDecodedMessage}</p>
-				{:else}
-					&nbsp
-				{/if}
-			</div> -->
 
 			<button
 				class="general-button"
 				disabled={!messageEncrypted}
 				on:click={() => {
-					decodeTextMessage();
+					decodeMessage();
 				}}>Deccode (text frequency)<br /><small>Encrypt to enable</small></button
 			>
 			<div class="encrypt-container">
 				<p class="decoded-header header-text">Decoded message</p>
 				{#if messageEncrypted}
-					<p class="decoded-message message-text">{textDecodedMessage.slice(0, 200)}</p>
+					<p class="decoded-message message-text">{decodedMessage.slice(0, 200)}</p>
 				{:else}
 					&nbsp
 				{/if}
 			</div>
+		</div>
+		<div class="cipher-container">
+			<h3 class="section-header">Adjust key</h3>
+
+			<LetterDisplay
+				lettersType={'plaintext'}
+				letterHead="Text key"
+				bind:letters={textKey}
+				draggable={false}
+				{messageDecoded}
+			/>
+			<LetterDisplay
+				lettersType={'decode'}
+				bind:letters={decodeKey}
+				draggable={true}
+				{messageDecoded}
+			/>
 		</div>
 	</div>
 {/key}

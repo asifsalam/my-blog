@@ -1,5 +1,36 @@
 import * as d3 from 'd3';
 
+function calculateLetterFrequency(message) {
+    let textFrequency = [];
+    let frequency = [...message].reduce((acc, chr) => {
+        acc[chr] = (acc[chr] || 0) + 1;
+        return acc;
+    }, {});
+    Object.keys(frequency).forEach((d) => {
+        let x = { letter: d, frequency: frequency[d] };
+        if (d != ' ') textFrequency.push(x);
+    });
+    let sum = textFrequency.reduce((acc, curr) => {
+        return acc + curr.frequency;
+    }, 0);
+    textFrequency.forEach((d) => {
+        let x = (d.frequency * 100) / sum;
+        d.frequency = x.toFixed(2);
+    });
+    textFrequency.sort((a, b) => b.frequency - a.frequency);
+    return textFrequency;
+}
+
+function convertStringToFrequency(textMessage) {
+    const cleanMessage = textMessage.replace(/[^a-zA-Z ]+/g, '').toUpperCase();
+    let result = [...cleanMessage].reduce((a, e) => {
+        a[e] = a[e] ? a[e] + 1 : 1;
+        return a;
+    }, {});
+    console.log('convertStringToFrequency: ', result);
+    return result;
+}
+
 function getImageUrl(article) {
     //grab a random image if img_type is "rep"lace
     const baseImageUrl = '/img/images/geometric-pattern-';
@@ -335,5 +366,5 @@ function filterTopic1(articles, topic) {
 
 export {
     randomIntFromInterval, paddedRandomIntFromInterval, parsePosts, parseArticle, capitalizeFirstLetter, loadArticles, loadPosts,
-    filterCategory, filterTheme, filterTag, filterTopic, filterArticles, cleanTags, getImageUrl, searchArticles
+    filterCategory, filterTheme, filterTag, filterTopic, filterArticles, cleanTags, getImageUrl, searchArticles, convertStringToFrequency, calculateLetterFrequency
 } 
