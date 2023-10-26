@@ -1,16 +1,14 @@
 <script>
-	export let lettersType = 'decode';
 	export let letters;
-	export let letterHead = 'Decode key';
-	export let messageDecoded = false;
-	export let draggable;
-	export let handleDrop1 = () => {};
+	export let swapInfo;
 
 	import { onMount } from 'svelte';
 
+	const lettersType = 'decode';
 	let sourceId = '';
 	let sourceIndex = 0;
 	let sourceLetter = '';
+
 	function handleDragStart(e) {
 		e.dataTransfer.setData('Text', e.target.id);
 		sourceId = e.target.id;
@@ -23,15 +21,17 @@
 	let dropped = false;
 	function handleDrop(e) {
 		// let sourceId = e.getData("Text");
+		e.preventDefault();
 		dropped = true;
-		targetId = e.target.id;
+		swapInfo.sId = e.dataTransfer.getData('Text');
+		swapInfo.tId = e.target.id;
 		console.log('Drag entered at: ', e, e.target.id);
-		sourceLetter = sourceId.split('-')[1];
-		targetLetter = targetId.split('-')[1];
-		sourceIndex = letters.indexOf(sourceLetter);
-		targetIndex = letters.indexOf(targetLetter);
-		letters[sourceIndex] = targetLetter;
-		letters[targetIndex] = sourceLetter;
+		sourceLetter = swapInfo.sId.split('-')[1];
+		targetLetter = swapInfo.tId.split('-')[1];
+		swapInfo.sInd = letters.indexOf(sourceLetter);
+		swapInfo.tInd = letters.indexOf(targetLetter);
+		letters[swapInfo.sInd] = targetLetter;
+		letters[swapInfo.tInd] = sourceLetter;
 		letters = letters;
 		console.log(
 			'letter-display: handle-drop: ',
@@ -39,26 +39,17 @@
 			sourceLetter,
 			targetIndex,
 			targetLetter,
-			letters[sourceIndex],
-			letters[targetIndex]
+			letters[swapInfo.sInd],
+			letters[swapInfo.tInd]
 		);
 	}
 
 	function allowDrop(e) {
 		e.preventDefault();
 	}
-
-	// $: console.log(
-	// 	'letter-display: ',
-	// 	sourceId,
-	// 	targetId,
-	// 	lettersList[sourceIndex],
-	// 	lettersList[targetIndex]
-	// );
 </script>
 
 <div class="letters-list">
-	<p class="letter-head {lettersType}">{letterHead}</p>
 	<div class="letters-table">
 		{#key letters}
 			{#each letters as letter}
@@ -66,16 +57,12 @@
 				<span
 					class="letter-box {lettersType}"
 					id="decode-{letter}"
-					{draggable}
+					draggable="true"
 					on:dragstart={handleDragStart}
 					on:drop={handleDrop}
 					on:dragover={allowDrop}
 				>
-					{#if messageDecoded}
-						{letter}
-					{:else}
-						-
-					{/if}
+					{letter}
 				</span>
 			{/each}
 		{/key}

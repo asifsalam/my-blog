@@ -102,40 +102,33 @@
 		decodedMessage = encodeMessage(encryptedMessage, decodeKey, textKey);
 	}
 
-	function tweakDecodeKey() {}
-
 	let sourceId = '';
+	let sourceIndex = '';
 	let sourceLetter = '';
-	function handleDragStart(e) {
-		e.dataTransfer.setData('Text', e.target.id);
-		sourceId = e.target.id;
-		console.log('handleDragStart-sourceLetter: ', sourceLetter);
-	}
-
 	let targetId = '';
+	let targetIndex = 0;
 	let targetLetter = '';
+	let dropped = false;
 	function handleDrop(e) {
+		dropped = true;
 		targetId = e.target.id;
 		console.log('Drag entered at: ', e, e.target.id);
 		sourceLetter = sourceId.split('-')[1];
 		targetLetter = targetId.split('-')[1];
-		let sourceIndex = decodeKey.indexOf(sourceLetter);
-		let targetIndex = decodeKey.indexOf(targetLetter);
-		decodeKey[sourceIndex] = targetLetter;
-		decodeKey[targetIndex] = sourceLetter;
+		sourceIndex = letters.indexOf(sourceLetter);
+		targetIndex = letters.indexOf(targetLetter);
+		letters[sourceIndex] = targetLetter;
+		letters[targetIndex] = sourceLetter;
+		letters = letters;
 		console.log(
-			'page:',
+			'letter-display: handle-drop: ',
 			sourceIndex,
 			sourceLetter,
 			targetIndex,
 			targetLetter,
-			decodeKey[sourceIndex],
-			decodeKey[targetIndex]
+			letters[sourceIndex],
+			letters[targetIndex]
 		);
-	}
-
-	function allowDrop(e) {
-		e.preventDefault();
 	}
 
 	$: {
@@ -147,9 +140,9 @@
 					return b.frequency - a.frequency;
 				})
 				.forEach((d) => decodeKey.push(d.letter));
-			console.log('CipherText: ', ciphertextFrequency);
-			console.log('decodeKey: ', decodeKey);
+			// console.log('CipherText: ', ciphertextFrequency);
 		}
+		console.log('decodeKey: ', decodeKey);
 	}
 </script>
 
@@ -297,9 +290,11 @@
 			/>
 			<LetterDisplay
 				lettersType={'decode'}
+				letterHead="Decode key"
 				bind:letters={decodeKey}
 				draggable={true}
 				{messageDecoded}
+				{handleDrop}
 			/>
 		</div>
 	</div>
