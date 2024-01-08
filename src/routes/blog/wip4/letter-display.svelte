@@ -1,75 +1,92 @@
 <script>
+	import { flip } from 'svelte/animate';
 	export let letters;
 	export let swapInfo;
+	export let draggable = false;
+	export let letterHead = 'Decode key';
+	export let lettersType = 'decode';
+	export let showLetters = true;
 
-	import { onMount } from 'svelte';
+	import { interpolateLab } from 'd3-interpolate';
+	import { tweened } from 'svelte/motion';
 
-	const lettersType = 'decode';
-	let sourceId = '';
-	let sourceIndex = 0;
-	let sourceLetter = '';
+	const colors = ['rgb(226, 153, 43)', 'rgb(64, 179, 255)', 'rgb(103, 103, 120)'];
+
+	const color = tweened(colors[0], {
+		duration: 800,
+		interpolate: interpolateLab
+	});
+
+	const flipOptions = { delay: 100, duration: 1000 };
+	let showDash = letters.length === 0;
 
 	function handleDragStart(e) {
 		e.dataTransfer.setData('Text', e.target.id);
-		sourceId = e.target.id;
-		console.log('handleDragStart-sourceLetter: ', sourceLetter);
 	}
 
-	let targetId = '';
-	let targetIndex = 0;
-	let targetLetter = '';
 	let dropped = false;
+	let swapped = [];
+	letters.forEach((d) => {
+		swapped[d] = false;
+	});
+
+	// console.log('swapped: ', swapped);
+
 	function handleDrop(e) {
-		// let sourceId = e.getData("Text");
 		e.preventDefault();
 		dropped = true;
 		swapInfo.sId = e.dataTransfer.getData('Text');
 		swapInfo.tId = e.target.id;
 		console.log('Drag entered at: ', e, e.target.id);
-		sourceLetter = swapInfo.sId.split('-')[1];
-		targetLetter = swapInfo.tId.split('-')[1];
+		let sourceLetter = swapInfo.sId.split('-')[1];
+		let targetLetter = swapInfo.tId.split('-')[1];
 		swapInfo.sInd = letters.indexOf(sourceLetter);
 		swapInfo.tInd = letters.indexOf(targetLetter);
 		letters[swapInfo.sInd] = targetLetter;
 		letters[swapInfo.tInd] = sourceLetter;
-		letters = letters;
-		console.log(
-			'letter-display: handle-drop: ',
-			sourceIndex,
-			sourceLetter,
-			targetIndex,
-			targetLetter,
-			letters[swapInfo.sInd],
-			letters[swapInfo.tInd]
-		);
+		if (sourceLetter !== targetLetter) {
+			swapped[sourceLetter] = true;
+			swapped[targetLetter] = true;
+		}
 	}
 
 	function allowDrop(e) {
 		e.preventDefault();
 	}
+	// console.log('letter-display: ', letterHead, letters);
 </script>
 
 <div class="letters-list">
+	<p class="letter-head {lettersType}">{letterHead}</p>
 	<div class="letters-table">
 		{#key letters}
-			{#each letters as letter}
+			{#each letters as letter (letter)}
 				<!-- svelte-ignore a11y-no-static-element-interactions -->
-				<span
+				<p
 					class="letter-box {lettersType}"
 					id="decode-{letter}"
-					draggable="true"
+					class:swapped={swapped[letter]}
+					{draggable}
 					on:dragstart={handleDragStart}
 					on:drop={handleDrop}
 					on:dragover={allowDrop}
 				>
-					{letter}
-				</span>
+					{#if showLetters}
+						{letter}
+					{:else}
+						-
+					{/if}
+				</p>
 			{/each}
 		{/key}
 	</div>
 </div>
 
 <style>
+	.swapped {
+		background-color: rgb(161, 249, 221);
+		transition: background-color 10s;
+	}
 	.letters-list {
 		margin: 10px 0 10px 0;
 		display: grid;
@@ -87,12 +104,14 @@
 	}
 	.letter-box {
 		stroke: lightgray;
+		/* background-color: rgb(226, 153, 43); */
 		fill: none;
 		margin: auto;
 		padding: 0.25em;
 		border: 0.5px lightgray solid;
 		width: 15px;
 		float: left;
+		transition: all 5s;
 	}
 
 	.letter {

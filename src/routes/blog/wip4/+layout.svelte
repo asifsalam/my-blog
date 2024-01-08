@@ -10,7 +10,7 @@
 	// console.log(posts.length);
 </script>
 
-<!-- <RandomQuote /> -->
+src/routes/blog/wip3/letter-display.svelte<!-- <RandomQuote /> -->
 <Breadcrumbs />
 <!-- <main> -->
 {#key $page.params.id}

@@ -3,6 +3,8 @@
 	const fontList = data.fontList;
 	console.log(fontList);
 	fontList.sort();
+	let loremUpper =
+		'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quas assumenda repudiandae excepturi saepe, fugit quos distinctio rem vero sapiente expedita consectetur culpa numquam';
 </script>
 
 {#each fontList as fontItem}
@@ -14,6 +16,9 @@
 		voluptate neque eius, laudantium voluptas, id totam iure a blanditiis. Ad optio eos neque esse
 		nesciunt corporis doloribus voluptates voluptate iusto, maiores quisquam, magni incidunt
 		pariatur.
+	</p>
+	<p class="font-text" style="font-family:'{fontItem}';">
+		{loremUpper.toUpperCase()}
 	</p>
 {/each}
 

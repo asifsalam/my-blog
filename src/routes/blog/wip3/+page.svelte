@@ -1,6 +1,6 @@
 <script>
 	export let data;
-	import { max, shuffle, shuffler, randomLcg } from 'd3';
+	import { max, shuffle } from 'd3';
 	import '$lib/styles/blog.css';
 	import { page } from '$app/stores';
 	import { postList } from '$lib/json/stores';
@@ -13,13 +13,12 @@
 	import letterFrequencies from './letter-frequency';
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 
-	let showModal = false;
 	let postData = data.postData;
 	const sourceText = data.sourceText;
 
 	let posts = $postList.slice(0, 5);
 
-	const alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+	let alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 	let cipher = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 	let textKey = [];
 	$: decodeKey = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
