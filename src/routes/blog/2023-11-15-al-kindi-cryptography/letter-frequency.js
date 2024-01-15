@@ -3,7 +3,8 @@ export default [
         "letter": "A",
         "texts": "8,2",
         "dictionaries": "7,8",
-        "words": "8,12"
+        "words": "7,68",
+        "words-old": "8,12"
     },
     {
         "letter": "B",
@@ -89,7 +90,8 @@ export default [
         "letter": "O",
         "texts": "7,5",
         "dictionaries": "6,1",
-        "words": "7,68",
+        "words": "8,12",
+        "words-new1": "7,68",
         "words-new": "7,31"
     },
     {

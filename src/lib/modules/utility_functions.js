@@ -1,6 +1,6 @@
 import * as d3 from 'd3';
 
-function calculateLetterFrequency(message) {
+function calculateLetterFrequency(message, alphabet) {
     let textFrequency = [];
     let frequency = [...message].reduce((acc, chr) => {
         acc[chr] = (acc[chr] || 0) + 1;
@@ -18,6 +18,11 @@ function calculateLetterFrequency(message) {
         d.frequency = x.toFixed(2);
     });
     textFrequency.sort((a, b) => b.frequency - a.frequency);
+    let missingLetters = alphabet.filter((el) => !textFrequency.some(obj => obj.letter === el));
+    missingLetters.forEach((el) => {
+        textFrequency.push({ "letter": el, "frequency": '0' })
+    })
+    console.log('text-frequency', missingLetters, textFrequency);
     return textFrequency;
 }
 

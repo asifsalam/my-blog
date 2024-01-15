@@ -8,7 +8,7 @@ export async function load({ fetch }) {
 
     // console.log("source_text:", typeof fontText);
     let x = fontText.split("\r\n")
-    console.log(x);
+    // console.log(x);
     return {
         sourceText: x
     }

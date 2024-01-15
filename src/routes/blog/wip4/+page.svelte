@@ -70,6 +70,11 @@
 		cipherObj.ciphertext = encodeMessage(cipherObj.plaintext, cipherObj.alphabet, cipherObj.cipher);
 		ciphertextFrequency = calculateLetterFrequency(cipherObj.ciphertext);
 		cipherObj.decodeKey = createKey(ciphertextFrequency);
+		cipherObj.textKey.forEach((d) => {
+			let i = cipherObj.alphabet.indexOf(d);
+			cipherKey.push(cipherObj.cipher[i]);
+		});
+		console.log(ciphertextFrequency, cipherObj.decodeKey, cipherKey);
 	}
 
 	function decryptMessage() {
@@ -115,6 +120,7 @@
 	let plaintextFrequency = calculateLetterFrequency(cipherObj.plaintext);
 	let ciphertextFrequency = [];
 	let textFrequency = [];
+	let cipherKey = [];
 
 	// Create text key - sequence of letters sorted by frequency
 	letterFrequencies.forEach((d) => {
@@ -127,18 +133,13 @@
 	$: swapInfo = { sId: '', tId: '', sInd: 0, tInd: 0 };
 	$: {
 		if (cipherObj.messageEncrypted) {
-			// decodeMessage();
-			// console.log(cipherObj.decodeKey[0]);
 		}
-
-		// console.log('cipherObj.decodeKey: ', cipherObj.decodeKey);
 	}
 	$: {
 		if (cipherObj.messageDecoded) {
 			decodeMessage();
 		}
 		plaintextInput = cleanInput(plaintextInput);
-		// console.log('plaintextInput - length: ', plaintextInput.length);
 	}
 </script>
 
@@ -182,7 +183,7 @@
 			id="plaintext-textarea"
 			cols="30"
 			rows="50"
-			maxlength="5000"
+			maxlength="50000"
 			class="plaintext-box"
 			bind:value={plaintextInput}
 			placeholder="Enter you message..."
@@ -274,9 +275,9 @@
 			showLetters={cipherObj.messageDecoded}
 		/>
 		<LetterDisplay
-			bind:letters={cipherObj.decodeKey}
+			bind:letters={cipherKey}
 			bind:swapInfo
-			letterHead="Decode key"
+			letterHead="Decode key (O)"
 			lettersType="decode"
 			draggable={true}
 			showLetters={cipherObj.messageDecoded}
