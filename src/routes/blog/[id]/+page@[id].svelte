@@ -6,6 +6,8 @@
 	import { postList } from '$lib/json/stores';
 	import PostsListCard from '$lib/components/posts-list-card.svelte';
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
+	import RandomQuote from '$lib/components/random-quote.svelte';
+	import Breadcrumbs from '$lib/components/breadcrumbs.svelte';
 
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 	let postData = data.postData;
@@ -22,32 +24,42 @@
 	// console.log('other posts: ', posts);
 </script>
 
-{#key $page.params.id}
-	<div class="sidebar">
-		<PostsListCard {posts} />
-		<p class="topics">
-			<SidebarTags useThemes={'yes'} useCategories={'yes'} />
-		</p>
-	</div>
+<RandomQuote callerId={'blog-id-page@id'} />
+<Breadcrumbs />
 
-	<div class="content">
-		<div class="heading">
-			<h1>{@html postData.metadata.title}</h1>
+{#key $page.params.id}
+	<div class="container">
+		<div class="sidebar">
+			<PostsListCard {posts} />
+			<p class="topics">
+				<SidebarTags useThemes={'yes'} useCategories={'yes'} />
+			</p>
 		</div>
-		<div class="meta-info">
-			<p class="author">{postData.metadata.author}</p>
-			<p class="date">Posted: {postData.metadata.post_date}</p>
-			<TopicListCard {tags} size={3} tagType={'light-tag'} />
-		</div>
-		<br />
-		<img class="preview-image" src={postData.metadata.preview_image} alt="" />
-		<div class="main-content">
-			<svelte:component this={postData.content} />
+
+		<div class="content">
+			<div class="heading">
+				<h1>{@html postData.metadata.title}</h1>
+			</div>
+			<div class="meta-info">
+				<p class="author">{postData.metadata.author}</p>
+				<p class="date">Posted: {postData.metadata.post_date}</p>
+				<TopicListCard {tags} size={3} tagType={'light-tag'} />
+			</div>
+			<br />
+			<img class="preview-image" src={postData.metadata.preview_image} alt="" />
+			<div class="main-content">
+				<svelte:component this={postData.content} />
+			</div>
 		</div>
 	</div>
 {/key}
 
 <style>
+	div.container {
+		display: grid;
+		grid-template-columns: 2fr 5fr;
+		margin: 0px 0px 5px 0px;
+	}
 	.heading h1 {
 		margin-top: 10px;
 		margin-bottom: 20px;

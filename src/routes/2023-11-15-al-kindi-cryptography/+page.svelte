@@ -1,24 +1,31 @@
 <script>
 	export let data;
 
-	import Layout from '../../+layout.svelte';
-	import { scale } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+	// import Layout from '../../+layout.svelte';
+	import { page } from '$app/stores';
 	import GeneralButton from './general-button.svelte';
-	import { max, shuffle, shuffler, randomLcg } from 'd3';
+	import { max, shuffle } from 'd3';
 	import '$lib/styles/blog.css';
 	import { postList } from '$lib/json/stores';
+	import RandomQuote from '$lib/components/random-quote.svelte';
 	import PostsListCard from '$lib/components/posts-list-card.svelte';
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
 	import LetterBars from './letter-bars.svelte';
-	import LetterDisplay from './letter-display.svelte';
 	import LetterBoxes from './letter-boxes.svelte';
 	import { calculateLetterFrequency } from '$lib/modules/utility_functions.js';
 	import letterFrequencies from './letter-frequency';
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 
 	const postData = data.postData;
-	const posts = $postList.slice(0, 5);
+	// const posts = $postList.slice(0, 5);
+	let posts = $postList
+		.filter((d) => d.link != $page.route.id)
+		.map((d) => ({
+			link: d.link,
+			title: d.title
+		}))
+		.slice(0, 5);
+	console.log('al-kindi-posts: ', $page, posts);
 
 	function encodeMessage(inputMessage, letterKey, decodeKey) {
 		let outputMessage = '';
@@ -172,7 +179,8 @@
 
 	let showFullText = false;
 	let showFullDecodedText = false;
-	$: console.log('showfulltext: ', showFullText);
+	let showHint1 = false;
+	let showHint2 = false;
 </script>
 
 <div class="sidebar">
@@ -193,17 +201,23 @@
 	<br />
 	<div class="main-content">
 		<p>
-			Contemporary texts and books on statistics and statistical inference date its origin to the
-			seventeenth century, around the time of the "Enlightenment," when Western Europeans introduced
-			the world to the value of knowledge and reason. The reality, however, is that statistical
-			techniques were being developed centuries even millennia earlier. Progress in these fields,
-			indeed all fields, is accumulative and builds on the foundational work of scholars of previous
-			generations. One such scholar was the 9th century polymath and philosopher Abu Yusuf Ya’qub
-			ibn Ishaq Al-Kindi, a prominent member of the then newly established Bayt Al-Hikmat (House of
-			Wisdom) in Baghdad. Al-Kindi made numerous contributions to many fields including optics,
-			philosophy, mathematics, physics and, of course, statistics. He is considered the father of
-			cryptology for his work in the field of cryptanalysis, and is the first person known to have
-			used statistics for inference.
+			<img
+				src="/img/article_images/img-L02207.jpg"
+				alt="Iraqi stamp commemorating Al-Kindi"
+				srcset=""
+				style="float:right;margin-left:10px"
+				width="250;"
+			/>
+			Contemporary texts and books on statistics and statistical inference date its origin to the seventeenth
+			century, around the time of the "Enlightenment," when Western Europeans introduced the world to
+			the value of knowledge and reason. The reality, however, is that statistical techniques were being
+			developed centuries even millennia earlier. Progress in these fields, indeed all fields, is accumulative
+			and builds on the foundational work of scholars of previous generations. One such scholar was the
+			9th century polymath and philosopher Abu Yusuf Ya’qub ibn Ishaq Al-Kindi, a prominent member of
+			the then newly established Bayt Al-Hikmat (House of Wisdom) in Baghdad. Al-Kindi made numerous
+			contributions to many fields including optics, philosophy, mathematics, physics and, of course,
+			statistics. He is considered the father of cryptology for his work in the field of cryptanalysis,
+			and is the first person known to have used statistics for inference.
 		</p>
 		<p>
 			Cryptography has a long history. Important military, diplomatic, commercial and other
@@ -299,13 +313,13 @@
 			A new field, cryptanalysis, and a new statistical technique, frequency analysis, invented in a
 			few sentences. The technique is simple, elegant, and powerful, but there is much more to
 			actually breaking a cipher than just frequency analysis, which Al-Kindi alludes to in the text
-			above. In the book he provides a number of techniques and tables to help the code-breaker
+			above. In the book he provides a number of techniques and tables to help the codebreaker
 			decode a cryptogram.
 		</p>
 		<p>
-			While cryptology has advanced considerably over the last, this method can still break modern
-			systems. Kamara & Naveed have shown how the method can be used to extract information from
-			encrypted databases (3,5).
+			While cryptology has advanced considerably over the centuries, this method can still break
+			modern systems. Kamara & Naveed have shown how the method can be used to extract information
+			from encrypted databases (3,5).
 		</p>
 		<h2>Further reading</h2>
 		<p>
@@ -398,8 +412,8 @@
 			If you manage to decode the ciphertext, send me a message on LinkedIn with some information
 			about the text, like the author, location, date.
 		</p>
-		<p style="font-size:0.9em;margin-bottom:2px;">Hover to show hint</p>
-		<p style="height:30px;margin-top:2px;" class="hint">
+		<p style="font-size:0.9em;margin-bottom:2px;">Use the hints if you get stuck.</p>
+		<!-- <p style="height:30px;margin-top:2px;" class="hint">
 			Hint 1 : <span class="hide"
 				>The frequencies of the symbols in the ciphertext can often be off by on letter or so. Try
 				to swap adjacent symbols.</span
@@ -413,7 +427,26 @@
 				Swap these in the Decode Key by first clicking on the symbol in the Decode Key that maps to
 				the letter "L" in the Text Key, and then the symbol that maps to the letter "D" in Text Key.</span
 			>
-		</p>
+		</p> -->
+		<div class="hint">
+			<span>Show hint 1</span>
+			<input type="checkbox" name="hint1" id="hint1" bind:checked={showHint1} />
+			<span class:visible={showHint1} class="isHint"
+				>The frequencies of the symbols in the ciphertext can often be off by on letter or so. Try
+				to swap adjacent symbols.</span
+			>
+		</div>
+		<br />
+		<div class="hint">
+			<span>Show hint 1</span>
+			<input type="checkbox" name="hint2" id="hint2" bind:checked={showHint2} />
+			<span class:visible={showHint2} class="isHint"
+				>The decoded second word "ANL" could be "AND" or "ANY". Let's explore "AND". This means that
+				the positions in the Decode Key that correspond to the letters "L" and "D" may be incorrect.
+				Swap these in the Decode Key by first clicking on the symbol in the Decode Key that maps to
+				the letter "L" in the Text Key, and then the symbol that maps to the letter "D" in Text Key.</span
+			>
+		</div>
 
 		<div class="text-container">
 			<button
@@ -460,13 +493,6 @@
 					buttonFunction={() => (showFullDecodedText = !showFullDecodedText)}
 					heading="Show {showFullDecodedText ? 'less' : 'more'}"
 				/>
-				<!-- {#key cipherObj.decodeKey}
-					{#if cipherObj.messageDecoded}
-						<p class="decoded-message message-text">{cipherObj.decodedtext.slice(0, 750)}</p>
-					{:else}
-						&nbsp
-					{/if}
-				{/key} -->
 			</div>
 		</div>
 
@@ -531,6 +557,15 @@
 	.decodedShown {
 		height: 50rem;
 		overflow: auto;
+	}
+
+	.isHint {
+		opacity: 0;
+		transition: opacity 5s ease;
+		color: rgb(158, 43, 43);
+	}
+	.isHint.visible {
+		opacity: 1;
 	}
 
 	.heading h1 {

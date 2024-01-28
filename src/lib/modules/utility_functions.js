@@ -22,7 +22,7 @@ function calculateLetterFrequency(message, alphabet) {
     missingLetters.forEach((el) => {
         textFrequency.push({ "letter": el, "frequency": '0' })
     })
-    console.log('text-frequency', missingLetters, textFrequency);
+    // console.log('text-frequency', missingLetters, textFrequency);
     return textFrequency;
 }
 

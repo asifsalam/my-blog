@@ -1,10 +1,10 @@
 <script>
+	// import '/src/styles/global.css';
 	import { fade, fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { quotes } from '$lib/json/quotes';
 	import { randomIntFromInterval } from '$lib/modules/utility_functions.js';
 	export let quoteIndex = randomIntFromInterval(0, 29);
-	export let callerId = 'unknown';
 
 	let quoteToUse = quotes[quoteIndex];
 	let quote = quoteToUse.quotation.replaceAll('\n', '<br>');
@@ -16,7 +16,6 @@
 		opacity: 0.1,
 		easing: quintOut
 	};
-	console.log('random-quote: ', callerId);
 </script>
 
 <div class="quote-tag">

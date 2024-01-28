@@ -20,8 +20,8 @@
 	let sidebarBulletText = [];
 </script>
 
-<RandomQuote callerId={'blog-page'} />
-<Breadcrumbs />
+<!-- <RandomQuote /> -->
+<!-- <Breadcrumbs /> -->
 
 <div class="container">
 	<div class="sidebar-container">
@@ -43,6 +43,12 @@
 </div>
 
 <style>
+	div.main-container {
+		display: grid;
+		grid-template-columns: 2fr 5fr;
+		margin: 0px 0px 5px 0px;
+	}
+
 	div.container {
 		width: 100%;
 		display: grid;
