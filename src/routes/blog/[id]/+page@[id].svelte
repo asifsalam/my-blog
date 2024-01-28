@@ -27,8 +27,8 @@
 <RandomQuote callerId={'blog-id-page@id'} />
 <Breadcrumbs />
 
-{#key $page.params.id}
-	<div class="container">
+<div class="container">
+	{#key $page.params.id}
 		<div class="sidebar">
 			<PostsListCard {posts} />
 			<p class="topics">
@@ -51,8 +51,8 @@
 				<svelte:component this={postData.content} />
 			</div>
 		</div>
-	</div>
-{/key}
+	{/key}
+</div>
 
 <style>
 	div.container {
@@ -89,6 +89,12 @@
 		width: 100%;
 	}
 	@media (max-width: 1000px) {
+		div.container {
+			display: block;
+			grid-template-columns: 1fr;
+			/* min-width: 300px; */
+		}
+
 		div.sidebar {
 			margin: 0px;
 			padding-bottom: 20px;

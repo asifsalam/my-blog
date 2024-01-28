@@ -16,7 +16,7 @@
 		opacity: 0.1,
 		easing: quintOut
 	};
-	console.log('random-quote: ', callerId);
+	// console.log('random-quote: ', callerId);
 </script>
 
 <div class="quote-tag">

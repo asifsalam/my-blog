@@ -7,7 +7,7 @@
 	import TopicBox from '$lib/components/topic-box.svelte';
 
 	const headingText =
-		'a little prose, some poetry <br/>some art, a bit of history<br />to stir the soul, spark the imagination';
+		'a little prose, some poetry <br/>a bit of art, some history<br />to touch the soul, spark the imagination';
 </script>
 
 <RandomQuote />
