@@ -767,4 +767,11 @@
 	.references :is(p, li) {
 		font-size: 1.1em;
 	}
+	@media (max-width: 1000px) {
+		div.sidebar {
+			margin: 0px;
+			padding-bottom: 20px;
+			border-bottom: 2px dotted var(--main-color);
+		}
+	}
 </style>
