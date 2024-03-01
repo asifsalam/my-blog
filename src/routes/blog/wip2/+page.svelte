@@ -155,7 +155,9 @@
 			<text class="axis-label" transform={`translate(${-75},${height / 2}) rotate(-90)`}
 				>Parameters</text
 			>
-			<text class="axis-label" x={width / 2} y={height + 60}>Model Release Date</text>
+			<text class="axis-label" x={width / 2} y={height + 60} text-anchor="middle"
+				>Model Release Date</text
+			>
 		</g>
 	</svg>
 </div>
