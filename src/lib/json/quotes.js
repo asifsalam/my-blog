@@ -328,9 +328,22 @@ export const quotes = [
         quoteID: 34,
         type: "quote",
         quotation: `Mostly it is loss which teaches us about the worth of things.`,
-        sourceTitll: " Parerga and Paralipomena",
+        sourceTitll: "Parerga and Paralipomena",
         attributedTo: "Arthur Schopenhauer"
     },
-
+    {
+        quoteID: 35,
+        type: "quote",
+        quotation: `The limits of your language are the limits of your world.`,
+        sourceTitll: "",
+        attributedTo: "Ludwig Wittgenstein"
+    },
+    {
+        quoteID: 36,
+        type: "quote",
+        quotation: "The function, the very serious function of racism is distraction. It keeps you from doing your work. It keeps you explaining, over and over again, your reason for being. Somebody says you have no language and you spend twenty years proving that you do. Somebody says your head isn’t shaped properly so you have scientists working on the fact that it is. Somebody says you have no art, so you dredge that up. Somebody says you have no kingdoms, so you dredge that up. None of this is necessary. There will always be one more thing.",
+        sourceTitll: "",
+        attributedTo: "Toni Morrison"
+    },
 ]
 

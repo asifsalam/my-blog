@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import { postList } from '$lib/json/stores';
-	// import RandomQuote from '$lib/components/random-quote.svelte';
+	import RandomQuote from '$lib/components/random-quote.svelte';
 	import Breadcrumbs from '$lib/components/breadcrumbs.svelte';
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
 	import PostsListCard from '$lib/components/posts-list-card.svelte';
@@ -13,16 +13,16 @@
 			title: d.title
 		}))
 		.slice(0, 5);
-	// console.log(posts.length);
+	// console.log('Blog layout-posts: ', posts);
 </script>
 
-<!-- <RandomQuote /> -->
+<RandomQuote callerId={'sub-site-layout'} />
 <Breadcrumbs />
 <!-- <main> -->
-{#key $page.params.id}
-	<div class="container">
-		<slot />
-		<!-- <div class="sidebar">
+
+<div class="container">
+	<slot />
+	<!-- <div class="sidebar">
 			<PostsListCard {posts} />
 			<p class="topics">
 				<SidebarTags useThemes={'yes'} useCategories={'yes'} />
@@ -31,19 +31,16 @@
 		<div class="content">
 			<slot />
 		</div> -->
-	</div>
-{/key}
+</div>
 
 <!-- </main> -->
 <style>
 	div.container {
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: 2fr 5fr;
 		margin: 0px 0px 5px 0px;
 	}
-	.sidebar {
-		margin: 10px 30px 0px 0px;
-	}
+
 	@media (max-width: 1000px) {
 		div.container {
 			display: block;

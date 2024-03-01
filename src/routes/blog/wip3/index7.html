@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>Distributions?</title>
+	<script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+	<link rel="stylesheet" href="../00-templates/basic_page_a.css">
+	
+	<style type="text/css">
+	circle:hover {
+		fill: orange;
+	}
+	
+	circle {
+		fill: steelblue;
+		//stroke: #5c5c5c;
+		stroke: none;
+		stroke-opacity: 0.9;
+		r: 5;
+	}
+	
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #434A54;
+		stroke-width: 1px;
+		shape-rendering: crispEdges;
+	}
+	
+	.axis text {
+		font-family: sans-serif;
+		font-size: 12px;
+		opacity: 0.9;
+	}
+	
+	.bar {
+	  fill: none;
+		stroke: darkgray;
+		stroke-width: 1px;
+		shape-rendering: crispEdges;
+	}
+
+	.bar:hover {
+	  fill: lightblue;
+	  oopacity: 0.5;
+	}
+	
+	.line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+</style>
+
+</head>
+<body>
+<div id="container">
+<div id ="header">
+<h1>Normal Distribution</h1>
+
+<p><br>
+ <br>
+</p>    
+</div>
+<div id ="sidebar">
+This is a test of the emergency navigation systems.  This is a test of the emergency navigation systems.  This is a test of the emergency navigation systems.
+This is a test of the emergency navigation systems.  This is a test of the emergency navigation systems.  This is a test of the emergency navigation systems.
+This is a test of the emergency navigation systems.  This is a test of the emergency navigation systems.  This is a test of the emergency navigation systems.
+This is a test of the emergency navigation systems.  This is a test of the emergency navigation systems.  This is a test of the emergency navigation systems.
+</div>
+<div id ="content">
+<svg id="chart" >
+ </svg>
+</div>
+<div id ="footer">
+<p><i>Note: This is a test of the emergency broadcast system.  </i></p>
+<p><ul> Sources:
+	<li><a href="http://google.com">Test system</a>, 2012</li>
+	<li><a href="http://tableau.com">This is a test</a> These are even more tests. 
+	</li>
+	<li><a href="flipboard.com">Some of the best flips are here</a> More followers is better.</li>
+	</ul>
+</p>
+</div>
+</div>
+	
+<script type="text/javascript">
+	var windowWidth = document.documentElement.clientWidth;
+	var windowHeight = document.documentElement.clientHeight;
+	console.log("wW: ",windowWidth," - wH: ",windowHeight);
+	
+	var clientWidth = document.getElementById("content").offsetWidth,
+	clientHeight = document.getElementById("content").clientHeight-10;
+	//console.log(clientWidth,clientHeight);
+	//clientWidth = 800;
+	//clientHeight = 650;
+	var margin = {top: 80, right:30, bottom:60, left:80};
+	width = clientWidth - margin.left - margin.right;
+	height = clientHeight - margin.top - margin.bottom;
+	//console.log(margin);
+	
+	var nSamples = 100;
+	var mu = 0;
+	var sigma = 1;
+	
+	normalData = createNormalData(nSamples);
+	//console.log(normalData);
+	
+	var nBins = 20;
+	var xExtent = [-5*sigma-mu,5*sigma+mu];
+	
+	var x = d3.scale.linear()
+		.range([0, width]).domain(xExtent);
+	
+	data = d3.layout.histogram()
+		.bins(x.ticks(nBins))
+		(normalData);
+	
+	yMax = d3.max(data,function(d) {return d.y;});
+	
+	// Create Normal Distribution
+	var normDist = [];
+	for (var i = -5; i < 5; i= i +10/1000) {
+		//q = normal() // calc random draw from normal dist
+		p = gaussian(i,mu,sigma) // calc prob of rand draw
+		el = {
+			"q": i,
+			"p": p
+		}
+		normDist.push(el);
+	};
+	
+	normMax = d3.max(normDist,function(d) {return d.p;});
+	normDist.forEach(function(d) {
+		d.p = d.p*yMax*0.8/normMax;
+	});
+	
+	var pdfLine = d3.svg.line()
+			.x(function(d) {return x(d.q);
+			})
+			.y(function(d) {return y(d.p);
+			});
+			
+	var y = d3.scale.linear()
+		.domain([0,yMax])
+		.range([height, 0]);
+
+	var xAxis = d3.svg.axis()
+		.scale(x)
+		.orient("bottom");
+	
+	format0 = d3.format(",.0f");
+	format1 = d3.format(",.1f");
+	var yAxis = d3.svg.axis()
+		.scale(y)
+		.orient("left")
+		.tickFormat(format0)
+		.ticks(6);
+	//d3.format(",.2f")	 - shows 2 decimals after
+	//d3.format(",.0%") - shows no decimals and % sign
+	var chart = d3.select("#chart")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	chart.selectAll(".bar")
+		.data(data)
+		.enter().append("rect")
+		.attr("class", "bar")
+		.attr("x", function(d) { return x(d.x); })
+		.attr("width", x(data[0].dx) - x(0)-0)
+		.attr("y", function(d) { return height; })
+		//.attr("height", function(d) { return height - y(d.y); });
+		.attr("height", function(d) { return 0; });
+		
+	chart.selectAll(".bar")
+		.transition()
+		.duration(100)
+		.attr("y", function(d) { return y(d.y); })
+		.attr("height",function(d) { return height - y(d.y);})
+		.delay(function(d,i) {return i*250;});
+		
+	//Create the line
+	chart.append("path")
+		.datum(normDist)
+		.attr("class","line")
+		.attr("d",pdfLine);
+	
+	chart.append("g")
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + height + ")")
+		.call(xAxis)
+		.append("text")
+		.text("Sample Value")
+		.style("text-anchor","middle")
+		.attr("x",width/2)
+		.attr("y",2)
+		.attr("dy","3em");
+		
+	    // Add the text label for the x axis
+/*    chart.append("text")
+        .attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom/1.5) + ")")
+        .style("text-anchor", "middle")
+		.attr("class","axis text")
+        .text("Sample Value");
+*/
+	chart.append("g")
+		.attr("class", "y axis")
+		.call(yAxis)
+		.append("text")
+		.attr("transform", "rotate(-90)")
+		.attr("y", -2)
+		.attr("x",-height/2)
+		.attr("dy", "-3.5em")
+		.style("text-anchor", "middle")
+		.text("Frequency");
+	
+	var boxes = [];
+	
+	data.forEach(function(d,i) {
+		boxes[i] = {x: d.x, y: d.y, h:d.length,w:d.dx};
+		//console.log(boxes[i]);
+		})
+
+	r = (height-y(1))*0.45;			
+	var binClass = "";
+	//oneSet = [];
+	var dx = data[0].dx;
+	count=0;
+	for (oneBin in data) {
+		//console.log(oneSet,data[oneSet]);
+		binClass = "bin" + oneBin;
+		var dataX = data[oneBin].x;
+		var dataY = data[oneBin].y;
+		console.log("X:", dataX);
+		console.log("Y:", dataY);
+		//console.log(binClass);
+		if (oneBin.length > 0) {
+			//console.log(binClass);
+			chart.selectAll(binClass)
+				.data(data[oneBin])
+				.enter().append("circle")
+				.attr("class",binClass)
+				//.attr("cx",function(d) { console.log(d); return x(d);})
+				.attr("cx",x(dataX+dx/2))
+				.attr("cy",function(d,i) {d.count=count+1; return y(i) - r - 1;})
+				.attr("cx",function(d,i) {dx = boxes[oneBin].x + boxes[oneBin].w/2; 
+											return x(dx);})
+				.style("r",r)
+				.attr("fill","gray")
+				.attr("opacity",0.5)
+				.append("title")
+				.text(function(d,i) {var this_title = "x: " + format1(d) + " - y: " + format1(i*r);
+										console.log(d);return this_title;});
+		}
+	}
+			
+	function type(d) {
+		d.frequency = +d.frequency; // coerce to number
+		return d;
+	}
+	
+	function createNormalData(num) {
+		var randomNormal = d3.random.normal();
+		normalData = [];
+		for (var i=0; i < num; i++) {
+		//ranData.push(normal_random(0,1))
+		normalData.push(randomNormal());
+		}
+		return normalData;
+	}
+	
+
+// from http://bl.ocks.org/mbostock/4349187
+// Sample from a normal distribution with mean 0, stddev 1.
+function normal() {
+    var x = 0,
+        y = 0,
+        rds, c;
+    do {
+        x = Math.random() * 2 - 1;
+        y = Math.random() * 2 - 1;
+        rds = x * x + y * y;
+    } while (rds == 0 || rds > 1);
+    c = Math.sqrt(-2 * Math.log(rds) / rds); // Box-Muller transform
+    return x * c; // throw away extra sample y * c
+}
+
+//taken from Jason Davies science library
+// https://github.com/jasondavies/science.js/
+function gaussian(x,mean,sigma) {
+	var gaussianConstant = 1 / Math.sqrt(2 * Math.PI),
+		//mean = 0,
+    	//sigma = 1;
+
+    x = (x - mean) / sigma;
+    return gaussianConstant * Math.exp(-.5 * x * x) / sigma;
+};
+
+
+</script>
+</body>
+</html>

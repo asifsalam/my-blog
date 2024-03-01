@@ -16,12 +16,12 @@
 	let category = 'all';
 
 	let sidebarTitle = '';
-	let sidebarLeadinText = 'Not nearly enough.';
+	let sidebarLeadinText = 'My posts. Not nearly enough.';
 	let sidebarBulletText = [];
 </script>
 
-<RandomQuote callerId={'blog-page'} />
-<Breadcrumbs />
+<!-- <RandomQuote callerId={'blog-page'} />
+<Breadcrumbs /> -->
 
 <div class="container">
 	<div class="sidebar-container">

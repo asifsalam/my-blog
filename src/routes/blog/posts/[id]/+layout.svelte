@@ -1,10 +1,10 @@
 <script>
 	import { page } from '$app/stores';
 	import { postList } from '$lib/json/stores';
-	// import RandomQuote from '$lib/components/random-quote.svelte';
+	import RandomQuote from '$lib/components/random-quote.svelte';
 	import Breadcrumbs from '$lib/components/breadcrumbs.svelte';
-	import SidebarTags from '$lib/components/sidebar-tags.svelte';
-	import PostsListCard from '$lib/components/posts-list-card.svelte';
+	// import SidebarTags from '$lib/components/sidebar-tags.svelte';
+	// import PostsListCard from '$lib/components/posts-list-card.svelte';
 	const leadinText = 'Select articles and resources from the main themes below';
 	let posts = $postList
 		.filter((d) => d.link.split('/')[2] != $page.params.id)
@@ -13,14 +13,14 @@
 			title: d.title
 		}))
 		.slice(0, 5);
-	// console.log(posts.length);
+	// console.log('Blog layout-posts: ', posts);
 </script>
 
-<!-- <RandomQuote /> -->
-<Breadcrumbs />
+<!-- <RandomQuote callerId={"blog-id-layout"}/> -->
+<!-- <Breadcrumbs /> -->
 <!-- <main> -->
 {#key $page.params.id}
-	<div class="container">
+	<div class="main-container">
 		<slot />
 		<!-- <div class="sidebar">
 			<PostsListCard {posts} />
@@ -38,7 +38,7 @@
 <style>
 	div.container {
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: 2fr 5fr;
 		margin: 0px 0px 5px 0px;
 	}
 	.sidebar {

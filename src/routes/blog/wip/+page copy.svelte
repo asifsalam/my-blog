@@ -9,30 +9,38 @@
 
 	onMount(() => {
 		const svg = d3.select('#chart');
-		const margin = { top: 20, right: 30, bottom: 40, left: 90 };
-		const width = 960 - margin.left - margin.right;
-		const height = 500 - margin.top - margin.bottom;
+		const margin = { top: 100, right: 100, bottom: 40, left: 90 };
+
+		const width = chartWidth - margin.left - margin.right;
+		const height = chartHeight - margin.top - margin.bottom;
 		const modelData = data.modelData.filter((d) => d.parameters > 0);
-
-		// Parse dates and numbers
-		modelData.forEach((d) => {
-			d.date = d3.timeParse('%Y-%m-%d')(d.date);
-			d.parameters = +d.parameters;
-		});
-
+		const minDate = d3.timeParse('%Y-%m-%d')('2017-01-01');
+		const maxDate = d3.timeParse('%Y-%m-%d')('2024-01-01');
+		const minParameters = 1;
+		const maxParameters = 100000000000000;
 		// Scales
-		const x = d3
-			.scaleTime()
-			.domain(d3.extent(modelData, (d) => d.date))
-			.range([0, width]);
-		const y = d3
-			.scaleLog()
-			.domain([1, d3.max(modelData, (d) => d.parameters)])
-			.range([height, 0]);
+		// const x = d3
+		// 	.scaleTime()
+		// 	.domain(d3.extent(modelData, (d) => d.date))
+		// 	.range([0, width]);
+		const x = d3.scaleTime().domain([minDate, maxDate]).range([0, width]);
+
+		// const y = d3
+		// 	.scaleLog()
+		// 	.domain([1, d3.max(modelData, (d) => d.parameters)])
+		// 	.range([height, 0]);
+		const y = d3.scaleLog().domain([1, maxParameters]).range([height, 0]);
 
 		// Add axes
-		svg.append('g').attr('transform', `translate(0,${height})`).call(d3.axisBottom(x));
-		svg.append('g').call(d3.axisLeft(y));
+		svg
+			.append('g')
+			.attr('transform', `translate(${margin.right},${height})`)
+			.call(d3.axisBottom(x));
+		svg.append('g').attr('transform', `translate(${margin.right},0)`).call(d3.axisLeft(y));
+
+		// Some checks
+		// console.log(d3.extent(modelData, (d) => d.date));
+		// console.log(d3.min(modelData, (d) => d.date));
 
 		// Draw circles
 		svg
@@ -42,7 +50,7 @@
 			.append('circle')
 			.attr('cx', (d) => x(d.date))
 			.attr('cy', (d) => y(d.parameters))
-			.attr('r', 5)
+			.attr('r', 15)
 			.style('fill', 'none')
 			.style('stroke', 'lightblue');
 
@@ -53,10 +61,12 @@
 			.enter()
 			.append('text')
 			.attr('x', (d) => x(d.date))
-			.attr('y', (d) => y(d.arameters))
+			.attr('y', (d) => y(d.parameters))
 			.text((d) => d.model_name)
 			.style('font-size', '12px');
 	});
+
+	// console.log(modelData);
 </script>
 
 {#key $page.params.id}

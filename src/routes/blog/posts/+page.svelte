@@ -16,24 +16,29 @@
 	let category = 'all';
 
 	let sidebarTitle = '';
-	let sidebarLeadinText = 'Not nearly enough. ';
+	let sidebarLeadinText = 'My posts. Not nearly enough.';
 	let sidebarBulletText = [];
 </script>
 
-<div class="sidebar-container">
-	<!-- <SidebarHeadingBlog /> -->
-	<SidebarHeading {sidebarLeadinText} />
-	<SidebarTags useThemes={'yes'} useCategories={'yes'} useTags={'no'} />
-</div>
-<div class="main-content">
-	<SectionHeading {category} headingTitle={headingText} {displayQuantity} {totalQuantity} />
-	<div class="articles">
-		<div class="posts">
-			{#each $postList.slice(0, 50) as post}
-				<ContentCard article={post} />
-			{/each}
+<RandomQuote callerId={'blog-page'} />
+<Breadcrumbs />
+
+<div class="container">
+	<div class="sidebar-container">
+		<!-- <SidebarHeadingBlog /> -->
+		<SidebarHeading {sidebarLeadinText} />
+		<SidebarTags useThemes={'yes'} useCategories={'yes'} useTags={'no'} />
+	</div>
+	<div class="main-content">
+		<SectionHeading {category} headingTitle={headingText} {displayQuantity} {totalQuantity} />
+		<div class="articles">
+			<div class="posts">
+				{#each $postList.slice(0, 50) as post}
+					<ContentCard article={post} />
+				{/each}
+			</div>
+			<!-- <p class="more-posts"><a href="\blog">More posts</a></p> -->
 		</div>
-		<!-- <p class="more-posts"><a href="\blog">More posts</a></p> -->
 	</div>
 </div>
 
