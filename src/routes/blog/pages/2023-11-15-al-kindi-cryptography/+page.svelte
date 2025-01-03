@@ -327,8 +327,8 @@
 			<h2>Further reading</h2>
 			<p>
 				Simon Singh's <i>The code book: the secret history of codes and codebreaking</i> provides a technically
-				rigorous and rich, yet accessible history of the field, its role in war and revolution, its impact
-				on modern society and its affect on personal privacy today (6).
+				rigorous and rich, yet accessible history of the field, its role in war and revolution, impact
+				on modern society and effect on personal privacy today (6).
 			</p>
 			<h2>Can you break this cipher?</h2>
 			<p>
@@ -389,7 +389,7 @@
 			</div>
 
 			<p>
-				This forms the first estimate of the <strong>decryption key</strong>. This result of the
+				This forms the first estimate of the <strong>decryption key</strong>. The result of the
 				decoding effort using this key is shown in the text box further down.
 			</p>
 			<p>
@@ -509,7 +509,7 @@
 						> 97–126. https://doi.org/10.1080/0161-119291866801.
 					</li>
 					<li>
-						Al-Tayeb, T. (2003, June 9). <i>Al-Kindi, Cryptography, code breaking and Ciphers.</i> Muslim
+						Al-Tayeb, T. (2003, June 9). <i>Al-Kindi, Cryptography, Code Breaking and Ciphers.</i> Muslim
 						Heritage. Retrieved September 20, 2023, from https://muslimheritage.com/al-kindi-cryptography/
 					</li>
 					<li>

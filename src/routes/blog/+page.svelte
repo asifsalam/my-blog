@@ -18,6 +18,7 @@
 	let sidebarTitle = '';
 	let sidebarLeadinText = 'My posts. Not nearly enough.';
 	let sidebarBulletText = [];
+	console.log($postList);
 </script>
 
 <!-- <RandomQuote callerId={'blog-page'} />

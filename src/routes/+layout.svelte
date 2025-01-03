@@ -14,6 +14,7 @@
 
 	export let data;
 	// export let errors;
+	// console.log('main-layout.s', data);
 	let numArticles = data.articles.length;
 
 	const articleData = data.articles.slice(0, numArticles);

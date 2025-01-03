@@ -13,6 +13,7 @@
 	let postData = data.postData;
 	// console.log(data, $postList, $page);
 	// const tags = cleanTags(data.posts.filter((d) => d.link_id === postData.metadata.id)[0].tags);
+	const t1 = $postList.filter((d) => d.link_id === postData.metadata.id);
 	const tags = cleanTags($postList.filter((d) => d.link_id === postData.metadata.id)[0].tags);
 	let posts = $postList
 		.filter((d) => d.link.split('/')[2] != $page.params.id)
@@ -21,7 +22,7 @@
 			title: d.title
 		}))
 		.slice(0, 5);
-	// console.log('other posts: ', posts);
+	// console.log('tags: ', postData.metadata.categories, postData.metadata.id, t1);
 </script>
 
 <RandomQuote callerId={'blog-id-page@id'} />
@@ -38,6 +39,9 @@
 
 		<div class="content">
 			<div class="heading">
+				{#if postData.metadata.pre_title}
+					<br /><pre-title>{@html postData.metadata.pre_title}</pre-title>
+				{/if}
 				<h1>{@html postData.metadata.title}</h1>
 			</div>
 			<div class="meta-info">

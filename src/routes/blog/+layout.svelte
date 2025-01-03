@@ -13,7 +13,6 @@
 			title: d.title
 		}))
 		.slice(0, 5);
-	// console.log('Blog layout-posts: ', posts);
 </script>
 
 <!-- <RandomQuote callerId={"blog-id-layout"}/> -->

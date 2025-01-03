@@ -10,9 +10,7 @@ const config = {
 		adapter: adapter()
 	},
 	vitePlugin: {
-		experimental: {
-			inspector: true,
-		},
+		inspector: true
 	},
 	extensions: ['.svelte', '.md'],
 	preprocess: [

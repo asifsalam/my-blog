@@ -1,0 +1,517 @@
+<svg id="chart" width="1000" height="800"><g transform="translate(90,10)"><g transform="translate(0,0)"><line y2="690" stroke="#dddddd4f"></line><text text-anchor="middle" dy=".71em" y="705">2017</text></g><g transform="translate(108.52895148669798,0)"><line y2="690" stroke="#dddddd4f"></line><text text-anchor="middle" dy=".71em" y="705">2018</text></g><g transform="translate(217.05790297339595,0)"><line y2="690" stroke="#dddddd4f"></line><text text-anchor="middle" dy=".71em" y="705">2019</text></g><g transform="translate(325.5868544600939,0)"><line y2="690" stroke="#dddddd4f"></line><text text-anchor="middle" dy=".71em" y="705">2020</text></g><g transform="translate(434.4131455399061,0)"><line y2="690" stroke="#dddddd4f"></line><text text-anchor="middle" dy=".71em" y="705">2021</text></g><g transform="translate(542.9420970266041,0)"><line y2="690" stroke="#dddddd4f"></line><text text-anchor="middle" dy=".71em" y="705">2022</text></g><g transform="translate(651.471048513302,0)"><line y2="690" stroke="#dddddd4f"></line><text text-anchor="middle" dy=".71em" y="705">2023</text></g><g transform="translate(760,0)"><line y2="690" stroke="#dddddd4f"></line><text text-anchor="middle" dy=".71em" y="705">2024</text></g><g transform="translate(0,690)"><line x2="760" stroke="#dddddd4f"></line><text text-anchor="end" dx="-1em">1.0M</text></g><g transform="translate(0,591.4285714285714)"><line x2="760" stroke="#dddddd4f"></line><text text-anchor="end" dx="-1em">10M</text></g><g transform="translate(0,492.8571428571428)"><line x2="760" stroke="#dddddd4f"></line><text text-anchor="end" dx="-1em">100M</text></g><g transform="translate(0,394.2857142857143)"><line x2="760" stroke="#dddddd4f"></line><text text-anchor="end" dx="-1em">1.0B</text></g><g transform="translate(0,295.71428571428567)"><line x2="760" stroke="#dddddd4f"></line><text text-anchor="end" dx="-1em">10B</text></g><g transform="translate(0,197.14285714285705)"><line x2="760" stroke="#dddddd4f"></line><text text-anchor="end" dx="-1em">100B</text></g><g transform="translate(0,98.5714285714286)"><line x2="760" stroke="#dddddd4f"></line><text text-anchor="end" dx="-1em">1.0T</text></g><g transform="translate(0,0)"><line x2="760" stroke="#dddddd4f"></line><text text-anchor="end" dx="-1em">10T</text></g><circle cx="180.17540427751695" cy="466.52164391456006" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-08-30
+Model Name: (ensemble): AWD-LSTM-DOC (fin) × 5 (WT2)
+Parameters: 190M</title></circle><circle cx="100.50078247261345" cy="613.154060147443" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-12-05
+Model Name: 2-layer-LSTM+Deep-Gradient-Compression
+Parameters: 6.0M</title></circle><circle cx="132.31611893583724" cy="550.5240557000193" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-03-22
+Model Name: 4 layer QRNN (h=2500)
+Parameters: 26M</title></circle><circle cx="296.7325247782994" cy="566.2659959255312" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-09-26
+Model Name: ALBERT
+Parameters: 18M</title></circle><circle cx="337.1830985915493" cy="456.28045357607175" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-02-09
+Model Name: ALBERT-xxlarge
+Parameters: 240M</title></circle><circle cx="482.2724308815858" cy="402.78120597931934" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-06-11
+Model Name: ALIGN
+Parameters: 820M</title></circle><circle cx="638.9827856025039" cy="376.92814732165436" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-11-20
+Model Name: AR-LDM
+Parameters: 1.5B</title></circle><circle cx="58.86085028690662" cy="553.9506061741417" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-07-18
+Model Name: AWD-LSTM
+Parameters: 24M</title></circle><circle cx="264.6198487219614" cy="537.7990070569014" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-06-10
+Model Name: AWD-LSTM + MoS + Partial Shuffled
+Parameters: 35M</title></circle><circle cx="64.80764214919144" cy="540.3179116406083" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-08-07
+Model Name: AWD-LSTM - 3-layer LSTM (tied) + continuous cache pointer (WT2)
+Parameters: 33M</title></circle><circle cx="79.6746218049035" cy="520.0356642822079" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-09-26
+Model Name: AWD-LSTM+WT+Cache+IOG (WT2)
+Parameters: 53M</title></circle><circle cx="256.5916797078769" cy="539.0399353201205" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-05-14
+Model Name: AWD-LSTM-DRILL + dynamic evaluation† (WT2)
+Parameters: 34M</title></circle><circle cx="93.06729264475744" cy="537.7990070569014" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-11-10
+Model Name: AWD-LSTM-MoS + dynamic evaluation (WT2, 2017)
+Parameters: 35M</title></circle><circle cx="185.82485654668753" cy="537.7990070569014" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-09-18
+Model Name: AWD-LSTM-MoS + dynamic evaluation (WT2, 2018)
+Parameters: 35M</title></circle><circle cx="175.4179707876891" cy="537.7990070569014" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-08-14
+Model Name: AWD-LSTM-MoS+PDR + dynamic evaluation (WT2)
+Parameters: 35M</title></circle><circle cx="487.3272039645279" cy="454.14844317869006" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-06-28
+Model Name: Adaptive Input Transformer + RD
+Parameters: 250M</title></circle><circle cx="296.43518518518516" cy="431.11787807303153" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-09-25
+Model Name: Adaptive Inputs + LayerDrop
+Parameters: 420M</title></circle><circle cx="67.78103808033386" cy="514.7250910336122" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-08-17
+Model Name: Adversarial Joint Adaptation Network (ResNet)
+Parameters: 60M</title></circle><circle cx="606.2630412102243" cy="266.57981443226987" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-08-02
+Model Name: AlexaTM 20B
+Parameters: 20B</title></circle><circle cx="552.4569640062598" cy="235.2070204150732" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-02-02
+Model Name: AlphaCode
+Parameters: 41B</title></circle><circle cx="118.9358372456964" cy="498.8188165275932" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-02-05
+Model Name: AmoebaNet-A (F=190)
+Parameters: 87M</title></circle><circle cx="118.9358372456964" cy="426.69867693237035" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-02-05
+Model Name: AmoebaNet-A (F=448)
+Parameters: 470M</title></circle><circle cx="306.55712050078245" cy="432.84314160958377" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-10-29
+Model Name: BART-large
+Parameters: 410M</title></circle><circle cx="530.1564945226917" cy="346.267788702963" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-11-19
+Model Name: BASIC-L
+Parameters: 3.1B</title></circle><circle cx="664.2566510172144" cy="346.267788702963" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-02-13
+Model Name: BASIC-L + Lion
+Parameters: 3.1B</title></circle><circle cx="192.6636671883151" cy="440.4685067486919" r="10" fill="rgb(64, 128, 238)" stroke="rgb(64, 128, 238)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2018-10-11
+Model Name: BERT-L
+Parameters: 340M</title></circle><text class="label svelte-3b7aot" x="192.6636671883151" dx="-1em" y="440.4685067486919" dy="0.4em" text-anchor="end">BERT-L</text><circle cx="249.4555294731351" cy="434.04971485967747" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-04-20
+Model Name: BERT-Large-CAS (PTB+WT2+WT103)
+Parameters: 400M</title></circle><circle cx="635.414710485133" cy="172.94232274403376" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-11-08
+Model Name: BLOOM-176B
+Parameters: 180B</title></circle><circle cx="742.4569640062598" cy="172.94232274403376" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-11-03
+Model Name: BLUUMI
+Parameters: 180B</title></circle><circle cx="307.4491392801252" cy="454.14844317869006" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-11-01
+Model Name: Base LM + kNN LM + Continuous Cache
+Parameters: 250M</title></circle><circle cx="323.20813771517993" cy="397.4845566298551" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-12-24
+Model Name: Big Transfer (BiT-L)
+Parameters: 930M</title></circle><circle cx="165.01108502869067" cy="503.8462345511839" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-07-10
+Model Name: Big-Little Net
+Parameters: 77M</title></circle><circle cx="188.79825247782995" cy="487.7409111352499" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-09-28
+Model Name: BigGAN-deep 512x512
+Parameters: 110M</title></circle><circle cx="-86.22848200312988" cy="535.420115770539" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-03-17
+Model Name: Binarized Neural Network (MNIST)
+Parameters: 37M</title></circle><circle cx="608.6417579551382" cy="173.1862494866367" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-08-10
+Model Name: BlenderBot 3
+Parameters: 180B</title></circle><circle cx="677.6245435576421" cy="226.33997463043983" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-03-30
+Model Name: BloombergGPT
+Parameters: 51B</title></circle><circle cx="478.1096765779865" cy="284.8132999847884" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-05-28
+Model Name: ByT5-XXL
+Parameters: 13B</title></circle><circle cx="435.6025039123631" cy="498.0386759854193" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-01-05
+Model Name: CLIP (ResNet-50)
+Parameters: 89M</title></circle><circle cx="435.6025039123631" cy="436.84868719911054" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-01-05
+Model Name: CLIP (ViT L/14@336px)
+Parameters: 370M</title></circle><circle cx="740.0658581116328" cy="505.17253260853244" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-10-26
+Model Name: CODEFUSION (Python)
+Parameters: 75M</title></circle><circle cx="425.1956181533646" cy="353.38119855716224" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-12-01
+Model Name: CPM-Large
+Parameters: 2.6B</title></circle><circle cx="432.3317683881064" cy="527.0404807850017" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-12-25
+Model Name: CT-MoS (WT2)
+Parameters: 45M</title></circle><circle cx="88.59480959833073" cy="599.9240631221764" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-10-26
+Model Name: CapsNet (MNIST)
+Parameters: 8.2M</title></circle><circle cx="88.59480959833073" cy="585.9698501930357" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-10-26
+Model Name: CapsNet (MultiMNIST)
+Parameters: 11M</title></circle><circle cx="740.363197704747" cy="185.91129812975464" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-10-27
+Model Name: ChatGLM3
+Parameters: 130B</title></circle><circle cx="641.9561815336464" cy="167.46990042740757" r="10" fill="rgb(18, 160, 125)" stroke="rgb(18, 160, 125)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2022-11-30
+Model Name: ChatGPT 3.5
+Parameters: 200B</title></circle><text class="label svelte-3b7aot" x="641.9561815336464" dx="-1em" y="167.46990042740757" dy="0.4em" text-anchor="end">ChatGPT 3.5</text><circle cx="568.79825247783" cy="212.41176462716618" r="5" fill="rgb(64, 128, 238)" stroke="rgb(64, 128, 238)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-03-29
+Model Name: Chinchilla
+Parameters: 70B</title></circle><circle cx="481.67775169535736" cy="356.1001456894681" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-06-09
+Model Name: CoAtNet
+Parameters: 2.4B</title></circle><circle cx="591.6934011476264" cy="362.52409809051363" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-06-14
+Model Name: CoCa
+Parameters: 2.1B</title></circle><circle cx="692.7888628064685" cy="275.59388742391604" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-05-20
+Model Name: CodeT5+
+Parameters: 16B</title></circle><circle cx="524.8043818466354" cy="459.10405003323956" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-11-01
+Model Name: CodeT5-base
+Parameters: 220M</title></circle><circle cx="597.9375326030256" cy="405.4744856615696" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-07-05
+Model Name: CodeT5-large
+Parameters: 770M</title></circle><circle cx="490.0032603025561" cy="287.90927717530553" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-07-07
+Model Name: Codex
+Parameters: 12B</title></circle><circle cx="586.9359676577986" cy="300.2246669266951" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-05-29
+Model Name: CogVideo
+Parameters: 9.0B</title></circle><circle cx="477.51499739175796" cy="334.93980085481513" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-05-26
+Model Name: CogView
+Parameters: 4.0B</title></circle><circle cx="477.2176577986437" cy="439.84354634277724" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-05-25
+Model Name: ConSERT
+Parameters: 350M</title></circle><circle cx="538.1846635367763" cy="488.7770067486893" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-16
+Model Name: Contriever
+Parameters: 110M</title></circle><circle cx="435.6025039123631" cy="287.90927717530553" r="10" fill="rgb(18, 160, 125)" stroke="rgb(18, 160, 125)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2021-01-05
+Model Name: DALL-E
+Parameters: 12B</title></circle><text class="label svelte-3b7aot" x="435.6025039123631" dx="-1em" y="287.90927717530553" dy="0.4em" text-anchor="end">DALL-E</text><circle cx="571.1769692227439" cy="340.65614991404425" r="10" fill="rgb(18, 160, 125)" stroke="rgb(18, 160, 125)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2022-04-06
+Model Name: DALL·E 2
+Parameters: 3.5B</title></circle><text class="label svelte-3b7aot" x="571.1769692227439" dx="-1em" y="340.65614991404425" dy="0.4em" text-anchor="end">DALL·E 2</text><circle cx="160.2536515388628" cy="540.3179116406083" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-06-24
+Model Name: DARTS
+Parameters: 33M</title></circle><circle cx="659.2018779342724" cy="446.5461155678667" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-01-27
+Model Name: DDPM-IP (CelebA)
+Parameters: 300M</title></circle><circle cx="368.98604590506" cy="514.7250910336122" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-05-26
+Model Name: DETR
+Parameters: 60M</title></circle><circle cx="589.3146844027126" cy="406.60110403710377" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-06-06
+Model Name: DITTO
+Parameters: 750M</title></circle><circle cx="481.97509128847156" cy="376.92814732165436" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-06-10
+Model Name: DeBERTa
+Parameters: 1.5B</title></circle><circle cx="535.2112676056338" cy="431.6269093678893" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-06
+Model Name: DeBERTaV3-large + KEAR 
+Parameters: 420M</title></circle><circle cx="389.5024778299426" cy="493.2873879610986" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-08-03
+Model Name: DeLight
+Parameters: 99M</title></circle><circle cx="217.94992175273865" cy="536.0025605035761" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-01-04
+Model Name: Decoupled weight decay regularization
+Parameters: 37M</title></circle><circle cx="560.4851330203443" cy="344.4923592798949" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-03-01
+Model Name: DeepNet
+Parameters: 3.2B</title></circle><circle cx="-38.36919666145018" cy="539.0399353201205" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-08-25
+Model Name: DenseNet-264
+Parameters: 34M</title></circle><circle cx="669.3114241001565" cy="411.1114852495132" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-03-02
+Model Name: DiT-XL/2
+Parameters: 680M</title></circle><circle cx="740.0658581116328" cy="411.1114852495132" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-10-26
+Model Name: DiT-XL/2 + CADS
+Parameters: 680M</title></circle><circle cx="139.1425404277517" cy="305.2668441393655" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-04-14
+Model Name: Diffractive Deep Neural Network
+Parameters: 8.0B</title></circle><circle cx="298.51656233698486" cy="510.64495492515863" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-10-02
+Model Name: DistilBERT
+Parameters: 66M</title></circle><circle cx="144.79199269692228" cy="521.6823683560606" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-05-03
+Model Name: Dropout-LSTM+Noise(Bernoulli) (WT2)
+Parameters: 51M</title></circle><circle cx="66.88901930099112" cy="563.9514307632211" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-08-14
+Model Name: EI-REHN-1000D
+Parameters: 19M</title></circle><circle cx="349.96870109546165" cy="441.1027261635109" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-03-23
+Model Name: ELECTRA
+Parameters: 340M</title></circle><circle cx="117.74647887323943" cy="495.50596871660116" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-02-01
+Model Name: ELMo
+Parameters: 94M</title></circle><circle cx="481.67775169535736" cy="429.43109331779016" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-06-09
+Model Name: EMDR
+Parameters: 440M</title></circle><circle cx="120.12519561815337" cy="553.9506061741417" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-02-09
+Model Name: ENAS
+Parameters: 24M</title></circle><circle cx="277.1081116327595" cy="555.7725418782659" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-07-22
+Model Name: EN^2AS with performance reward
+Parameters: 23M</title></circle><circle cx="489.40858111632764" cy="295.71428571428567" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-07-05
+Model Name: ERNIE 3.0
+Parameters: 10B</title></circle><circle cx="540.2660406885759" cy="156.23834141430518" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-23
+Model Name: ERNIE 3.0 Titan
+Parameters: 260B</title></circle><circle cx="434.1158059467919" cy="454.14844317869006" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-12-31
+Model Name: ERNIE-Doc (247M)
+Parameters: 250M</title></circle><circle cx="390.39449660928534" cy="440.4685067486919" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-08-06
+Model Name: ERNIE-GEN (large)
+Parameters: 340M</title></circle><circle cx="542.6447574334899" cy="295.71428571428567" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-31
+Model Name: ERNIE-ViLG
+Parameters: 10B</title></circle><circle cx="387.421100678143" cy="504.04591423299826" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-07-27
+Model Name: EfficientDet
+Parameters: 77M</title></circle><circle cx="260.7544340114763" cy="425.7062208872636" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-05-28
+Model Name: EfficientNet-L2
+Parameters: 480M</title></circle><circle cx="485.8405059989567" cy="461.50518555367063" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-06-23
+Model Name: EfficientNetV2
+Parameters: 210M</title></circle><circle cx="243.80607720396452" cy="454.14844317869006" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-04-01
+Model Name: FAIRSEQ Adaptive Inputs
+Parameters: 250M</title></circle><circle cx="507.2489567031821" cy="183.66611552315428" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-09-03
+Model Name: FLAN 137B
+Parameters: 140B</title></circle><circle cx="725.1988784559207" cy="171.9802816398169" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-09-06
+Model Name: Falcon 180B
+Parameters: 180B</title></circle><circle cx="673.1768388106416" cy="236.36837228338655" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-03-15
+Model Name: Falcon-40B
+Parameters: 40B</title></circle><circle cx="340.7511737089202" cy="482.9634748384117" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-02-21
+Model Name: Feedback Transformer
+Parameters: 130M</title></circle><circle cx="735.6057642149192" cy="284.48272670118325" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-10-11
+Model Name: Ferret (13B)
+Parameters: 13B</title></circle><circle cx="734.4164058424622" cy="284.48272670118325" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-10-07
+Model Name: FinGPT-13B
+Parameters: 13B</title></circle><circle cx="202.19092331768388" cy="555.7725418782659" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-11-12
+Model Name: Fine-tuned-AWD-LSTM-DOC(fin)
+Parameters: 23M</title></circle><circle cx="265.80920709441835" cy="402.31391056004446" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-06-14
+Model Name: FixRes ResNeXt-101 WSL
+Parameters: 830M</title></circle><circle cx="578.0157798643713" cy="206.69541556793706" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-04-29
+Model Name: Flamingo
+Parameters: 80B</title></circle><circle cx="90.09389671361502" cy="539.0399353201205" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-10-31
+Model Name: Fraternal dropout + AWD-LSTM 3-layer (WT2)
+Parameters: 34M</title></circle><circle cx="638.3881064162754" cy="441.7464830691797" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-11-18
+Model Name: Fusion in Encoder
+Parameters: 330M</title></circle><circle cx="71.34911319770474" cy="534.2784740477716" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-08-29
+Model Name: GL-LWGC-AWD-MoS-LSTM + dynamic evaluation (WT2)
+Parameters: 38M</title></circle><circle cx="539.3740219092332" cy="340.65614991404425" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-20
+Model Name: GLIDE
+Parameters: 3.5B</title></circle><circle cx="606.8577203964528" cy="185.91129812975464" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-08-04
+Model Name: GLM-130B
+Parameters: 130B</title></circle><circle cx="537.2926447574335" cy="90.76642003244841" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-13
+Model Name: GLaM
+Parameters: 1.2T</title></circle><circle cx="-28.854329681794468" cy="449.0870129737896" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-09-26
+Model Name: GNMT
+Parameters: 280M</title></circle><circle cx="153.41484089723525" cy="486.1359650564497" r="10" fill="rgb(18, 160, 125)" stroke="rgb(18, 160, 125)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2018-06-01
+Model Name: GPT
+Parameters: 120M</title></circle><text class="label svelte-3b7aot" x="153.41484089723525" dx="-1em" y="486.1359650564497" dy="0.4em" text-anchor="end">GPT</text><circle cx="230.14084507042253" cy="376.92814732165436" r="10" fill="rgb(18, 160, 125)" stroke="rgb(18, 160, 125)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2019-02-14
+Model Name: GPT-2 (1.5B)
+Parameters: 1.5B</title></circle><text class="label svelte-3b7aot" x="230.14084507042253" dx="-1em" y="376.92814732165436" dy="0.4em" text-anchor="end">GPT-2 (1.5B)</text><circle cx="369.58072509128846" cy="173.1862494866367" r="10" fill="rgb(18, 160, 125)" stroke="rgb(18, 160, 125)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2020-05-28
+Model Name: GPT-3 175B
+Parameters: 180B</title></circle><text class="label svelte-3b7aot" x="369.58072509128846" dx="-1em" y="173.1862494866367" dy="0.4em" text-anchor="end">GPT-3 175B</text><circle cx="641.3615023474179" cy="173.1862494866367" r="5" fill="rgb(18, 160, 125)" stroke="rgb(18, 160, 125)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-11-28
+Model Name: GPT-3.5 (text-davinci-003)
+Parameters: 180B</title></circle><circle cx="673.1768388106416" cy="74.3708941726053" r="10" fill="rgb(18, 160, 125)" stroke="rgb(18, 160, 125)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2023-03-15
+Model Name: GPT-4
+Parameters: 1.8T</title></circle><text class="label svelte-3b7aot" x="673.1768388106416" dx="-1em" y="74.3708941726053" dy="0.4em" text-anchor="end">GPT-4</text><circle cx="554.5383411580596" cy="266.04132899883615" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-02-09
+Model Name: GPT-NeoX-20B
+Parameters: 20B</title></circle><circle cx="203.38028169014083" cy="419.33713076144664" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-11-16
+Model Name: GPipe (Amoeba)
+Parameters: 560M</title></circle><circle cx="203.38028169014083" cy="317.58223389075516" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-11-16
+Model Name: GPipe (Transformer)
+Parameters: 6.0B</title></circle><circle cx="379.39293166405844" cy="120.43937674789797" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-06-30
+Model Name: GShard (dense)
+Parameters: 600B</title></circle><circle cx="-73.15792905581638" cy="596.0818877570823" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-04-30
+Model Name: Gated HORNN (3rd order)
+Parameters: 9.0M</title></circle><circle cx="581.8811945748565" cy="387.2002021369677" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-05-12
+Model Name: Gato
+Parameters: 1.2B</title></circle><circle cx="453.14553990610324" cy="298.363111573744" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-03-05
+Model Name: Generative BST
+Parameters: 9.4B</title></circle><circle cx="693.6808815858111" cy="310.9831931985946" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-05-23
+Model Name: Goat-7B
+Parameters: 7.0B</title></circle><circle cx="535.8059467918623" cy="153.065851196267" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-08
+Model Name: Gopher (280B)
+Parameters: 280B</title></circle><circle cx="495.95005216484094" cy="394.2857142857143" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-07-27
+Model Name: HuBERT
+Parameters: 1.0B</title></circle><circle cx="650.2816901408451" cy="351.765571818614" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-12-28
+Model Name: Hybrid H3-2.7B
+Parameters: 2.7B</title></circle><circle cx="509.33033385498175" cy="205.63834883646228" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-09-10
+Model Name: HyperClova
+Parameters: 82B</title></circle><circle cx="76.40388628064684" cy="586.961020662458" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-09-15
+Model Name: ISS
+Parameters: 11M</title></circle><circle cx="689.5181272822118" cy="397.3004314965361" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-05-09
+Model Name: ImageBind
+Parameters: 930M</title></circle><circle cx="585.1519300991132" cy="347.2551906062047" r="10" fill="rgb(64, 128, 238)" stroke="rgb(64, 128, 238)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2022-05-23
+Model Name: Imagen
+Parameters: 3.0B</title></circle><text class="label svelte-3b7aot" x="585.1519300991132" dx="-1em" y="347.2551906062047" dy="0.4em" text-anchor="end">Imagen</text><circle cx="-93.06729264475744" cy="517.6786087665316" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-02-23
+Model Name: Inception-ResNet-V2
+Parameters: 56M</title></circle><circle cx="-93.06729264475744" cy="528.986680807155" r="5" fill="rgb(64, 128, 238)" stroke="rgb(64, 128, 238)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-02-23
+Model Name: Inceptionv4
+Parameters: 43M</title></circle><circle cx="680.5979394887845" cy="312.8583408766328" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-04-09
+Model Name: Incoder-6.7B
+Parameters: 6.7B</title></circle><circle cx="550.6729264475744" cy="173.1862494866367" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-01-27
+Model Name: InstructGPT
+Parameters: 180B</title></circle><circle cx="706.7638236828378" cy="197.14285714285705" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-07-06
+Model Name: InternLM
+Parameters: 100B</title></circle><circle cx="722.8201617110068" cy="284.48272670118325" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-08-29
+Model Name: Jais
+Parameters: 13B</title></circle><circle cx="422.81690140845075" cy="488.7770067486893" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-11-23
+Model Name: KEPLER
+Parameters: 110M</title></circle><circle cx="539.3740219092332" cy="378.3794397796953" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-20
+Model Name: LDM-1.45B
+Parameters: 1.5B</title></circle><circle cx="667.5273865414711" cy="215.45273699213936" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-02-24
+Model Name: LLaMA-65B
+Parameters: 65B</title></circle><circle cx="667.5273865414711" cy="312.8583408766328" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-02-24
+Model Name: LLaMA-7B
+Parameters: 6.7B</title></circle><circle cx="629.7528690662493" cy="124.94975796030745" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-10-20
+Model Name: LMSI-Palm
+Parameters: 540B</title></circle><circle cx="126.9640062597809" cy="580.197012415469" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-03-04
+Model Name: LSTM (2018)
+Parameters: 13M</title></circle><circle cx="133.79042775169535" cy="526.8506399971637" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-03-27
+Model Name: LSTM (Hebbian, Cache, MbPA)
+Parameters: 45M</title></circle><circle cx="78.18792383933229" cy="522.5300995725925" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-09-21
+Model Name: LSTM + dynamic eval
+Parameters: 50M</title></circle><circle cx="187.60889410537297" cy="658.2383838047994" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-09-24
+Model Name: LSTM+NeuralCache
+Parameters: 2.1M</title></circle><circle cx="554.8356807511738" cy="183.66611552315428" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-02-10
+Model Name: LaMDA
+Parameters: 140B</title></circle><circle cx="266.7012258737611" cy="527.9053390381702" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-06-17
+Model Name: LaNet-L (CIFAR-10)
+Parameters: 44M</title></circle><circle cx="710.3318988002086" cy="212.41176462716618" r="10" fill="rgb(140, 86, 75)" stroke="rgb(140, 86, 75)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2023-07-18
+Model Name: Llama 2-70B
+Parameters: 70B</title></circle><text class="label svelte-3b7aot" x="710.3318988002086" dx="-1em" y="212.41176462716618" dy="0.4em" text-anchor="end">Llama 2-70B</text><circle cx="710.3318988002086" cy="212.41176462716618" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-07-18
+Model Name: Llama 2-7B
+Parameters: 70B</title></circle><circle cx="453.14553990610324" cy="98.5714285714286" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-03-05
+Model Name: M6-T
+Parameters: 1.0T</title></circle><circle cx="317.55868544600935" cy="505.17253260853244" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-12-05
+Model Name: MMLSTM
+Parameters: 75M</title></circle><circle cx="225.9780907668232" cy="441.7464830691797" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-01-31
+Model Name: MT-DNN
+Parameters: 330M</title></circle><circle cx="333.61502347417843" cy="353.38119855716224" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-01-28
+Model Name: Meena
+Parameters: 2.6B</title></circle><circle cx="294.05646844027126" cy="336.02363159310227" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-09-17
+Model Name: Megatron-BERT
+Parameters: 3.9B</title></circle><circle cx="294.05646844027126" cy="303.6908737515013" r="10" fill="rgb(163, 29, 30)" stroke="rgb(163, 29, 30)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2019-09-17
+Model Name: Megatron-LM
+Parameters: 8.3B</title></circle><text class="label svelte-3b7aot" x="294.05646844027126" dx="-1em" y="303.6908737515013" dy="0.4em" text-anchor="end">Megatron-LM</text><circle cx="518.5478612415233" cy="125.74994999649368" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-10-11
+Model Name: Megatron-Turing NLG 530B
+Parameters: 530B</title></circle><circle cx="451.9561815336464" cy="425.7062208872636" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-03-01
+Model Name: Meta Pseudo Labels
+Parameters: 480M</title></circle><circle cx="596.1534950443402" cy="124.92202035647556" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-06-29
+Model Name: Minerva (540B)
+Parameters: 540B</title></circle><circle cx="261.0517736045905" cy="621.9663863971894" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-05-29
+Model Name: MnasNet-A1 + SSDLite
+Parameters: 4.9M</title></circle><circle cx="261.0517736045905" cy="619.4225275559984" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-05-29
+Model Name: MnasNet-A3
+Parameters: 5.2M</title></circle><circle cx="6.541471048513301" cy="301.67595938473613" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-01-23
+Model Name: MoE
+Parameters: 8.7B</title></circle><circle cx="290.1910537297861" cy="537.7990070569014" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-09-04
+Model Name: Mogrifier (d2, MoS2, MC) + dynamic eval
+Parameters: 35M</title></circle><circle cx="633.9280125195619" cy="537.7990070569014" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-11-03
+Model Name: Mogrifier RLSTM (WT2)
+Parameters: 35M</title></circle><circle cx="203.08294209702663" cy="605.4915110660606" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-11-15
+Model Name: Multi-cell LSTM
+Parameters: 7.2M</title></circle><circle cx="363.0392540427752" cy="473.8205753050601" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-05-06
+Model Name: NAS+ESS (156M)
+Parameters: 160M</title></circle><circle cx="59.752869066249346" cy="497.84584220214424" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-07-21
+Model Name: NASNet-A
+Parameters: 89M</title></circle><circle cx="598.2348721961398" cy="223.12663048987386" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-07-06
+Model Name: NLLB
+Parameters: 55B</title></circle><circle cx="746.0250391236307" cy="305.2668441393655" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-11-15
+Model Name: Nemotron-3-8B
+Parameters: 8.0B</title></circle><circle cx="-16.948356807511736" cy="519.2354722460217" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-11-05
+Model Name: Neural Architecture Search with base 8 and shared embeddings
+Parameters: 54M</title></circle><circle cx="310.4225352112676" cy="425.7062208872636" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-11-11
+Model Name: Noisy Student (L2)
+Parameters: 480M</title></circle><circle cx="531.6431924882629" cy="400.2473879561648" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-11-24
+Model Name: NÜWA
+Parameters: 870M</title></circle><circle cx="692.19418362024" cy="334.93980085481513" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-05-18
+Model Name: ONE-PEACE
+Parameters: 4.0B</title></circle><circle cx="578.9077986437142" cy="173.1862494866367" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-05-02
+Model Name: OPT-175B
+Parameters: 180B</title></circle><circle cx="1.784037558685446" cy="565.7929631843283" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-01-07
+Model Name: OR-WideResNet
+Parameters: 18M</title></circle><circle cx="512.3037297861241" cy="291.6341496058321" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-09-20
+Model Name: PLATO-XL
+Parameters: 11B</title></circle><circle cx="466.51343244653106" cy="253.19414324718554" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-04-19
+Model Name: PLUG
+Parameters: 27B</title></circle><circle cx="99.60876369327075" cy="499.3137240917054" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-12-02
+Model Name: PNAS-net
+Parameters: 86M</title></circle><circle cx="695.4649191444967" cy="222.7356777498531" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-05-29
+Model Name: PaLI-X
+Parameters: 55B</title></circle><circle cx="570.5822900365154" cy="124.92202035647556" r="10" fill="rgb(64, 128, 238)" stroke="rgb(64, 128, 238)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2022-04-04
+Model Name: PaLM (540B)
+Parameters: 540B</title></circle><text class="label svelte-3b7aot" x="570.5822900365154" dx="-1em" y="124.92202035647556" dy="0.4em" text-anchor="end">PaLM (540B)</text><circle cx="689.815466875326" cy="144.75422103440624" r="5" fill="rgb(64, 128, 238)" stroke="rgb(64, 128, 238)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-05-10
+Model Name: PaLM 2
+Parameters: 340B</title></circle><circle cx="674.6635367762128" cy="95.07906866466597" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-03-20
+Model Name: PanGu-Σ
+Parameters: 1.1T</title></circle><circle cx="594.0721178925404" cy="266.04132899883615" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-06-22
+Model Name: Parti
+Parameters: 20B</title></circle><circle cx="336.88575899843505" cy="430.91594832361204" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-02-08
+Model Name: Perceiver IO
+Parameters: 430M</title></circle><circle cx="508.14097548252477" cy="540.3179116406083" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-09-06
+Model Name: PermuteFormer
+Parameters: 33M</title></circle><circle cx="-28.854329681794468" cy="559.6669552333708" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-09-26
+Model Name: Pointer Sentinel-LSTM (medium)
+Parameters: 21M</title></circle><circle cx="559.5931142410016" cy="351.765571818614" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-02-26
+Model Name: PolyCoder
+Parameters: 2.7B</title></circle><circle cx="-13.380281690140846" cy="496.4266284473667" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-11-17
+Model Name: PolyNet
+Parameters: 92M</title></circle><circle cx="73.72782994261867" cy="550.5240557000193" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-09-06
+Model Name: PyramidNet
+Parameters: 26M</title></circle><circle cx="739.7685185185186" cy="78.45103028105889" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-10-25
+Model Name: QMoE: Practical Sub-1-Bit Compression of Trillion-Parameter Models
+Parameters: 1.6T</title></circle><circle cx="117.74647887323943" cy="480.00995710549233" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-02-01
+Model Name: QRNN
+Parameters: 140M</title></circle><circle cx="750.4851330203443" cy="211.2057967803464" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-11-30
+Model Name: Qwen-72B
+Parameters: 72B</title></circle><circle cx="553.943661971831" cy="308.02967546567515" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-02-07
+Model Name: RETRO-7B
+Parameters: 7.5B</title></circle><circle cx="144.49465310380805" cy="402.31391056004446" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-05-02
+Model Name: ResNeXt-101 32x48d
+Parameters: 830M</title></circle><circle cx="253.02360459050598" cy="464.7093509692337" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-05-02
+Model Name: ResNeXt-101 Billion-scale
+Parameters: 190M</title></circle><circle cx="-13.677621283255085" cy="552.2030562880419" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-11-16
+Model Name: ResNeXt-50
+Parameters: 25M</title></circle><circle cx="-31.53038601982264" cy="590.5808402120396" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-09-17
+Model Name: ResNet-1001
+Parameters: 10M</title></circle><circle cx="253.02360459050598" cy="552.2030562880419" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-05-02
+Model Name: ResNet-50 Billion-scale
+Parameters: 25M</title></circle><circle cx="64.80764214919144" cy="520.0356642822079" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-08-07
+Model Name: RetinaNet-R101
+Parameters: 53M</title></circle><circle cx="64.80764214919144" cy="539.0399353201205" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-08-07
+Model Name: RetinaNet-R50
+Parameters: 34M</title></circle><circle cx="367.796687532603" cy="414.33767286925774" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-05-22
+Model Name: Retrieval-Augmented Generator
+Parameters: 630M</title></circle><circle cx="270.8639801773605" cy="438.6203480559978" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-07-01
+Model Name: RoBERTa Large
+Parameters: 360M</title></circle><circle cx="346.697965571205" cy="502.67809731814793" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-03-12
+Model Name: Routing Transformer
+Parameters: 80M</title></circle><circle cx="524.4946531038081" cy="453.80320721484884" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-10-31
+Model Name: S4
+Parameters: 250M</title></circle><circle cx="73.43049034950442" cy="547.1989484664992" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-09-05
+Model Name: SENet (ImageNet)
+Parameters: 28M</title></circle><circle cx="450.4694835680751" cy="456.46300834100026" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-02-24
+Model Name: SRU++ Large
+Parameters: 230M</title></circle><circle cx="556.9170579029734" cy="154.7815609711912" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-02-17
+Model Name: ST-MoE
+Parameters: 270B</title></circle><circle cx="310.1251956181534" cy="461.29986608333894" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-11-10
+Model Name: Sandwich Transformer
+Parameters: 210M</title></circle><circle cx="566.4319248826291" cy="452.4494492716296" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-03-21
+Model Name: Segatron-XL large, M=384 + HCP
+Parameters: 260M</title></circle><circle cx="679.4085811163276" cy="413.6592271717992" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-04-05
+Model Name: Segment Anything Model
+Parameters: 640M</title></circle><circle cx="-39.26121544079291" cy="617.1773449493978" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-08-22
+Model Name: SimpleNet
+Parameters: 5.5M</title></circle><circle cx="741.2676056338029" cy="284.48272670118325" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-10-30
+Model Name: Skywork-13B
+Parameters: 13B</title></circle><circle cx="573.5556859676578" cy="298.363111573744" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-04-14
+Model Name: Sparse all-MLP
+Parameters: 9.4B</title></circle><circle cx="-92.76995305164318" cy="682.1949914610198" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-02-24
+Model Name: SqueezeNet
+Parameters: 1.2M</title></circle><circle cx="573.2583463745435" cy="378.3794397796953" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-04-13
+Model Name: Stable Diffusion (LDM-KL-8-G)
+Parameters: 1.5B</title></circle><circle cx="706.1691444966093" cy="341.89707817726344" r="10" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.2" stroke-width="2px"><title>Date: 2023-07-04
+Model Name: Stable Diffusion XL
+Parameters: 3.4B</title></circle><text class="label svelte-3b7aot" x="706.1691444966093" dx="-1em" y="341.89707817726344" dy="0.4em" text-anchor="end">Stable Diffusion XL</text><circle cx="689.5181272822118" cy="276.9530183232141" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-05-09
+Model Name: StarCoder
+Parameters: 16B</title></circle><circle cx="437.38654147104853" cy="78.45103028105889" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-01-11
+Model Name: Switch
+Parameters: 1.6T</title></circle><circle cx="304.7606937923839" cy="291.6341496058321" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-10-23
+Model Name: T5-11B
+Parameters: 11B</title></circle><circle cx="304.7606937923839" cy="350.20870833912414" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-10-23
+Model Name: T5-3B
+Parameters: 2.8B</title></circle><circle cx="121.90923317683882" cy="825.7082842322069" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-02-15
+Model Name: TCN (P-MNIST)
+Parameters: 42k</title></circle><circle cx="336.88575899843505" cy="455.37917760271307" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-02-08
+Model Name: TaLK Convolution
+Parameters: 240M</title></circle><circle cx="633.035993740219" cy="394.2857142857143" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-10-31
+Model Name: Taiyi-Stable Diffusion
+Parameters: 1.0B</title></circle><circle cx="342.8325508607199" cy="540.3179116406083" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-02-28
+Model Name: Temporal Convolutional Attention-based Network(TCAN) (WT2)
+Parameters: 33M</title></circle><circle cx="348.1846635367762" cy="499.66359549920134" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-03-17
+Model Name: Tensor-Transformer(1core)+PN (WT103)
+Parameters: 85M</title></circle><circle cx="268.7826030255608" cy="452.4494492716296" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-06-24
+Model Name: Tensorized Transformer (257M)
+Parameters: 260M</title></circle><circle cx="336.5884194053208" cy="510.64495492515863" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-02-07
+Model Name: Theseus 6/768
+Parameters: 66M</title></circle><circle cx="48.156624934793946" cy="460.4882962324673" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2017-06-12
+Model Name: Transformer
+Parameters: 210M</title></circle><circle cx="188.79825247782995" cy="454.14844317869006" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-09-28
+Model Name: Transformer (Adaptive Input Embeddings)
+Parameters: 250M</title></circle><circle cx="185.52751695357327" cy="497.36752406955225" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-09-17
+Model Name: Transformer + Simple Recurrent Unit
+Parameters: 90M</title></circle><circle cx="217.05790297339595" cy="517.6786087665316" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-01-01
+Model Name: Transformer ELMo
+Parameters: 56M</title></circle><circle cx="248.5635106937924" cy="452.4494492716296" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-04-17
+Model Name: Transformer-XL + RMS dynamic eval
+Parameters: 260M</title></circle><circle cx="315.17996870109545" cy="478.148401752541" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-11-27
+Model Name: Transformer-XL DeFINE (141M)
+Parameters: 140M</title></circle><circle cx="219.43661971830986" cy="452.4494492716296" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-01-09
+Model Name: Transformer-XL Large
+Parameters: 260M</title></circle><circle cx="262.83581116327593" cy="452.4494492716296" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-06-04
+Model Name: Transformer-XL Large + Phrase Induction
+Parameters: 260M</title></circle><circle cx="346.4006259780908" cy="475.2151294811018" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-03-11
+Model Name: TransformerXL + spectrum control
+Parameters: 150M</title></circle><circle cx="193.853025560772" cy="467.69456735410256" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-10-15
+Model Name: TrellisNet
+Parameters: 180M</title></circle><circle cx="245.88745435576422" cy="606.6974789128803" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-04-08
+Model Name: True-Regularization+Finetune+Dynamic-Eval
+Parameters: 7.0M</title></circle><circle cx="338.37245696400623" cy="272.9986063212845" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-02-13
+Model Name: Turing-NLG
+Parameters: 17B</title></circle><circle cx="629.7528690662493" cy="124.94975796030745" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-10-20
+Model Name: U-PaLM (540B)
+Parameters: 540B</title></circle><circle cx="581.286515388628" cy="266.04132899883615" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-05-10
+Model Name: UL2
+Parameters: 20B</title></circle><circle cx="361.84989567031823" cy="291.6341496058321" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-05-02
+Model Name: UnifiedQA
+Parameters: 11B</title></circle><circle cx="-17.245696400625977" cy="521.6823683560606" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-11-04
+Model Name: VD-LSTM+REAL Large
+Parameters: 51M</title></circle><circle cx="-51.45213875847679" cy="541.635216422752" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-07-12
+Model Name: VD-RHN
+Parameters: 32M</title></circle><circle cx="563.1611893583724" cy="368.11250267126263" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-03-10
+Model Name: ViT-G (model soup)
+Parameters: 1.8B</title></circle><circle cx="528.9671361502348" cy="347.1839016180367" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-11-15
+Model Name: ViT-G/14 (LiT)
+Parameters: 3.0B</title></circle><circle cx="677.6245435576421" cy="284.48272670118325" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-03-30
+Model Name: Vicuna-13B
+Parameters: 13B</title></circle><circle cx="245.88745435576422" cy="555.7725418782659" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-04-08
+Model Name: WeNet (Penn Treebank)
+Parameters: 23M</title></circle><circle cx="685.0580333854981" cy="312.8583408766328" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-04-24
+Model Name: WizardLM-7B
+Parameters: 6.7B</title></circle><circle cx="539.3740219092332" cy="308.02967546567515" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-12-20
+Model Name: XGLM
+Parameters: 7.5B</title></circle><circle cx="725.496218049035" cy="312.8583408766328" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-09-07
+Model Name: XGen-7B
+Parameters: 6.7B</title></circle><circle cx="261.9437923839332" cy="411.7504378201226" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-06-01
+Model Name: XLM
+Parameters: 670M</title></circle><circle cx="502.19418362024" cy="292.8178847710294" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-08-17
+Model Name: XLMR-XXL
+Parameters: 11B</title></circle><circle cx="261.9437923839332" cy="437.98965849210254" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2019-06-01
+Model Name: XLNet
+Parameters: 360M</title></circle><circle cx="-25.583594157537817" cy="556.0414960623283" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-10-07
+Model Name: Xception
+Parameters: 23M</title></circle><circle cx="-2.081377151799687" cy="521.6823683560606" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-12-25
+Model Name: YOLOv2
+Parameters: 51M</title></circle><circle cx="742.1596244131455" cy="243.32564960583485" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2023-11-02
+Model Name: Yi-34B
+Parameters: 34B</title></circle><circle cx="518.8452008346375" cy="158.6548364785604" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-10-12
+Model Name: Yuan 1.0
+Parameters: 250B</title></circle><circle cx="500.4101460615545" cy="197.14285714285705" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-08-11
+Model Name: Zidong Taichu
+Parameters: 100B</title></circle><circle cx="-28.854329681794468" cy="559.6669552333708" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2016-09-26
+Model Name: Zoneout + Variational LSTM (WT2)
+Parameters: 21M</title></circle><circle cx="150.44144496609283" cy="541.635216422752" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2018-05-22
+Model Name: aLSTM(depth-2)+RecurrentPolicy (WT2)
+Parameters: 32M</title></circle><circle cx="520.3318988002086" cy="449.7074445219903" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2021-10-17
+Model Name: base LM+GNN+kNN
+Parameters: 270M</title></circle><circle cx="548.5915492957747" cy="409.2417574921416" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2022-01-20
+Model Name: data2vec (language)
+Parameters: 710M</title></circle><circle cx="412.69496609285346" cy="284.48272670118325" r="5" fill="rgb(144, 144, 144)" stroke="rgb(144, 144, 144)" fill-opacity="0.4" stroke-width="0.5px"><title>Date: 2020-10-20
+Model Name: mT5-XXL
+Parameters: 13B</title></circle><line x1="0" x2="760" y1="691" y2="691" stroke="lightgrey"></line><text class="axis-label svelte-3b7aot" transform="translate(-75,345) rotate(-90)">Parameters</text><text class="axis-label svelte-3b7aot" x="380" y="750" text-anchor="middle">Model Release Date</text></g></svg>

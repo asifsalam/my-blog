@@ -158,6 +158,7 @@ function searchArticles2(articles, searchTerm, selection, articleList) {
 /** @type {Array}*/
 function cleanTags(articleTags) {
     const tagsToRemove = ["post", "article", "pitfall"]
+    // console.log("CleanTags: ", articleTags)
     let tags = articleTags;
     let index;
     if (articleTags.length > 0) {

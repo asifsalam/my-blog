@@ -5,57 +5,86 @@
 	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
 	const chartWidth = 1000;
-	const chartHeight = 1000;
+	const chartHeight = 700;
+	// Dummy data - replace this with your actual data
 
-	onMount(() => {
+	// Prepare your data - convert date strings to actual Date objects
+
+	// Function to create the chart
+	function createChart(modelData) {
 		const svg = d3.select('#chart');
-		const margin = { top: 20, right: 30, bottom: 40, left: 90 };
-		const width = 960 - margin.left - margin.right;
-		const height = 500 - margin.top - margin.bottom;
-		const modelData = data.modelData.filter((d) => d.parameters > 0);
+		const margin = { top: 20, right: 30, bottom: 50, left: 80 };
+		const width = chartWidth - margin.left - margin.right;
+		const height = chartHeight - margin.top - margin.bottom;
 
-		// Parse dates and numbers
-		modelData.forEach((d) => {
-			d.date = d3.timeParse('%Y-%m-%d')(d.date);
-			d.parameters = +d.parameters;
-		});
-
-		// Scales
-		const x = d3
+		// Set up the scales
+		const xScale = d3
 			.scaleTime()
 			.domain(d3.extent(modelData, (d) => d.date))
 			.range([0, width]);
-		const y = d3
+		// console.log('xScale: ', xScale(modelData[2].date));
+
+		const yScale = d3
 			.scaleLog()
-			.domain([1, d3.max(modelData, (d) => d.parameters)])
+			.domain([10000, d3.max(modelData, (d) => d.parameters)])
 			.range([height, 0]);
+		// console.log('yScale: ', modelData[2].parameters, yScale(modelData[2].parameters));
 
-		// Add axes
-		svg.append('g').attr('transform', `translate(0,${height})`).call(d3.axisBottom(x));
-		svg.append('g').call(d3.axisLeft(y));
+		// Add the SVG to the page
+		const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-		// Draw circles
+		// X-axis
+		g.append('g').attr('transform', `translate(0,${height})`).call(d3.axisBottom(xScale));
+
+		// Y-axis
+		g.append('g').call(d3.axisLeft(yScale));
+
+		// X-axis label
 		svg
-			.selectAll('circle')
+			.append('text')
+			.attr('text-anchor', 'end')
+			.attr('x', width / 2 + margin.left)
+			.attr('y', height + margin.top + 40)
+			.text('Model Release Date');
+
+		// Y-axis label
+		svg
+			.append('text')
+			.attr('text-anchor', 'end')
+			.attr('transform', 'rotate(-90)')
+			.attr('y', 20)
+			.attr('x', -margin.top - height / 2 + 20)
+			.text('# of Parameters');
+
+		// Plot the data
+		g.selectAll('.model-dot')
 			.data(modelData)
 			.enter()
 			.append('circle')
-			.attr('cx', (d) => x(d.date))
-			.attr('cy', (d) => y(d.parameters))
-			.attr('r', 5)
-			.style('fill', 'none')
-			.style('stroke', 'lightblue');
+			.attr('class', 'model-dot')
+			.attr('r', 5) // Adjust radius as needed
+			.attr('cx', (d) => xScale(d.date))
+			.attr('cy', (d) => {
+				return yScale(d.parameters);
+			})
+			.style('fill', (d) => (d.highlight ? 'red' : 'blue')) // Adjust colors as needed
+			.style('opacity', 0.5);
 
-		// Add labels (simplified)
-		svg
-			.selectAll('text')
-			.data(modelData)
+		// Optionally, add labels to highlighted points
+		g.selectAll('.model-label')
+			.data(modelData.filter((d) => d.highlight))
 			.enter()
 			.append('text')
-			.attr('x', (d) => x(d.date))
-			.attr('y', (d) => y(d.arameters))
-			.text((d) => d.model_name)
-			.style('font-size', '12px');
+			.attr('x', (d) => xScale(d.date))
+			.attr('y', (d) => yScale(d.parameters))
+			.attr('dy', -10) // Adjust label position
+			.style('text-anchor', 'middle')
+			.text((d) => d.model_name);
+	}
+
+	onMount(() => {
+		console.log(data.modelData);
+		createChart(data.modelData.filter((d) => d.parameters > 10));
 	});
 </script>
 
@@ -66,11 +95,11 @@
 			<SidebarTags useThemes={'yes'} useCategories={'yes'} />
 		</p>
 	</div> -->
-	<div>This is a sidebar</div>
+	<div />
 
 	<div class="main-content">
 		<div class="heading">
-			<h1>this is a test</h1>
+			<h1>Parameter counts of selected AI systems</h1>
 		</div>
 		<svg id="chart" width={chartWidth} height={chartHeight} />
 	</div>

@@ -93,6 +93,14 @@ h3 {
 	max-width: 100%;
 }
 
+pre-title {
+	font-family: 'Poiret One', Overlock, Asap, 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata;
+	font-size: 1.8rem;
+	font-weight: 200;
+	color: hsla(251, 100%, 15%, 0.9);
+}
+
+
 @counter-style circles {
 	system: cyclic;
 	/* symbols: "\278A" "\278B" "\278C" "\278D" "\278E" "\278F"; */

@@ -8,7 +8,7 @@ export async function load({ fetch }) {
     const textData = await response.text();
     const xsv = d3.dsvFormat(";")
     const modelData = xsv.parse(textData);
-
+    console.log(modelData);
     modelData.forEach(d => {
         d.date = d3.timeParse("%Y-%m-%d")(d.date);
         d.parameters = +d.parameters;
@@ -16,7 +16,7 @@ export async function load({ fetch }) {
 
     // console.log(articleData[1]);
 
-    console.log(modelData);
+
     return {
         modelData
     }
