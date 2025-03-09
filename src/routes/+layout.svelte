@@ -14,9 +14,9 @@
 
 	export let data;
 	// export let errors;
-	// console.log('main-layout.s', data);
-	let numArticles = data.articles.length;
 
+	let numArticles = data.articles.length;
+	console.log('routes-layout.svelte', data);
 	const articleData = data.articles.slice(0, numArticles);
 	$articleList = articleData;
 	$postList = data.posts;

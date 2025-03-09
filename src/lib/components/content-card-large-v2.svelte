@@ -113,7 +113,7 @@
 
 	.left-image {
 		height: 100%;
-		background-color: black;
+		background-color: none;
 		background-size: cover;
 		background-position: center;
 	}

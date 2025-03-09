@@ -94,9 +94,11 @@
 		padding-left: 1.2em;
 	}
 	.sidebar-bullet:before {
-		content: '□';
+		/* content: '□'; */
+		content: 'Θ';
 		position: absolute;
 		left: 0;
+		font-size: smaller;
 	}
 
 	@media (max-width: 600px) {

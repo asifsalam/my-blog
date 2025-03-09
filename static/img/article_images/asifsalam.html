@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<link rel="icon" href="http://localhost:5173/favicon.png">
+		<!-- <meta name="viewport" content="width=device-width" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/node_modules/@sveltejs/vite-plugin-svelte-inspector/src/runtime/Inspector.svelte?svelte&amp;type=style&amp;lang.css">body.svelte-inspector-enabled *{cursor:var(--svelte-inspector-icon), crosshair !important}.svelte-inspector-active-target{outline:2px dashed #ff3e00 !important}#svelte-inspector-overlay.s-OVzkeubwzSP7{position:fixed;background-color:rgba(0, 0, 0, 0.8);color:#fff;padding:2px 4px;border-radius:5px;z-index:999999;pointer-events:none}#svelte-inspector-toggle.s-OVzkeubwzSP7{all:unset;border:1px solid #ff3e00;border-radius:8px;position:fixed;height:32px;width:32px;background-color:white;background-position:center;background-repeat:no-repeat;cursor:pointer}#svelte-inspector-announcer.s-OVzkeubwzSP7{position:absolute;left:0px;top:0px;clip:rect(0px, 0px, 0px, 0px);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}#svelte-inspector-toggle.s-OVzkeubwzSP7:not(.enabled){filter:grayscale(1)}#svelte-inspector-toggle.s-OVzkeubwzSP7:hover{background-color:#facece}.s-OVzkeubwzSP7{}</style><style type="text/css" id="svelte-inspector-style">:root { --svelte-inspector-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDEwNyAxMjgiPiA8dGl0bGU+c3ZlbHRlLWluc3BlY3Rvci1sb2dvPC90aXRsZT4gPHBhdGggZD0iTTk0LjE1NjYsMjIuODE4OWMtMTAuNC0xNC44ODUxLTMwLjk0LTE5LjI5NzEtNDUuNzkxNC05LjgzNDhMMjIuMjgyNSwyOS42MDc4QTI5LjkyMzQsMjkuOTIzNCwwLDAsMCw4Ljc2MzksNDkuNjUwNmEzMS41MTM2LDMxLjUxMzYsMCwwLDAsMy4xMDc2LDIwLjIzMThBMzAuMDA2MSwzMC4wMDYxLDAsMCwwLDcuMzk1Myw4MS4wNjUzYTMxLjg4ODYsMzEuODg4NiwwLDAsMCw1LjQ0NzMsMjQuMTE1N2MxMC40MDIyLDE0Ljg4NjUsMzAuOTQyMywxOS4yOTY2LDQ1Ljc5MTQsOS44MzQ4TDg0LjcxNjcsOTguMzkyMUEyOS45MTc3LDI5LjkxNzcsMCwwLDAsOTguMjM1Myw3OC4zNDkzLDMxLjUyNjMsMzEuNTI2MywwLDAsMCw5NS4xMyw1OC4xMTdhMzAsMzAsMCwwLDAsNC40NzQzLTExLjE4MjQsMzEuODgsMzEuODgsMCwwLDAtNS40NDczLTI0LjExNTciIHN0eWxlPSJmaWxsOiNmZjNlMDAiLz48cGF0aCBkPSJNNDUuODE3MSwxMDYuNTgxNUEyMC43MTgyLDIwLjcxODIsMCwwLDEsMjMuNTgsOTguMzM4OWExOS4xNzM5LDE5LjE3MzksMCwwLDEtMy4yNzY2LTE0LjUwMjUsMTguMTg4NiwxOC4xODg2LDAsMCwxLC42MjMzLTIuNDM1N2wuNDkxMi0xLjQ5NzgsMS4zMzYzLjk4MTVhMzMuNjQ0MywzMy42NDQzLDAsMCwwLDEwLjIwMyw1LjA5NzhsLjk2OTQuMjk0MS0uMDg5My45Njc1YTUuODQ3NCw1Ljg0NzQsMCwwLDAsMS4wNTIsMy44NzgxLDYuMjM4OSw2LjIzODksMCwwLDAsNi42OTUyLDIuNDg1LDUuNzQ0OSw1Ljc0NDksMCwwLDAsMS42MDIxLS43MDQxTDY5LjI3LDc2LjI4MWE1LjQzMDYsNS40MzA2LDAsMCwwLDIuNDUwNi0zLjYzMSw1Ljc5NDgsNS43OTQ4LDAsMCwwLS45ODc1LTQuMzcxMiw2LjI0MzYsNi4yNDM2LDAsMCwwLTYuNjk3OC0yLjQ4NjQsNS43NDI3LDUuNzQyNywwLDAsMC0xLjYuNzAzNmwtOS45NTMyLDYuMzQ0OWExOS4wMzI5LDE5LjAzMjksMCwwLDEtNS4yOTY1LDIuMzI1OSwyMC43MTgxLDIwLjcxODEsMCwwLDEtMjIuMjM2OC04LjI0MjcsMTkuMTcyNSwxOS4xNzI1LDAsMCwxLTMuMjc2Ni0xNC41MDI0LDE3Ljk4ODUsMTcuOTg4NSwwLDAsMSw4LjEzLTEyLjA1MTNMNTUuODgzMywyMy43NDcyYTE5LjAwMzgsMTkuMDAzOCwwLDAsMSw1LjMtMi4zMjg3QTIwLjcxODIsMjAuNzE4MiwwLDAsMSw4My40MiwyOS42NjExYTE5LjE3MzksMTkuMTczOSwwLDAsMSwzLjI3NjYsMTQuNTAyNSwxOC40LDE4LjQsMCwwLDEtLjYyMzMsMi40MzU3bC0uNDkxMiwxLjQ5NzgtMS4zMzU2LS45OGEzMy42MTc1LDMzLjYxNzUsMCwwLDAtMTAuMjAzNy01LjFsLS45Njk0LS4yOTQyLjA4OTMtLjk2NzVhNS44NTg4LDUuODU4OCwwLDAsMC0xLjA1Mi0zLjg3OCw2LjIzODksNi4yMzg5LDAsMCwwLTYuNjk1Mi0yLjQ4NSw1Ljc0NDksNS43NDQ5LDAsMCwwLTEuNjAyMS43MDQxTDM3LjczLDUxLjcxOWE1LjQyMTgsNS40MjE4LDAsMCwwLTIuNDQ4NywzLjYzLDUuNzg2Miw1Ljc4NjIsMCwwLDAsLjk4NTYsNC4zNzE3LDYuMjQzNyw2LjI0MzcsMCwwLDAsNi42OTc4LDIuNDg2NCw1Ljc2NTIsNS43NjUyLDAsMCwwLDEuNjAyLS43MDQxbDkuOTUxOS02LjM0MjVhMTguOTc4LDE4Ljk3OCwwLDAsMSw1LjI5NTktMi4zMjc4LDIwLjcxODEsMjAuNzE4MSwwLDAsMSwyMi4yMzY4LDguMjQyNywxOS4xNzI1LDE5LjE3MjUsMCwwLDEsMy4yNzY2LDE0LjUwMjQsMTcuOTk3NywxNy45OTc3LDAsMCwxLTguMTMsMTIuMDUzMkw1MS4xMTY3LDEwNC4yNTI4YTE5LjAwMzgsMTkuMDAzOCwwLDAsMS01LjMsMi4zMjg3IiBzdHlsZT0iZmlsbDojZmZmIi8+IDxwb2x5Z29uIHBvaW50cz0iMCwwIDE1LDQwIDQwLDIwIiBzdHJva2U9IiNmZjNlMDAiIGZpbGw9IiNmZjNlMDAiPjwvcG9seWdvbj4gPC9zdmc+)};</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/styles/global.css">
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Delius&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Crimson+Pro:wght@300;500&family=Meddon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Lancelot&family=Maiden+Orange&family=Noto+Serif+Thai:wght@300;400&family=Offside&family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Pridi&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cherry+Swash:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galdeano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200;400&family=Exo+2:wght@200;400&family=Hind+Madurai:wght@300;400&family=Prompt:wght@200;400&family=Signika+Negative:wght@300;400&family=Space+Grotesk:wght@300;400&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Epilogue:wght@200;400;500&family=Laila:wght@300;400;600&family=Urbanist:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Electrolize&family=Gotu&family=KoHo:wght@200;300;400&family=M+PLUS+Code+Latin:wght@200;300;400;500&family=Palanquin+Dark:wght@400;600&family=Ruluko&family=Sulphur+Point:wght@300;400&family=Syne:wght@400;600&family=Tsukimi+Rounded:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Flamenco:wght@300;400&family=Goldman&family=Gugi&family=Iceland&family=MuseoModerno:wght@100;200;300;400&family=Overlock:wght@400;700&family=Poiret+One&family=Righteous&family=Skranji&family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Macondo&display=swap');
+/* Roboto Slab, Roboto */
+/* Allura, Delius, Great Vibes */
+/* Libre Baskerville */
+/* DM Sans */
+/* Yellowtail */
+/* Pacifico */
+/* Crimson Pro, Meddon */
+/* Antic Slab */
+/* Amiri */
+/* Bad Script, Marck Script */
+/* Noto Sans */
+/* Cherry Swash, Lancelot, Maiden Orange, Noto Serif Thai, Offside, Scope One */
+/* Crete Round, Pridi, Sanchez */
+/* Lancelot - sans serif*/
+/* Alata, Cherry Swash */
+/* Galdeano */
+/* PT Sans Caption */
+/* Sora */
+/* Singika */
+/* Alegreya Sans - men*/
+/* Palanquin Dark - Not usable*/
+/* Titillium Web - meh*/
+/* Asap, Exo 2, Hind Madurai, Prompt, Space Grotesk, Varela Round*/
+/* ABeeZee, Epilogue, Laila, Urbanist */
+/* Capriola, Electrolize, Gotu, KoHo, 'M PLUS Code Latin', 'Palanquin Dark', Ruloko, 'Sulphur Point', Syne, 'Tsukimi Rounded' */
+/* Comfortaa, Flamenco, Goldman, Gugi, Iceland, MuseoModerno, Overlock, 'Poiret One', Righteous, Skranji, Wellfleet*/
+/* Carattere & Macondo */
+/* 
+Allura - handwriting font
+Great Vibes - handwriting
+Yellowtail - handwriting Astigmatic, 1 style
+Pacifico - handwrting, 1 style
+Calligraffitti - handwriting, too much
+Meddon - slant handwriting, too much
+Bad Script - handwriting
+Delius - slight handwriting
+Marck Script - handwriting
+Proza Libre - slight handwriting
+Libre baskerville - slight handwriting - Headline?
+DM Sans - Sans font
+Crimson Pro - slight - headline?
+Antik Slab - Slight serif - too basic
+Amiri - light serif - too basic
+ */
+@font-face {
+	font-family: 'Amal Baik';
+	src: url('/fonts/Amal\ Baik.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Demora';
+	/* src: url('/fonts/trial/DemoraItalic-p7LxD.otf'); */
+	src: url('/fonts/trial/Demora-w1Wr6.otf');
+}
+@font-face {
+	font-family: 'Dista Calista';
+	src: url('/fonts/Ditsa\ Calista\ DEMO.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Bukhari';
+	src: url('/fonts/BukhariScript-lemD.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'RedThinker';
+	src: url('/fonts/RedThinker-Light.ttf');
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Delik';
+	src: url('/fonts/DelikFreeTrial.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat/MontserratAlternates-Bold.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Audiowide';
+	src: url('/fonts/Audiowide/Audiowide-Regular.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'AlexBrush';
+	src: url('/fonts/AlexBrush-7XGA.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'DejavuSerif';
+	src: url('/fonts/Dejavu/DejaVuSerif.ttf');
+}
+@font-face {
+	font-family: 'DejavuSans';
+	src: url('/fonts/Dejavu/DejaVuSans.ttf');
+}
+@font-face {
+	font-family: 'JetBrainsMono';
+	src: url('/fonts/jetbrainsmono/ttf/JetBrainsMono-Regular.ttf');
+}
+@font-face {
+	font-family: 'Hidayat';
+	src: url('/fonts/HidayatullahDemo-mLp39.ttf');
+}
+/**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+code[class*='language-'],
+pre[class*='language-'] {
+	/* color: #3c3836; */
+	/* color: #030d8f; */
+	color: #0079cc;
+	/* fg1 / fg */
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+	color: #282828;
+	/* fg0 */
+	background: #a89984;
+	/* bg4 */
+}
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+	color: #282828;
+	/* fg0 */
+	background: #a89984;
+	/* bg4 */
+}
+/* Code blocks */
+pre[class*='language-'] {
+	padding: 1em;
+	margin: 0.5em 0;
+	overflow: auto;
+}
+:not(pre)>code[class*='language-'],
+pre[class*='language-'] {
+	/* background: #e89266; */
+	/* background: #f8b945; */
+	background: hsl(29, 67%, 82%, 0.25);
+	/* bg0_h */
+}
+/* Inline code */
+:not(pre)>code[class*='language-'] {
+	padding: 0.1em;
+	border-radius: 0.3em;
+}
+.token.comment,
+.token.prolog,
+.token.cdata {
+	/* color: #7b5c41; */
+	color: #7d7d7d;
+	/* fg4 / gray1 */
+}
+.token.delimiter,
+.token.boolean,
+.token.keyword,
+.token.selector,
+.token.important,
+.token.atrule {
+	color: #9d005c;
+	/* red2 */
+}
+.token.operator,
+.token.punctuation,
+.token.attr-name {
+	color: #7c6f64;
+	color: #c900d0;
+	/* fg4 / gray1 */
+}
+.token.tag,
+.token.tag .punctuation,
+.token.doctype,
+.token.builtin {
+	color: #ff8b2d;
+	/* yellow2 */
+}
+.token.entity,
+.token.number,
+.token.symbol {
+	/* color: #8f3f71; */
+	/* color: #69016f; */
+	color: #5f00b3;
+	/* purple2 */
+}
+.token.property,
+.token.constant,
+.token.variable {
+	color: #016ab6;
+	/* red2 */
+}
+.token.string,
+.token.char {
+	/* color: #797403; */
+	/* color: #00a171; */
+	color: #00b6b3;
+	/* green2 */
+}
+.token.attr-value,
+.token.attr-value .punctuation {
+	color: #7c6f64;
+	/* fg4 / gray1 */
+}
+.token.url {
+	color: #797403;
+	/* green2 */
+	text-decoration: underline;
+}
+.token.function {
+	color: #b57614;
+	/* yellow2 */
+}
+.token.regex {
+	background: #797403;
+	/* green2 */
+}
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+.token.inserted {
+	background: #7c6f64;
+	/* fg4 / gray1 */
+}
+.token.deleted {
+	background: #9d0000;
+	/* red2 */
+}
+/* @import url('gruvbox-light.css'); */
+:global(:root) {
+	--vp-w-s1: 768px;
+}
+:root {
+	/* colors */
+	--main-color: hsl(250, 100%, 25%);
+	--main-text-color: 250, 100%, 25%;
+	--hue1: 250;
+	--heading-text: var(--hue) 100% 21% --text: var(--hue) 4.8% 28.9%;
+	--accent1: var(--hue) 43.6% 57.5%;
+	--accent2: var(--hue) 71.4% 95.9%;
+	--bg: hsl(55, 100%, 98%);
+	--bg-highlight: hsl(60, 56%, 91%);
+	--bg-accent1: var(--hue) 100% 99.6%;
+	--color_white: #fff;
+	--color_prime: #5ad67d;
+	--color_grey: #e2e2e2;
+	--color_grey_dark: #a2a2a2;
+	--color_link: #b7ffbc;
+
+	/* Sizes */
+	/* Viewport */
+	--vp-w-l: 1200px;
+	--vp-w-m: 1024px;
+	--vp-w-s: 768px;
+
+	/* box-shadows */
+	--boxs-sm: 4px 6px 8px hsl(var(--accent1) / 14%), -3px 3px 18px 2px hsl(var(--accent1) / 12%),
+		2px 5px 10px -3px hsl(var(--accent1) / 20%);
+	--boxs-lg: 0px 8px 10px hsl(var(--accent1) / 14%), 0px 3px 14px 2px hsl(var(--accent1) / 12%),
+		0px 5px 5px -3px hsl(var(--accent1) / 20%);
+}
+/* @media (max-width:768px) {
+	html * {
+		font-size: 16px;
+	}
+}
+
+@media (max-width:1024px) {
+	html * {
+		font-size: 19px;
+	}
+}
+
+@media (min-width:1280px) {
+	html * {
+		font-size: 24px;
+	}
+} */
+body {
+	/* background-color: rgb(255, 254, 243); */
+	background-color: var(--bg);
+	margin: 0;
+	width: 1200px;
+	margin: auto;
+	/* align-items: center; */
+}
+h1 {
+	font-family: 'Poiret One', Overlock, Asap, 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata;
+	font-weight: 200;
+}
+h2 {
+	font-family: Montserrat, Galdeano, Alata, 'Cherry Swash', Roboto;
+	font-weight: bold;
+}
+h3 {
+	font-family: 'Libre Baskerville', 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+	font-weight: 200;
+}
+h4,
+p,
+li {
+	font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
+	font-weight: normal;
+}
+a {
+	font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
+	font-weight: normal;
+}
+q {
+	font-family: 'Lancelot', 'Bukhari';
+}
+blockquote {
+	font-family: 'Lancelot', 'Bad Script', 'Libre Baskerville', 'Delius', Georgia, 'Times New Roman', Times, serif;
+}
+code {
+	font-size: large;
+}
+kbd {
+	font-family: monospace;
+	color: inherit;
+	font-size: 80%;
+	background-color: #fff;
+	border: 1px solid #a6a6a6;
+	border-radius: 4px;
+	box-shadow: 0 2px grey;
+	padding: 2.4px 6px;
+	margin: auto 0;
+}
+@media (max-width: 1200px) {
+	body {
+		font-size: 20px;
+		width: auto;
+		margin: 10px;
+		/* margin: 10px 10px; */
+		/* align-items: center; */
+	}
+}
+@media (max-width: 900px) {
+	body {
+		font-size: 18px;
+		/* width: auto; */
+		/* margin: 10px 10px; */
+		/* align-items: center; */
+	}
+}
+/* used to be 768px */
+@media (max-width: 600px) {
+	body {
+		font-size: 16px;
+		min-width: 300px;
+		/* width: auto; */
+		/* margin: 10px 10px; */
+		/* align-items: center; */
+	}
+
+}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/main-title-v2.svelte?svelte&amp;type=style&amp;lang.css">@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+:root{--heading-color:hsla(251, 100%, 21%, 1)}
+.main-title-wrap.s-cRdZuPwzb90e{width:100%;display:grid;grid-template-columns:1fr;align-content:center;justify-content:space-evenly;justify-items:center;padding:20px 0 10px 0;margin:0}
+.main-title.s-cRdZuPwzb90e{margin:0;padding:0px 0}
+.main-title-header.s-cRdZuPwzb90e{margin:0;padding:0}
+.main-title-left.s-cRdZuPwzb90e{height:100%;font-family:'Dista Calista', cursive;color:hsla(251, 100%, 25%);font-size:4em;text-align:center;margin:0;padding:0}
+.title-name-wrap.s-cRdZuPwzb90e{display:flex;justify-content:space-between;align-items:end;margin:-15px 0 10px 0}
+.title-name.s-cRdZuPwzb90e{font-family:'Great Vibes', MuseoModerno, 'Pacifico';font-size:1.5em;margin:0;text-align:right;padding:3px 5px;color:hsla(250.78deg 100% 25.1% / 66%)}
+.sub-title-text.s-cRdZuPwzb90e{font-family:'Comfortaa', 'Great Vibes', MuseoModerno, 'Pacifico';font-size:1.5em;margin:0;color:hsla(251, 100%, 21%, 0.7)}
+.title-border.s-cRdZuPwzb90e{width:100%;height:15px;background-image:url('/img/borders/border-01.jpg');background-position:top;background-color:bisque}
+@media(max-width: 1200px){.main-title-wrap.s-cRdZuPwzb90e{grid-template-columns:1fr;padding:20px 0 10px 0}.main-title.s-cRdZuPwzb90e{font-size:1.3em;text-align:center}.main-title-left.s-cRdZuPwzb90e{font-size:2em;margin:0;padding:0;line-height:1}.title-name-wrap.s-cRdZuPwzb90e{display:flex;font-size:1em;flex-direction:column;align-items:center}.title-name.s-cRdZuPwzb90e{font-size:1.1em;margin:-10px 0px}.sub-title-text.s-cRdZuPwzb90e{font-size:1em;margin:15px 0px}}
+.s-cRdZuPwzb90e{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/navbar.svelte?svelte&amp;type=style&amp;lang.css">header.s-HCuzqHjNU96d{width:100%}nav.s-HCuzqHjNU96d{height:inherit;position:sticky;top:0;height:40px}ul.s-HCuzqHjNU96d{list-style-type:none;margin:0;padding:0;display:flex;flex-direction:row;justify-content:space-around;height:inherit}a.s-HCuzqHjNU96d{text-decoration:none;color:darkgray}li.s-HCuzqHjNU96d{float:left;vertical-align:middle;margin:auto;font-family:'Roboto Slab';text-decoration:none;font-size:1.2em;padding:1px 2px}li.s-HCuzqHjNU96d:hover{text-decoration:underline hsl(251, 100%, 20%) 0.2em}.active.s-HCuzqHjNU96d{border:1px solid hsl(251, 100%, 20%, 0.2);background-color:hsl(251, 25%, 67%);color:hsl(55, 100%, 97%)}a.s-HCuzqHjNU96d{padding:5px;margin:5px}.nav-container.s-HCuzqHjNU96d{width:100%;display:block;margin:0;border-bottom:2px solid #999980;position:sticky;top:0}.middle-section.s-HCuzqHjNU96d{width:100%}.medium.s-HCuzqHjNU96d{display:none}@media(max-width: 1200px){.nav-container.s-HCuzqHjNU96d{font-size:0.9em}.large.s-HCuzqHjNU96d{display:none}.medium.s-HCuzqHjNU96d{display:contents}}.s-HCuzqHjNU96d{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/footer.svelte?svelte&amp;type=style&amp;lang.css">@import url('https://fonts.googleapis.com/css2?family=Allura&family=Delius&family=Great+Vibes&display=swap');@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');.personal-info.s-ghcUECSXdemo{display:grid;grid-row:auto;text-align:center}.name.s-ghcUECSXdemo{font-family:'Great Vibes', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;margin:5px 0 2px 0;font-size:1.7em;color:hsla(251, 100%, 20%, 1)}.location.s-ghcUECSXdemo{margin:0px 0 2px 0;font-family:Delius;font-weight:100;font-size:1.1em}a.s-ghcUECSXdemo{text-decoration:none}.swedish-flag.s-ghcUECSXdemo{float:right;margin:0;background-image:url('/img/icons/Flag_of_Sweden.svg.png');height:90%;width:auto;text-decoration:none;color:hsl(55deg 100% 98%);background-size:cover}.other-icon.s-ghcUECSXdemo{float:right;margin:0;background-image:url('/img/icons/Flag_of_Sweden.svg.png');height:52px;width:auto;text-decoration:none;color:hsl(55deg 100% 98%);background-size:cover}.footer.s-ghcUECSXdemo{display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;width:100%;margin-top:20px;padding:5px 0px;border-bottom:1px solid grey;border-top:1px solid rgb(56, 56, 56);height:100px}.footer-bottom.s-ghcUECSXdemo{font-size:1em;font-weight:bolder}.s-ghcUECSXdemo{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/routes/+layout.svelte?svelte&amp;type=style&amp;lang.css">.s-7IPF32Wcq3s8{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/random-quote.svelte?svelte&amp;type=style&amp;lang.css">@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Lancelot&family=Scope+One&display=swap');@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');.main-quote.s-0uPEqmZkV37o{margin:0px 0px 0px 0px;font-family:'Lancelot', 'Cherry Swash', 'Noto Serif Thai', 'Delius', Georgia, 'Times New Roman',
+			Times, serif;font-size:1.4rem;font-weight:100;letter-spacing:0ch;line-height:110%;color:rgb(102, 89, 158)}.quote-tag.s-0uPEqmZkV37o{display:block;overflow:hidden;width:inherit;padding:0px;margin:0px 0px 0px 0px;border-bottom:0px solid hsla(0, 2%, 73%, 0.9);border-top:0px solid hsla(0, 2%, 73%, 0.9)}blockquote.s-0uPEqmZkV37o{font-family:'Marck Script', cursive;font-size:1.2rem;color:var(--heading-color);margin:7px 0px}.poem.s-0uPEqmZkV37o{text-align:center}.quote.s-0uPEqmZkV37o{text-align:left}.attribution-container.s-0uPEqmZkV37o{display:flex;background-color:hsla(250, 13%, 91%, 0);height:23px;align-items:center;justify-content:right;border-top:dashed 0.25px hsla(250, 58%, 75%, 0.4)}.attribution.s-0uPEqmZkV37o{font-family:'Scope One', 'Noto Sans', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight:500;color:rgb(0, 0, 0);margin:0px 0px 0px 0px}.s-0uPEqmZkV37o{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/breadcrumbs.svelte?svelte&amp;type=style&amp;lang.css">.breadcrumbs.s-Y7PSJJThxgdQ.s-Y7PSJJThxgdQ{padding:0;margin:0 0 0px 0;background-color:#f1f1e4f5;border-top:1px solid #9999808f;border-bottom:1px solid #9999808f;font-family:Roboto, Verdana, Geneva, Tahoma, sans-serif;font-size:1.1rem;position:sticky;top:0;z-index:250}.breadcrumbs-item.s-Y7PSJJThxgdQ.s-Y7PSJJThxgdQ{display:inline-block;color:hsl(250.34, 87.7%, 14.51%)}.breadcrumbs-item-active.s-Y7PSJJThxgdQ.s-Y7PSJJThxgdQ{display:inline-block;color:hsl(250, 87.7%, 14.51%)}.breadcrumbs-item-active.s-Y7PSJJThxgdQ a.s-Y7PSJJThxgdQ{color:rgb(255 208 0);color:beige;color:hsl(250, 87.7%, 14.51%)}li.s-Y7PSJJThxgdQ.s-Y7PSJJThxgdQ{list-style:none;margin:5px 5px;padding:0}ul.s-Y7PSJJThxgdQ.s-Y7PSJJThxgdQ{margin:0;padding:0}.s-Y7PSJJThxgdQ.s-Y7PSJJThxgdQ{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/routes/blog/+layout.svelte?svelte&amp;type=style&amp;lang.css">@media(max-width: 1000px){}.s-ISUD83oxX-r6{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/create-tags.svelte?svelte&amp;type=style&amp;lang.css">.tags-header.s-K_SBHUGq4i3V{padding:10px 0 0 0;margin:0 0 5px 0;font-family:'Pridi', Georgia, 'Times New Roman', Times, serif;font-size:1.4rem;font-weight:300;color:hsla(251, 100%, 20%, 0.6);border-bottom:1px solid hsla(251, 100%, 20%, 0.2)}.tag-group.s-K_SBHUGq4i3V{padding:0 0 10px 0}.tag-type.s-K_SBHUGq4i3V{padding:0px 0 0 0;margin:0;font-family:'Pridi', Georgia, 'Times New Roman', Times, serif;font-size:1.2rem;color:hsla(251, 100%, 20%, 0.7)}.tag-box.s-K_SBHUGq4i3V{display:inline-block;padding:2px 5px;margin:3px 10px 3px 0;background-color:hsla(196, 67%, 54%, 0.07);font-family:Roboto, Arial, Helvetica, sans-serif;font-weight:normal;font-size:16px;color:hsl(251, 100%, 15%, 0.6);border-radius:4px;text-decoration:none;border:1px solid hsla(251, 32%, 44%, 0.2)}.tag-box.s-K_SBHUGq4i3V:hover{color:hsl(253, 39%, 95%);background-color:hsl(251, 100%, 15%, 0.5);cursor:pointer}.s-K_SBHUGq4i3V{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/key-tags.svelte?svelte&amp;type=style&amp;lang.css">@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Sanchez&family=Pridi&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Scope+One&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');.sidebar-themes.s-woQE_tsaL3Qe{margin:0;padding:0}.tags.s-woQE_tsaL3Qe{line-height:1.5}.s-woQE_tsaL3Qe{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/sidebar-tags.svelte?svelte&amp;type=style&amp;lang.css">@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Sanchez&family=Pridi:wght@200;300;400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Scope+One&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');.sidebar.s-utS4VE8MRsLT{}.s-utS4VE8MRsLT{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/posts-list-card.svelte?svelte&amp;type=style&amp;lang.css">@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Scope+One&display=swap');.post-card.s-FJou1cHfGjIc{width:100%;min-height:20px;margin:10px 0 0px 0;padding-bottom:10px;font-size:1.1rem;font-family:'Scope One', Cochin, Georgia, Times, 'Times New Roman', serif;border-bottom:3px solid #9999808a;border-radius:0px;z-index:0;position:relative}h3.s-FJou1cHfGjIc{margin:0px 0 10px 0;font-family:'Pridi', Georgia, 'Times New Roman', Times, serif;font-size:1.4rem;font-weight:300;color:hsla(0, 0%, 32%, 0.8)}.main-link.s-FJou1cHfGjIc{position:relative;display:inline;text-decoration:none}.article-title.s-FJou1cHfGjIc{display:block;font-family:Urbanist, 'Titillium Web', 'Scope One', Cochin, Georgia, Times, 'Times New Roman',
+			serif;margin:0px 0px 15px 2px;font-size:1.1rem;color:hsla(0, 0%, 56%, 80%)}.article-title.s-FJou1cHfGjIc:hover{text-decoration:underline}.s-FJou1cHfGjIc{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/routes/blog/pages/+layout.svelte?svelte&amp;type=style&amp;lang.css">div.container.s-K-BxOMm0sYXH{display:grid;grid-template-columns:2fr 5fr;margin:0px 0px 5px 0px}@media(max-width: 1000px){div.container.s-K-BxOMm0sYXH{display:block;grid-template-columns:1fr}}.s-K-BxOMm0sYXH{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/routes/blog/pages/2023-11-29-what-is-ai/general-button.svelte?svelte&amp;type=style&amp;lang.css">.general-button.s-Y5WU98OkHMjq{background-color:hsl(80deg 100% 92.35%);cursor:pointer;color:hsl(220deg 81% 47%);width:30%;justify-self:center;border:0.5px solid lightgray;margin-top:1em;border-radius:7px}.general-button.s-Y5WU98OkHMjq:disabled{background-color:grey}.s-Y5WU98OkHMjq{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/styles/blog.css">/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Lancelot&family=Maiden+Orange&family=Noto+Serif+Thai:wght@300;400&family=Offside&family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Pridi&family=Sanchez&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap'); */
+
+/*  Space Grotesk, Asap,  Sora  */
+
+/* ABeeZee, Varela Round, Alegreya Sans, Montserrat,Urbanist, */
+
+/* Capriola, 'M PLUS Code Latin', 'Palanquin Dark',*/
+
+/* Cool: 'Tsukimi Rounded', 'Alegreya Sans',
+
+/* Asap, Capriola, Electrolize, Gotu, KoHo, 'M PLUS Code Latin', 'Palanquin Dark', Ruloko, 'Sulphur Point',
+Syne, 'Tsukimi Rounded' 'Alegreya Sans', 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata; */
+
+* {
+	font-family: 'Scope One',
+		'Libre Baskerville',
+		'Roboto Slab',
+		Georgia,
+		'Times New Roman',
+		Times,
+		serif;
+	color: hsla(var(--main-text-color), 1);
+
+}
+
+h1 {
+	font-family: 'Poiret One', Overlock, Asap, 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata;
+	font-size: 3rem;
+	font-weight: 200;
+	color: hsla(251, 100%, 15%, 0.9);
+}
+
+h2 {
+	font-family: Montserrat, Galdeano, Alata, 'Cherry Swash', Roboto;
+	font-weight: bold;
+	font-size: 2.5rem;
+	color: hsla(251, 100%, 15%, 0.7);
+}
+
+h3 {
+	font-family: 'Titillium Web', Demora, RedThinker, Alata, 'Cherry Swash', Roboto;
+	font-weight: bold;
+	font-size: 2rem;
+	color: hsla(251, 100%, 15%, 0.7);
+}
+
+.main-content p {
+	font-family: 'Scope One', 'Libre Baskerville', 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+	font-weight: normal;
+	letter-spacing: 0.012em;
+	word-spacing: 0.15em;
+	font-size: 1.3rem;
+	color: hsla(var(--main-text-color), 1);
+}
+
+.main-content p code {
+	/* width: 850px; */
+	background: hsl(35, 73%, 94%, 1);
+	padding: 0em .15em;
+	border-radius: 2px;
+	border: 0.5px solid rgb(221, 216, 216);
+	/* font-size: inherit; */
+	font-size: 0.9em;
+	line-height: 1 !important;
+	white-space: nowrap;
+	color: hsla(var(--main-text-color), 0.9);
+	/* background: linear-gradient(to bottom, hsla(0, 0%, 20%, 0), hsla(0, 0%, 20%, 0) 15%,
+			hsl(35, 73%, 94%, 1) 30%, hsl(35, 73%, 94%, 1) 75%, hsla(0, 0%, 20%, 0) 100%); */
+
+}
+
+.main-content li code {
+	/* width: 850px; */
+	background: hsl(35, 73%, 94%, 1);
+	padding: 0em .15em;
+	border-radius: 2px;
+	border: 0.5px solid rgb(221, 216, 216);
+	font-size: inherit;
+	line-height: 1 !important;
+	white-space: nowrap;
+	font-size: 0.85em;
+
+}
+
+.main-content img {
+	max-width: 100%;
+}
+
+pre-title {
+	font-family: 'Poiret One', Overlock, Asap, 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata;
+	font-size: 1.8rem;
+	font-weight: 200;
+	color: hsla(251, 100%, 15%, 0.9);
+}
+
+@counter-style circles {
+	system: cyclic;
+	/* symbols: "\278A" "\278B" "\278C" "\278D" "\278E" "\278F"; */
+	symbols: "\2776" "\2777" "\2778" "\2779" "\277A" "\277B";
+	/* symbols: "a", "b", "c"; */
+	suffix: " ";
+}
+
+ol {
+	/* list-style: decimal; */
+	/* list-style-type: circles; */
+	line-height: 1.4em;
+}
+
+li::marker {
+	font-size: 1.1em;
+}
+
+li {
+	font-family: 'Scope One', 'Libre Baskerville', 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+	font-weight: normal;
+	letter-spacing: 0.012em;
+	word-spacing: 0.15em;
+	font-size: 1.2rem;
+	list-style-position: outside;
+	padding-left: 10px;
+	/* margin: 10px 0px; */
+	line-height: 1.3em;
+
+}
+
+li::marker {
+	/* font-family: DejavuSans; */
+	/* list-style-type: "\2680"; */
+	/* content: "\21F3"; */
+}
+
+ul {
+	/* font-family: DejavuSerif; */
+	list-style-type: "\27BA";
+	line-height: 1.4em;
+}
+
+pre {
+	box-sizing: border-box;
+	overflow-x: scroll;
+	background-color: #321506;
+	/* background-blend-mode: multiply; */
+	border: hsla(20, 79%, 11%, 0.1) 1px solid;
+	border-radius: 5px;
+	width: 100%;
+	padding: 0;
+	display: grid;
+	overflow-x: scroll;
+}
+
+pre[class*='language-'] {
+	margin: 1em 0;
+}
+
+code {
+	box-sizing: border-box;
+	font-size: 1rem;
+	/* width: 850px; */
+	/* overflow-x: scroll; */
+	/* background-color: #dda384; */
+	min-width: 300px;
+}
+
+.main-content a {
+	font-family: 'Scope One', 'Libre Baskerville', 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+	/* color: hsla(var(--main-text-color), 0.7); */
+	font-weight: normal;
+	letter-spacing: 0.012em;
+	word-spacing: 0.15em;
+	font-size: 1.3rem;
+	color: hsla(var(--main-text-color), 1);
+}
+
+dingbat {
+	/* font-size: 1em; */
+	/* color: black; */
+	position: relative;
+	/* top: 3px; */
+}
+
+html-el {
+	font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+	box-sizing: border-box;
+	font-size: 1.1rem;
+	color: hsl(251, 100%, 8%);
+	/* width: 850px; */
+	/* overflow-x: scroll; */
+	background-color: hsl(168, 48%, 63%, 15%);
+	border-radius: 2px;
+	padding: 0px 5px;
+	border: 0.1px solid #e3e3e3;
+	min-width: 300px;
+}
+
+html-el::after {
+	content: ">"
+}
+
+html-el::before {
+	content: "<"
+}
+
+html-attr {
+	font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+	box-sizing: border-box;
+	font-size: 1.1rem;
+	color: hsl(251, 100%, 8%);
+	/* width: 850px; */
+	/* overflow-x: scroll; */
+	background-color: hsl(168, 48%, 63%, 15%);
+	border-radius: 2px;
+	padding: 0px 5px;
+	border: 0.3px dotted hsla(0, 0%, 0%, 0.4);
+	min-width: 300px;
+}
+
+html-attr>code {
+	background-color: #670b0b;
+	border-radius: 2px;
+	padding: 0px 5px;
+	border: 0.5px solid #cacaca;
+}
+
+.language-bash pre {
+	color: #f8f8f2;
+	font-display: swap;
+	/* background: hsla(251, 100%, 15%, 0.7); */
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+.language-bash code::before {
+	content: "Console";
+	background: brown;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.language-bash code {
+	color: rgb(255, 255, 255);
+	background: hsla(251, 100%, 15%, 1);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1em;
+	padding: 10px;
+	text-shadow: 0 1px rgba(0, 0, 0, .3);
+}
+
+.language-bash .token,
+.string,
+.operator .punctuation {
+	color: white;
+	font-weight: normal;
+	/* font-size: 1rem; */
+	font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 1.8em;
+	}
+
+	pre {
+		width: 95%;
+		padding: 0;
+		overflow-x: scroll;
+	}
+
+	.post-video {
+		width: 90%;
+	}
+
+	code {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	pre {
+		width: 95%;
+		padding: 0;
+		overflow-x: scroll;
+	}
+
+	.post-video {
+		width: 90%;
+	}
+
+	code {
+		font-size: 1rem;
+	}
+}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/lib/components/topic-list-card.svelte?svelte&amp;type=style&amp;lang.css">@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&display=swap');
+.tags.s-crYAW51Da_Ef{display:block;margin:0px;font-size:smaller}
+.size-1.s-crYAW51Da_Ef{font-size:0.9rem}
+.size-2.s-crYAW51Da_Ef{font-size:1rem}
+.size-3.s-crYAW51Da_Ef{font-size:1.1rem}
+.topic-box.s-crYAW51Da_Ef{padding:0px 4px;margin:0px 5px 3px 0px;border-radius:5px;text-decoration:none;display:inline-block}
+.normal-tag.s-crYAW51Da_Ef{background-color:hsla(196, 67%, 54%, 0.1);color:hsl(251, 100%, 15%);border:1px solid hsla(251, 32%, 44%, 0.2)}
+.light-tag.s-crYAW51Da_Ef{background-color:hsla(240, 39%, 77%, 0.2);color:hsl(251, 100%, 15%);border:1px solid hsla(251, 32%, 44%, 0.4)}
+.topic-box.s-crYAW51Da_Ef:hover{outline:0.2px solid hsla(252, 32%, 44%, 0.2);cursor:pointer;color:hsl(253, 39%, 95%);background-color:hsl(251, 100%, 15%, 0.6)}
+.s-crYAW51Da_Ef{}</style><style type="text/css" data-vite-dev-id="/home/develiman/Documents/10-MyWork/01-my-site/01-my-blog/src/routes/blog/pages/2023-11-29-what-is-ai/+page.svelte?svelte&amp;type=style&amp;lang.css">.heading.s-uYev1HRvSmNg h1.s-uYev1HRvSmNg{margin-top:10px;margin-bottom:20px}.meta-info.s-uYev1HRvSmNg.s-uYev1HRvSmNg{border-left:hsl(251, 100%, 15%) solid 4px;padding:0 0 0 10px}.meta-info.s-uYev1HRvSmNg .author.s-uYev1HRvSmNg,.date.s-uYev1HRvSmNg.s-uYev1HRvSmNg{font-family:Roboto, Verdana, Geneva, Tahoma, sans-serif;font-style:oblique;margin:5px}.main-content.s-uYev1HRvSmNg.s-uYev1HRvSmNg{width:auto}text.s-uYev1HRvSmNg.s-uYev1HRvSmNg{font-family:Arial, sans-serif}.sidebar.s-uYev1HRvSmNg.s-uYev1HRvSmNg{margin:10px 30px 0px 0px}.content.s-uYev1HRvSmNg.s-uYev1HRvSmNg{width:100%;display:flex;flex-direction:column;align-items:flex-start}.references.s-uYev1HRvSmNg.s-uYev1HRvSmNg{border-top:2px #8aa9a9 dashed}.references.s-uYev1HRvSmNg .s-uYev1HRvSmNg:is(p, li){font-size:1.1em}@media(max-width: 1000px){div.sidebar.s-uYev1HRvSmNg.s-uYev1HRvSmNg{margin:0px;padding-bottom:20px;border-bottom:2px dotted var(--main-color)}}.s-uYev1HRvSmNg.s-uYev1HRvSmNg{}</style><title>asifsalam</title></head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"> <section class="header s-7IPF32Wcq3s8"><div class="main-title-wrap s-cRdZuPwzb90e"><div class="main-title s-cRdZuPwzb90e"><p class="main-title-header s-cRdZuPwzb90e"><span class="main-title-left s-cRdZuPwzb90e">Normally unsupervised</span></p> <div class="title-name-wrap s-cRdZuPwzb90e"><p class="sub-title-text s-cRdZuPwzb90e">Mostly about data — and how to use it effectively.</p> <p class="title-name s-cRdZuPwzb90e">Asif Salam</p></div></div></div> <div class="title-border s-cRdZuPwzb90e"></div><!--<Main-title-v2>--> <header class="s-HCuzqHjNU96d"><div class="nav-container s-HCuzqHjNU96d"><nav class="middle-section large s-HCuzqHjNU96d"><ul class="s-HCuzqHjNU96d"><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/" class="s-HCuzqHjNU96d">Home</a> </li><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/blog" class="s-HCuzqHjNU96d active">Blog</a> </li><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/resources" class="s-HCuzqHjNU96d">Resources</a> </li><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/shayari" class="s-HCuzqHjNU96d">Melancholy</a> </li><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/contact" class="s-HCuzqHjNU96d">Contact</a> </li><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/about" class="s-HCuzqHjNU96d">About</a> </li></ul></nav> <nav class="middle-section medium s-HCuzqHjNU96d"><ul class="s-HCuzqHjNU96d"><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/" class="s-HCuzqHjNU96d">Home</a> </li><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/blog" class="s-HCuzqHjNU96d active">Blog</a> </li><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/resources" class="s-HCuzqHjNU96d">Resources</a> </li><li class="nav-item s-HCuzqHjNU96d"><a data-sveltekit-prefetch="" href="http://localhost:5173/shayari" class="s-HCuzqHjNU96d">Melancholy</a> </li></ul></nav></div></header><!--<Navbar>--></section> <main class="s-7IPF32Wcq3s8"><div class="main-container s-ISUD83oxX-r6"><div class="quote-tag s-0uPEqmZkV37o"><div class="for-animation s-0uPEqmZkV37o"><blockquote class="quote s-0uPEqmZkV37o"><q class="main-quote s-0uPEqmZkV37o">Probability and expectation are not the same. It's probability and probability times the pay-off.</q></blockquote> <div class="attribution-container s-0uPEqmZkV37o"><p class="attribution s-0uPEqmZkV37o">Nassim Nicholas Taleb  <br class="s-0uPEqmZkV37o"></p></div></div></div><!--<Random-quote>--> <ul class="breadcrumbs s-Y7PSJJThxgdQ"><li class="breadcrumbs-item-active s-Y7PSJJThxgdQ"><a href="http://localhost:5173/" class="s-Y7PSJJThxgdQ">Home</a>&nbsp;&nbsp;&gt;
+			</li><li class="breadcrumbs-item-active s-Y7PSJJThxgdQ"><a href="http://localhost:5173/blog" class="s-Y7PSJJThxgdQ">Blog</a>&nbsp;&nbsp;&gt;
+			</li><li class="breadcrumbs-item-active s-Y7PSJJThxgdQ"><a href="http://localhost:5173/blog/pages" class="s-Y7PSJJThxgdQ">Pages</a>&nbsp;&nbsp;&gt;
+			</li><li class="breadcrumbs-item s-Y7PSJJThxgdQ">2023-11-29-what-is-ai</li></ul><!--<Breadcrumbs>--> <div class="container s-K-BxOMm0sYXH"><div class="sidebar s-uYev1HRvSmNg"><div class="post-card s-FJou1cHfGjIc"><h3 class="s-FJou1cHfGjIc">Recent posts</h3> <a class="main-link s-FJou1cHfGjIc" href="http://localhost:5173/blog/posts/2024-01-04-data-driven-enterprise-part-1"><p class="article-title s-FJou1cHfGjIc">The Data-Driven Enterprise – Part 1 – Why Data &amp; AI Initiatives Fail</p> </a><a class="main-link s-FJou1cHfGjIc" href="http://localhost:5173/blog/pages/2023-11-15-al-kindi-cryptography"><p class="article-title s-FJou1cHfGjIc">Al-Kindi and the birth of statistical inference</p> </a><a class="main-link s-FJou1cHfGjIc" href="http://localhost:5173/blog/posts/2023-09-15-r-and-powerpoint-part-3"><p class="article-title s-FJou1cHfGjIc">Create amazing PowerPoint slides using R — Part 3(3) — Putting it together</p> </a><a class="main-link s-FJou1cHfGjIc" href="http://localhost:5173/blog/posts/2023-08-30-r-and-powerpoint-part-2"><p class="article-title s-FJou1cHfGjIc">Create amazing PowerPoint slides using R — Part 2(3) — Getting some data</p> </a><a class="main-link s-FJou1cHfGjIc" href="http://localhost:5173/blog/posts/2023-08-05-r-and-powerpoint-part-1"><p class="article-title s-FJou1cHfGjIc">Create amazing PowerPoint slides using R — Part 1(3) — The basics</p> </a></div><!--<Posts-list-card>--> <p class="topics s-uYev1HRvSmNg"><div class="sidebar s-utS4VE8MRsLT"><div class="sidebar-themes s-woQE_tsaL3Qe"><p class="tags s-woQE_tsaL3Qe"><p class="tags-header s-K_SBHUGq4i3V">Themes</p> <button class="topic tag-box s-K_SBHUGq4i3V">all</button><button class="topic tag-box s-K_SBHUGq4i3V">data-analysis</button><button class="topic tag-box s-K_SBHUGq4i3V">data-driven-enterprise</button><button class="topic tag-box s-K_SBHUGq4i3V">data-literacy</button><button class="topic tag-box s-K_SBHUGq4i3V">data-science</button><button class="topic tag-box s-K_SBHUGq4i3V">data-viz</button><button class="topic tag-box s-K_SBHUGq4i3V">inspiration</button><button class="topic tag-box s-K_SBHUGq4i3V">pitfall</button><!--<Create-tags>--></p></div><!--<Key-tags>--> <div class="sidebar-themes s-woQE_tsaL3Qe"><p class="tags s-woQE_tsaL3Qe"><p class="tags-header s-K_SBHUGq4i3V">Categories</p> <button class="topic tag-box s-K_SBHUGq4i3V">all</button><button class="topic tag-box s-K_SBHUGq4i3V">book</button><button class="topic tag-box s-K_SBHUGq4i3V">cautionary-tale</button><button class="topic tag-box s-K_SBHUGq4i3V">foundations</button><button class="topic tag-box s-K_SBHUGq4i3V">inspiration</button><button class="topic tag-box s-K_SBHUGq4i3V">method</button><button class="topic tag-box s-K_SBHUGq4i3V">my-post</button><button class="topic tag-box s-K_SBHUGq4i3V">organization</button><button class="topic tag-box s-K_SBHUGq4i3V">python</button><button class="topic tag-box s-K_SBHUGq4i3V">rstats</button><button class="topic tag-box s-K_SBHUGq4i3V">technology</button><button class="topic tag-box s-K_SBHUGq4i3V">tools</button><!--<Create-tags>--></p></div><!--<Key-tags>--> </div><!--<Sidebar-tags>--></p></div> <div class="content s-uYev1HRvSmNg"><div class="heading s-uYev1HRvSmNg"><h1 class="s-uYev1HRvSmNg">What is Artificial Intelligence?</h1></div> <div class="meta-info s-uYev1HRvSmNg"><p class="author s-uYev1HRvSmNg">Asif Salam</p> <p class="date s-uYev1HRvSmNg">Posted: 2023-11-15</p> <p class="tags s-crYAW51Da_Ef"><a class="topic-box size-3 light-tag s-crYAW51Da_Ef" href="http://localhost:5173/resources/tags/post">post</a><a class="topic-box size-3 light-tag s-crYAW51Da_Ef" href="http://localhost:5173/resources/tags/AI">AI</a><a class="topic-box size-3 light-tag s-crYAW51Da_Ef" href="http://localhost:5173/resources/tags/data-literacy">data-literacy</a><a class="topic-box size-3 light-tag s-crYAW51Da_Ef" href="http://localhost:5173/resources/tags/my-post">my-post</a></p><!--<Topic-list-card>--></div> <br class="s-uYev1HRvSmNg"> <div class="main-content s-uYev1HRvSmNg"><p class="s-uYev1HRvSmNg"><img src="asifsalam_files/img-L02207.jpg" alt="Iraqi stamp commemorating Al-Kindi" style="float: right; margin-left: 10px;" width="250;" class="s-uYev1HRvSmNg">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis tenetur error quis
+				maxime dolorum perferendis ipsa, id non accusantium ab saepe. Omnis beatae assumenda tenetur
+				nemo, provident facilis in voluptate iste minima natus, incidunt aperiam suscipit repellendus
+				molestias, numquam corporis consectetur commodi. Assumenda sit quos eligendi sapiente nam ipsa
+				praesentium odit itaque maiores hic unde, ut obcaecati molestias debitis voluptate! Voluptatum
+				sit excepturi ad fugiat asperiores similique nostrum, voluptas voluptates molestiae atque, quas
+				quisquam minus magnam dolorem alias doloremque magni. Veritatis numquam molestiae harum nam cupiditate
+				modi earum quo minima optio, quod atque, ad nihil, maxime saepe omnis voluptates non dolore officiis
+				rem quibusdam! Atque, ad. Ab accusamus, quo veritatis officiis, totam accusantium ullam commodi
+				atque temporibus nulla iusto tenetur. Itaque voluptatum repudiandae, dolore optio id nemo!</p> <div class="visual s-uYev1HRvSmNg"><svg class="chart s-uYev1HRvSmNg" width="800" height="2550"><line x1="0" y1="0" x2="800" y2="0" stroke="black" stroke-width="2" class="s-uYev1HRvSmNg"></line><rect x="400" y="20" width="15" height="2525" fill="lightgrey" stroke="lightgrey" class="s-uYev1HRvSmNg"></rect><g transform="translate(400, 175)" class="s-uYev1HRvSmNg"><circle cx="0" cy="0" r="5" fill="blue" class="s-uYev1HRvSmNg"></circle><text x="0" y="0" font-size="12" text-anchor="middle" fill="black" class="s-uYev1HRvSmNg">1936</text><text x="50" y="0" font-size="12" fill="black" class="s-uYev1HRvSmNg">Alan Turing publishes On Computable Machines</text></g><g transform="translate(400, 275)" class="s-uYev1HRvSmNg"><circle cx="0" cy="0" r="5" fill="blue" class="s-uYev1HRvSmNg"></circle><text x="0" y="0" font-size="12" text-anchor="middle" fill="black" class="s-uYev1HRvSmNg">1940</text><text x="50" y="0" font-size="12" fill="black" class="s-uYev1HRvSmNg"></text></g><g transform="translate(400, 350)" class="s-uYev1HRvSmNg"><circle cx="0" cy="0" r="5" fill="blue" class="s-uYev1HRvSmNg"></circle><text x="0" y="0" font-size="12" text-anchor="middle" fill="black" class="s-uYev1HRvSmNg">1943</text><text x="50" y="0" font-size="12" fill="black" class="s-uYev1HRvSmNg">McCulloch &amp; Pitt model Mental Nets</text></g><g transform="translate(400, 525)" class="s-uYev1HRvSmNg"><circle cx="0" cy="0" r="5" fill="blue" class="s-uYev1HRvSmNg"></circle><text x="0" y="0" font-size="12" text-anchor="middle" fill="black" class="s-uYev1HRvSmNg">1950</text><text x="50" y="0" font-size="12" fill="black" class="s-uYev1HRvSmNg"></text></g></svg></div> <div class="references s-uYev1HRvSmNg"><p class="s-uYev1HRvSmNg">References:</p> <ol class="s-uYev1HRvSmNg"><li class="s-uYev1HRvSmNg">Al-Kadit, I. A. (n.d.). ORIGINS OF CRYPTOLOGY: THE ARAB CONTRIBUTIONS. <i class="s-uYev1HRvSmNg">Cryptologia, 16(2),</i> 97–126. https://doi.org/10.1080/0161-119291866801.</li> <li class="s-uYev1HRvSmNg">Al-Tayeb, T. (2003, June 9). <i class="s-uYev1HRvSmNg">Al-Kindi, Cryptography, Code Breaking and Ciphers.</i> Muslim
+						Heritage. Retrieved September 20, 2023, from https://muslimheritage.com/al-kindi-cryptography/</li> <li class="s-uYev1HRvSmNg">Brewster, T. (2015, September 3). <i class="s-uYev1HRvSmNg">How A 1200-Year-Old Hacking Technique Can Already Crack Tomorrow’s Encrypted Vaults.</i>
+ Forbes. Retrieved October 5, 2023, from 
+https://www.forbes.com/sites/thomasbrewster/2015/09/03/microsoft-dumb-
+attacks-cracks-next-gen-cryptography/?sh=55b84c1a5b55</li> <li class="s-uYev1HRvSmNg">Maidment, J. (2000, October 5). <i class="s-uYev1HRvSmNg">The man who cracked the Kama Sutra code.</i>
+ The Telegraph.
+						Retrieved September 24, 2023, from 
+https://www.telegraph.co.uk/news/science/science-news/4754214/The-man-
+who-cracked-the-Kama-Sutra-code.html</li> <li class="s-uYev1HRvSmNg">Naveed, M., Kamara, S., and Wright, C.V., (2015). Inference Attacks on
+						Property-Preserving Encrypted Databases. In <i class="s-uYev1HRvSmNg">Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security
+							(CCS '15).</i> Association for Computing Machinery, New York, NY, USA, 644–655. https://doi-org.ezp.sub.su.se/10.1145/2810103.2813651</li> <li class="s-uYev1HRvSmNg">Singh, S. (2000). <i class="s-uYev1HRvSmNg">The code book : the secret history of codes and codebreaking.</i> http://ci.nii.ac.jp/ncid/BA51150503</li></ol></div></div></div><!--<+page>--></div><!--<+layout>--></div><!--<+layout>--></main> <div class="footer s-ghcUECSXdemo"><div class="personal-info s-ghcUECSXdemo"><p class="name s-ghcUECSXdemo">Asif Salam</p> <p class="location s-ghcUECSXdemo">Stockholm</p> <div class="flag s-ghcUECSXdemo"><p class="location s-ghcUECSXdemo" style="display: inline;">Sweden</p></div></div> <img class="swedish-flag s-ghcUECSXdemo" src="asifsalam_files/sweden_flag_postage_stamp_2.jpg" alt="Flag of Sweden"> <a href="mailto:asif.salam@yahoo.com" class="s-ghcUECSXdemo"><img src="asifsalam_files/email-retro-1.svg" alt="email icon" class="other-icon s-ghcUECSXdemo"></a> <a href="http://twitter.com/asifsalam" class="s-ghcUECSXdemo"><img class="other-icon s-ghcUECSXdemo" src="asifsalam_files/twitter-retro-1.svg" alt="Twitter Logo"></a> <a href="https://www.linkedin.com/in/asifsalam/" class="s-ghcUECSXdemo"><img src="asifsalam_files/linkedin-retro-1.svg" alt="linkedin icon" class="other-icon s-ghcUECSXdemo"></a></div> <div class="footer-bottom s-ghcUECSXdemo"><p class="s-ghcUECSXdemo"><a href="http://localhost:5173/about" class="s-ghcUECSXdemo">Technology &amp; resource stack</a></p></div><!--<Footer>--><!--<+layout>--> <div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;"></div><!--<Root>--></div>
+	
+
+</body><div id="svelte-inspector-host"> <!--<Inspector>--></div></html>

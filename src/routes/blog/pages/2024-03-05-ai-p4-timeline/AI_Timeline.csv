@@ -1,0 +1,101 @@
+Year,Event Name,Description,Category,Key Figures/Organizations,Impact/Significance
+1950,Turing Test,Alan Turing proposed a test to assess machine intelligence.,Theoretical Foundations,Alan Turing,Introduced a fundamental way to think about machine intelligence.
+1956,Dartmouth Conference,The term 'Artificial Intelligence' was coined.,Major Breakthroughs,"John McCarthy, Marvin Minsky",Birth of AI as a formal academic discipline.
+1958,Perceptron,Frank Rosenblatt developed the first artificial neural network model.,Neural Networks,Frank Rosenblatt,"Early work in neural networks, basis for deep learning."
+1965,Moore's Law,Gordon Moore predicted exponential growth in computing power.,Hardware,Gordon Moore,Enabled the rapid growth of AI computing power.
+1966,ELIZA,"Joseph Weizenbaum developed ELIZA, an early chatbot.",NLP,Joseph Weizenbaum,First demonstration of human-computer dialogue.
+1973,Lighthill Report,"UK report criticized AI progress, leading to decreased funding.",AI Winters,James Lighthill,Contributed to the first AI winter.
+1980,Expert Systems Boom,Rise of rule-based AI systems in industries.,Expert Systems,Various,Commercial AI applications gained traction.
+1986,Backpropagation Rediscovered,Hinton and colleagues improved neural network training.,Deep Learning,Geoffrey Hinton,Major breakthrough in neural network training.
+1997,Deep Blue vs Kasparov,IBM's Deep Blue defeated world chess champion Garry Kasparov.,AI Milestones,IBM,First AI to defeat a world chess champion.
+2006,Deep Learning Renaissance,Hinton and others reignited interest in neural networks.,Deep Learning,Geoffrey Hinton,Led to modern AI breakthroughs.
+2011,IBM Watson wins Jeopardy!,Watson defeated human champions in Jeopardy!,AI Milestones,IBM,Showcased AI's ability to understand and process natural language.
+2012,AlexNet wins ImageNet,Deep learning model dominated the ImageNet competition.,Deep Learning,"Geoffrey Hinton, Alex Krizhevsky",Sparked the deep learning revolution.
+2014,GANs Invented,Goodfellow introduced Generative Adversarial Networks (GANs).,Machine Learning,Ian Goodfellow,Led to advancements in image and video synthesis.
+2016,AlphaGo beats Lee Sedol,DeepMind’s AlphaGo defeated a world champion in Go.,AI Milestones,DeepMind,Demonstrated AI's ability to master complex strategy games.
+2020,GPT-3 Released,"OpenAI launched GPT-3, an advanced NLP model.",NLP,OpenAI,Significant improvement in text generation and understanding.
+2023,GPT-4 Released,"OpenAI launched GPT-4, a multimodal AI model.",AI Models,OpenAI,Further advances in reasoning and multimodal capabilities.
+2024,AI Regulation Developments,Global governments push AI governance and regulations.,Ethics & Regulation,Various,Shaping the future of AI policy and governance.
+2017,AI Event 18,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2018,AI Event 19,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2019,AI Event 20,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2020,AI Event 21,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2021,AI Event 22,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2022,AI Event 23,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2023,AI Event 24,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2024,AI Event 25,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2000,AI Event 26,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2001,AI Event 27,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2002,AI Event 28,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2003,AI Event 29,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2004,AI Event 30,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2005,AI Event 31,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2006,AI Event 32,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2007,AI Event 33,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2008,AI Event 34,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2009,AI Event 35,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2010,AI Event 36,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2011,AI Event 37,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2012,AI Event 38,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2013,AI Event 39,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2014,AI Event 40,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2015,AI Event 41,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2016,AI Event 42,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2017,AI Event 43,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2018,AI Event 44,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2019,AI Event 45,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2020,AI Event 46,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2021,AI Event 47,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2022,AI Event 48,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2023,AI Event 49,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2024,AI Event 50,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2000,AI Event 51,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2001,AI Event 52,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2002,AI Event 53,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2003,AI Event 54,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2004,AI Event 55,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2005,AI Event 56,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2006,AI Event 57,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2007,AI Event 58,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2008,AI Event 59,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2009,AI Event 60,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2010,AI Event 61,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2011,AI Event 62,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2012,AI Event 63,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2013,AI Event 64,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2014,AI Event 65,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2015,AI Event 66,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2016,AI Event 67,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2017,AI Event 68,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2018,AI Event 69,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2019,AI Event 70,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2020,AI Event 71,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2021,AI Event 72,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2022,AI Event 73,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2023,AI Event 74,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2024,AI Event 75,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2000,AI Event 76,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2001,AI Event 77,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2002,AI Event 78,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2003,AI Event 79,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2004,AI Event 80,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2005,AI Event 81,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2006,AI Event 82,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2007,AI Event 83,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2008,AI Event 84,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2009,AI Event 85,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2010,AI Event 86,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2011,AI Event 87,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2012,AI Event 88,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2013,AI Event 89,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2014,AI Event 90,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2015,AI Event 91,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2016,AI Event 92,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2017,AI Event 93,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2018,AI Event 94,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2019,AI Event 95,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2020,AI Event 96,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2021,AI Event 97,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2022,AI Event 98,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2023,AI Event 99,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
+2024,AI Event 100,Significant AI milestone or discovery.,Various,Key AI Researchers,Impactful AI advancement.
