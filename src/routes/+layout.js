@@ -2,7 +2,7 @@ import * as d3 from 'd3';
 import { parseArticle, parsePosts } from '/src/lib/modules/utility_functions';
 import { themes, categories, tags, allThemes, allCategories, allTopics } from '$lib/json/categories';
 // const dataFile = '/data/link_data_full-v4.csv';
-const dataFile = '/data/link_data_v6.csv';
+const dataFile = '/data/link_data_v7.csv';
 // const dataFile = 'https://raw.githubusercontent.com/asifsalam/datasets/master/processed_links-small.csv';
 
 export const ssr = false;
@@ -14,7 +14,7 @@ export async function load({ fetch }) {
         .filter((d) => d.link_type !== "blog")
         .filter((d) => d.link_type !== "site");
 
-    console.log("layout.js", articleData[1159]);
+    // console.log("layout.js", articleData[1159]);
 
     /**
      * @type {any[]}
@@ -40,6 +40,8 @@ export async function load({ fetch }) {
     })
 
     const posts = articles.filter((d) => d.link_type === "my-post");
+    articles = articles.filter((d) => d.link_type != "my-post");
+    // console.log(articleData, articles, posts);
     // console.log("layout-js", articles[1], articleData[1]);
     return {
         articles, posts, themes, categories, tags

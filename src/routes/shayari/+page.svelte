@@ -7,7 +7,7 @@
 	import TopicBox from '$lib/components/topic-box.svelte';
 
 	const headingText =
-		'a little prose, some poetry <br/>a bit of art, some history<br />to touch the soul, spark the imagination';
+		'a little prose, some poetry <br/>a bit of art, some history<br />nourishment for the soul';
 </script>
 
 <RandomQuote />
@@ -16,9 +16,9 @@
 <div class="container">
 	<div class="sidebar">
 		<SidebarHeading
-			sidebarLeadinText={'Data has its place, but the soul craves a more substantial kindling.'}
+			sidebarLeadinText={'The other important things.'}
 		/>
-		<SidebarTags useThemes={'yes'} />
+		<!-- <SidebarTags useThemes={'yes'} /> -->
 	</div>
 	<div class="posts-list">
 		<h1 class="heading-title">{@html headingText}</h1>

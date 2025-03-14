@@ -4,11 +4,10 @@
 		Symbolic AI uses explicit rules, logic, and symbolic structures to replicate human reasoning and
 		knowledge representation.
 	</p>
-	<h3>Main techniques</h3>
+	<h3>Representative techniques</h3>
 	<ul>
 		<li>
-			<strong>Logic Programming:</strong> Encodes knowledge and inferences using formal logic (e.g.,
-			Prolog).
+			<strong>Logic Programming:</strong> Encodes knowledge and inferences using formal logic.
 		</li>
 		<li>
 			<strong>Expert Systems:</strong> Rule-based systems that mimic domain-specific human expertise.
@@ -21,11 +20,10 @@
 			<strong>Semantic Networks:</strong> Represents knowledge as nodes (concepts) and edges (relationships).
 		</li>
 		<li>
-			<strong>Production Systems:</strong> Uses "if-then" rules to derive actions from conditions (e.g.,
-			CLIPS).
+			<strong>Production Systems:</strong> Uses "if-then" rules to derive actions from conditions.
 		</li>
 	</ul>
-	<h3>Main Algorithms</h3>
+	<h3>Notable algorithms</h3>
 	<ul>
 		<li>
 			<strong>A* Search:</strong> An optimization algorithm for graph traversal, using heuristics to
@@ -58,7 +56,7 @@
 	<h3>Example applications</h3>
 	<ul>
 		<li>
-			<strong>Expert Systems:</strong> AI programs that use rule-based reasoning to simulate human decision-making
+			<strong>Expert Systems:</strong> Programs that use rule-based reasoning to simulate human decision-making
 			in specialized domains.
 		</li>
 		<li>
@@ -70,7 +68,7 @@
 			between concepts in a domain.
 		</li>
 		<li>
-			<strong>Automated Theorem Provers:</strong> AI systems that use formal logic to automatically prove
+			<strong>Automated Theorem Provers:</strong> Systems that use formal logic to automatically prove
 			mathematical and logical theorems.
 		</li>
 		<li>
@@ -82,8 +80,8 @@
 			relationships to enable reasoning and inference.
 		</li>
 		<li>
-			<strong>Reasoning Systems:</strong> AI frameworks designed to infer new knowledge and make logical
-			deductions based on given facts.
+			<strong>Reasoning Systems:</strong> Designed to infer new knowledge and make logical deductions
+			based on given facts.
 		</li>
 	</ul>
 </section>
@@ -94,7 +92,7 @@
 		Connectionist AI uses artificial neural networks to learn patterns from data, using inspiration
 		from our understanding of how the human brain works.
 	</p>
-	<h3>Main techniques</h3>
+	<h3>Representative techniques</h3>
 	<ul>
 		<li>
 			<strong>Artificial Neural Networks (ANNs):</strong> Interconnected layers of nodes that learn hierarchical
@@ -112,14 +110,23 @@
 			<strong>Recurrent Neural Networks (RNNs):</strong> Handles sequential data via feedback loops.
 		</li>
 		<li>
+			<strong>Generative adversarial Networks (GANs):</strong> Neural networks that compete, a generator
+			and a discriminator, iteratively refining generated data to match real data distributions.
+		</li>
+		<li>
+			<strong>Variatioinal Autoencoders (VAEs):</strong> Learn probabilistic latent representations of
+			data, enabling generation by sampling and decoding from the latent space.
+		</li>
+
+		<li>
 			<strong>Transformers:</strong> Uses self-attention mechanisms for parallelized sequence processing.
 		</li>
 		<li>
-			<strong>Supervised and Unsupervised Learning:</strong> Using labeled data to train models and discovering
+			<strong>Supervised and Unsupervised Learning:</strong> Uses labeled data to train models and discover
 			hidden patterns in unlabeled data.
 		</li>
 	</ul>
-	<h3>Example Algorithms</h3>
+	<h3>Notable algorithms</h3>
 	<ul>
 		<li>
 			<strong>Backpropagation:</strong> Adjusts network weights by propagating errors backward.
@@ -141,36 +148,36 @@
 	<h3>Example applications</h3>
 	<ul>
 		<li>
-			<strong>Text Generation:</strong> AI programs that generate natural language text based on input
-			prompts.
+			<strong>Text Generation:</strong> Generate natural language text based on input prompts. LLMs ar
+			examples of models that generate natural language text and code based on user prompts.
 		</li>
 		<li>
-			<strong>Image Generation:</strong> AI programs that generate images based on input prompts.
+			<strong>Image Generation:</strong> Generate images based on input prompts.
 		</li>
 		<li>
-			<strong>Video Generation:</strong> AI programs that generate videos from text descriptions.
+			<strong>Video Generation:</strong> Generate videos from text descriptions.
 		</li>
-		<li><strong>Video to Text:</strong> AI programs that transcribe videos into text.</li>
-		<li><strong>Reasoning Models:</strong> Systems that mimic thinking and solve complex tasks.</li>
+		<li><strong>Video to Text:</strong> Transcribe videos into text.</li>
+		<li><strong>Reasoning Models:</strong> Mimic thinking and solve complex tasks.</li>
 		<li>
-			<strong>Image Classification:</strong> Assigning one or more predefined labels to an image based
-			on its visual content.
-		</li>
-		<li>
-			<strong>Text Classification:</strong> AI programs that classify text into predefined categories.
+			<strong>Image Classification:</strong> Assign one or more predefined labels to an image based on
+			its visual content.
 		</li>
 		<li>
-			<strong>Object Detection:</strong> Identifying and localizing objects within images or video frames.
+			<strong>Text Classification:</strong> Classify text into predefined categories.
 		</li>
-		<li><strong>Speech Recognition:</strong> Converting spoken language into written text.</li>
 		<li>
-			<strong>Anomaly Detection:</strong> Identifying patterns in data that deviate significantly from
-			expected behavior.
+			<strong>Object Detection:</strong> Identify and locale objects within images or video frames.
 		</li>
-		<li><strong>Forecasting:</strong> Predicting future outcomes based on historical data.</li>
+		<li><strong>Speech Recognition:</strong> Convert spoken language into written text.</li>
 		<li>
-			<strong>Recommendation Systems:</strong> Predicting user preferences to suggest relevant items
-			or content.
+			<strong>Anomaly Detection:</strong> Identify patterns in data that deviate significantly from expected
+			behavior.
+		</li>
+		<li><strong>Forecasting:</strong> Predict future outcomes based on historical data.</li>
+		<li>
+			<strong>Recommendation Systems:</strong> Predict user preferences to suggest relevant items or
+			content.
 		</li>
 	</ul>
 </section>
@@ -182,7 +189,7 @@
 		do not fit into either the Symbolic AI or Connectionist AI categories. There is a lot of overlap
 		in the tasks, but the techniques, algorithms, and scale are different.
 	</p>
-	<h3>Main Techniques</h3>
+	<h3>Representative Techniques</h3>
 	<ul>
 		<li>
 			<strong>Probability Theory:</strong> The broad foundational mathematical tools used in machine
@@ -217,7 +224,7 @@
 			in unlabeled data without predefined output labels.
 		</li>
 	</ul>
-	<h3>Example Algorithms</h3>
+	<h3>Representative Algorithms</h3>
 	<ul>
 		<li>
 			<strong>Q-Learning:</strong> A way for a computer to learn the best actions through trial and error,
@@ -348,3 +355,12 @@
 		</li>
 	</ul>
 </section>
+
+<style>
+	li::marker {
+		list-style-type: '\27BD';
+		line-height: 1.2em;
+		content: '\27A0';
+		color: hsla(var(--main-text-color), 0.15);
+	}
+</style>

@@ -13,6 +13,7 @@
 	let articlesPerPage = $itemsPerPage;
 	$: totalPages = Math.ceil(totalQuantity / articlesPerPage);
 	$: currentPage = 1;
+	$: previousPage = 1;
 	$: pageSet = 5;
 	let startArticleNum = 0;
 	// console.log('pagination-list', articles);
@@ -20,12 +21,19 @@
 	//	let currentPage = 1;
 	let trimStart = 0;
 	let trimEnd = trimStart + pageSet;
+	let slideDirection = 'right';
 
 	function handlePageChange(subPage) {
+		if (currentPage === subPage) {
+			return;
+		}
+		previousPage = currentPage;
 		currentPage = subPage;
 		trimStart = (currentPage - 1) * articlesPerPage;
 		trimEnd = trimStart + articlesPerPage;
 		articleSet = articles.slice(trimStart, trimEnd);
+		slideDirection = subPage > currentPage ? 'right' : 'left';
+		console.log('currentPage, previousPage, subPage - ', currentPage, previousPage, subPage);
 		// fetch new data for the current page
 	}
 	/*
@@ -64,15 +72,37 @@
 	{/key}
 </div>
 {#key articleSet}
-	<div
-		class="category-container"
-		out:fly={{ delay: 0, duration: 200, opacity: 0, x: -100 }}
-		in:fly={{ delay: 250, duration: 200, x: 200 }}
-	>
-		{#each articleSet as article, i}
-			<ContentCardMedium {article} />
-		{/each}
-	</div>
+	{#if currentPage > previousPage}
+		<div
+			class="category-container"
+			out:fly={{ delay: 200, duration: 200, x: -200 }}
+			in:fly={{ delay: 200, duration: 200, opacity: 1, x: 200 }}
+		>
+			{#each articleSet as article, i}
+				<ContentCardMedium {article} />
+			{/each}
+		</div>
+	{:else if currentPage < previousPage}
+		<div
+			class="category-container"
+			out:fly={{ delay: 0, duration: 200, opacity: 0, x: -100 }}
+			in:fly={{ delay: 250, duration: 200, x: 200 }}
+		>
+			{#each articleSet as article, i}
+				<ContentCardMedium {article} />
+			{/each}
+		</div>
+	{:else}
+		<div
+			class="category-container"
+			out:fly={{ delay: 0, duration: 200, opacity: 0, x: -100 }}
+			in:fly={{ delay: 250, duration: 200, x: 200 }}
+		>
+			{#each articleSet as article, i}
+				<ContentCardMedium {article} />
+			{/each}
+		</div>
+	{/if}
 {/key}
 
 <style>
@@ -107,8 +137,24 @@
 		column-gap: 1.5rem;
 		row-gap: 1.5rem;
 		align-content: start;
+		transition: transform 0.3s ease-in-out;
 		/* margin-bottom: 15px; */
 	}
+
+	.slide-in-left {
+		transform: translateX(0);
+	}
+	.slide-in-right {
+		transform: translateX(0);
+	}
+
+	.slide-out-left {
+		transform: translateX(-100%);
+	}
+	.slide-out-right {
+		transform: translateX(100%);
+	}
+
 	@media (max-width: 950px) {
 		.pagination-container {
 			grid-template-columns: 1fr;

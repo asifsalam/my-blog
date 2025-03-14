@@ -1,5 +1,6 @@
 ---
-title: Create amazing PowerPoint slides using R &#151 Part 1(3) &#151 The basics
+pre_title: 'Create amazing PowerPoint slides using R'
+title: 1) The basics
 preview_image: '/post_assets/0001/post-0001-image-02.png'
 author: Asif Salam
 id: 'L02141'

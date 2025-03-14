@@ -18,22 +18,11 @@
 
 <RandomQuote callerId={'sub-site-layout'} />
 <Breadcrumbs />
-<!-- <main> -->
 
 <div class="container">
 	<slot />
-	<!-- <div class="sidebar">
-			<PostsListCard {posts} />
-			<p class="topics">
-				<SidebarTags useThemes={'yes'} useCategories={'yes'} />
-			</p>
-		</div>
-		<div class="content">
-			<slot />
-		</div> -->
 </div>
 
-<!-- </main> -->
 <style>
 	div.container {
 		display: grid;

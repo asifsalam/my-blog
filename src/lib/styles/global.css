@@ -114,6 +114,13 @@ kbd {
 	margin: auto 0;
 }
 
+pre-title {
+	font-family: 'Poiret One', Overlock, Asap, 'Sora', 'Montserrat', 'PT Sans Caption', Galdeano, Alata;
+	font-size: 1.8rem;
+	font-weight: 200;
+	color: hsla(251, 100%, 15%, 0.9);
+}
+
 
 @media (max-width: 1200px) {
 	body {

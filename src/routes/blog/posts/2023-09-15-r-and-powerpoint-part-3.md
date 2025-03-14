@@ -1,11 +1,12 @@
 ---
-title: Create amazing PowerPoint slides using R &#151 Part 3(3) &#151 Putting it together
+pre_title: 'Create amazing PowerPoint slides using R'
+title: '3) Putting it together'
 preview_image: '/post_assets/0003/post-0003-image-02.png'
 author: Asif Salam
-id: 'L02157'
+id: 'L02160'
 published: true
 post_date: '2023-09-15'
-excerpt: 'Automate the creation of PowerPoint presentations with R, reticulate, python and pywin32. In this final post, we put evreything together and create a stellar slide.'
+excerpt: 'Automate the creation of PowerPoint presentations with R, reticulate, python and pywin32. In this final post, we put everything together and create a stellar slide.'
 categories:
   - 'rstats'
   - 'method'
@@ -16,8 +17,7 @@ categories:
 <script>
   import ShowImage from "$lib/components/show-image.svelte"
   import ConsoleOutput from "$lib/components/console-output.svelte"
-  const consoleOutput1 = ['> nrow(films)',
-'[1] 60']
+  const consoleOutput1 = ['> nrow(films)', '[1] 60']
 </script>
 
 <br/>

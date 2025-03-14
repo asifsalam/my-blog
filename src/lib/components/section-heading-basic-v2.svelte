@@ -19,9 +19,14 @@
 		{headingTitle}
 		<TopicBox category={selectedTag} size={1} type={'heading'} />
 	</h1>
-	<SearchBar bind:searchTerm {searchItems} />
+
 	<h3 class="article-count large">{totalQuantity} <br /> items</h3>
 	<h3 class="article-count medium">{totalQuantity} items</h3>
+</div>
+<div class="search-section">
+	<div class="search-bar">
+		<SearchBar bind:searchTerm {searchItems} />
+	</div>
 </div>
 
 <style>
@@ -63,6 +68,18 @@
 
 	.medium {
 		display: none;
+	}
+
+	.search-section {
+		display: flex;
+		margin-bottom: 15px;
+		margin-left: 20px;
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+	}
+	.search-bar {
+		width: 80%;
 	}
 
 	@media (max-width: 900px) {

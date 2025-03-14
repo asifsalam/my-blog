@@ -1,5 +1,6 @@
 ---
-title: Create amazing PowerPoint slides using R &#151 Part 2(3) &#151 Getting some data
+pre_title: 'Create amazing PowerPoint slides using R'
+title: 2) Getting data
 preview_image: '/post_assets/0002/post-0002-image-02.png'
 author: Asif Salam
 id: 'L02146'

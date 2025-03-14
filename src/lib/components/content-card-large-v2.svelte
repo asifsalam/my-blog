@@ -27,6 +27,9 @@
 	<div class="post-main">
 		<div class="post-title">
 			<a style="text-decoration:none" href={article.link}>
+				{#if article.pre_title.length > 0}
+					<p class="pre-title">{article.pre_title}</p>
+				{/if}
 				<h3 class="article-title">{article.title}</h3></a
 			>
 			{#if article.author == 'NA'}
@@ -109,6 +112,13 @@
 	.image-container {
 		width: 100%;
 		height: 100%;
+	}
+	.pre-title {
+		font-family: 'Roboto', 'Roboto Slab', Poppins, sans-serif;
+		margin: 3px 0px 1px 10px;
+		font-size: 1.1rem;
+		font-weight: 400;
+		color: hsla(251, 100%, 21%, 1);
 	}
 
 	.left-image {

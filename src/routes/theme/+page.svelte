@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
-	import { articleList, themes, clickedTheme } from '$lib/json/stores';
+	import { articleList, postList, themes, clickedTheme } from '$lib/json/stores';
 	import { filterArticles, searchArticles } from '$lib/modules/utility_functions';
 	import RandomQuote from '$lib/components/random-quote.svelte';
 	import Breadcrumbs from '$lib/components/breadcrumbs.svelte';
@@ -15,13 +15,20 @@
 	$: theme = '';
 	$: articles = [];
 	$: searchTerm = '';
-
 	let themeObj = {};
+
+	const combinedList = [...$articleList, ...$postList].sort((a, b) => {
+		if (a.link_id > b.link_id) {
+			return -1;
+		} else {
+			return 1;
+		}
+	});
 
 	onMount(() => {
 		themeObj = $themes.filter((d) => d.name === $clickedTheme)[0];
 		theme = themeObj.name;
-		articles = filterArticles($articleList, themeObj);
+		articles = filterArticles(combinedList, themeObj);
 	});
 
 	function themeClicked(clTheme) {
@@ -29,11 +36,11 @@
 		$clickedTheme = selectedTheme;
 		themeObj = $themes.filter((d) => d.name === $clickedTheme)[0];
 		theme = themeObj.name;
-		articles = filterArticles($articleList, themeObj);
+		articles = filterArticles(combinedList, themeObj);
 	}
 
 	const searchItems = () => {
-		articles = searchArticles(articles, searchTerm, $clickedTheme, $articleList);
+		articles = searchArticles(articles, searchTerm, $clickedTheme, combinedList);
 		console.log('theme-searchItems: ', articles.length);
 	};
 	/** @type {string}*/

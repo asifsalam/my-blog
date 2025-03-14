@@ -1,6 +1,6 @@
 ---
 pre_title: 'Building the Data-Driven Enterprise'
-title: Part 1 - Why Data & AI initiatives Fail
+title: 1) Why Data & AI initiatives Fail
 sub_title: ''
 preview_image: ''
 author: Asif Salam

@@ -11,7 +11,7 @@
 
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 	let postData = data.postData;
-	// console.log(data, $postList, $page);
+	// console.log(data, $postList, $page, postData.metadata);
 	// const tags = cleanTags(data.posts.filter((d) => d.link_id === postData.metadata.id)[0].tags);
 	const t1 = $postList.filter((d) => d.link_id === postData.metadata.id);
 	const tags = cleanTags($postList.filter((d) => d.link_id === postData.metadata.id)[0].tags);

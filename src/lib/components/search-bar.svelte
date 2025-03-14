@@ -1,24 +1,26 @@
 <script>
-	export let searchTerm;
+	export let searchTerm = '';
 	export let searchItems = () => {};
 	// $: console.log('search-bar: ', searchTerm);
-	/*
-	const enterKey = (e) => {
+
+	//Handel Enter key press
+
+	const handleKeyDown = (e) => {
 		// console.log('key pressed:', e);
 		if (e.key === 'Enter') {
 			console.log('Enter key');
-			// searchItems(searchTerm);
+			searchItems(searchTerm);
 		}
 	};
 
-	const searchClicked = (e) => {
+	const handleSearchClick = (e) => {
 		console.log('click event: ', e);
+		searchItems(searchTerm); //Trigger search on button click
 	};
-*/
-	const searchEventInitiated = (e) => {
-		// Execute on the search event, rather than keypress or click
-		console.log('search event: ', e.target.value);
-		searchItems(searchTerm);
+
+	const handleClearClick = () => {
+		searchTerm = ''; // Clear search term
+		searchItems(''); // Trigger search with empty term
 	};
 </script>
 
@@ -29,25 +31,12 @@
 		placeholder="enter search term..."
 		autocomplete="off"
 		bind:value={searchTerm}
-		on:search={searchEventInitiated}
+		on:keydown={handleKeyDown}
 	/>
-	<button
-		id="search-click"
-		on:click={() => {
-			searchItems(searchTerm);
-		}}
-	>
-		search
-	</button>
-	<button
-		id="search-clear"
-		on:click={() => {
-			searchTerm = '';
-			searchItems('');
-		}}
-	>
-		clear
-	</button>
+
+	<button id="search-click" on:click={handleSearchClick}> search </button>
+
+	<button id="search-clear" on:click={handleClearClick}> clear </button>
 </div>
 
 <style>

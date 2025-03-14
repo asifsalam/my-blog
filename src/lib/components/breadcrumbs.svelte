@@ -14,7 +14,7 @@
 				labelCap: capitalizeFirstLetter(t)
 			};
 		});
-		x.unshift({ labelCap: 'Home', href: '/' });
+		x.unshift({ labelCap: 'Posts', href: '/' });
 		return x;
 	};
 	$: crumbs = crumbsList();
@@ -36,7 +36,7 @@
 	.breadcrumbs {
 		padding: 0;
 		margin: 0 0 0px 0;
-		background-color: #f1f1e4f5;
+		background-color: #f1f1e49f;
 		border-top: 1px solid #9999808f;
 		border-bottom: 1px solid #9999808f;
 		font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
@@ -48,12 +48,14 @@
 
 	.breadcrumbs-item {
 		display: inline-block;
-		color: hsl(250.34, 87.7%, 14.51%);
+		color: hsla(250.34, 87.7%, 14.51%, 0.7);
+		font-size: 1rem;
 	}
 
 	.breadcrumbs-item-active {
 		display: inline-block;
 		color: hsl(250, 87.7%, 14.51%);
+		font-size: 1rem;
 	}
 
 	.breadcrumbs-item-active a {
@@ -63,7 +65,7 @@
 	}
 	li {
 		list-style: none;
-		margin: 5px 5px;
+		margin: 3px 3px;
 		padding: 0;
 	}
 	ul {

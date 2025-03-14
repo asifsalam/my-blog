@@ -218,13 +218,41 @@ function loadArticles(numArticles = 0, dataFile = "/static/data/processed_links-
 }
 
 
+/**
+ * @param {object} d - row from the data file
+ * @returns {object} - an article object with the following properties:
+ *   - link_id: id of the link
+ *   - link: link to the article
+ *   - title: title of the article
+ *   - author: author of the article
+ *   - post_date: date of the article
+ *   - excerpt: excerpt from the article
+ *   - tags: tags for the article
+ *   - site: site where the article was posted
+ *   - link_type: type of link (e.g. article, video, etc.)
+ *   - img_type: type of image (e.g. 'article', 'video', etc.)
+ *   - img_url: url of the image
+ *   - author_image: url of the author's image
+ *   - author_url: url of the author's web site
+ */
 function parseArticle(d) {
+    const titles = d.article_title.split("-n-")
+    let preTitle, mainTitle;
+    if (titles.length === 2) {
+        preTitle = titles[0]
+        mainTitle = titles[1]
+    } else {
+        preTitle = ""
+        mainTitle = titles[0]
+    }
     return {
         // id: d.id,
         // sequence: d.sequence,
         link_id: d.link_id,
         link: d.link,
-        title: d.article_title,
+        // title: d.article_title,
+        title: mainTitle,
+        pre_title: preTitle,
         author: d.article_author,
         post_date: d.post_date,
         excerpt: d.article_excerpt,

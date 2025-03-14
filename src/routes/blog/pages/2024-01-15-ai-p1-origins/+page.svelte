@@ -54,44 +54,37 @@
 		<br />
 		<div class="main-content">
 			<p>
-				<a href="https://www.nasa.gov/what-is-artificial-intelligence/">
+				<a href="https://arxiv.org/abs/2110.12773">
 					<ShowPicture
 						mediaType="image"
 						mediaPath="/post_assets/0006/1-ai_framing_1.jpg"
-						mediaCaption="From the NASA website"
+						mediaCaption="Thiyagalingam et al. Scientific Machine Learning Benchmarks."
 						mediaNumber="1"
 						mediaWidth="50%"
 					/></a
 				>
 				ChatGPT has catapulted Artificial Intelligence (AI) into the mainstream. However, the term "AI"
-				is a loaded one, with a rich and complex history. When speaking about AI with a general audience
-				a couple of years ago, I would typically begin by explaining machine learning in terms of supervised,
-				unsupervised and reinforcement learning, then on to the rise of deep learning, the driver for
-				much of the recent success and hype around AI, and then cover applications. There would be little
-				formal discussion about AI itself, beyond the conceptual framing shown in the figures 1<sup
+				is a loaded one, with a rich and complex history. The typical explanation provided when speaking about AI to a general audience, a couple of years ago, would involve a superficial review of machine learning in terms of supervised,
+				unsupervised and reinforcement learning, moving on to the rise of deep learning, and then a discussion around applications such as churn prediction or predictive maintenance. There would be little formal discussion about AI itself, beyond the conceptual framing shown in the figures 1<sup
 					id="ref-link-1"><a href="#ref1">[1]</a></sup
 				>
 				& 2<sup id="ref-link-2"><a href="#ref2">[2]</a></sup> below.
 			</p>
 
 			<p>
-				<a href="https://arxiv.org/abs/2110.12773">
+				<a href="https://www.nasa.gov/what-is-artificial-intelligence/">
 					<ShowPicture
 						mediaType="image"
 						mediaPath="/post_assets/0006/2-ai_framing_2.png"
-						mediaCaption="Thiyagalingam et al. Scientific Machine Learning Benchmarks."
+						mediaCaption="From the NASA website"
 						mediaNumber="2"
 						mediaWidth="60%"
 					/></a
 				>
-				Unlike the busy leaders to whom I presented, as a rather slow person, I prefer detailed explanations,
-				a meandering pace and a dash of humour. For me this “executive” view is thin bones and no meat,
-				shorn of nuance and complexity. Let’s create a richer, more detailed picture of AI, beginning
-				with a some of its (modern) origins. The field has a rich history, with fascinating characters
-				responsible for creating many of the building blocks of the digital world we live in today. In
-				the next post we will try to create a structured view of the broad set techniques and components
-				that make up modern AI. And then look at the definitions of the term AI, but a bit later. Links
-				to resources (more details!) are included.
+				That simplistic view is no longer tenable. Managers and leaders should invest in learning about the capabilities of AI and the profound impact it will have on their organizations and competitiveness. But so should everyone else, as this will permeate all facets of our modern lives. The somewhat warranted hype is fueling a great influx of into the field, with increasing sophisticated models and amazing capabilities being released almost every day. The race for market capture is on, with heavy investment, rapid development, and constant hype.  
+				</p>
+				<p>
+				The genesis of the field, however, was characterized by a quest for fundamental understanding of the human mind. It was led by visionaries who, along with their technical brilliance, had strong philosophical perspectives on these pursuits. This makes for fascinating history, with strong characters responsible for creating many of the building blocks of the digital world we live in today. We can start creating a richer, more detailed picture of AI, starting with its interesting modern origins. In subsequent posts we will look at other aspects.
 			</p>
 
 			<p>
@@ -103,20 +96,19 @@
 					mediaWidth="50%"
 				/>
 				The desire to create artificial beings comes to us from antiquity, envisioned by the likes of
-				Aristotle<sup id="ref-link-3"><a href="#ref3">[3]</a></sup> , al-Jazari<sup id="ref-link-4"
+				Aristotle,<sup id="ref-link-3"><a href="#ref3">[3]</a></sup> al-Jazari,<sup id="ref-link-4"
 					><a href="#ref4">[4]</a></sup
-				>
-				, Leonardo Da Vinci<sup id="ref-link-5"><a href="#ref5">[5]</a></sup>, Thomas Hobbes<sup
+				> Leonardo Da Vinci,<sup id="ref-link-5"><a href="#ref5">[5]</a></sup> Thomas Hobbes<sup
 					id="ref-link-6"><a href="#ref6">[6]</a></sup
 				> among many, many others. Whether as amusement, plaything, curiosity, servant or tool extending
 				human capabilities or providing some impossible power, the desire to play god, bringing to life
 				inanimate objects, or to explore the limits of technology, we seem to be on the way to creating
 				the thing we have long imagined. For better and for worse. That, though, is a digression for
-				another time.
+				another time. For now, we will focus on its more recent origins and development as a discipline, and in  <a href="/blog/pages/2024-02-10-ai-p2-multifaceted-ai">the next part</a>, an overview of the various components that are part of the modern AI toolkit. 
 			</p>
 
 			<p>
-				Let's start with a bit of history for some perspective on the two main tracks along which
+				Let's start with some history for a perspective on the two main tracks along which
 				artificial intelligence has developed.
 			</p>
 			<h2>The origins of AI</h2>
@@ -157,7 +149,7 @@
 				<ShowPicture
 					mediaType="image"
 					mediaPath="/post_assets/0006/1943-mcculloch_pitts.png"
-					mediaCaption="Walter McCullogh and Walter Pitts"
+					mediaCaption="Warren McCullogh and Walter Pitts"
 					mediaNumber="6"
 					mediaWidth="40%"
 				/>
@@ -170,7 +162,7 @@
 				/>
 
 				<p>
-					In 1943, Walter McCullogh, neurophysiologist and cybernetician at the University of
+					In 1943, Warren McCullogh, neurophysiologist and cybernetician at the University of
 					Illinois at Chicago, and vagabond self-educated cognitive psychologist Walter Pitts
 					published “A Logical Calculus of the Ideas Immanent in Nervous Activity.”<sup
 						id="ref-link-8"><a href="#ref8">[8]</a></sup
@@ -192,7 +184,7 @@
 						<ShowPicture
 							mediaType="image"
 							mediaPath="/post_assets/0006/1943-mcculloch-pitts-paper-neuron-diagram.jpg"
-							mediaCaption="Walter McCullogh and Walter Pitts"
+							mediaCaption="Various types of neural nets"
 							mediaNumber="10"
 							mediaWidth="90%"
 						/>
@@ -210,8 +202,28 @@
 						<ShowPicture
 							mediaType="image"
 							mediaPath="/post_assets/0006/1943-mcculloch-pitts-paper-truth-table.jpg"
-							mediaCaption="Walter McCullogh and Walter Pitts"
+							mediaCaption="Example truth table of a set of connections"
 							mediaNumber="9"
+							mediaWidth="90%"
+						/>
+					</div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-left">
+						<ShowPicture
+							mediaType="video"
+							mediaPath="/post_assets/0006/warren_mcculloch_interview_1.mp4"
+							mediaCaption="Warren McCullogh interviewed at home"
+							mediaNumber=""
+							mediaWidth="90%"
+						/>
+					</div>
+					<div class="grid-right">
+						<ShowPicture
+							mediaType="video"
+							mediaPath="/post_assets/0006/warren_mcculloch_interview_2.mp4"
+							mediaCaption="Warren McCullogh interview on the Canadian Broadcasting Corporation (1969)"
+							mediaNumber=""
 							mediaWidth="90%"
 						/>
 					</div>
@@ -268,7 +280,7 @@
 					mediaNumber="15"
 					mediaWidth="90%"
 				/>
-
+				<p><br /></p>
 				<p>
 					Around the same time, Claude Shannon published "Programming a Computer for Playing Chess."<sup
 						id="ref-link-11"><a href="#ref11">[11]</a></sup
@@ -282,6 +294,21 @@
 						><a href="#ref11">[11]</a></sup
 					> The paper inspired early development in game theory and AI research.
 				</p>
+
+				<ShowPicture
+					mediaType="youtube"
+					mediaWidth="95%"
+					mediaCaption="Short documentary on Claude Shannon"
+					youtubeSrc="https://www.youtube.com/embed/pHSRHi17RKM?si=6bECW2UbA7i2i6Zz"
+				/>
+
+				<p>
+					The Shannon's work on Information Theory laid the foundations for the information age. He
+					created a mathematical model of information which would be the basis for the modern
+					information theory, defined information entropy as a measure of information content, and
+					the term "bit", a shortening of "binary digit," as the smallest unit of information,
+					representing a choice between two equally likely outcomes.
+				</p>
 			</TimeBox>
 			<TimeBox year="1951">
 				<a href="https://achievement.org/achiever/marvin-minsky-ph-d/">
@@ -293,6 +320,14 @@
 						mediaWidth="90%"
 					/></a
 				>
+				<ShowPicture
+					mediaType="video"
+					mediaPath="/post_assets/0006/marvin_minsky_interview_clip2.mp4"
+					mediaCaption="Marvin Minsky interview in February 2008"
+					mediaNumber=""
+					mediaWidth="90%"
+				/>
+
 				<p>
 					Inspired by the McCulloch & Pitt artificial neuron, Marvin Minsky and Dean Edmonds created
 					the first artificial neural network machine in 1951. They used vacuum tubes to simulate a
@@ -311,11 +346,6 @@
 					observers to follow the progress of the rat—or rats.
 				</p>
 
-				<p class="quote-block">
-					“The rats actually interacted with one another. If one of them found a good path, the
-					others would tend to follow it.” <br />
-					Marvin Minsky
-				</p>
 				<ShowPicture
 					mediaType="image"
 					mediaPath="/post_assets/0006/1951-minsky-snarc.png"
@@ -323,6 +353,11 @@
 					mediaNumber="17"
 					mediaWidth="90%"
 				/>
+				<p class="quote-block">
+					“The rats actually interacted with one another. If one of them found a good path, the
+					others would tend to follow it.” <br />
+					Marvin Minsky
+				</p>
 			</TimeBox>
 			<TimeBox year="1956"
 				><p>
@@ -338,7 +373,7 @@
 						<ShowPicture
 							mediaType="image"
 							mediaPath="/post_assets/0006/1956-dartmouth-conference-participants-1.png"
-							mediaCaption="Particapants of the Dartmouth Summer Research Project on Artificial Intelligence, 1956. Left to right: Oliver Selfridge, Nathaniel Rochester, Ray Solomonoff, Marvin Minsky, Trenchard More, John McCarthy, Claude Shannon"
+							mediaCaption="Participants of the Dartmouth Summer Research Project on Artificial Intelligence, 1956. Left to right: Oliver Selfridge, Nathaniel Rochester, Ray Solomonoff, Marvin Minsky, Trenchard More, John McCarthy, Claude Shannon"
 							mediaNumber="18"
 							mediaWidth="90%"
 						/></a
@@ -482,16 +517,22 @@
 				<br />
 				<p>Herber Simon explains his theories and symbol manipulation in the video below.</p>
 				<div class="grid-container">
-					<div class="wide">
-						<iframe
-							width="560"
-							height="315"
-							src="https://www.youtube.com/embed/TP3fowjokkI?si=705C5ja6353Jzw2y&amp;start=995"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin"
-							allowfullscreen
+					<div class="grid-left">
+						<ShowPicture
+							mediaType="video"
+							mediaPath="/post_assets/0006/john_mccarthy_ai_thinking_aloud_clip.mp4"
+							mediaCaption="John McCarthy interview by John Mishlove"
+							mediaNumber=""
+							mediaWidth="90%"
+						/>
+					</div>
+					<div class="grid-right">
+						<ShowPicture
+							mediaType="video"
+							mediaPath="/post_assets/0006/herbert_simon_gustavus_adolphus_college.mp4"
+							mediaCaption="Herbert Simon lecture at Gustavus Adolphus College "
+							mediaNumber=""
+							mediaWidth="90%"
 						/>
 					</div>
 				</div>
@@ -557,7 +598,7 @@
 				</div>
 				<p class="quote-block">
 					“Stories about the creation of machines having human qualities have long been a
-					fascinating province in the realm of science fiction,” “Yet we are about to witness the
+					fascinating province in the realm of science fiction. Yet we are about to witness the
 					birth of such a machine – a machine capable of perceiving, recognizing and identifying its
 					surroundings without any human training or control.” <br />
 					<cite>Frank Rosenblatt, 1958.<sup id="ref-link-22"><a href="#ref22">[22]</a></sup></cite>
@@ -687,6 +728,13 @@
 						>
 					</div>
 				</div>
+				<ShowPicture
+					mediaType="youtube"
+					mediaWidth="95%"
+					mediaCaption="Short documentary on the Perceptron"
+					youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
+				/>
+				<!-- 				
 				<iframe
 					width="560"
 					height="315"
@@ -696,7 +744,7 @@
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerpolicy="strict-origin-when-cross-origin"
 					allowfullscreen
-				/>
+				/> -->
 			</TimeBox>
 			<h2>More than Symbolic and Connectionist</h2>
 			<p>
@@ -729,14 +777,14 @@
 			</p>
 			<h2>To do next</h2>
 			<p>
-				In Part 2 I will try to outline the broad range of components and techniques that are part
-				of the modern AI landscape, and attempt to organize these into a (mostly) coherent framework
-				around Symbolic AI, Connectionist AI, and a catch-all "Other" category for things that don't
-				fit in either. Definitions are useful for context and framing, so Part 3 will be a list of
-				the various definitions of the term AI from a broad range of sources. Of course advancement
-				is not about definitions. The debate around the definitions of AGI, AI, and even
-				intelligence, and reasoning—and how these can be determined
-				anttps://www.artpublikamag.com/post/leonardo-da-vincis-robots-and-their-modern-day-influence
+				In Part 2 <del>(coming soon)</del> I outline the broad range of components and techniques that
+				are part of the modern AI landscape, and attempt to organize these into a coherent framework
+				around Symbolic AI, Connectionist AI, and a supplementary "Other" category. Definitions are useful
+				for context and framing, so Part 3 will be a list of the various definitions of the term AI from
+				a broad range of sources. Of course progress is not about definitions. The debate around the
+				definitions of AGI, AI, and even intelligence, and reasoning—and how these can be determined
+				and measured—has gone on for decades. It is useful to see how the definitions evolve as new capabilities
+				are developed and the impacts of the benefits and risks become visible.
 			</p>
 
 			<div class="references">
@@ -876,6 +924,8 @@
 						McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1955, August 31). <i
 							>A proposal for the Dartmouth Summer Research Project on Artificial Intelligence</i
 						>.
+						<a href="https://archive.computerhistory.org/resources/access/text/2023/06/102720392-05-01-acc.pdf" target="_blank">PDF</a>
+						
 					</li>
 
 					<li id="ref16">
@@ -993,6 +1043,8 @@
 	}
 	.wide {
 		grid-column: 1 / 3;
+		display: grid;
+		place-items: center;
 	}
 
 	/* Bottom-left image */
@@ -1006,6 +1058,14 @@
 		width: 100%;
 		height: auto;
 		display: block;
+	}
+
+	.caption {
+		margin: 0;
+		padding-left: 5px;
+		font-size: 0.9rem;
+		text-decoration: none;
+		/* width: 70%; */
 	}
 	.heading {
 		margin-top: 20px;

@@ -2,14 +2,16 @@
 	import { page } from '$app/stores';
 
 	const menuItems = [
-		{ name: 'Home', url: '/' },
-		{ name: 'Blog', url: '/blog' },
+		{ name: 'Posts', url: '/' },
+		//		{ name: 'Blog', url: '/blog' },
+		{ name: 'Explorations', url: '/explorations' },
 		// { name: 'Articles', url: '/articles' },
 		{ name: 'Resources', url: '/resources' },
 		{ name: 'Melancholy', url: '/shayari' },
-		{ name: 'Contact', url: '/contact' },
+		// { name: 'Contact', url: '/contact' },
 		{ name: 'About', url: '/about' }
 	];
+	// other names - Log book, Manifest, Chronicle, Voyage, Journey
 
 	$: currentPage = $page.url.pathname;
 </script>
@@ -23,7 +25,7 @@
 						<!-- we are using the class directive here -->
 						{#if currentPage === '/theme'}
 							{#if url === '/'}
-								<a class:active={true} data-sveltekit-prefetch href={'/'}>Home</a>
+								<a class:active={true} data-sveltekit-prefetch href={'/'}>Posts</a>
 							{:else}
 								<a class:active={false} data-sveltekit-prefetch href={url}>{name}</a>
 							{/if}

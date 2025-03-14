@@ -1,6 +1,6 @@
 <script>
 	import '$lib/styles/global.css';
-	import { articleList, clickedTheme } from '$lib/json/stores';
+	import { articleList, postList, clickedTheme } from '$lib/json/stores';
 	import { goto } from '$app/navigation';
 	import { fade } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
@@ -14,15 +14,18 @@
 	// const themes = $allThemes;
 	// console.log('home-page:');
 	let sidebarTitle = '';
-	let sidebarLeadinText = 'Greetings! In case you are here unwittingly, I am Asif, and this is:';
-	let sidebarBulletText = [
-		'My personal blog',
-		'And bookmark manager',
-		'Generally about becoming "data-driven"'
-	];
-	let headingTitleItems = 'Latest posts';
+	let sidebarLeadinText =
+		'Hello! I am Asif, and this is my personal site and bookmark manager, generally about data and becoming "data-driven."';
+	// let sidebarBulletText = [
+	// 	'My personal multipurpose site',
+	// 	'And bookmark manager',
+	// 	'Generally about becoming "data-driven"'
+	// ];
+	let sidebarBulletText = [];
+	let headingTitleItems = 'My scribery';
 	let displayQuantityItems = 20;
-	let totalQuantityItems = $articleList.length;
+	// let totalQuantityItems = $articleList.length;
+	let totalQuantityItems = $postList.length;
 	// @ts-ignore
 	function moreItemsClicked(selectedCategory) {
 		$clickedTheme = 'all';
@@ -32,7 +35,7 @@
 
 <RandomQuote />
 <Breadcrumbs />
-{#key $articleList.length}
+{#key $postList.length}
 	<div class="container" transition:fade={{ delay: 250, duration: 300 }}>
 		<div class="sidebar-container">
 			<div class="sidebar-heading">
@@ -49,8 +52,8 @@
 					{moreItemsClicked}
 				/>
 				<div class="posts">
-					{#each $articleList.slice(0, displayQuantityItems) as article}
-						<ContentCard {article} />
+					{#each $postList.slice(0, displayQuantityItems) as post}
+						<ContentCard article={post} />
 					{/each}
 				</div>
 				<!-- <p class="more-posts"><a href="\blog">More posts</a></p> -->

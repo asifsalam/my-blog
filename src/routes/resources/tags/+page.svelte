@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { articleList, tags, clickedTopic } from '$lib/json/stores';
+	import { articleList, postList, tags, clickedTopic } from '$lib/json/stores';
 	import { filterTag, searchArticles } from '$lib/modules/utility_functions';
 	import RandomQuote from '$lib/components/random-quote.svelte';
 	import Breadcrumbs from '$lib/components/breadcrumbs.svelte';
@@ -17,17 +17,23 @@
 	let tagObj = {};
 	/** @type {Array} */
 	let articles = [];
+	const combinedList = [...$articleList, ...$postList].sort((a, b) => {
+		if (a.link_id > b.link_id) {
+			return -1;
+		} else {
+			return 1;
+		}
+	});
 
 	onMount(() => {
 		selectedTopic = $clickedTopic;
-		articles = filterTag($articleList, selectedTopic, $tags);
+		articles = filterTag(combinedList, selectedTopic, $tags);
 		// console.log(selectedTopic);
 	});
 
 	function tagClicked(tag) {
 		// @ts-ignore
 		$clickedTopic = tag;
-
 		goto(`/resources/tags/`);
 	}
 
@@ -38,7 +44,7 @@
 	}
 
 	const searchItems = () => {
-		articles = searchArticles(articles, searchTerm, $clickedTopic, $articleList);
+		articles = searchArticles(articles, searchTerm, $clickedTopic, combinedList);
 	};
 
 	/** @type {string}*/

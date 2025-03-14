@@ -9,8 +9,8 @@
 	import PostsListCard from '$lib/components/posts-list-card.svelte';
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
-
-	import MultifacetedAi from './multifaceted-ai.svelte';
+	import AIDefinitions from './ai-definitions.svelte';
+	import AiDefinitionsTable from './ai-definitions-table.svelte';
 
 	const postData = data.postData;
 	let pageId = $page.route.id;
@@ -51,43 +51,10 @@
 		</div>
 		<br />
 		<div class="main-content">
-			<MultifacetedAi />
-
-			<div class="references">
-				<p>References:</p>
-				alan turing on computable numbers: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
-				<ol>
-					<li>
-						Thiyagalingam et al. (2021, October 25). Scientific Machine Learning Benchmarks. <i
-							>arXiv,</i
-						> https://arxiv.org/abs/2110.12773.
-					</li>
-					<li>
-						NASA. (n.d). What is artificial intelligence? Retrieved [2023, December 27], from
-						https://www.nasa.gov/what-is-artificial-intelligence
-					</li>
-					<li>
-						Brewster, T. (2015, September 3). <i
-							>How A 1200-Year-Old Hacking Technique Can Already Crack Tomorrow’s Encrypted Vaults.</i
-						> Forbes. Retrieved October 5, 2023, from https://www.forbes.com/sites/thomasbrewster/2015/09/03/microsoft-dumb-attacks-cracks-next-gen-cryptography/?sh=55b84c1a5b55
-					</li>
-					<li>
-						Maidment, J. (2000, October 5). <i>The man who cracked the Kama Sutra code.</i> The Telegraph.
-						Retrieved September 24, 2023, from https://www.telegraph.co.uk/news/science/science-news/4754214/The-man-who-cracked-the-Kama-Sutra-code.html
-					</li>
-					<li>
-						Naveed, M., Kamara, S., and Wright, C.V., (2015). Inference Attacks on
-						Property-Preserving Encrypted Databases. In <i
-							>Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security
-							(CCS '15).</i
-						> Association for Computing Machinery, New York, NY, USA, 644–655. https://doi-org.ezp.sub.su.se/10.1145/2810103.2813651
-					</li>
-
-					<li>
-						Singh, S. (2000). <i>The code book : the secret history of codes and codebreaking.</i> http://ci.nii.ac.jp/ncid/BA51150503
-					</li>
-				</ol>
-			</div>
+			<p>
+				Some of these are not definitions, but statements of purpose, or rationalizations for AI.
+			</p>
+			<AiDefinitionsTable />
 		</div>
 	</div>
 {/key}
