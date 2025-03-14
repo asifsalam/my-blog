@@ -30,7 +30,7 @@ export async function load({ fetch }) {
             // articles[i].searchs_text = `${d.article_title} ${d.article_author} ${d.article_excerpt}`
         })
 
-    articles.sort((a, b) => {
+    articles = articles.filter(d => d.link_type != "remove").sort((a, b) => {
         if (a.link_id > b.link_id) {
             // console.log(a, b)
             return -1
