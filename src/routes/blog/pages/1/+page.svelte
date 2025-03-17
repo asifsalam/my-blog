@@ -749,12 +749,12 @@
 						>
 					</div>
 				</div>
-				<!-- <ShowPicture
+				<ShowPicture
 					mediaType="youtube"
 					mediaWidth="95%"
 					mediaCaption="Short documentary on the Perceptron"
 					youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
-				/> -->
+				/>
 			</TimeBox>
 			<p>
 				This was a period of excitement, and the possibilities seemed endless, success guaranteed,
