@@ -312,14 +312,14 @@
 						><a href="#ref11">[11]</a></sup
 					> The paper inspired early development in game theory and AI research.
 				</p>
-				<!-- <div class="youtube-video">
+				<div class="youtube-video">
 					<ShowPicture
 						mediaType="youtube"
 						mediaWidth="95%"
 						mediaCaption="Short documentary on Claude Shannon"
 						youtubeSrc="https://www.youtube.com/embed/pHSRHi17RKM?si=6bECW2UbA7i2i6Zz"
 					/>
-				</div> -->
+				</div>
 				<p class="youtube-link">
 					<a href="https://youtu.be/pHSRHi17RKM?si=NzAW9YG-EIoJ5mJR"
 						>Short documentary on Claude Shannon (YouTube)</a
@@ -754,14 +754,14 @@
 						>
 					</div>
 				</div>
-				<!-- <div class="youtube-video">
+				<div class="youtube-video">
 					<ShowPicture
 						mediaType="youtube"
 						mediaWidth="95%"
 						mediaCaption="Short documentary on the Perceptron"
 						youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
 					/>
-				</div> -->
+				</div>
 
 				<p class="youtube-link">
 					<a href="https://youtu.be/Suevq-kZdIw?si=SPBexQYYEXD0jG_r"
@@ -836,24 +836,18 @@
 							>Scientific machine learning benchmarks</em
 						>
 						[Preprint]. arXiv.
-						<a href="https://doi.org/10.48550/arXiv.2110.12773"
-							>https://doi.org/10.48550/arXiv.2110.12773</a
-						>
+						<a href="https://doi.org/10.48550/arXiv.2110.12773">Link</a>
 					</li>
 
 					<li id="ref2">
 						NASA. (n.d.). <i>What is artificial intelligence?</i>,
-						<a href="https://www.nasa.gov/what-is-artificial-intelligence" target="_blank"
-							>https://www.nasa.gov/what-is-artificial-intelligence</a
-						>
+						<a href="https://www.nasa.gov/what-is-artificial-intelligence" target="_blank">Link</a>
 					</li>
 
 					<li id="ref3">
 						Aristotle. (350 B.C.E./1998). <em>Politics</em> (C. D. C. Reeve, Trans.) [Book 1].
 						Hackett Publishing Company. (Original work published ca. 350 B.C.E.), from
-						<a href="http://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank"
-							>http://classics.mit.edu/Aristotle/politics.1.one.html</a
-						>
+						<a href="http://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank">Link</a>
 					</li>
 					<li id="ref3">
 						Manual, M. (2019, October 15). <em
@@ -877,9 +871,7 @@
 						Bush, R. (2023).. <em
 							>Sir Francis Bacon and Thomas Hobbes: Science, politics, and artificial intelligence"</em
 						>. Ancient Origins. from
-						<a href="https://doi.org/10.13140/RG.2.2.32734.61767"
-							>https://doi.org/10.13140/RG.2.2.32734.61767</a
-						>
+						<a href="https://doi.org/10.13140/RG.2.2.32734.61767">Link</a>
 					</li>
 
 					<li id="ref7">
@@ -913,8 +905,7 @@
 						<i>Turing Archive.</i>
 						<a
 							href="https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4"
-							target="_blank"
-							>https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4</a
+							target="_blank">Link</a
 						>
 					</li>
 
@@ -942,16 +933,13 @@
 						December 27, 2023, from
 						<a
 							href="https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator"
-							target="_blank"
-							>https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator</a
+							target="_blank">Link</a
 						>
 					</li>
 
 					<li id="ref13">
 						Hertzberg, H. (1981, December 14). A.I. <i>The New Yorker</i>.
-						<a href="https://www.newyorker.com/magazine/1981/12/14/a-i" target="_blank"
-							>https://www.newyorker.com/magazine/1981/12/14/a-i</a
-						>
+						<a href="https://www.newyorker.com/magazine/1981/12/14/a-i" target="_blank">Link</a>
 					</li>
 
 					<li id="ref14">
@@ -992,9 +980,7 @@
 
 					<li id="ref18">
 						Logic theorist. (n.d.). In Wikipedia. Retrieved December 27, 2023, from
-						<a href="https://en.wikipedia.org/wiki/Logic_Theorist" target="_blank"
-							>https://en.wikipedia.org/wiki/Logic_Theorist</a
-						>
+						<a href="https://en.wikipedia.org/wiki/Logic_Theorist" target="_blank">Link</a>
 					</li>
 
 					<li id="ref19">
@@ -1006,9 +992,7 @@
 					<li id="ref20">
 						Wikipedia contributors. (n.d.). <em>Principia Mathematica</em>. In
 						<em>Wikipedia, The Free Encyclopedia</em>. Retrieved March 8, 2025, from
-						<a href="https://en.wikipedia.org/wiki/Principia_Mathematica"
-							>https://en.wikipedia.org/wiki/Principia_Mathematica</a
-						>
+						<a href="https://en.wikipedia.org/wiki/Principia_Mathematica">Link</a>
 					</li>
 
 					<li id="ref21">
@@ -1024,8 +1008,7 @@
 						years too soon. <i>Cornell Chronicle</i>.
 						<a
 							href="https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
-							target="_blank"
-							>https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon</a
+							target="_blank">Link</a
 						>
 					</li>
 
@@ -1034,9 +1017,7 @@
 							>The man who forever changed artificial intelligence</i
 						>
 						[Video]. YouTube.
-						<a href="https://www.youtube.com/watch?v=Suevq-kZdIw" target="_blank"
-							>https://www.youtube.com/watch?v=Suevq-kZdIw</a
-						>
+						<a href="https://www.youtube.com/watch?v=Suevq-kZdIw" target="_blank">Link</a>
 					</li>
 					<li id="ref24">
 						The New York Times. (1958, July 13). Electronic brain teaches itself. <i
@@ -1045,7 +1026,7 @@
 						Retrieved from
 						<a
 							href="https://www.nytimes.com/1958/07/13/archives/electronic-brain-teaches-itself.html"
-							>https://www.nytimes.com/1958/07/13/archives/electronic-brain-teaches-itself.html</a
+							>Link</a
 						>
 					</li>
 					<li id="ref25">
@@ -1055,7 +1036,7 @@
 						Retrieved from
 						<a
 							href="https://www.forbes.com/sites/gilpress/2018/04/01/killer-ai-is-defeated-celebrated-for-half-a-century/"
-							>https://www.forbes.com/sites/gilpress/2018/04/01/killer-ai-is-defeated-celebrated-for-half-a-century/</a
+							>Link</a
 						>
 					</li>
 				</ol>

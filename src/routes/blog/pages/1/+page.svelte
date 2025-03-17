@@ -881,6 +881,14 @@
 						href="https://home.csulb.edu/~cwallis/382/readings/482/mccolloch.logical.calculus.ideas.1943.pdf"
 						target="_blank">PDF</a
 					>
+					<!-- <div class="youtube-video">
+					<ShowPicture
+						mediaType="youtube"
+						mediaWidth="95%"
+						mediaCaption="Short documentary on the Perceptron"
+						youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
+					/>
+				</div> -->
 				</li>
 
 				<li id="ref9">
