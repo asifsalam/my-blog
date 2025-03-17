@@ -67,7 +67,6 @@
 
 	@media (max-width: 900px) {
 
-
 		div.posts {
 			grid-template-columns: 1fr;
 		}

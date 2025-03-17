@@ -139,7 +139,7 @@
 		display: none;
 	}
 
-	@media (max-width: 1200px) {
+	@media (max-width: 900px) {
 		.nav-container {
 			font-size: 0.9em;
 		}

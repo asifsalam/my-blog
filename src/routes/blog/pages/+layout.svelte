@@ -24,6 +24,10 @@
 </div>
 
 <style>
+	:root {
+		--screen-tab: "900px";
+	}
+
 	div.container {
 		display: grid;
 		grid-template-columns: 2fr 5fr;
@@ -40,6 +44,7 @@
 	@media (max-width: 600px) {
 		div.container {
 			grid-template-columns: 1fr;
+
 		}
 
 	}

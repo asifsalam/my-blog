@@ -81,10 +81,10 @@
 						mediaWidth="60%"
 					/></a
 				>
-				That simplistic view is no longer tenable. Managers and leaders should invest in learning about the capabilities of AI and the profound impact it will have on their organizations and competitiveness. But so should everyone else, as this will permeate all facets of our modern lives. The somewhat warranted hype is fueling a great influx of into the field, with increasing sophisticated models and amazing capabilities being released almost every day. The race for market capture is on, with heavy investment, rapid development, and constant hype.  
+				That simplistic view is no longer tenable. Managers and leaders should invest in learning about the capabilities of AI and the impact it will have on their organizations and competitiveness. But so should everyone else, as this will permeate all facets of our modern lives. The somewhat warranted hype is fueling a great influx of money into the field, with increasingly sophisticated models and capabilities being released almost every day. The race for market capture is on, with heavy investment, rapid development, and constant hype.  
 				</p>
 				<p>
-				The genesis of the field, however, was characterized by a quest for fundamental understanding of the human mind. It was led by visionaries who, along with their technical brilliance, had strong philosophical perspectives on these pursuits. This makes for fascinating history, with strong characters responsible for creating many of the building blocks of the digital world we live in today. We can start creating a richer, more detailed picture of AI, starting with its interesting modern origins. In subsequent posts we will look at other aspects.
+				The genesis of the field, however, was characterized by a quest for fundamental understanding of the human mind. It was led by visionaries who, along with their technical brilliance, had thoughtful philosophical perspectives on these pursuits. This makes for fascinating history, with strong characters responsible for creating many of the building blocks of the digital world we live in today. We can start creating a richer, more detailed picture of AI, starting with its interesting modern origins with two distinct schools of thought. In subsequent posts we will look at other aspects.
 			</p>
 
 			<p>
@@ -715,7 +715,7 @@
 						>
 					</div>
 					<div class="grid-right">
-						<a
+						<aflatpak install flathub org.mozilla.firefox
 							href="https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
 						>
 							<ShowPicture
@@ -724,7 +724,7 @@
 								mediaCaption="The Perceptron Machine"
 								mediaNumber="35"
 								mediaWidth="90%"
-							/></a
+							/></aflatpak
 						>
 					</div>
 				</div>
@@ -1199,7 +1199,7 @@
 	}
 
 	
-		@media (max-width: 1000px) {
+		@media (max-width: 900px) {
 		div.sidebar-container {
 			margin: 0px 20px 0 0;
 			padding-bottom: 20px;
@@ -1210,6 +1210,7 @@
 		div.sidebar-container {
 			margin: 0px 0px 0 0;
 		}
+
 
 	}
 
