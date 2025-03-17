@@ -776,7 +776,50 @@
 				invented is our successor. Biological evolution has given way to a far more rapid
 				process-technological evolution. To put it bluntly and brutally, the machine is going to
 				take over.<br />
-				<cite>Forbes, April 01, 2028.<sup id="ref-link-25"><a href="#ref25">[25]</a></sup></cite>
+				<cite
+					>Artuhu Clarke, cited in Forbes, April 01, 2018.<sup id="ref-link-25"
+						><a href="#ref25">[25]</a></sup
+					></cite
+				>
+			</p>
+			<h2>More than Symbolic and Connectionist</h2>
+			<p>
+				We thus have two approaches to the development of AI, based on two somewhat opposing
+				theories of human intelligence. The symbolic approach, in which intelligence is the
+				manipulation of abstract symbols and rules. This means that we have to be able to represent
+				knowledge, before we can start learning from experience, and this ability must be innate to
+				us. In the connectionist approach, intelligence is the development of the synaptic
+				connections in the brain and their strengths, which we develop as we experience the world.
+				In other words, we build general purpose AI either through encoding an large set of rules
+				that help it make sense of the world, or let the AI learn the rules from large volumes of
+				data.
+			</p>
+
+			<p>
+				The two approaches to AI have evolved at a rapid pace, along with other techniques, over the
+				last 70 years. However, the work done during these early years established the vision,
+				foundations and trajectory along which along which AI and computer science has developed.
+			</p>
+			<p>
+				At the moment, the Connectionists appear to be racing ahead, while the Symbolists seem to be
+				receding into the distance. But there is growing recognition of the limitations of a purely
+				Connectionist approach. While deep learning has achieved remarkable success, the lack of
+				explainability, the need for massive amounts of data and computing power point to the need
+				for an approach that incorporates the structured knowledge and logical reasoning of Symbolic
+				AI.
+			</p>
+			<h2>Next in this series</h2>
+			<p>
+				In Part 2 <del>(coming soon)</del> we take a cursory look at the broad range of components and
+				techniques that are part of the modern AI landscape, and attempt to organize these into a coherent
+				framework around Symbolic AI, Connectionist AI, and a supplementary "Other" category.
+			</p>
+			<p>
+				While progress transcends definitions, they are useful for context and framing, so Part 3
+				will be a list of the various definitions of the term AI from a broad range of sources. The
+				debate around the definitions of AGI, AI, intelligence, and reasoning will continue, but it
+				is still useful to see how the definitions evolve as new capabilities are developed and the
+				impacts of the benefits and risks become visible.
 			</p>
 		</div>
 	</div>

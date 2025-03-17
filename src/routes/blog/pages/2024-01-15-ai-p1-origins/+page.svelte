@@ -783,7 +783,7 @@
 				process-technological evolution. To put it bluntly and brutally, the machine is going to
 				take over.<br />
 				<cite
-					>Arthur Clarke, cited in Forbes, April 01, 2028.<sup id="ref-link-25"
+					>Arthur Clarke, cited in Forbes, April 01, 2018.<sup id="ref-link-25"
 						><a href="#ref25">[25]</a></sup
 					></cite
 				>
