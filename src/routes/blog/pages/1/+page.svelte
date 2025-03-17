@@ -822,6 +822,232 @@
 				impacts of the benefits and risks become visible.
 			</p>
 		</div>
+		<div class="references">
+			<p>References:</p>
+			<ol class="references-1">
+				<li id="ref1">
+					Thiyagalingam, J., Shankar, M., Fox, G. C., &amp; Hey, T. (2021). <em
+						>Scientific machine learning benchmarks</em
+					>
+					[Preprint]. arXiv.
+					<a href="https://doi.org/10.48550/arXiv.2110.12773"
+						>https://doi.org/10.48550/arXiv.2110.12773</a
+					>
+				</li>
+
+				<li id="ref2">
+					NASA. (n.d.). <i>What is artificial intelligence?</i>,
+					<a href="https://www.nasa.gov/what-is-artificial-intelligence" target="_blank"
+						>https://www.nasa.gov/what-is-artificial-intelligence</a
+					>
+				</li>
+
+				<li id="ref3">
+					Aristotle. (350 B.C.E./1998). <em>Politics</em> (C. D. C. Reeve, Trans.) [Book 1]. Hackett
+					Publishing Company. (Original work published ca. 350 B.C.E.), from
+					<a href="http://classics.mit.edu/Aristotle/politics.1.one.html" target="_blank"
+						>http://classics.mit.edu/Aristotle/politics.1.one.html</a
+					>
+				</li>
+				<li id="ref3">
+					Manual, M. (2019, October 15). <em
+						>Leonardo da Vinci's robots and their modern day influence</em
+					>. Art Publika Mag. from
+					<a
+						href="https://www.artpublikamag.com/post/leonardo-da-vincis-robots-and-their-modern-day-influence"
+						>Article</a
+					>
+				</li>
+				<li id="ref5">
+					Vučković, A. (2020, December 13). <em
+						>Ismail al-Jazari: Medieval Muslim Inventor and "Father of Robotics"</em
+					>. Ancient Origins. from
+					<a href="https://www.ancient-origins.net/history-famous-people/ismail-al-jazari-0014667"
+						>Article</a
+					>
+				</li>
+
+				<li id="ref6">
+					Bush, R. (2023).. <em
+						>Sir Francis Bacon and Thomas Hobbes: Science, politics, and artificial intelligence"</em
+					>. Ancient Origins. from
+					<a href="https://doi.org/10.13140/RG.2.2.32734.61767"
+						>https://doi.org/10.13140/RG.2.2.32734.61767</a
+					>
+				</li>
+
+				<li id="ref7">
+					Turing, A. M. (1936). An computable numbers, with an application to the
+					Entscheidungsproblem. <i>Proceedings of the London Mathematical Society</i>(42), 230-265.
+					<a href="https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf" target="_blank">PDF</a
+					>
+				</li>
+				<li id="ref8">
+					McCulloch, W. S., & Pitts, W. (1943). A logical calculus of the ideas immanent in nervous
+					activity. <i>Bulletin of Mathematical Biophysics, 5</i>(4), 115–133.
+					<a
+						href="https://home.csulb.edu/~cwallis/382/readings/482/mccolloch.logical.calculus.ideas.1943.pdf"
+						target="_blank">PDF</a
+					>
+				</li>
+
+				<li id="ref9">
+					Turing, A. M. (1950). Computing machinery and intelligence. <i>Mind, 59</i>(236), 433–460.
+					<a
+						href="https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/turing1950.pdf"
+						target="_blank">PDF</a
+					>
+				</li>
+
+				<li id="ref10">
+					Turing, A. M. (1951). Intelligent machinery, a heretical theory [Lecture notes].
+					<i>Turing Archive.</i>
+					<a
+						href="https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4"
+						target="_blank"
+						>https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4</a
+					>
+				</li>
+
+				<li id="ref11">
+					Shannon, C. E. (1950). Programming a computer for playing chess. <i
+						>Philosophical Magazine, 41</i
+					>(314), 256–275.
+					<a
+						href="https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf"
+						target="_blank">PDF</a
+					>
+				</li>
+
+				<!-- <li id="ref12">
+						Turing, A. M. (1936). On computable numbers with an application to the
+						Entscheidungsproblem. <i>Proceedings of the London Mathematical Society, s2-42</i>(1),
+						230–265.
+						<a href="https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf" target="_blank"
+							>PDF</a
+						>
+					</li> -->
+
+				<li id="ref12">
+					Stochastic neural analog reinforcement calculator. (n.d.). In Wikipedia. Retrieved
+					December 27, 2023, from
+					<a
+						href="https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator"
+						target="_blank"
+						>https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator</a
+					>
+				</li>
+
+				<li id="ref13">
+					Hertzberg, H. (1981, December 14). A.I. <i>The New Yorker</i>.
+					<a href="https://www.newyorker.com/magazine/1981/12/14/a-i" target="_blank"
+						>https://www.newyorker.com/magazine/1981/12/14/a-i</a
+					>
+				</li>
+
+				<li id="ref14">
+					Samuel, A. L. (1959). Some studies in machine learning using the game of checkers. <i
+						>IBM Journal of Research and Development, 3</i
+					>(3), 210–229.
+					<a href="https://people.csail.mit.edu/brooks/idocs/Samuel.pdf" target="_blank">PDF</a>
+				</li>
+
+				<li id="ref15">
+					McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1955, August 31). <i
+						>A proposal for the Dartmouth Summer Research Project on Artificial Intelligence</i
+					>.
+					<a
+						href="https://archive.computerhistory.org/resources/access/text/2023/06/102720392-05-01-acc.pdf"
+						target="_blank">PDF</a
+					>
+				</li>
+
+				<li id="ref16">
+					Newell, A., & Simon, H. A. (1956). The logic theory machine. <i
+						>IRE Transactions on Information Theory, 2</i
+					>(3), 61–79.
+					<a
+						href="http://shelf1.library.cmu.edu/IMLS/MindModels/logictheorymachine.pdf"
+						target="_blank">PDF</a
+					>
+				</li>
+
+				<li id="ref17">
+					Allen Newell: 1927-1992. (1998). Annals of the History of Computing 20.
+					<i>Annals of the History of Computing</i> (20) p68.
+					<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=667311" target="_blank"
+						>PDF</a
+					>
+				</li>
+
+				<li id="ref18">
+					Logic theorist. (n.d.). In Wikipedia. Retrieved December 27, 2023, from
+					<a href="https://en.wikipedia.org/wiki/Logic_Theorist" target="_blank"
+						>https://en.wikipedia.org/wiki/Logic_Theorist</a
+					>
+				</li>
+
+				<li id="ref19">
+					Sloat, S. (2023, October 3). The first AI started a 70-year debate. <i>Popular Science</i
+					>.
+				</li>
+
+				<li id="ref20">
+					Wikipedia contributors. (n.d.). <em>Principia Mathematica</em>. In
+					<em>Wikipedia, The Free Encyclopedia</em>. Retrieved March 8, 2025, from
+					<a href="https://en.wikipedia.org/wiki/Principia_Mathematica"
+						>https://en.wikipedia.org/wiki/Principia_Mathematica</a
+					>
+				</li>
+
+				<li id="ref21">
+					Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and
+					organization in the brain. <i>Psychological Review, 65</i>(6), 386–408.
+					<a href="https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf" target="_blank"
+						>PDF</a
+					>
+				</li>
+
+				<li id="ref22">
+					Lefkowitz, M. (2019, September 25). Professor’s perceptron paved the way for AI – 60 years
+					too soon. <i>Cornell Chronicle</i>.
+					<a
+						href="https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
+						target="_blank"
+						>https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon</a
+					>
+				</li>
+
+				<li id="ref23">
+					Serious Science. (2019, October 22). <i
+						>The man who forever changed artificial intelligence</i
+					>
+					[Video]. YouTube.
+					<a href="https://www.youtube.com/watch?v=Suevq-kZdIw" target="_blank"
+						>https://www.youtube.com/watch?v=Suevq-kZdIw</a
+					>
+				</li>
+				<li id="ref24">
+					The New York Times. (1958, July 13). Electronic brain teaches itself. <i
+						>The New York Times.</i
+					>
+					Retrieved from
+					<a href="https://www.nytimes.com/1958/07/13/archives/electronic-brain-teaches-itself.html"
+						>https://www.nytimes.com/1958/07/13/archives/electronic-brain-teaches-itself.html</a
+					>
+				</li>
+				<li id="ref25">
+					Gil Press (2018, April 1). Killer AI Defeated, Celebrated For Half A Century. <i
+						>Forbes.</i
+					>
+					Retrieved from
+					<a
+						href="https://www.forbes.com/sites/gilpress/2018/04/01/killer-ai-is-defeated-celebrated-for-half-a-century/"
+						>https://www.forbes.com/sites/gilpress/2018/04/01/killer-ai-is-defeated-celebrated-for-half-a-century/</a
+					>
+				</li>
+			</ol>
+		</div>
 	</div>
 {/key}
 
