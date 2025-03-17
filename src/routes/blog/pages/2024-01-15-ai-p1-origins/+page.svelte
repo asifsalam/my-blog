@@ -64,10 +64,12 @@
 					/></a
 				>
 				ChatGPT has catapulted Artificial Intelligence (AI) into the mainstream. However, the term "AI"
-				is a loaded one, with a rich and complex history. The typical explanation provided when speaking about AI to a general audience, a couple of years ago, would involve a superficial review of machine learning in terms of supervised,
-				unsupervised and reinforcement learning, moving on to the rise of deep learning, and then a discussion around applications such as churn prediction or predictive maintenance. There would be little formal discussion about AI itself, beyond the conceptual framing shown in the figures 1<sup
-					id="ref-link-1"><a href="#ref1">[1]</a></sup
-				>
+				is a loaded one, with a rich and complex history. The typical explanation provided when speaking
+				about AI to a general audience, a couple of years ago, would involve a superficial review of
+				machine learning in terms of supervised, unsupervised and reinforcement learning, moving on to
+				the rise of deep learning, and then a discussion around applications such as churn prediction
+				or predictive maintenance. There would be little formal discussion about AI itself, beyond the
+				conceptual framing shown in the figures 1<sup id="ref-link-1"><a href="#ref1">[1]</a></sup>
 				& 2<sup id="ref-link-2"><a href="#ref2">[2]</a></sup> below.
 			</p>
 
@@ -81,10 +83,21 @@
 						mediaWidth="60%"
 					/></a
 				>
-				That simplistic view is no longer tenable. Managers and leaders should invest in learning about the capabilities of AI and the impact it will have on their organizations and competitiveness. But so should everyone else, as this will permeate all facets of our modern lives. The somewhat warranted hype is fueling a great influx of money into the field, with increasingly sophisticated models and capabilities being released almost every day. The race for market capture is on, with heavy investment, rapid development, and constant hype.  
-				</p>
-				<p>
-				The genesis of the field, however, was characterized by a quest for fundamental understanding of the human mind. It was led by visionaries who, along with their technical brilliance, had thoughtful philosophical perspectives on these pursuits. This makes for fascinating history, with strong characters responsible for creating many of the building blocks of the digital world we live in today. We can start creating a richer, more detailed picture of AI, starting with its interesting modern origins with two distinct schools of thought. In subsequent posts we will look at other aspects.
+				That simplistic view is no longer tenable. Managers and leaders should invest in learning about
+				the capabilities of AI and the impact it will have on their organizations and competitiveness.
+				But so should everyone else, as this will permeate all facets of our modern lives. The somewhat
+				warranted hype is fueling a great influx of money into the field, with increasingly sophisticated
+				models and capabilities being released almost every day. The race for market capture is on, with
+				heavy investment, rapid development, and constant hype.
+			</p>
+			<p>
+				The genesis of the field, however, was characterized by a quest for fundamental
+				understanding of the human mind. It was led by visionaries who, along with their technical
+				brilliance, had thoughtful philosophical perspectives on these pursuits. This makes for
+				fascinating history, with strong characters responsible for creating many of the building
+				blocks of the digital world we live in today. We can start creating a richer, more detailed
+				picture of AI, starting with its interesting modern origins with two distinct schools of
+				thought. In subsequent posts we will look at other aspects.
 			</p>
 
 			<p>
@@ -98,13 +111,18 @@
 				The desire to create artificial beings comes to us from antiquity, envisioned by the likes of
 				Aristotle,<sup id="ref-link-3"><a href="#ref3">[3]</a></sup> al-Jazari,<sup id="ref-link-4"
 					><a href="#ref4">[4]</a></sup
-				> Leonardo Da Vinci,<sup id="ref-link-5"><a href="#ref5">[5]</a></sup> Thomas Hobbes<sup
+				>
+				Leonardo Da Vinci,<sup id="ref-link-5"><a href="#ref5">[5]</a></sup> Thomas Hobbes<sup
 					id="ref-link-6"><a href="#ref6">[6]</a></sup
-				> among many, many others. Whether as amusement, plaything, curiosity, servant or tool extending
+				>
+				among many, many others. Whether as amusement, plaything, curiosity, servant or tool extending
 				human capabilities or providing some impossible power, the desire to play god, bringing to life
 				inanimate objects, or to explore the limits of technology, we seem to be on the way to creating
 				the thing we have long imagined. For better and for worse. That, though, is a digression for
-				another time. For now, we will focus on its more recent origins and development as a discipline, and in  <a href="/blog/pages/2024-02-10-ai-p2-multifaceted-ai">the next part</a>, an overview of the various components that are part of the modern AI toolkit. 
+				another time. For now, we will focus on its more recent origins and development as a discipline,
+				and in
+				<a href="/blog/pages/2024-02-10-ai-p2-multifaceted-ai">the next part</a>, an overview of the
+				various components that are part of the modern AI toolkit.
 			</p>
 
 			<p>
@@ -294,14 +312,19 @@
 						><a href="#ref11">[11]</a></sup
 					> The paper inspired early development in game theory and AI research.
 				</p>
-
-				<ShowPicture
-					mediaType="youtube"
-					mediaWidth="95%"
-					mediaCaption="Short documentary on Claude Shannon"
-					youtubeSrc="https://www.youtube.com/embed/pHSRHi17RKM?si=6bECW2UbA7i2i6Zz"
-				/>
-
+				<div class="youtube-video">
+					<ShowPicture
+						mediaType="youtube"
+						mediaWidth="95%"
+						mediaCaption="Short documentary on Claude Shannon"
+						youtubeSrc="https://www.youtube.com/embed/pHSRHi17RKM?si=6bECW2UbA7i2i6Zz"
+					/>
+				</div>
+				<p class="youtube-link">
+					<a href="https://youtu.be/pHSRHi17RKM?si=NzAW9YG-EIoJ5mJR"
+						>Short documentary on Claude Shannon (YouTube)</a
+					>
+				</p>
 				<p>
 					The Shannon's work on Information Theory laid the foundations for the information age. He
 					created a mathematical model of information which would be the basis for the modern
@@ -474,7 +497,7 @@
 					<ShowPicture
 						mediaType="image"
 						mediaPath="/post_assets/0006/1956-simon-newell-1964.jpg"
-						mediaCaption="Allen Newell (left) andHerbert Simon, c. 1964"
+						mediaCaption="Allen Newell (left) and Herbert Simon, c. 1964"
 						mediaNumber="23"
 						mediaWidth="40%"
 					/></a
@@ -715,7 +738,10 @@
 						>
 					</div>
 					<div class="grid-right">
-						<aflatpak install flathub org.mozilla.firefox
+						<aflatpak
+							install
+							flathub
+							org.mozilla.firefox
 							href="https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
 						>
 							<ShowPicture
@@ -728,12 +754,20 @@
 						>
 					</div>
 				</div>
-				<ShowPicture
-					mediaType="youtube"
-					mediaWidth="95%"
-					mediaCaption="Short documentary on the Perceptron"
-					youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
-				/>
+				<div class="youtube-video">
+					<ShowPicture
+						mediaType="youtube"
+						mediaWidth="95%"
+						mediaCaption="Short documentary on the Perceptron"
+						youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
+					/>
+				</div>
+
+				<p class="youtube-link">
+					<a href="https://youtu.be/Suevq-kZdIw?si=SPBexQYYEXD0jG_r"
+						>Short documentary on the Perceptron (YouTube)</a
+					>
+				</p>
 				<!-- 				
 				<iframe
 					width="560"
@@ -746,14 +780,25 @@
 					allowfullscreen
 				/> -->
 			</TimeBox>
-			<p>This was a period of excitement, and the possibilities seemed endless, success guaranteed, although there was unease about the consequence of this success.</p>
+			<p>
+				This was a period of excitement, and the possibilities seemed endless, success guaranteed,
+				although there was unease about the consequence of this success.
+			</p>
 
-			<p class="quote-block">The old idea that Man invented tools is...a misleading half-truth; it would be more accurate to say that tools <em>invented Man.</em> They wre primitive tools... yet they led to us-and tho the eventual extinction of the apeman who first wielded then...The tools the apeman invented caused them to evolve into their successor, <em>Homo Sapiens.</em> The tool we have invented is our successor. Biological evolution has given way to a far more rapid process-technological evolution. To put it bluntly and brutally, the machine is going to take over.<br />
-					<cite
-						>Forbes, April 01, 2028.<sup id="ref-link-25"
-							><a href="#ref25">[25]</a></sup
-						></cite
-					></p>
+			<p class="quote-block">
+				The old idea that Man invented tools is...a misleading half-truth; it would be more accurate
+				to say that tools <em>invented Man.</em> They wre primitive tools... yet they led to us-and
+				tho the eventual extinction of the apeman who first wielded then...The tools the apeman
+				invented caused them to evolve into their successor, <em>Homo Sapiens.</em> The tool we have
+				invented is our successor. Biological evolution has given way to a far more rapid
+				process-technological evolution. To put it bluntly and brutally, the machine is going to
+				take over.<br />
+				<cite
+					>Arthur Clarke, cited in Forbes, April 01, 2028.<sup id="ref-link-25"
+						><a href="#ref25">[25]</a></sup
+					></cite
+				>
+			</p>
 			<h2>More than Symbolic and Connectionist</h2>
 			<p>
 				We thus have two approaches to the development of AI, based on two somewhat opposing
@@ -778,14 +823,20 @@
 				Connectionist approach. While deep learning has achieved remarkable success, the lack of
 				explainability, the need for massive amounts of data and computing power point to the need
 				for an approach that incorporates the structured knowledge and logical reasoning of Symbolic
-				AI. 
+				AI.
 			</p>
 			<h2>Next in this series</h2>
 			<p>
-				In Part 2 <del>(coming soon)</del> we take a cursory look at the broad range of components and techniques that
-				are part of the modern AI landscape, and attempt to organize these into a coherent framework around Symbolic AI, Connectionist AI, and a supplementary "Other" category.
-				</p>
-				<p>While progress transcends definitions, they are useful for context and framing, so Part 3 will be a list of the various definitions of the term AI from a broad range of sources. The debate around the definitions of AGI, AI, intelligence, and reasoning will continue, but it is still useful to see how the definitions evolve as new capabilities are developed and the impacts of the benefits and risks become visible.
+				In Part 2 <del>(coming soon)</del> we take a cursory look at the broad range of components and
+				techniques that are part of the modern AI landscape, and attempt to organize these into a coherent
+				framework around Symbolic AI, Connectionist AI, and a supplementary "Other" category.
+			</p>
+			<p>
+				While progress transcends definitions, they are useful for context and framing, so Part 3
+				will be a list of the various definitions of the term AI from a broad range of sources. The
+				debate around the definitions of AGI, AI, intelligence, and reasoning will continue, but it
+				is still useful to see how the definitions evolve as new capabilities are developed and the
+				impacts of the benefits and risks become visible.
 			</p>
 
 			<div class="references">
@@ -925,8 +976,10 @@
 						McCarthy, J., Minsky, M. L., Rochester, N., & Shannon, C. E. (1955, August 31). <i
 							>A proposal for the Dartmouth Summer Research Project on Artificial Intelligence</i
 						>.
-						<a href="https://archive.computerhistory.org/resources/access/text/2023/06/102720392-05-01-acc.pdf" target="_blank">PDF</a>
-						
+						<a
+							href="https://archive.computerhistory.org/resources/access/text/2023/06/102720392-05-01-acc.pdf"
+							target="_blank">PDF</a
+						>
 					</li>
 
 					<li id="ref16">
@@ -1007,13 +1060,13 @@
 						>
 					</li>
 					<li id="ref25">
-						Gil Press (2018, April 1). Killer AI Defeated, Celebrated For Half A Century<i
+						Gil Press (2018, April 1). Killer AI Defeated, Celebrated For Half A Century. <i
 							>Forbes.</i
 						>
 						Retrieved from
 						<a
-							href="https://www.nytimes.com/1958/07/13/archives/electronic-brain-teaches-itself.html"
-							>https://www.nytimes.com/1958/07/13/archives/electronic-brain-teaches-itself.html</a
+							href="https://www.forbes.com/sites/gilpress/2018/04/01/killer-ai-is-defeated-celebrated-for-half-a-century/"
+							>https://www.forbes.com/sites/gilpress/2018/04/01/killer-ai-is-defeated-celebrated-for-half-a-century/</a
 						>
 					</li>
 				</ol>
@@ -1161,19 +1214,19 @@
 	}
 
 	p.quote-block {
-		font-family: 'KoHO','Crete Round', 'Lancelot', 'Cherry Swash', 'Noto Serif Thai', 'Delius', Georgia,
-			'Times New Roman', Times, serif;
+		font-family: 'KoHO', 'Crete Round', 'Lancelot', 'Cherry Swash', 'Noto Serif Thai', 'Delius',
+			Georgia, 'Times New Roman', Times, serif;
 		padding: 5px 0 15px 0;
 		border-top: 3px solid rgba(177, 37, 177, 0.2);
 		border-bottom: 3px solid rgb(177, 37, 177, 0.2);
 		font-size: 1.1em;
 		display: inline-block;
-		font-style:normal;
+		font-style: normal;
 	}
-	
+
 	em {
 		font-family: 'KoHo';
-		
+
 		font-style: italic;
 	}
 	figure {
@@ -1198,20 +1251,77 @@
 		font-size: 0.9em;
 	}
 
-	
-		@media (max-width: 900px) {
+	.youtube-link {
+		display: none;
+	}
+
+	@media (max-width: 900px) {
 		div.sidebar-container {
 			margin: 0px 20px 0 0;
 			padding-bottom: 20px;
 			border-bottom: 2px dotted var(--main-color);
 		}
 	}
-		@media (max-width: 600px) {
+	@media (max-width: 600px) {
 		div.sidebar-container {
 			margin: 0px 0px 0 0;
 		}
+		/* p {
+			font-size: 1.3em;
+		}
 
+		strong {
+			font-size: 0.7em;
+		} */
+		p.quote-block {
+			font-size: 1.3em;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+		}
 
+		/* Top-left image */
+		.top-left {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.top-right {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.grid-left {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.grid-right {
+			grid-column: 1;
+			grid-row: unset;
+		}
+
+		/* Tall image spanning both rows in the right column */
+		.right-tall {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.wide {
+			grid-column: 1;
+			grid-row: unset;
+		}
+
+		/* Bottom-left image */
+		.bottom-left {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.youtube-video {
+			display: none;
+		}
+		.youtube-link {
+			font-size: 0.4em;
+			font-style: italic;
+			display: block;
+		}
 	}
-
 </style>

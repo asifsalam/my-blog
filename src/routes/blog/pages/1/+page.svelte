@@ -749,12 +749,19 @@
 						>
 					</div>
 				</div>
-				<ShowPicture
-					mediaType="youtube"
-					mediaWidth="95%"
-					mediaCaption="Short documentary on the Perceptron"
-					youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
-				/>
+				<div class="youtube-video">
+					<ShowPicture
+						mediaType="youtube"
+						mediaWidth="95%"
+						mediaCaption="Short documentary on the Perceptron"
+						youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
+					/>
+				</div>
+				<p class="youtube-link">
+					<a href="http://https://youtu.be/Suevq-kZdIw?si=v_t0_NQeW2ZSUm9F"
+						>The man who forever changed Artificial Intelligence (YouTube)</a
+					>
+				</p>
 			</TimeBox>
 			<p>
 				This was a period of excitement, and the possibilities seemed endless, success guaranteed,
@@ -951,6 +958,10 @@
 		font-size: 0.9em;
 	}
 
+	.youtube-link {
+		display: none;
+	}
+
 	@media (max-width: 900px) {
 		div.sidebar-container {
 			margin: 0px 20px 0 0;
@@ -1010,6 +1021,15 @@
 		.bottom-left {
 			grid-column: 1;
 			grid-row: unset;
+		}
+		.youtube-video {
+			display: none;
+		}
+		.youtube-link {
+			font-size: 0.4em;
+			font-style: italic;
+
+			display: block;
 		}
 	}
 </style>
