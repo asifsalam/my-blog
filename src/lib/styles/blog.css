@@ -295,6 +295,22 @@ html-attr>code {
 }
 
 @media (max-width: 600px) {
+	h1 {
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	p a {
+		font-size: 1em;
+	}
+
 	pre {
 		width: 95%;
 		padding: 0;
@@ -306,6 +322,6 @@ html-attr>code {
 	}
 
 	code {
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 }

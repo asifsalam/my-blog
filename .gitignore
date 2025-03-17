@@ -4,6 +4,7 @@ node_modules
 /.svelte-kit
 /package
 /temp
+/python
 docs
 .vscode
 .env

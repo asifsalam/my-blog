@@ -27,7 +27,7 @@
 		}))
 		.slice(0, 5);
 
-	const tags = ['post', 'AI', 'data-literacy', 'my-post'];
+	const tags = ['post', 'ai', 'data-literacy', 'ai-literacy', 'my-post'];
 </script>
 
 <!-- <RandomQuote /> -->

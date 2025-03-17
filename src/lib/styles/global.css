@@ -136,7 +136,7 @@ pre-title {
 
 @media (max-width: 900px) {
 	body {
-		font-size: 18px;
+		font-size: 16px;
 		/* width: auto; */
 		/* margin: 10px 10px; */
 		/* align-items: center; */
@@ -146,7 +146,7 @@ pre-title {
 /* used to be 768px */
 @media (max-width: 600px) {
 	body {
-		font-size: 16px;
+		font-size: 12px;
 		min-width: 300px;
 		/* width: auto; */
 		/* margin: 10px 10px; */
