@@ -16,7 +16,7 @@
 	let category = 'all';
 
 	let sidebarTitle = '';
-	let sidebarLeadinText = 'My posts. Not nearly enough.';
+	let sidebarLeadinText = 'My posts. Miles to go.';
 	let sidebarBulletText = [];
 </script>
 

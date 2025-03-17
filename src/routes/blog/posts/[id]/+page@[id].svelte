@@ -30,7 +30,7 @@
 
 <div class="container">
 	{#key $page.params.id}
-		<div class="sidebar">
+		<div class="sidebar-container">
 			<PostsListCard {posts} />
 			<p class="topics">
 				<SidebarTags useThemes={'yes'} useCategories={'yes'} />
@@ -85,24 +85,43 @@
 		width: auto;
 	}
 
-	.sidebar {
+	.sidebar-container {
 		margin: 10px 30px 0px 0px;
 	}
 
 	.preview-image {
 		width: 100%;
 	}
-	@media (max-width: 1000px) {
+	/* @media (max-width: 1000px) {
 		div.container {
 			display: block;
 			grid-template-columns: 1fr;
-			/* min-width: 300px; */
+
 		}
 
 		div.sidebar {
 			margin: 0px;
 			padding-bottom: 20px;
 			border-bottom: 2px dotted var(--main-color);
+		}
+	} */
+
+	 	@media (max-width: 900px) {
+		div.container {
+			grid-template-columns: 2fr 4fr;
+		}
+
+		div.posts {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 600px) {
+		div.container {
+			grid-template-columns: 1fr;
+		}
+		div.sidebar-container {
+			margin: 0px;
 		}
 	}
 </style>

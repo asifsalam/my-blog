@@ -16,9 +16,10 @@
 	let category = 'all';
 
 	let sidebarTitle = '';
-	let sidebarLeadinText = 'My posts. Not nearly enough.';
+	let sidebarLeadinText = 'My posts. Miles to go.';
 	let sidebarBulletText = [];
 </script>
+
 
 <div class="sidebar-container">
 	<!-- <SidebarHeadingBlog /> -->
@@ -65,6 +66,21 @@
 	}
 
 	@media (max-width: 900px) {
+
+
+		div.posts {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 600px) {
+
+		div.sidebar-container {
+			margin: 0px;
+		}
+	}
+
+	/* @media (max-width: 900px) {
 		div.container {
 			grid-template-columns: 2fr 4fr;
 		}
@@ -81,5 +97,5 @@
 		div.sidebar-container {
 			margin: 0px;
 		}
-	}
+	} */
 </style>

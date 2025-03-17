@@ -72,4 +72,28 @@
 		border: 10px solid transparent;
 		border-image: url('/img/misc/mughal-search-instrument.jpg') 30 10 round;
 	}
+
+	
+	@media (max-width: 900px) {
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 2fr 4fr;
+			/* flex-direction: row; */
+		}
+		/* .sidebar-container {
+			margin-right: 10px;
+		} */
+		.resources-container {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 600px) {
+		div.container {
+			grid-template-columns: 1fr;
+		}
+		div.sidebar-container {
+			margin-right: 0;
+		}
+	}
 </style>

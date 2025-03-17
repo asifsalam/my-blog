@@ -184,7 +184,7 @@
 
 <!-- <RandomQuote /> -->
 
-<div class="sidebar">
+<div class="sidebar-container">
 	<PostsListCard {posts} />
 	<p class="topics">
 		<SidebarTags useThemes={'yes'} useCategories={'yes'} />
@@ -204,7 +204,7 @@
 		<div class="main-content">
 			<p>
 				<img
-					src="/img/article_images/img-L02207.jpg"
+					src="/img/article_images/img-l02207.jpg"
 					alt="Iraqi stamp commemorating Al-Kindi"
 					srcset=""
 					style="float:right;margin-left:10px"
@@ -597,7 +597,7 @@
 		align-self: self-start;
 		margin-bottom: 10px;
 	}
-	.sidebar {
+	.sidebar-container {
 		margin: 10px 30px 0px 0px;
 	}
 	.content {
@@ -768,10 +768,15 @@
 		font-size: 1.1em;
 	}
 	@media (max-width: 1000px) {
-		div.sidebar {
-			margin: 0px;
+		div.sidebar-container {
+			margin: 0px 20px 0 0;
 			padding-bottom: 20px;
 			border-bottom: 2px dotted var(--main-color);
+		}
+	}
+		@media (max-width: 600px) {
+		div.sidebar-container {
+			margin: 0px 0px 0 0;
 		}
 	}
 </style>

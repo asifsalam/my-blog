@@ -12,12 +12,12 @@
 <Breadcrumbs />
 
 <div class="container">
-	<div class="sidebar">
+	<div class="sidebar-container">
 		<SidebarHeading
-			sidebarLeadinText={'A little about myself, and this site'}
+			sidebarLeadinText={'A little about myself, and this site (coming at some point)'}
 		/>
 		<p>Asif Salam</p>
-		<p>Husband to a gifted educator</p>
+		<p>Husband of a gifted educator</p>
 		<p>Father of two amazing boys</p>
 		<p>Brother, uncle</p>
 	</div>
@@ -74,5 +74,35 @@
 		object-fit: cover;
 		border: 10px solid transparent;
 		border-image: url('/img/misc/mughal-search-instrument.jpg') 30 10 round;
+	}
+
+		@media (max-width: 900px) {
+		/* main content container */
+		div.container {
+			/* display: grid; */
+			grid-template-columns: 2fr 4fr;
+			/* flex-direction: row; */
+		}
+		div.posts {
+			grid-template-columns: 1fr;
+		}
+		.sidebar-heading {
+			/* display: none; */
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 600px) {
+				div.sidebar-container {
+			margin: 10px 0px 00px 0px;
+			border-bottom: 2px dotted var(--main-color);
+		}
+		div.container {
+			/* display: grid; */
+			
+			grid-template-columns: 1fr;
+			/* flex-direction: row; */
+		}
 	}
 </style>

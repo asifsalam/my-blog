@@ -44,16 +44,16 @@
 	.sidebar {
 		margin: 10px 30px 0px 0px;
 	}
-	@media (max-width: 1000px) {
+	/* @media (max-width: 1000px) {
 		div.container {
 			display: block;
 			grid-template-columns: 1fr;
-			/* min-width: 300px; */
+
 		}
 		div.sidebar {
 			margin: 0px;
 			padding-bottom: 20px;
 			border-bottom: 2px dotted var(--main-color);
 		}
-	}
+	} */
 </style>

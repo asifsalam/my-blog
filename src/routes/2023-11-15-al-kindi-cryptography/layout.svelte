@@ -27,11 +27,11 @@
 		margin: 0px 0px 5px 0px;
 	}
 
-	@media (max-width: 1000px) {
+	/* @media (max-width: 1000px) {
 		div.container {
 			display: block;
 			grid-template-columns: 1fr;
-			/* min-width: 300px; */
+
 		}
-	}
+	} */
 </style>

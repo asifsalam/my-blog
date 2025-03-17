@@ -5,8 +5,8 @@
 	export let mediaNumber = 1;
 	export let mediaWidth = '100%';
 	export let youtubeSrc = 'https://www.youtube.com/embed/pHSRHi17RKM?si=6bECW2UbA7i2i6Zz';
-	const youtubeHeight = '315';
-	const youtubeWidth = '560';
+	const youtubeHeight = '240';
+	const youtubeWidth = '426';
 
 	console.log(mediaNumber);
 	let hideNumber = false;
@@ -97,4 +97,13 @@
 		text-align: left;
 		/* width: 70%; */
 	}
+			
+	@media (max-width: 1000px) {
+		.youtube-container {
+			width:426px;
+			height: 240px;
+		}
+	}
+
+
 </style>

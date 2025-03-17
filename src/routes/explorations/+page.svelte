@@ -126,8 +126,12 @@
 	}
 
 	@media (max-width: 600px) {
+				div.sidebar-container {
+			margin: 10px 0px 00px 0px
+		}
 		div.container {
 			/* display: grid; */
+			
 			grid-template-columns: 1fr;
 			/* flex-direction: row; */
 		}

@@ -34,7 +34,7 @@
 
 <!-- <RandomQuote /> -->
 
-<div class="sidebar">
+<div class="sidebar-container">
 	<PostsListCard {posts} />
 	<p class="topics">
 		<SidebarTags useThemes={'yes'} useCategories={'yes'} />
@@ -746,6 +746,14 @@
 					allowfullscreen
 				/> -->
 			</TimeBox>
+			<p>This was a period of excitement, and the possibilities seemed endless, success guaranteed, although there was unease about the consequence of this success.</p>
+
+			<p class="quote-block">The old idea that Man invented tools is...a misleading half-truth; it would be more accurate to say that tools <em>invented Man.</em> They wre primitive tools... yet they led to us-and tho the eventual extinction of the apeman who first wielded then...The tools the apeman invented caused them to evolve into their successor, <em>Homo Sapiens.</em> The tool we have invented is our successor. Biological evolution has given way to a far more rapid process-technological evolution. To put it bluntly and brutally, the machine is going to take over.<br />
+					<cite
+						>Forbes, April 01, 2028.<sup id="ref-link-25"
+							><a href="#ref25">[25]</a></sup
+						></cite
+					></p>
 			<h2>More than Symbolic and Connectionist</h2>
 			<p>
 				We thus have two approaches to the development of AI, based on two somewhat opposing
@@ -770,21 +778,14 @@
 				Connectionist approach. While deep learning has achieved remarkable success, the lack of
 				explainability, the need for massive amounts of data and computing power point to the need
 				for an approach that incorporates the structured knowledge and logical reasoning of Symbolic
-				AI. <i
-					>(To do: Summarize the main limitations of the Connectionist approach, and how Symbolic AI
-					addresses some of them.)</i
-				>
+				AI. 
 			</p>
-			<h2>To do next</h2>
+			<h2>Next in this series</h2>
 			<p>
-				In Part 2 <del>(coming soon)</del> I outline the broad range of components and techniques that
-				are part of the modern AI landscape, and attempt to organize these into a coherent framework
-				around Symbolic AI, Connectionist AI, and a supplementary "Other" category. Definitions are useful
-				for context and framing, so Part 3 will be a list of the various definitions of the term AI from
-				a broad range of sources. Of course progress is not about definitions. The debate around the
-				definitions of AGI, AI, and even intelligence, and reasoning—and how these can be determined
-				and measured—has gone on for decades. It is useful to see how the definitions evolve as new capabilities
-				are developed and the impacts of the benefits and risks become visible.
+				In Part 2 <del>(coming soon)</del> we take a cursory look at the broad range of components and techniques that
+				are part of the modern AI landscape, and attempt to organize these into a coherent framework around Symbolic AI, Connectionist AI, and a supplementary "Other" category.
+				</p>
+				<p>While progress transcends definitions, they are useful for context and framing, so Part 3 will be a list of the various definitions of the term AI from a broad range of sources. The debate around the definitions of AGI, AI, intelligence, and reasoning will continue, but it is still useful to see how the definitions evolve as new capabilities are developed and the impacts of the benefits and risks become visible.
 			</p>
 
 			<div class="references">
@@ -968,7 +969,7 @@
 						>
 					</li>
 
-					<li id="ref20">
+					<li id="ref21">
 						Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and
 						organization in the brain. <i>Psychological Review, 65</i>(6), 386–408.
 						<a href="https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf" target="_blank"
@@ -976,7 +977,7 @@
 						>
 					</li>
 
-					<li id="ref21">
+					<li id="ref22">
 						Lefkowitz, M. (2019, September 25). Professor’s perceptron paved the way for AI – 60
 						years too soon. <i>Cornell Chronicle</i>.
 						<a
@@ -986,7 +987,7 @@
 						>
 					</li>
 
-					<li id="ref22">
+					<li id="ref23">
 						Serious Science. (2019, October 22). <i
 							>The man who forever changed artificial intelligence</i
 						>
@@ -995,9 +996,19 @@
 							>https://www.youtube.com/watch?v=Suevq-kZdIw</a
 						>
 					</li>
-					<li id="ref23">
+					<li id="ref24">
 						The New York Times. (1958, July 13). Electronic brain teaches itself. <i
 							>The New York Times.</i
+						>
+						Retrieved from
+						<a
+							href="https://www.nytimes.com/1958/07/13/archives/electronic-brain-teaches-itself.html"
+							>https://www.nytimes.com/1958/07/13/archives/electronic-brain-teaches-itself.html</a
+						>
+					</li>
+					<li id="ref25">
+						Gil Press (2018, April 1). Killer AI Defeated, Celebrated For Half A Century<i
+							>Forbes.</i
 						>
 						Retrieved from
 						<a
@@ -1107,7 +1118,7 @@
 		margin-bottom: 10px;
 	}
 
-	.sidebar {
+	.sidebar-container {
 		margin: 10px 30px 0px 0px;
 	}
 
@@ -1149,15 +1160,21 @@
 		justify-self: center;
 	}
 
-	.quote-block {
-		font-family: 'Crete Round', 'Lancelot', 'Cherry Swash', 'Noto Serif Thai', 'Delius', Georgia,
+	p.quote-block {
+		font-family: 'KoHO','Crete Round', 'Lancelot', 'Cherry Swash', 'Noto Serif Thai', 'Delius', Georgia,
 			'Times New Roman', Times, serif;
 		padding: 5px 0 15px 0;
 		border-top: 3px solid rgba(177, 37, 177, 0.2);
 		border-bottom: 3px solid rgb(177, 37, 177, 0.2);
-		font-size: 1.4em;
+		font-size: 1.1em;
 		display: inline-block;
-		/* font-style: italic; */
+		font-style:normal;
+	}
+	
+	em {
+		font-family: 'KoHo';
+		
+		font-style: italic;
 	}
 	figure {
 		margin: 0; /* Removes default margin */
@@ -1181,11 +1198,19 @@
 		font-size: 0.9em;
 	}
 
-	@media (max-width: 1000px) {
-		div.sidebar {
-			margin: 0px;
+	
+		@media (max-width: 1000px) {
+		div.sidebar-container {
+			margin: 0px 20px 0 0;
 			padding-bottom: 20px;
 			border-bottom: 2px dotted var(--main-color);
 		}
 	}
+		@media (max-width: 600px) {
+		div.sidebar-container {
+			margin: 0px 0px 0 0;
+		}
+
+	}
+
 </style>
