@@ -1028,7 +1028,6 @@
 		.youtube-link {
 			font-size: 0.4em;
 			font-style: italic;
-
 			display: block;
 		}
 	}

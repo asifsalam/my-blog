@@ -312,14 +312,14 @@
 						><a href="#ref11">[11]</a></sup
 					> The paper inspired early development in game theory and AI research.
 				</p>
-				<div class="youtube-video">
+				<!-- <div class="youtube-video">
 					<ShowPicture
 						mediaType="youtube"
 						mediaWidth="95%"
 						mediaCaption="Short documentary on Claude Shannon"
 						youtubeSrc="https://www.youtube.com/embed/pHSRHi17RKM?si=6bECW2UbA7i2i6Zz"
 					/>
-				</div>
+				</div> -->
 				<p class="youtube-link">
 					<a href="https://youtu.be/pHSRHi17RKM?si=NzAW9YG-EIoJ5mJR"
 						>Short documentary on Claude Shannon (YouTube)</a
@@ -754,31 +754,20 @@
 						>
 					</div>
 				</div>
-				<div class="youtube-video">
+				<!-- <div class="youtube-video">
 					<ShowPicture
 						mediaType="youtube"
 						mediaWidth="95%"
 						mediaCaption="Short documentary on the Perceptron"
 						youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
 					/>
-				</div>
+				</div> -->
 
 				<p class="youtube-link">
 					<a href="https://youtu.be/Suevq-kZdIw?si=SPBexQYYEXD0jG_r"
 						>Short documentary on the Perceptron (YouTube)</a
 					>
 				</p>
-				<!-- 				
-				<iframe
-					width="560"
-					height="315"
-					src="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-				/> -->
 			</TimeBox>
 			<p>
 				This was a period of excitement, and the possibilities seemed endless, success guaranteed,
