@@ -25,7 +25,7 @@
 
 <style>
 	:root {
-		--screen-tab: "900px";
+		--screen-tab: '900px';
 	}
 
 	div.container {
@@ -34,7 +34,6 @@
 		margin: 0px 0px 5px 0px;
 	}
 
-	
 	@media (max-width: 900px) {
 		div.container {
 			grid-template-columns: 2fr 4fr;
@@ -44,12 +43,13 @@
 	@media (max-width: 600px) {
 		div.container {
 			grid-template-columns: 1fr;
-
 		}
-
+		p {
+			font-size: 1em;
+		}
 	}
 
-/*	 @media (max-width: 1000px) {
+	/*	 @media (max-width: 1000px) {
 		div.container {
 			display: block;
 			grid-template-columns: 1fr;

@@ -1,7 +1,6 @@
 <script>
 	export let data;
 
-	// import Layout from '../../+layout.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import '$lib/styles/blog.css';
@@ -9,7 +8,6 @@
 	import PostsListCard from '$lib/components/posts-list-card.svelte';
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
-	import AIDefinitions from './ai-definitions.svelte';
 	import AiDefinitionsTable from './ai-definitions-table.svelte';
 
 	const postData = data.postData;

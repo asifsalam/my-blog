@@ -492,7 +492,7 @@
 					<ShowPicture
 						mediaType="image"
 						mediaPath="/post_assets/0006/1956-simon-newell-1964.jpg"
-						mediaCaption="Allen Newell (left) andHerbert Simon, c. 1964"
+						mediaCaption="Allen Newell (left) and Herbert Simon, c. 1964"
 						mediaNumber="23"
 						mediaWidth="40%"
 					/></a
@@ -961,6 +961,55 @@
 	@media (max-width: 600px) {
 		div.sidebar-container {
 			margin: 0px 0px 0 0;
+		}
+		/* p {
+			font-size: 1.3em;
+		}
+
+		strong {
+			font-size: 0.7em;
+		} */
+		p.quote-block {
+			font-size: 1.3em;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+		}
+
+		/* Top-left image */
+		.top-left {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.top-right {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.grid-left {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.grid-right {
+			grid-column: 1;
+			grid-row: unset;
+		}
+
+		/* Tall image spanning both rows in the right column */
+		.right-tall {
+			grid-column: 1;
+			grid-row: unset;
+		}
+		.wide {
+			grid-column: 1;
+			grid-row: unset;
+		}
+
+		/* Bottom-left image */
+		.bottom-left {
+			grid-column: 1;
+			grid-row: unset;
 		}
 	}
 </style>

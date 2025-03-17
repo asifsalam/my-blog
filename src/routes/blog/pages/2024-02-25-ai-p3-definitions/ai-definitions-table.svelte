@@ -1,11 +1,9 @@
 <script>
-	import AiDefinitions from './ai-definitions.svelte';
-
 	let sortColumn = 'source';
 	let sortDirection = 'asc';
 
 	let aiDefinitions = [
-				{
+		{
 			source: 'John McCarthy et al.',
 			date: '1956',
 			definition:
@@ -130,7 +128,7 @@
 				'Artificial intelligence (AI) encompasses various technologies that enable machines to perform tasks typically requiring human intelligence, such as sensing, comprehending, acting and learning.',
 			category: 'Consulting Firm',
 			link: 'https://www.accenture.com/us-en/insights/generative-ai',
-			checked: 'yes'
+			checked: 'no'
 		},
 		{
 			source: 'Gartner',
@@ -239,7 +237,7 @@
 			category: 'Book',
 			link: 'https://nickbostrom.com/superintelligence/',
 			checked: 'no'
-		},
+		}
 	];
 
 	const rows = aiDefinitions.filter((d) => d.checked === 'yes');
