@@ -313,7 +313,7 @@
 			</p>
 
 			<p>
-				A new field, cryptanalysis, and a new statistical technique, frequency analysis, invented in
+				A new field, cryptanalysis, and a new statistical technique, frequency analysis, birthed in
 				a few sentences. The technique is simple, elegant, and powerful, but there is much more to
 				actually breaking a cipher than just frequency analysis, which Al-Kindi alludes to in the
 				text above. In the book he provides a number of techniques and tables to help the
