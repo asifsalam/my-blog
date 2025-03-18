@@ -17,7 +17,7 @@
 
 <div class="media-container" style:width={mediaWidth}>
 	<!-- <div class="youtube-container" style="height = {youtubeHeight}; width={youtubeWidth}"> -->
-	<div class="youtube-container" style="height = {youtubeHeight}; width={youtubeWidth}">
+	<div class="youtube-container" style="width:90%">
 		<iframe
 			class="youtube-iframe"
 			src={youtubeSrc}
@@ -48,6 +48,7 @@
 	.youtube-iframe {
 		margin-bottom: 5px;
 		aspect-ratio: 16 / 9;
+		width: inherit;
 	}
 
 	.caption {
