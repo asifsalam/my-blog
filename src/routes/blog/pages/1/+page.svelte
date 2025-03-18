@@ -424,6 +424,101 @@
 					"D" in Text Key.</span
 				>
 			</div>
+			<div class="text-container">
+				<button
+					class="general-button"
+					disabled={!cipherObj.messageEncrypted}
+					on:click={() => {
+						decodeMessage();
+					}}>Start decoding</button
+				>
+				<br />
+				<LetterBoxes
+					bind:letters={cipherObj.textKey}
+					bind:swapInfo
+					letterHead="Text key"
+					lettersType="plaintext"
+					draggable={false}
+					showLetters={cipherObj.messageDecoded}
+				/>
+				<LetterBoxes
+					bind:letters={cipherObj.decodeKey}
+					swapInfo={{}}
+					letterHead="Decode key"
+					lettersType="decode"
+					draggable={true}
+					showLetters={cipherObj.messageDecoded}
+				/>
+
+				<div class="decoded-container" style="min-height:15em">
+					<p class="decoded-header header-text">Decoded message</p>
+
+					{#key cipherObj.decodeKey}
+						{#if cipherObj.messageEncrypted}
+							<p
+								class="decoded-message message-text message-box {showFullDecodedText
+									? 'decodedShown'
+									: 'decodedHidden'}"
+							>
+								{cipherObj.decodedtext}
+							</p>
+						{/if}
+					{/key}
+					<GeneralButton
+						disabledFlag={!cipherObj.messageDecoded}
+						buttonFunction={() => (showFullDecodedText = !showFullDecodedText)}
+						heading="Show {showFullDecodedText ? 'less' : 'more'}"
+					/>
+				</div>
+			</div>
+			<div class="references">
+				<p>References:</p>
+				<ol>
+					<li>
+						Al-Kadit, I. A. (n.d.). ORIGINS OF CRYPTOLOGY: THE ARAB CONTRIBUTIONS. <i
+							>Cryptologia, 16(2),</i
+						>
+						97–126. <a href="https://doi.org/10.1080/0161-119291866801">Link</a>.
+					</li>
+					<li>
+						Al-Tayeb, T. (2003, June 9). <i>Al-Kindi, Cryptography, Code Breaking and Ciphers.</i>
+						Muslim Heritage. Retrieved September 20, 2023,
+						<a href="https://muslimheritage.com/al-kindi-cryptography/">link</a>
+					</li>
+					<li>
+						Brewster, T. (2015, September 3). <i
+							>How A 1200-Year-Old Hacking Technique Can Already Crack Tomorrow’s Encrypted Vaults.</i
+						>
+						Forbes. Retrieved October 5, 2023,
+						<a
+							href="https://www.forbes.com/sites/thomasbrewster/2015/09/03/microsoft-dumb-attacks-cracks-next-gen-cryptography/?sh=55b84c1a5b55"
+							>link</a
+						>
+					</li>
+					<li>
+						Maidment, J. (2000, October 5). <i>The man who cracked the Kama Sutra code.</i> The
+						Telegraph. Retrieved September 24, 2023,
+						<a
+							href="https://www.telegraph.co.uk/news/science/science-news/4754214/The-man-who-cracked-the-Kama-Sutra-code.html"
+							>link</a
+						>
+					</li>
+					<li>
+						Naveed, M., Kamara, S., and Wright, C.V., (2015). Inference Attacks on
+						Property-Preserving Encrypted Databases. In <i
+							>Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security
+							(CCS '15).</i
+						>
+						Association for Computing Machinery, New York, NY, USA, 644–655.
+						<a href="https://doi-org.ezp.sub.su.se/10.1145/2810103.2813651">link</a>
+					</li>
+
+					<li>
+						Singh, S. (2000). <i>The code book : the secret history of codes and codebreaking.</i>
+						<a href="http://ci.nii.ac.jp/ncid/BA51150503">Link</a>
+					</li>
+				</ol>
+			</div>
 		</div>
 	</div>
 {/key}
@@ -651,7 +746,8 @@
 	}
 
 	.references {
-		border-top: 2px #8aa9a9 dashed;
+		margin-top: 20px;
+		border-top: 2px #8aa9a9 solid;
 	}
 
 	.references :is(p, li) {
@@ -661,12 +757,13 @@
 		div.sidebar-container {
 			margin: 0px 20px 0 0;
 			padding-bottom: 20px;
-			border-bottom: 2px dotted var(--main-color);
+			/* border-bottom: 2px dotted var(--main-color); */
 		}
 	}
 	@media (max-width: 600px) {
 		div.sidebar-container {
 			margin: 0px 0px 0 0;
+			border-bottom: 2px dotted var(--main-color);
 		}
 		a {
 			font-size: 0.8rem;
