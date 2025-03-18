@@ -1,7 +1,6 @@
 <script>
 	export let data;
 
-	// import Layout from '../../+layout.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import GeneralButton from './general-button.svelte';
@@ -15,11 +14,8 @@
 	import { calculateLetterFrequency } from '$lib/modules/utility_functions.js';
 	import letterFrequencies from './letter-frequency';
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
-	import RandomQuote from '$lib/components/random-quote.svelte';
 
 	const postData = data.postData;
-	// const posts = $postList.slice(0, 5);
-	// console.log('crytpography-postlist: ', $postList);
 	let pageId = $page.route.id;
 
 	onMount(() => {
@@ -125,10 +121,7 @@
 	let sourceText = data.sourceText;
 	plaintextInput = cleanInput(sourceText.join(' '));
 	cipherObj.plaintext = plaintextInput;
-	// $: console.log(plaintextInput);
-	// cipherObj.encryptMessage();
 
-	// let plaintextFrequency = calculateLetterFrequency(cipherObj.plaintext);
 	let ciphertextFrequency = [];
 	let textFrequency = [];
 	let cipherKey = [];
@@ -208,7 +201,7 @@
 					alt="Iraqi stamp commemorating Al-Kindi"
 					srcset=""
 					style="float:right;margin-left:10px"
-					width="250;"
+					width="30%;"
 				/>
 				Contemporary texts and books on statistics and statistical inference date its origin to the seventeenth
 				century, around the time of the "Enlightenment," when Western Europeans introduced the world
@@ -244,7 +237,6 @@
 				In the "keyword" system, a keyword such as "equation" would result in the following
 				letter-cipher pairing:
 			</p>
-
 			<LetterBoxes
 				letters={cipherObj.alphabet}
 				swapInfo
@@ -347,7 +339,6 @@
 					on the change.
 				</li>
 			</ol>
-
 			<h3 class="section-header">View encrypted message</h3>
 
 			{#if cipherObj.messageEncrypted}
@@ -374,9 +365,6 @@
 						chartOptions={{ title: 'Letter Frequency (Language)', barType: 'letter' }}
 					/>
 				</div>
-				<!-- <div class="chart">
-				<LetterBars letterData={plaintextFrequency} chartOptions={{ title: 'Plaintext' }} />
-			</div> -->
 
 				{#if cipherObj.messageEncrypted}
 					<div class="chart">
@@ -416,21 +404,6 @@
 				about the text, like the author, location, date.
 			</p>
 			<p style="font-size:0.9em;margin-bottom:2px;">Use the hints if you get stuck.</p>
-			<!-- <p style="height:30px;margin-top:2px;" class="hint">
-			Hint 1 : <span class="hide"
-				>The frequencies of the symbols in the ciphertext can often be off by on letter or so. Try
-				to swap adjacent symbols.</span
-			>
-		</p>
-		<p style="height:60px;" class="hint">
-			Hint 2:
-			<span class="hide"
-				>The decoded second word "ANL" could be "AND" or "ANY". Let's explore "AND". This means that
-				the positions in the Decode Key that correspond to the letters "L" and "D" may be incorrect.
-				Swap these in the Decode Key by first clicking on the symbol in the Decode Key that maps to
-				the letter "L" in the Text Key, and then the symbol that maps to the letter "D" in Text Key.</span
-			>
-		</p> -->
 			<div class="hint">
 				<span>Show hint 1</span>
 				<input type="checkbox" name="hint1" id="hint1" bind:checked={showHint1} />
@@ -451,7 +424,6 @@
 					"D" in Text Key.</span
 				>
 			</div>
-
 			<div class="text-container">
 				<button
 					class="general-button"
@@ -499,7 +471,6 @@
 					/>
 				</div>
 			</div>
-
 			<div class="references">
 				<p>References:</p>
 				<ol>
@@ -775,7 +746,8 @@
 	}
 
 	.references {
-		border-top: 2px #8aa9a9 dashed;
+		margin-top: 20px;
+		border-top: 2px #8aa9a9 solid;
 	}
 
 	.references :is(p, li) {
@@ -785,12 +757,13 @@
 		div.sidebar-container {
 			margin: 0px 20px 0 0;
 			padding-bottom: 20px;
-			border-bottom: 2px dotted var(--main-color);
+			/* border-bottom: 2px dotted var(--main-color); */
 		}
 	}
 	@media (max-width: 600px) {
 		div.sidebar-container {
 			margin: 0px 0px 0 0;
+			border-bottom: 2px dotted var(--main-color);
 		}
 		a {
 			font-size: 0.8rem;
