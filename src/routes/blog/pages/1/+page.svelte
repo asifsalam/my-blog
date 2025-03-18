@@ -263,14 +263,6 @@
 				the possible number of combinations.
 			</p>
 			<p>Until Al-Kindi, in around 841 AD.</p>
-			<h2>Al-Kindi's method for deciphering cryptographic messages</h2>
-			<p>
-				The probability of correctly guessing the substitution cipher is effectively zero. But
-				governments and other agents had a keen interest in the ability to decipher the content of
-				these messages. Al-Kindi invented what is now called frequency analysis, a statistical
-				method for breaking this type of encryption. In his book "A Manuscript on Deciphering
-				Cryptographic Messages" (841 AD), Al-Kindi describes the method:
-			</p>
 		</div>
 	</div>
 {/key}
