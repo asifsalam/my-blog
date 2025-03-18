@@ -358,6 +358,72 @@
 				breaking effort. The bar chart below shows this, with the letter frequency on the left and
 				symbol frequency on the right.
 			</p>
+			<div class="letter-charts">
+				<div class="chart">
+					<LetterBars
+						letterData={textFrequency}
+						chartOptions={{ title: 'Letter Frequency (Language)', barType: 'letter' }}
+					/>
+				</div>
+
+				{#if cipherObj.messageEncrypted}
+					<div class="chart">
+						<LetterBars
+							letterData={ciphertextFrequency}
+							chartOptions={{ title: 'Symbol Frequency (Ciphertext)', barType: 'cipher' }}
+						/>
+					</div>
+				{/if}
+			</div>
+
+			<p>
+				This forms the first estimate of the <strong>decryption key</strong>. The result of the
+				decoding effort using this key is shown in the text box further down.
+			</p>
+			<p>
+				To decode the ciphertext, you need to order the symbols in the right sequence. The key table
+				below allows you to adjust the order of the symbols. The upper row in the key table below
+				contains letters in descending order based on frequency of occurrence in the language, as
+				shown in the chart above. The lower row contains symbols in descending order based on the
+				frequency of occurrence in the ciphertext, as shown in the chart above.
+			</p>
+			<p>
+				<strong
+					>Symbols positions in the lower row can be swapped by clicking on the first symbol to
+					select it and then the second symbol to swap the two. Symbols that have been swapped are
+					coloured green.</strong
+				>
+			</p>
+			<p>
+				The key is applied to the ciphertext to decode it. This decoding is updated as the symbols
+				are swapped in the key table above.
+			</p>
+			<p>If you run out of ideas, have a look at the hints below.</p>
+			<p>
+				If you manage to decode the ciphertext, send me a message on LinkedIn with some information
+				about the text, like the author, location, date.
+			</p>
+			<p style="font-size:0.9em;margin-bottom:2px;">Use the hints if you get stuck.</p>
+			<div class="hint">
+				<span>Show hint 1</span>
+				<input type="checkbox" name="hint1" id="hint1" bind:checked={showHint1} />
+				<span class:visible={showHint1} class="isHint"
+					>The frequencies of the symbols in the ciphertext can often be off by on letter or so. Try
+					to swap adjacent symbols.</span
+				>
+			</div>
+			<br />
+			<div class="hint">
+				<span>Show hint 1</span>
+				<input type="checkbox" name="hint2" id="hint2" bind:checked={showHint2} />
+				<span class:visible={showHint2} class="isHint"
+					>The decoded second word "ANL" could be "AND" or "ANY". Let's explore "AND". This means
+					that the positions in the Decode Key that correspond to the letters "L" and "D" may be
+					incorrect. Swap these in the Decode Key by first clicking on the symbol in the Decode Key
+					that maps to the letter "L" in the Text Key, and then the symbol that maps to the letter
+					"D" in Text Key.</span
+				>
+			</div>
 		</div>
 	</div>
 {/key}

@@ -1,5 +1,4 @@
 <script>
-	import { scaleLinear, max } from 'd3';
 	export let letterData;
 	export let yKey = 'texts';
 	export let chartOptions = {
@@ -8,12 +7,7 @@
 	};
 	export let fontColor = 'rgba(193, 84, 1, 1);';
 
-	// letterData.sort((a, b) => {
-	// 	return b.frequency - a.frequency;
-	// });
 	let barContainer = document.querySelector('.chart-container');
-	// let barWidth = barContainer.offsetWidth;
-	// console.log('barWidth: ', barContainer);
 </script>
 
 <div class="chart-container">
@@ -26,7 +20,7 @@
 				class="axis-letter {chartOptions.barType}"
 				style="border:none;background:none;width:20px;font-color:{fontColor}">{letter.letter}</span
 			>
-			<span class="frequency-box {chartOptions.barType}" style="width:{letter.frequency * 16}px;" />
+			<span class="frequency-box {chartOptions.barType}" style="width:{letter.frequency * 12}px;" />
 		</div>
 	{/each}
 </div>
