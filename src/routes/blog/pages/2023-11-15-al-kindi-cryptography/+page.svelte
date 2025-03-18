@@ -478,12 +478,12 @@
 						Al-Kadit, I. A. (n.d.). ORIGINS OF CRYPTOLOGY: THE ARAB CONTRIBUTIONS. <i
 							>Cryptologia, 16(2),</i
 						>
-						97–126. <a href="https://doi.org/10.1080/0161-119291866801">Link</a>.
+						97–126. <a href="https://doi.org/10.1080/0161-119291866801">Link.</a>
 					</li>
 					<li>
 						Al-Tayeb, T. (2003, June 9). <i>Al-Kindi, Cryptography, Code Breaking and Ciphers.</i>
 						Muslim Heritage. Retrieved September 20, 2023,
-						<a href="https://muslimheritage.com/al-kindi-cryptography/">link</a>
+						<a href="https://muslimheritage.com/al-kindi-cryptography/">link.</a>
 					</li>
 					<li>
 						Brewster, T. (2015, September 3). <i
@@ -492,7 +492,7 @@
 						Forbes. Retrieved October 5, 2023,
 						<a
 							href="https://www.forbes.com/sites/thomasbrewster/2015/09/03/microsoft-dumb-attacks-cracks-next-gen-cryptography/?sh=55b84c1a5b55"
-							>link</a
+							>link.</a
 						>
 					</li>
 					<li>
@@ -500,7 +500,7 @@
 						Telegraph. Retrieved September 24, 2023,
 						<a
 							href="https://www.telegraph.co.uk/news/science/science-news/4754214/The-man-who-cracked-the-Kama-Sutra-code.html"
-							>link</a
+							>link.</a
 						>
 					</li>
 					<li>
@@ -510,12 +510,12 @@
 							(CCS '15).</i
 						>
 						Association for Computing Machinery, New York, NY, USA, 644–655.
-						<a href="https://doi-org.ezp.sub.su.se/10.1145/2810103.2813651">link</a>
+						<a href="https://doi-org.ezp.sub.su.se/10.1145/2810103.2813651">Link.</a>
 					</li>
 
 					<li>
 						Singh, S. (2000). <i>The code book : the secret history of codes and codebreaking.</i>
-						<a href="http://ci.nii.ac.jp/ncid/BA51150503">Link</a>
+						<a href="http://ci.nii.ac.jp/ncid/BA51150503">Link.</a>
 					</li>
 				</ol>
 			</div>
@@ -524,6 +524,9 @@
 {/key}
 
 <style>
+	a {
+		font-size: 1em;
+	}
 	.message-box {
 		font-size: 1em;
 		transition: height 2s ease;
