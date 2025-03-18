@@ -738,10 +738,7 @@
 						>
 					</div>
 					<div class="grid-right">
-						<aflatpak
-							install
-							flathub
-							org.mozilla.firefox
+						<a
 							href="https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
 						>
 							<ShowPicture
@@ -750,7 +747,7 @@
 								mediaCaption="The Perceptron Machine"
 								mediaNumber="35"
 								mediaWidth="90%"
-							/></aflatpak
+							/></a
 						>
 					</div>
 				</div>
@@ -776,8 +773,8 @@
 
 			<p class="quote-block">
 				The old idea that Man invented tools is...a misleading half-truth; it would be more accurate
-				to say that tools <em>invented Man.</em> They wre primitive tools... yet they led to us-and
-				tho the eventual extinction of the apeman who first wielded then...The tools the apeman
+				to say that tools <em>invented Man.</em> They were primitive tools... yet they led to us-and
+				to the eventual extinction of the apeman who first wielded then...The tools the apeman
 				invented caused them to evolve into their successor, <em>Homo Sapiens.</em> The tool we have
 				invented is our successor. Biological evolution has given way to a far more rapid
 				process-technological evolution. To put it bluntly and brutally, the machine is going to
@@ -817,8 +814,8 @@
 			<h2>Next in this series</h2>
 			<p>
 				In Part 2 <del>(coming soon)</del> we take a cursory look at the broad range of components and
-				techniques that are part of the modern AI landscape, and attempt to organize these into a coherent
-				framework around Symbolic AI, Connectionist AI, and a supplementary "Other" category.
+				techniques that are part of the modern AI landscape, and attempt to organize these into a framework
+				around Symbolic AI, Connectionist AI, and a supplementary "Other" category.
 			</p>
 			<p>
 				While progress transcends definitions, they are useful for context and framing, so Part 3
@@ -918,15 +915,6 @@
 							target="_blank">PDF</a
 						>
 					</li>
-
-					<!-- <li id="ref12">
-						Turing, A. M. (1936). On computable numbers with an application to the
-						Entscheidungsproblem. <i>Proceedings of the London Mathematical Society, s2-42</i>(1),
-						230–265.
-						<a href="https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf" target="_blank"
-							>PDF</a
-						>
-					</li> -->
 
 					<li id="ref12">
 						Stochastic neural analog reinforcement calculator. (n.d.). In Wikipedia. Retrieved
@@ -1286,12 +1274,12 @@
 			grid-row: unset;
 		}
 		.youtube-video {
-			display: none;
+			display: inherit;
 		}
-		.youtube-link {
+		/* .youtube-link {
 			font-size: 0.4em;
 			font-style: italic;
-			display: block;
-		}
+			display: none;
+		} */
 	}
 </style>
