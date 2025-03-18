@@ -201,7 +201,7 @@
 					alt="Iraqi stamp commemorating Al-Kindi"
 					srcset=""
 					style="float:right;margin-left:10px"
-					width="250;"
+					width="30%;"
 				/>
 				Contemporary texts and books on statistics and statistical inference date its origin to the seventeenth
 				century, around the time of the "Enlightenment," when Western Europeans introduced the world
