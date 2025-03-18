@@ -339,6 +339,25 @@
 					on the change.
 				</li>
 			</ol>
+			<h3 class="section-header">View encrypted message</h3>
+
+			{#if cipherObj.messageEncrypted}
+				<p class="ciphertext-message message-text message-box {showFullText ? 'shown' : 'hidden'}">
+					{cipherObj.ciphertext}
+				</p>
+			{/if}
+			<GeneralButton
+				disabledFlag={!cipherObj.cipherGenerated || !cipherObj.messageEncrypted}
+				buttonFunction={() => (showFullText = !showFullText)}
+				heading="Show {showFullText ? 'less' : 'more'}"
+			/>
+			<h3 class="section-header">Break encryption</h3>
+			<p>
+				The first step is to calculate the symbol frequencies in the ciphertext, and map the symbols
+				to the letter frequencies in the language. This provides a starting point for the code
+				breaking effort. The bar chart below shows this, with the letter frequency on the left and
+				symbol frequency on the right.
+			</p>
 		</div>
 	</div>
 {/key}
