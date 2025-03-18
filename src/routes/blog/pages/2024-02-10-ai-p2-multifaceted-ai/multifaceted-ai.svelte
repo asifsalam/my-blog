@@ -286,29 +286,33 @@
 	<h3>Traditional ML tasks</h3>
 	<ul>
 		<li>
-			Image classification – assigning one or more predefined labels to an image based on its visual
+			Image classification: assigning one or more predefined labels to an image based on its visual
 			content.
 		</li>
 		<li>
-			Natural language processing – analyzing and understanding human language data to extract
-			meaningful information.
+			<strong>Natural language processing:</strong> analyzing and understanding human language data to
+			extract meaningful information.
 		</li>
-		<li>Machine translation – converting text from one language into another.</li>
+		<li><strong>Machine translation:</strong> converting text from one language into another.</li>
 		<li>
-			Sentiment analysis – determining the emotional tone or subjective opinion expressed in text.
-		</li>
-		<li>Object detection – identifying and localizing objects within images or video frames.</li>
-		<li>Text classification – classifying text into predefined categories.</li>
-		<li>
-			Churn prediction – predicting which customers are likely to discontinue using a service or
-			product.
+			<strong> Sentiment analysis:</strong> determining the emotional tone or subjective opinion expressed
+			in text.
 		</li>
 		<li>
-			Anomaly detection – identifying patterns in data that deviate significantly from expected
-			behavior.
+			<strong>Object detection:</strong> identifying and localizing objects within images or video frames.
+		</li>
+		<li><strong>Text classification:</strong> classifying text into predefined categories.</li>
+		<li>
+			<strong> Churn prediction:</strong> predicting which customers are likely to discontinue using
+			a service or product.
 		</li>
 		<li>
-			Recommendation systems – predicting user preferences to suggest relevant items or content.
+			<strong> Anomaly detection:</strong> identifying patterns in data that deviate significantly from
+			expected behavior.
+		</li>
+		<li>
+			<strong> Recommendation systems:</strong> predicting user preferences to suggest relevant items
+			or content.
 		</li>
 	</ul>
 	<h3>Other examples, with other techniques</h3>
@@ -362,5 +366,21 @@
 		line-height: 1.2em;
 		content: '\27A0';
 		color: hsla(var(--main-text-color), 0.15);
+	}
+
+	@media (max-width: 600px) {
+		p {
+			font-size: 1.3rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+		}
+		h3 {
+			font-size: 1.4rem;
+		}
+		li {
+			font-size: 1.3rem;
+		}
 	}
 </style>

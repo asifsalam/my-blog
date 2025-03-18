@@ -512,7 +512,6 @@
 						Association for Computing Machinery, New York, NY, USA, 644–655.
 						<a href="https://doi-org.ezp.sub.su.se/10.1145/2810103.2813651">Link.</a>
 					</li>
-
 					<li>
 						Singh, S. (2000). <i>The code book : the secret history of codes and codebreaking.</i>
 						<a href="http://ci.nii.ac.jp/ncid/BA51150503">Link.</a>
