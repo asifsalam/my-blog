@@ -201,7 +201,7 @@
 					alt="Iraqi stamp commemorating Al-Kindi"
 					srcset=""
 					style="float:right;margin-left:10px"
-					width="250;"
+					width="30%;"
 				/>
 				Contemporary texts and books on statistics and statistical inference date its origin to the seventeenth
 				century, around the time of the "Enlightenment," when Western Europeans introduced the world
@@ -236,6 +236,40 @@
 			<p>
 				In the "keyword" system, a keyword such as "equation" would result in the following
 				letter-cipher pairing:
+			</p>
+			<LetterBoxes
+				letters={cipherObj.alphabet}
+				swapInfo
+				draggable={false}
+				letterHead={'Alphabet'}
+				lettersType={'plaintext'}
+			/>
+			<LetterBoxes
+				letters={keywordCipher}
+				swapInfo
+				draggable={false}
+				letterHead={'Keyword Cipher'}
+				lettersType={'cipher'}
+			/>
+			<p>
+				The plaintext message:
+				<span class="plaintext">"war is peace freedom is slavery ignorance is strength"</span>
+				would result in the following ciphertext:
+				<span class="ciphertext">"wem bp kteut imttag bp pfevtmy bohjmehut bp prmthorn"</span>
+			</p>
+			<p>
+				The keyword cipher has a known problem. The last few letters are mapped to the same postions
+				in the cipher. But with a little care, this type of encryption was unbreakable because of
+				the possible number of combinations.
+			</p>
+			<p>Until Al-Kindi, in around 841 AD.</p>
+			<h2>Al-Kindi's method for deciphering cryptographic messages</h2>
+			<p>
+				The probability of correctly guessing the substitution cipher is effectively zero. But
+				governments and other agents had a keen interest in the ability to decipher the content of
+				these messages. Al-Kindi invented what is now called frequency analysis, a statistical
+				method for breaking this type of encryption. In his book "A Manuscript on Deciphering
+				Cryptographic Messages" (841 AD), Al-Kindi describes the method:
 			</p>
 		</div>
 	</div>
