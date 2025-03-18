@@ -8,12 +8,12 @@
 	export let letterHead = 'Decode key';
 	export let lettersType = 'decode';
 	export let showLetters = true;
-	const yPos = 20;
-	const letterSpacing = 20;
-	const boxSpacing = 5;
+	const chartWidth = 600;
+	const letterOffset = chartWidth / 8;
+	const yPos = letterOffset / 5;
+	const letterSpacing = letterOffset / 5;
+	const boxSpacing = letterSpacing / 4;
 	const boxHeight = letterSpacing * 1.2;
-	const letterOffset = 115;
-	const chartWidth = 800;
 
 	let swapped = [];
 	let firstClick = false;

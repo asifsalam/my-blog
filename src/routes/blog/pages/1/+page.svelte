@@ -263,6 +263,82 @@
 				the possible number of combinations.
 			</p>
 			<p>Until Al-Kindi, in around 841 AD.</p>
+			<h2>Al-Kindi's method for deciphering cryptographic messages</h2>
+			<p>
+				The probability of correctly guessing the substitution cipher is effectively zero. But
+				governments and other agents had a keen interest in the ability to decipher the content of
+				these messages. Al-Kindi invented what is now called frequency analysis, a statistical
+				method for breaking this type of encryption. In his book "A Manuscript on Deciphering
+				Cryptographic Messages" (841 AD), Al-Kindi describes the method:
+			</p>
+			<p class="quote-block">
+				<span
+					class="ciphetext"
+					style="margin-top:10px;display:block;font-family:Macondo;font-style:italic;font-weight:normal;font"
+					>“One way to solve an encrypted message, if we know its [original] language, is to find a
+					different plaintext of the same language long enough to fill one sheet or so, and then we
+					count the occurrences of each letter. We call the most frequently occurring letter the
+					‘first’, the next most occurring letter the ‘second’, the following most occurring the
+					‘third’, and so on, until we account for all the different letters in the plaintext
+					sample.”</span
+				>
+				<span
+					style="margin-top:10px;display:block;font-family:Macondo;font-style:italic; font-weight:normal"
+				>
+					“Then we look at the cryptogram we want to solve and we also classify its symbols. We find
+					the most occurring symbol and change it to the form of the ‘first’ letter of the plaintext
+					sample, the next most common symbol is changed to the form of the ‘second’ letter, and so
+					on, until we account for all symbols of the cryptogram we want to solve.(1, 2)”
+				</span>
+				<span
+					style="margin-top:10px;display:block;font-family:Macondo;font-style:italic; font-weight:normal"
+				>
+					“It could happen sometimes that the cryptogram is too short to have all different letters.
+					The high and low [frequency] counts will not be correct, for high and low counts are only
+					correct in long enough messages to correspond to all places of frequent and rare
+					occurrences so that if some letters are [too] few in one segment of the message, they will
+					be [too] many in others. But if the cryptogram is too short, equivalence does not apply,
+					letter ranks are not correct and [consequently] a second trick should be used to recover
+					letters. Such a trick is qualitative which is ... [here al-Kindi wrote in detail on
+					possible letter combinations in a language, like 'al' in Arabic...etc.] (1)."
+				</span>
+			</p>
+
+			<p>
+				A new field, cryptanalysis, and a new statistical technique, frequency analysis, birthed in
+				a few sentences. The technique is simple, elegant, and powerful, but there is much more to
+				actually breaking a cipher than just frequency analysis, which Al-Kindi alludes to in the
+				text above. In the book he provides a number of techniques and tables to help the
+				codebreaker decode a cryptogram.
+			</p>
+			<p>
+				While cryptology has advanced considerably over the centuries, this method can still break
+				modern systems. Kamara & Naveed have shown how the method can be used to extract information
+				from encrypted databases (3,5).
+			</p>
+			<h2>Further reading</h2>
+			<p>
+				Simon Singh's <i>The code book: the secret history of codes and codebreaking</i> provides a technically
+				rigorous and rich, yet accessible history of the field, its role in war and revolution, impact
+				on modern society and effect on personal privacy today (6).
+			</p>
+			<h2>Can you break this cipher?</h2>
+			<p>
+				This message was has been encrypted by a substitution cipher. As a codebreaker, your job is
+				to decode the ciphertext. You have trained on the Al-Kindi texts. You know that the letter
+				frequencies are only a starting point. You will have to use your statistical knowledge of
+				the English language, its common letter combinations and sequences. Your toolkit consists of
+				the following:
+			</p>
+			<ol>
+				<li>Estimated letter frequencies for the language.</li>
+				<li>Symbol frequencies from the ciphertext.</li>
+				<li>
+					A small tool that maps the symbols to the corresponding letters based on the frequencies.
+					You can swap symbol positions by clicking on two symbols. The decrypted text updates based
+					on the change.
+				</li>
+			</ol>
 		</div>
 	</div>
 {/key}
