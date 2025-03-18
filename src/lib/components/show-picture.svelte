@@ -35,6 +35,7 @@
 		{/if}
 	</div>
 	{#if mediaType === 'youtube'}
+		<!-- <div class="youtube-container" style="height = {youtubeHeight}; width={youtubeWidth}"> -->
 		<div class="youtube-container" style="height = {youtubeHeight}; width={youtubeWidth}">
 			<iframe
 				class="youtube-iframe"
@@ -60,7 +61,7 @@
 		float: right;
 		display: grid;
 		justify-items: center;
-		margin: 10px;
+		margin: 5px;
 	}
 
 	.content-container {
@@ -78,7 +79,8 @@
 	}
 
 	.youtube-iframe {
-		margin-bottom: 10px;
+		margin-bottom: 0px;
+		aspect-ratio: 16 / 9;
 	}
 
 	.post-figure {

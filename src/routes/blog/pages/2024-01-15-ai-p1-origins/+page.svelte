@@ -10,6 +10,7 @@
 	import SidebarTags from '$lib/components/sidebar-tags.svelte';
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 	import ShowPicture from '$lib/components/show-picture.svelte';
+	import ShowYoutube from '$lib/components/show-youtube.svelte';
 	import TimeBox from '$lib/components/time-box.svelte';
 
 	const postData = data.postData;
@@ -312,14 +313,13 @@
 						><a href="#ref11">[11]</a></sup
 					> The paper inspired early development in game theory and AI research.
 				</p>
-				<div class="youtube-video">
-					<ShowPicture
-						mediaType="youtube"
-						mediaWidth="95%"
-						mediaCaption="Short documentary on Claude Shannon"
-						youtubeSrc="https://www.youtube.com/embed/pHSRHi17RKM?si=6bECW2UbA7i2i6Zz"
-					/>
-				</div>
+
+				<ShowYoutube
+					mediaWidth="90%"
+					mediaCaption="Short documentary on Claude Shannon"
+					youtubeSrc="https://www.youtube.com/embed/pHSRHi17RKM?si=6bECW2UbA7i2i6Zz"
+				/>
+
 				<p class="youtube-link">
 					<a href="https://youtu.be/pHSRHi17RKM?si=NzAW9YG-EIoJ5mJR"
 						>Short documentary on Claude Shannon (YouTube)</a
@@ -751,15 +751,19 @@
 						>
 					</div>
 				</div>
-				<div class="youtube-video">
+				<!-- <div class="youtube-video">
 					<ShowPicture
 						mediaType="youtube"
 						mediaWidth="95%"
 						mediaCaption="Short documentary on the Perceptron"
 						youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
 					/>
-				</div>
-
+				</div> -->
+				<ShowYoutube
+					mediaWidth="90%"
+					mediaCaption="Short documentary on the Perceptron"
+					youtubeSrc="https://www.youtube.com/embed/Suevq-kZdIw?si=yTjO09bwHQK3y3PN&amp;start=90"
+				/>
 				<p class="youtube-link">
 					<a href="https://youtu.be/Suevq-kZdIw?si=SPBexQYYEXD0jG_r"
 						>Short documentary on the Perceptron (YouTube)</a
