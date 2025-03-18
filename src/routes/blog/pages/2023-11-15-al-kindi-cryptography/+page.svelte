@@ -793,7 +793,7 @@
 			margin: 0px 0px 0 0;
 		}
 		a {
-			font-size: 0.9rem;
+			font-size: 0.8rem;
 		}
 	}
 </style>
