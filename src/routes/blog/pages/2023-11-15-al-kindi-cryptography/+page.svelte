@@ -781,7 +781,7 @@
 	.references :is(p, li) {
 		font-size: 1.1em;
 	}
-	@media (max-width: 1000px) {
+	@media (max-width: 900px) {
 		div.sidebar-container {
 			margin: 0px 20px 0 0;
 			padding-bottom: 20px;
@@ -793,7 +793,7 @@
 			margin: 0px 0px 0 0;
 		}
 		a {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		}
 	}
 </style>
