@@ -286,8 +286,8 @@
 	<h3>Traditional ML tasks</h3>
 	<ul>
 		<li>
-			Image classification: assigning one or more predefined labels to an image based on its visual
-			content.
+			<strong>Image classification:</strong> assigning one or more predefined labels to an image based
+			on its visual content.
 		</li>
 		<li>
 			<strong>Natural language processing:</strong> analyzing and understanding human language data to
