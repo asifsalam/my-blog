@@ -1,0 +1,654 @@
+{
+	"Symbolic": {
+		"methodology": [
+			{
+				"id": "a001",
+				"name": "Logic Programming",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "A programming paradigm based formal logic, representing knowledge as a set of facts and rules that define relationships among entities.",
+				"link": "https://en.wikipedia.org/wiki/Logic_programming"
+			},
+			{
+				"id": "a002",
+				"name": "Rules-Based Systems",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Systems that use \"if-then\" rules to derive decisions and actions from given facts and conditions.",
+				"link": "https://smythos.com/ai-agents/ai-tutorials/symbolic-ai-applications/"
+			},
+			{
+				"id": "a003",
+				"name": "Semantic Networks",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Graph-based structures used to represents knowledge as a network of relationships, with knowledge as nodes and concepts as edges, representing relationships.",
+				"link": "https://en.wikipedia.org/wiki/Semantic_network"
+			},
+			{
+				"id": "a004",
+				"name": "Knowledge Representation",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "A set of techniques used to formalize and structure knowledge in way that can be used by machines for reasoning.",
+				"link": "https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning"
+			}
+		],
+		"method": [
+			{
+				"id": "a022",
+				"name": "Forward Chaining",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Data-driven approaches to reasoning that start from known facts and apply inference rules to derive new facts and conclusions until a goal is reached.",
+				"link": "https://en.wikipedia.org/wiki/Forward_chaining"
+			},
+			{
+				"id": "a023",
+				"name": "Backward Chaining",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Approaches to reasoning that start with a desired goal and work backwards through logical rules to determine which facts must be true to support it.",
+				"link": "https://en.wikipedia.org/wiki/Backward_chaining"
+			},
+			{
+				"id": "a024",
+				"name": "A* Search",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "An optimization algorithm that finds the best route to a goal by balancing the cost so far using heuristics to guide the search and make decisions efficiently.",
+				"link": "https://en.wikipedia.org/wiki/A*_search_algorithm"
+			},
+			{
+				"id": "a025",
+				"name": "Depth-First/Best-First Search",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Approaches for exploring decision spaces systematically traversing or searching through tree or graph data structures, each employing a distinct strategy to explore nodes.",
+				"link": "https://en.wikipedia.org/wiki/Depth-first_search"
+			},
+			{
+				"id": "a026",
+				"name": "Resolution Theorem Proving",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Procedures that apply logical inference rules to systematically derive conclusions from a set of premises by resolving contradictions in logic.",
+				"link": "https://ocw.mit.edu/courses/6-825-techniques-in-artificial-intelligence-sma-5504-fall-2002/3439d481b8e3d5abecc1403caf1ca89d_Lecture7FinalPart1.pdf"
+			},
+			{
+				"id": "a027",
+				"name": "Constraint Satisfaction Problems",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "The process of finding solutions that meet all specified constraints within a given problem space.",
+				"link": "https://en.wikipedia.org/wiki/Constraint_satisfaction_problem"
+			},
+			{
+				"id": "a028",
+				"name": "MiniMax Algorithm",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "A strategy for decision-making for adversarial games by that helps pick the best move by minimizing loss and maximizing gain.",
+				"link": "https://en.wikipedia.org/wiki/Minimax"
+			},
+			{
+				"id": "a029",
+				"name": "Dynamic Programming",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "A technique that solves complex problems by breaking them into simpler parts, and using solutions in a recursive way to reduce computations and time.",
+				"link": "https://en.wikipedia.org/wiki/Dynamic_programming"
+			},
+			{
+				"id": "a031",
+				"name": "Knowledge Graph Methods",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Methods that organize and connect information to help systems navigate, query and update facts to derive information from the connected nodes.",
+				"link": "https://en.wikipedia.org/wiki/Knowledge_graph"
+			}
+		],
+		"remove": [
+			{
+				"id": "a030",
+				"name": "Semantic Network Traversal",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Approaches that navigate relationships within a semantic network to help understand interconnections and infer new knowledge or answer queries.",
+				"link": ""
+			},
+			{
+				"id": "a055",
+				"name": "Knowledge Graph Methods",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Approaches to organizing and analyzing structure data through graphs of entities and their relationships, enabling reasoning and inference.",
+				"link": ""
+			}
+		],
+		"application": [
+			{
+				"id": "a051",
+				"name": "Expert Systems",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Programs that use rule-based reasoning to simulate human decision-making in specialized domains.",
+				"link": "https://en.wikipedia.org/wiki/Expert_system"
+			},
+			{
+				"id": "a052",
+				"name": "Semantic Web",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "An extension of the World Wide Web that enables machines to interpret and process data with semantic meaning.",
+				"link": "https://en.wikipedia.org/wiki/Semantic_Web"
+			},
+			{
+				"id": "a053",
+				"name": "Symbolic Mathematics",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Techniques to manipulate mathematical expressions symbolically rather than numerically, enabling exact computation.",
+				"link": "https://www.madscitech.org/guide/Introduction%20to%20Symbolic%20Mathematics.pdf"
+			},
+			{
+				"id": "a054",
+				"name": "Ontologies",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Structured representations of knowledge that define the concepts, relationships and constraints for a given domain.",
+				"link": "https://en.wikipedia.org/wiki/Ontology_(information_science)"
+			},
+			{
+				"id": "a056",
+				"name": "Automated Theorem Provers",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Programs that use formal logic to automatically prove or discover mathematical and logical theorems.",
+				"link": "https://en.wikipedia.org/wiki/Automated_theorem_proving"
+			},
+			{
+				"id": "a057",
+				"name": "Automated Reasoning Systems",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "Systems designed to infer new knowledge and make logical deductions based on known facts and rules.",
+				"link": "https://en.wikipedia.org/wiki/Reasoning_system"
+			}
+		]
+	},
+	"Other": {
+		"methodology": [
+			{
+				"id": "a005",
+				"name": "Markov Models",
+				"sub_cat1": "statistics",
+				"sub_cat2": "Unknown",
+				"description": "Probabilistic models that assume the future state depends only on the current state, commonly used for sequential data analysis.",
+				"link": "https://en.wikipedia.org/wiki/Markov_model"
+			},
+			{
+				"id": "a006",
+				"name": "Statistical Inference",
+				"sub_cat1": "statistics",
+				"sub_cat2": "Unknown",
+				"description": "The processes and techniques used to draw conclusions about population or process parameters based on sample data and probabilistic reasoning.",
+				"link": "https://en.wikipedia.org/wiki/Statistical_inference"
+			},
+			{
+				"id": "a007",
+				"name": "Probability Theory",
+				"sub_cat1": "statistics",
+				"sub_cat2": "Unknown",
+				"description": "The broad foundational mathematical framework tools used in many fields to model uncertainty and randomness, and analyze data distributions.",
+				"link": "https://en.wikipedia.org/wiki/Probability_theory"
+			},
+			{
+				"id": "a008",
+				"name": "Bayesian Network",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "Graphical models that represent probabilistic relationships among variables, enabling inference under uncertainty.",
+				"link": "https://en.wikipedia.org/wiki/Bayesian_network"
+			},
+			{
+				"id": "a010",
+				"name": "Supervised Learning",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A machine learning approach that uses labeled data to train models to make predictions on unlabeled data.",
+				"link": "https://en.wikipedia.org/wiki/Supervised_learning"
+			},
+			{
+				"id": "a011",
+				"name": "Unsupervised Learning",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A machine learning approach that finds underlying patterns and groupings in data without labels.",
+				"link": "https://en.wikipedia.org/wiki/Unsupervised_learning"
+			},
+			{
+				"id": "a012",
+				"name": "Reinforcement Learning",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A learning paradigm where an agent learns optimal actions by interacting with an environment and receiving feedback in the form of rewards or penalties to guide its actions.",
+				"link": "https://en.wikipedia.org/wiki/Reinforcement_learning"
+			}
+		],
+		"method": [
+			{
+				"id": "a009",
+				"name": "Evolutionary Algorithms",
+				"sub_cat1": "Unknown",
+				"sub_cat2": "Unknown",
+				"description": "A set of techniques inspired by natural selection, where solutions evolved over generations through operations like mutation, crossover & selection.",
+				"link": "https://en.wikipedia.org/wiki/Evolutionary_algorithm"
+			},
+			{
+				"id": "a032",
+				"name": "K-Means Clustering",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An unsupervised machine learning method groups data points into a chosen number of clusters by finding the best “centers” for each group.",
+				"link": "https://en.wikipedia.org/wiki/K-means_clustering"
+			},
+			{
+				"id": "a033",
+				"name": "Genetic Programming",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A technique that uses “survival of the fittest” to automatically evolve computer programs to solve problems.",
+				"link": "https://en.wikipedia.org/wiki/Genetic_programming"
+			},
+			{
+				"id": "a034",
+				"name": "Hierarchical Clustering",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An unsupervised machine learning method for clustering data by that builds nested groups by merging or splitting data.",
+				"link": "https://en.wikipedia.org/wiki/Hierarchical_clustering"
+			},
+			{
+				"id": "a035",
+				"name": "Markov Chain",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An approach to modeling a dynamic system where the probability of next state depends solely on the current state.",
+				"link": "https://en.wikipedia.org/wiki/Markov_chain"
+			},
+			{
+				"id": "a036",
+				"name": "Belief Propagation",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An iterative message-passing algorithm used to perform inference on graphical models by passing messages, where messages encode a local “’beliefs” about the neighbouring variables, enabling efficient computation of marginal distributions (approximate margninals in the case of “loopy graphs”).",
+				"link": "https://en.wikipedia.org/wiki/Belief_propagation"
+			},
+			{
+				"id": "a037",
+				"name": "Hypothesis Testing",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A statistical method for assessing assumptions about a population using sample data.",
+				"link": "https://en.wikipedia.org/wiki/Statistical_hypothesis_test"
+			},
+			{
+				"id": "a038",
+				"name": "Expectation Maximization",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An iterative algorithm for finding maximum likelihood estimates in models with latent variables.",
+				"link": "https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm"
+			},
+			{
+				"id": "a039",
+				"name": "Policy Gradient Methods",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "Reinforcement learning algorithms that update the parameters of policy by estimating the gradients towards maximizing cumulative rewards.",
+				"link": "https://en.wikipedia.org/wiki/Policy_gradient_method"
+			},
+			{
+				"id": "a040",
+				"name": "Q-Learning",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A reinforcement learning algorithm that learns the value of actions in states to maximize long-term reward.",
+				"link": "https://en.wikipedia.org/wiki/Q-learning"
+			},
+			{
+				"id": "a041",
+				"name": "Proximal Policy Optimization",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A reinforcement learning algorithm that improves policies by limiting changes using clipped object functions.",
+				"link": "https://en.wikipedia.org/wiki/Proximal_policy_optimization"
+			},
+			{
+				"id": "a042",
+				"name": "Logistic Regression",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A statistical machine learning method used for binary classification that predicts the probability of class membership using a logistic function.",
+				"link": "https://en.wikipedia.org/wiki/Logistic_regression"
+			},
+			{
+				"id": "a043",
+				"name": "Principal Component Analysis",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A dimensionality reduction technique that projects data onto orthogonal directions that capture the most variance.",
+				"link": "https://en.wikipedia.org/wiki/Principal_component_analysis"
+			},
+			{
+				"id": "a044",
+				"name": "Support Vector Machine",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A supervised learning algorithm that finds the optimal hyperplane to separate classes in a high-dimensional space.",
+				"link": "https://en.wikipedia.org/wiki/Support_vector_machine"
+			},
+			{
+				"id": "a045",
+				"name": "Random Forest",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An ensemble learning method that builds multiple decision trees using different subsets of data and features, and combines their outputs, improving generalizability and robustness.",
+				"link": "https://en.wikipedia.org/wiki/Random_forest"
+			},
+			{
+				"id": "a046",
+				"name": "Linear Regression",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A statistical method that models the linear relationship between input features and a continuous target variable.",
+				"link": "https://en.wikipedia.org/wiki/Linear_regression"
+			}
+		],
+		"application": [
+			{
+				"id": "a058",
+				"name": "Game playing",
+				"sub_cat1": "statistics",
+				"sub_cat2": "Unknown",
+				"description": "Systems designed to play and optimize strategies in games using decision-making algorithms.",
+				"link": "https://en.wikipedia.org/wiki/General_game_playing"
+			},
+			{
+				"id": "a059",
+				"name": "Risk Assessment",
+				"sub_cat1": "statistics",
+				"sub_cat2": "Unknown",
+				"description": "Models that predict probabilities of adverse outcomes using statistical and machine learning techniques.",
+				"link": "https://pure.tudelft.nl/ws/portalfiles/portal/55930460/1_s2.0_S0925753518311184_main.pdf"
+			},
+			{
+				"id": "a060",
+				"name": "Drug Effectiveness",
+				"sub_cat1": "statistics",
+				"sub_cat2": "Unknown",
+				"description": "The evaluation of the therapeutic potential of pharmaceutical compounds and the probability of adverse reactions using statistical and AI methods.",
+				"link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7646479/"
+			},
+			{
+				"id": "a061",
+				"name": "Survival Analysis",
+				"sub_cat1": "statistics",
+				"sub_cat2": "Unknown",
+				"description": "The use of use of statistical models that predict time-to-event outcomes, such as failures, disease, death etc., using censored data.",
+				"link": "https://en.wikipedia.org/wiki/Survival_analysis"
+			},
+			{
+				"id": "a062",
+				"name": "Robotics",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "Systems, typically with mechanical components, that use AI to execute tasks autonomously through perception, planning and control.",
+				"link": "https://en.wikipedia.org/wiki/Robotics"
+			},
+			{
+				"id": "a063",
+				"name": "Image Compression",
+				"sub_cat1": "statistics",
+				"sub_cat2": "Unknown",
+				"description": "The use of statistical and machine learning algorithms to reduce the file size of an image with minimizing degradation and preserving key visual features.",
+				"link": "https://en.wikipedia.org/wiki/Image_compression"
+			},
+			{
+				"id": "a064",
+				"name": "Speech Recognition",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "The machine learning task of converting spoken language into text using linguistic and acoustic modeling.",
+				"link": "https://en.wikipedia.org/wiki/Speech_recognition"
+			},
+			{
+				"id": "a065",
+				"name": "Image Classification",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "discriminative_ai",
+				"description": "The supervised machine learning task of assigning labels to images based on visual content.",
+				"link": "https://en.wikipedia.org/wiki/Computer_vision#Recognition"
+			},
+			{
+				"id": "a066",
+				"name": "Text Classification",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "discriminative_ai",
+				"description": "The supervised machine learning task of classifying text into predefined classes using natural language processing techniques.",
+				"link": "https://huggingface.co/models?pipeline_tag=text-classification"
+			},
+			{
+				"id": "a067",
+				"name": "Anomaly Detection",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "discriminative_ai",
+				"description": "The machine learning task of identifying rare or unexpected patterns in data.",
+				"link": "https://en.wikipedia.org/wiki/Anomaly_detection"
+			},
+			{
+				"id": "a068",
+				"name": "Remaining Useful Life",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "discriminative_ai",
+				"description": "The statistical or machine learning task of predicting the time until a system or component fails.",
+				"link": "https://en.wikipedia.org/wiki/Prognostics"
+			},
+			{
+				"id": "a069",
+				"name": "Object Detection",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "discriminative_ai",
+				"description": "The machine learning task of detecting and classifying multiple objects in an image or video.",
+				"link": "https://huggingface.co/models?pipeline_tag=object-detection"
+			},
+			{
+				"id": "a070",
+				"name": "Audio Classification",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "discriminative_ai",
+				"description": "The machine learning task of categorizing audio clips into predefined classes.",
+				"link": "https://huggingface.co/models?pipeline_tag=audio-classification"
+			},
+			{
+				"id": "a071",
+				"name": "Churn Prediction",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "discriminative_ai",
+				"description": "The machine learning task of forecasting the likelihood of customers canceling or discontinuing a service subscription.",
+				"link": "https://en.wikipedia.org/wiki/Customer_attrition"
+			}
+		]
+	},
+	"Connectionist": {
+		"methodology": [
+			{
+				"id": "a016",
+				"name": "Deep Learning",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "Neural networks with multiple layers, typically with non-linear activation functions, to learn representations of the data at multiple levels of abstraction.",
+				"link": "https://en.wikipedia.org/wiki/Deep_learning"
+			},
+			{
+				"id": "a013",
+				"name": "Supervised Learning",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A machine learning approach that uses labeled data to train models to make predictions on unlabeled data.",
+				"link": "https://en.wikipedia.org/wiki/Supervised_learning"
+			},
+			{
+				"id": "a014",
+				"name": "Unsupervised Learning",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A machine learning approach that finds underlying patterns and groupings in data without labels.",
+				"link": "https://en.wikipedia.org/wiki/Unsupervised_learning"
+			},
+			{
+				"id": "a015",
+				"name": "Artificial Neural Networks",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "Machine learning models loosely inspired by the human brain, built using layers of interconnected nodes.",
+				"link": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)"
+			}
+		],
+		"architecture": [
+			{
+				"id": "a017",
+				"name": "Convolutional Neural Networks",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A type of deep neural network architecture designed for analyzing visual data using convolutional layers.",
+				"link": "https://en.wikipedia.org/wiki/Convolutional_neural_network"
+			},
+			{
+				"id": "a018",
+				"name": "Recurrent Neural Networks",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "Neural networks designed for sequential data via feedback loops, where the outputs depend on current and previous inputs.",
+				"link": "https://en.wikipedia.org/wiki/Recurrent_neural_network"
+			},
+			{
+				"id": "a019",
+				"name": "Generative Adversarial Networks",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A method that uses two competing neural networks , a generator and a discriminator or evaluator, iteratively refining generated data to match real data distributions, producing realistic synthetic data.",
+				"link": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+			},
+			{
+				"id": "a020",
+				"name": "Variational Autoencoders",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "Generative neural networks that learn probabilistic latent representations of input data, enabling generation by sampling and decoding from the latent space.",
+				"link": "https://en.wikipedia.org/wiki/Variational_autoencoder"
+			},
+			{
+				"id": "a021",
+				"name": "Transformer",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A deep learning architecture that used an attention mechanism for parallelized processing of sequential data.",
+				"link": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"
+			}
+		],
+		"method": [
+			{
+				"id": "a047",
+				"name": "Backpropagation",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An algorithm used to train neural networks by propagating error gradients from output back through the network.",
+				"link": "https://en.wikipedia.org/wiki/Backpropagation"
+			},
+			{
+				"id": "a048",
+				"name": "Stochastic Gradient Descent",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An optimization algorithm that updates model parameters using randomly selected mini-batches of data to approximate the true gradient.",
+				"link": "https://en.wikipedia.org/wiki/Stochastic_gradient_descent"
+			},
+			{
+				"id": "a049",
+				"name": "Adam Optimizer",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "An adaptive learning-rate optimization algorithm combining RMSprop and momentum for efficient gradient-based training.",
+				"link": "https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam"
+			},
+			{
+				"id": "a050",
+				"name": "Attention Mechanism",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "Unknown",
+				"description": "A method to enable models to focus on relevant parts of the input by assigning importance scores to parts of the input.",
+				"link": "https://en.wikipedia.org/wiki/Attention_(machine_learning)"
+			}
+		],
+		"application": [
+			{
+				"id": "a072",
+				"name": "Text-to-Speech",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "generative_ai",
+				"description": "The machine learning task of synthesizing human sounding speech from written text.",
+				"link": "https://huggingface.co/models?pipeline_tag=text-to-speech"
+			},
+			{
+				"id": "a073",
+				"name": "Text Summarization",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "generative_ai",
+				"description": "The machine learning task of reducing documents into coherent summaries while retaining key information.",
+				"link": "https://huggingface.co/models?pipeline_tag=summarization"
+			},
+			{
+				"id": "a074",
+				"name": "Text-to-Video",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "generative_ai",
+				"description": "The machine learning task of generating video based on textual descriptions.",
+				"link": "https://huggingface.co/models?pipeline_tag=text-to-video"
+			},
+			{
+				"id": "a075",
+				"name": "Text Generation",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "generative_ai",
+				"description": "The machine learning task of generating human-like text from prompts in natural language.",
+				"link": "https://huggingface.co/models?pipeline_tag=text-generation"
+			},
+			{
+				"id": "a076",
+				"name": "Text-to-Image",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "generative_ai",
+				"description": "The machine learning task of generating images from textual descriptions.",
+				"link": "https://huggingface.co/models?pipeline_tag=image-to-text"
+			},
+			{
+				"id": "a077",
+				"name": "Image-to-Text",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "generative_ai",
+				"description": "The machine learning task of generating descriptive or contextual text from images.",
+				"link": "https://huggingface.co/models?pipeline_tag=image-to-text"
+			},
+			{
+				"id": "a078",
+				"name": "Video-to-Text",
+				"sub_cat1": "machine_learning",
+				"sub_cat2": "generative_ai",
+				"description": "The machine learning task of generating textual descriptions or transcripts from video content.",
+				"link": "https://huggingface.co/models?pipeline_tag=video-text-to-text"
+			}
+		]
+	}
+}

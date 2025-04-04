@@ -1,0 +1,83 @@
+Components of Symbolic AI (Gemini Research)
+https://docs.google.com/document/d/1othtTW5sp65qbexCPwwJIYDnYYhEgq83hs_Ua8iofQQ/edit?usp=sharing
+
+
+Symbolic AI - From Gemini
+Absolutely! Here's a breakdown of Symbolic AI components, categorized for a technically knowledgeable, non-specialist audience:
+
+**1. Main Approaches and Techniques:**
+
+* **Logic Programming:**
+    * This uses formal logic to encode knowledge and derive conclusions. It's like teaching a computer to reason by providing it with facts and rules, enabling it to answer questions logically.
+    * For example, using Prolog to define family relationships and then querying to find ancestors.
+* **Production Rules:**
+    * These are "if-then" statements that define actions based on conditions. They allow systems to respond to situations by following predefined rules.
+    * Think of it as setting up a series of triggers and responses, like an automated checklist.
+* **Semantic Nets:**
+    * These represent knowledge as networks of concepts and their relationships. They visually map how ideas connect, helping to understand complex information.
+    * Imagine a web of interconnected nodes, where each node is a concept, and the lines connecting them show how they relate.
+* **Knowledge Graphs:**
+    * These are large-scale semantic networks that focus on real-world entities and their connections. They're designed to store and retrieve vast amounts of structured information.
+    * They are like large databases that don't just hold data, but also the relationships between the data, making it easier to perform very complex data retreival.
+* **Frames:**
+    * Frames are data structures that organize knowledge into "slots" for attributes. They are used to represent typical objects or situations in a structured way.
+    * Think of them as templates for describing things, with predefined slots for key details.
+
+**2. Algorithms & Methods Developed Based on Those Techniques:**
+
+* **Rule-based Inference Engines:**
+    * These algorithms process production rules to derive conclusions. They act as the "brains" of rule-based systems, applying logic to make decisions.
+    * They are the software that takes a set of rules, and a set of facts, and produces new facts, or answers questions.
+* **Automated Theorem Proving:**
+    * These methods use logic programming to prove mathematical theorems. They automate the process of finding logical proofs.
+    * These are programs that can prove mathematical statements, much like a human mathematician would.
+* **Ontology Development:**
+    * This involves creating formal representations of knowledge domains. Ontologies define the concepts and relationships within a specific area.
+    * Ontologies are like very detailed dictionaries, that define not just the words, but how the words relate to each other.
+* **Planning Algorithms:**
+    * These algorithms use symbolic representations to create sequences of actions to achieve goals. They are used to create automated plans.
+    * These allow a computer to plot a course of action, to achieve a desired result.
+
+**3. Types of Applications Built Using Those Applications & Techniques:**
+
+* **Expert Systems:**
+    * These systems mimic the decision-making of human experts in specific domains. They use rules and knowledge to provide advice or solutions.
+    * Examples:
+        * Medical diagnosis systems that suggest treatments based on patient symptoms.
+        * Financial systems that assess credit risk based on financial data.
+* **Natural Language Processing (NLP):**
+    * Symbolic NLP uses rules and knowledge to understand and generate human language. It enables computers to process and interpret text.
+    * Examples:
+        * Rule-based translation systems that convert text from one language to another.
+        * Systems that analyze sentence structure to understand meaning.
+* **Automated Planning and Scheduling:**
+    * These applications create plans and schedules for complex tasks. They optimize resource allocation and task sequencing.
+    * Examples:
+        * Factory automation systems that plan production schedules.
+        * Logistics systems that optimize delivery routes.
+* **Knowledge Representation and Reasoning Systems:**
+    * These applications focus on storing and manipulating knowledge. They enable computers to reason and draw inferences.
+    * Examples:
+        * Semantic web applications that link and process information from various sources.
+        * Systems that perform complex database queries, based on relationships between data.
+
+Gemini: Technique categorization
+Okay, here's the categorization for those:
+
+* **Markov Models:**
+    * Representative Technique
+    * Algorithm (depending on context)
+    * Methodology
+* **Probability Theory:**
+    * Methodology
+    * Mathematical Foundation
+* **Statistical Inference:**
+    * Methodology
+    * Statistical Technique
+* **Bayesian Networks:**
+    * Representative Technique
+    * Methodology
+    * Probabilistic Graphical Model
+* **Reinforcement Learning:**
+    * Methodology
+    * Learning Paradigm

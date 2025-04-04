@@ -5,6 +5,8 @@ node_modules
 /package
 /temp
 /python
+source_data
+csvtojson
 docs
 .vscode
 .env

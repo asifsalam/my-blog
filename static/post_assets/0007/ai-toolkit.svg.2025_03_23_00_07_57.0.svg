@@ -1,0 +1,2204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="ai-toolkit.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5712063"
+     inkscape:cx="390.46433"
+     inkscape:cy="703.91777"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
+     inkscape:window-x="1600"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Diamond"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Diamond"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.45)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path19" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="SemiCircleFilled"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Filled semicircle"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.6pt"
+         d="m -0.22470421,-0.02741555 c 0,1.656 1.344,3 3,3 v -6 c -1.656,0 -3,1.344 -3,3 z"
+         id="path25" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="SemiCircleFilled-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Filled semicircle"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.6pt"
+         d="m -0.22470421,-0.02741555 c 0,1.65599995 1.34400001,2.99999995 3.00000001,2.99999995 v -6 c -1.656,0 -3.00000001,1.344 -3.00000001,3.00000005 z"
+         id="path25-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Diamond-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Diamond"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.45)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path19-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="SemiCircleFilled-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Filled semicircle"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.6pt"
+         d="m -0.22470421,-0.02741555 c 0,1.65599995 1.34400001,2.99999995 3.00000001,2.99999995 v -6 c -1.656,0 -3.00000001,1.344 -3.00000001,3.00000005 z"
+         id="path25-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Diamond-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Diamond"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.45)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path19-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="SemiCircleFilled-5-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Filled semicircle"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.6pt"
+         d="m -0.22470421,-0.02741555 c 0,1.65599995 1.34400001,2.99999995 3.00000001,2.99999995 v -6 c -1.656,0 -3.00000001,1.344 -3.00000001,3.00000005 z"
+         id="path25-4-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Diamond-9-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Diamond"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.45)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 Z"
+         id="path19-8-1" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#e3dbdb;fill-opacity:0.92;stroke-width:0.275893"
+       id="rect1"
+       width="198.4375"
+       height="218.1042"
+       x="4.4340897"
+       y="35.080486"
+       inkscape:label="rect-background" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2b0000;fill-opacity:0.92;stroke-width:0.17021"
+       id="text3-1"
+       inkscape:label="text-symbolic"
+       x="6.4491105"
+       y="34.391586"
+       transform="scale(0.81193829,1.2316207)"><tspan
+         id="tspan3-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.17021">Representative Techniques</tspan></text>
+    <g
+       id="g396"
+       transform="matrix(1.0017899,0,0,0.99999236,0.04660606,2.5521787e-4)">
+      <path
+         style="fill:#c8b7b7;fill-opacity:1;stroke:#000000;stroke-width:0.343629;stroke-dasharray:none;stroke-opacity:0"
+         id="path267"
+         sodipodi:type="arc"
+         sodipodi:cx="-103.6274"
+         sodipodi:cy="-35.108532"
+         sodipodi:rx="98.887238"
+         sodipodi:ry="22.282192"
+         sodipodi:start="0"
+         sodipodi:end="3.1154984"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="M -4.7401657,-35.108532 A 98.887238,22.282192 0 0 1 -102.33725,-12.828236 98.887238,22.282192 0 0 1 -202.48098,-34.527161"
+         transform="matrix(-0.99998599,-0.00529343,0.00537568,-0.99998555,0,0)"
+         inkscape:transform-center-x="-0.67927978"
+         inkscape:transform-center-y="0.74982136" />
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2b0000;fill-opacity:0.92;stroke-width:0.209634"
+         id="text3"
+         inkscape:label="text-symbolic"
+         x="9.8919334"
+         y="33.607784"><tspan
+           id="tspan3"
+           style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.209634">Symbolic </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2b0000;fill-opacity:0.92;stroke-width:0.209634"
+         id="text3-7"
+         inkscape:label="text-connectionist"
+         y="37.218754"
+         x="138.41635"
+         transform="scale(1.0965508,0.91195045)"><tspan
+           sodipodi:role="line"
+           id="tspan3-8"
+           style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.209634"
+           x="138.41635"
+           y="37.218754">Connectionist</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2b0000;fill-opacity:0.92;stroke-width:0.209634"
+         id="text3-7-7"
+         inkscape:label="text-connectionist"
+         y="37.300598"
+         x="85.871132"
+         transform="scale(1.0965508,0.91195045)"><tspan
+           sodipodi:role="line"
+           id="tspan3-8-0"
+           style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.209634"
+           x="85.871132"
+           y="37.300598">Other</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2b0000;fill-opacity:0.92;stroke-width:0.209634"
+         id="text3-7-7-1"
+         inkscape:label="text-connectionist"
+         y="21.546646"
+         x="55.492737"
+         transform="scale(1.0965508,0.91195045)"><tspan
+           sodipodi:role="line"
+           id="tspan3-8-0-3"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.209634"
+           x="55.492737"
+           y="21.546646">Artificial Intelligence</tspan></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.163128;stroke-dasharray:none;stroke-opacity:0.5"
+         id="path268"
+         sodipodi:type="arc"
+         sodipodi:cx="-103.59678"
+         sodipodi:cy="-34.361576"
+         sodipodi:rx="44.575516"
+         sodipodi:ry="11.140014"
+         sodipodi:start="0"
+         sodipodi:end="3.1154984"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="m -59.021263,-34.361576 a 44.575516,11.140014 0 0 1 -43.993947,11.139065 44.575516,11.140014 0 0 1 -45.14191,-10.848408"
+         transform="matrix(-0.99998277,-0.00587098,0.00484685,-0.99998825,0,0)"
+         inkscape:transform-center-x="-0.30620408"
+         inkscape:transform-center-y="0.37487909" />
+    </g>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.502904;stroke-dasharray:none;stroke-opacity:0.5;marker-start:url(#SemiCircleFilled);marker-end:url(#Diamond)"
+       d="m 64.820099,42.112387 v 56.56954"
+       id="path271" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.502895;stroke-dasharray:none;stroke-opacity:0.5;marker-start:url(#SemiCircleFilled-5);marker-end:url(#Diamond-9)"
+       d="M 145.89931,41.935385 V 98.680884"
+       id="path271-8" />
+    <path
+       style="fill:#2b0000;fill-opacity:0.92;stroke:#000000;stroke-width:0.500424;stroke-dasharray:none;stroke-opacity:0.5"
+       d="M 202.91282,43.526158 H 6.1352527 c -1.935291,0 -1.935291,0 -1.935291,0"
+       id="path272" />
+    <path
+       style="fill:#2b0000;fill-opacity:0.92;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:0.5"
+       d="M 202.80116,98.853405 H 6.3570995 c -1.932011,0 -1.932011,0 -1.932011,0"
+       id="path272-9" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.503494;stroke-dasharray:none;stroke-opacity:0.5;marker-start:url(#SemiCircleFilled-8);marker-end:url(#Diamond-6)"
+       d="m 64.822076,107.94228 v 58.95001"
+       id="path271-1" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.502797;stroke-dasharray:none;stroke-opacity:0.5;marker-start:url(#SemiCircleFilled-5-7);marker-end:url(#Diamond-9-7)"
+       d="m 145.89873,108.10979 v 58.78696"
+       id="path271-8-5" />
+    <path
+       style="fill:#2b0000;fill-opacity:0.92;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:0.5"
+       d="M 202.91368,109.47405 H 6.469625 c -1.932011,0 -1.932011,0 -1.932011,0"
+       id="path272-0" />
+    <path
+       style="fill:#2b0000;fill-opacity:0.92;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:0.5"
+       d="M 203.13881,166.98895 H 6.6947518 c -1.932011,0 -1.932011,0 -1.932011,0"
+       id="path272-9-9" />
+    <g
+       id="g273"
+       transform="translate(0.84197518,125.48768)">
+      <rect
+         style="fill:#ac9393;fill-opacity:0.92;stroke-width:0.279753"
+         id="rect2"
+         width="58.208332"
+         height="68.199989"
+         x="6.0588403"
+         y="134.41199"
+         inkscape:label="rect-symbolic" />
+      <rect
+         style="fill:#ac9393;fill-opacity:0.92;stroke-width:0.326681"
+         id="rect2-5"
+         width="79.375"
+         height="68.199989"
+         x="65.3125"
+         y="134.41199"
+         inkscape:label="rect-other" />
+      <rect
+         style="fill:#ac9393;fill-opacity:0.92;stroke-width:0.279753"
+         id="rect2-5-2"
+         width="58.208332"
+         height="68.199989"
+         x="145.54712"
+         y="134.17384"
+         inkscape:label="rect-connectionist" />
+    </g>
+    <g
+       id="g330"
+       transform="translate(-0.47629261)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.191977;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect273"
+         width="29.359587"
+         height="5.4853935"
+         x="6.9617729"
+         y="45.124752"
+         rx="0.40000001"
+         ry="0.40000001" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="7.5339775"
+         y="48.661198"
+         id="text273"><tspan
+           sodipodi:role="line"
+           id="tspan273"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+           x="7.5339775"
+           y="48.661198">Logic Programming</tspan></text>
+    </g>
+    <g
+       id="g329"
+       transform="translate(30.567931,-8.5002872)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.18198;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect275"
+         width="26.333216"
+         height="5.4953914"
+         x="6.8972378"
+         y="53.633495"
+         rx="0.40000001"
+         ry="0.40000001" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="7.7448363"
+         y="57.592983"
+         id="text275"><tspan
+           sodipodi:role="line"
+           id="tspan275"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+           x="7.7448363"
+           y="57.592983">Production Rules</tspan></text>
+    </g>
+    <g
+       id="g332"
+       transform="translate(1.228087,-8.8563176)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.167724;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect322"
+         width="22.311249"
+         height="5.5096469"
+         x="6.4733534"
+         y="61.068443"
+         rx="0.40000001"
+         ry="0.40000001" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="7.2076135"
+         y="65.035057"
+         id="text322"><tspan
+           sodipodi:role="line"
+           id="tspan322"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+           x="7.2076135"
+           y="65.035057">Semantic Nets</tspan></text>
+    </g>
+    <g
+       id="g334"
+       transform="translate(0.30340985,-9.1212793)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.210142;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect326-8"
+         width="35.295086"
+         height="5.4672294"
+         x="6.7456598"
+         y="68.777451"
+         rx="0.40000001"
+         ry="0.40000001" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="7.6256657"
+         y="72.304817"
+         id="text326-4"><tspan
+           sodipodi:role="line"
+           id="tspan326-2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+           x="7.6256657"
+           y="72.304817">Dynamic Programming</tspan></text>
+    </g>
+    <g
+       id="g328"
+       transform="translate(0,-1.72547)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.188512;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect327"
+         width="28.291391"
+         height="5.4888587"
+         x="34.704113"
+         y="53.934441"
+         rx="0.40000001"
+         ry="0.40000001" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="35.50069"
+         y="57.522011"
+         id="text327"><tspan
+           sodipodi:role="line"
+           id="tspan327"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+           x="35.50069"
+           y="57.522011">Knowledge Grahps</tspan></text>
+    </g>
+    <g
+       id="g335"
+       transform="translate(-0.50518511,-9.2328198)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.123718;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect328"
+         width="12.043149"
+         height="5.5536537"
+         x="45.864601"
+         y="68.845734"
+         rx="0.40000001"
+         ry="0.40000001" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="46.62273"
+         y="72.786728"
+         id="text328"><tspan
+           sodipodi:role="line"
+           id="tspan328"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+           x="46.62273"
+           y="72.786728">Frames</tspan></text>
+    </g>
+    <g
+       id="g338"
+       transform="translate(60.727368,-8.8698663)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.188512;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect336"
+         width="28.291391"
+         height="5.4888587"
+         x="34.704113"
+         y="53.934441"
+         rx="0.40000001"
+         ry="0.40000001" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="35.50069"
+         y="57.522011"
+         id="text336"><tspan
+           sodipodi:role="line"
+           id="tspan336"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+           x="35.50069"
+           y="57.522011">Probability Theory</tspan></text>
+    </g>
+    <g
+       id="g339"
+       transform="translate(21.195042,-2.5589827)">
+      <g
+         id="g340"
+         transform="translate(10.716594,0.59536636)">
+        <rect
+           style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.194251;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+           id="rect338"
+           width="30.071751"
+           height="5.4831195"
+           x="34.706982"
+           y="53.937309"
+           rx="0.40000001"
+           ry="0.40000001" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+           x="35.50069"
+           y="57.522011"
+           id="text338"><tspan
+             sodipodi:role="line"
+             id="tspan338"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+             x="35.50069"
+             y="57.522011">Statistical Inference</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g339-6"
+       transform="translate(21.130879,4.3506986)">
+      <g
+         id="g340-6"
+         transform="translate(10.716594,0.59536636)">
+        <rect
+           style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.194251;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+           id="rect338-91"
+           width="30.071751"
+           height="5.4831195"
+           x="34.706982"
+           y="53.937309"
+           rx="0.40000001"
+           ry="0.40000001" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+           x="35.50069"
+           y="57.522011"
+           id="text338-43"><tspan
+             sodipodi:role="line"
+             id="tspan338-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+             x="35.50069"
+             y="57.522011">Bayesian Networks</tspan></text>
+      </g>
+    </g>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.179;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect338-0"
+       width="81.389656"
+       height="5.3613672"
+       x="99.444237"
+       y="90.580017"
+       rx="0.39999998"
+       ry="0.40000001" />
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.179;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect342"
+       width="81.62735"
+       height="5.360919"
+       x="99.156975"
+       y="84.31868"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="125.25627"
+       y="87.842278"
+       id="text342"><tspan
+         sodipodi:role="line"
+         id="tspan342"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="125.25627"
+         y="87.842278">Supervised Learning</tspan></text>
+    <g
+       id="g339-7"
+       transform="translate(76.556629,-3.0801636)">
+      <g
+         id="g340-0"
+         transform="translate(10.716594,0.59536636)">
+        <g
+           id="g342"
+           transform="translate(-23.814654,0.35721981)">
+          <rect
+             style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.21392;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+             id="rect338-9"
+             width="36.601112"
+             height="5.4634509"
+             x="34.716816"
+             y="53.947144"
+             rx="0.40000001"
+             ry="0.40000001" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+             x="35.50069"
+             y="57.522011"
+             id="text338-4"><tspan
+               sodipodi:role="line"
+               id="tspan338-5"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+               x="35.50069"
+               y="57.522011">Reinforcement Learning</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g341"
+       transform="translate(31.316271,-8.8698663)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.30000001;stroke:#483737;stroke-width:0.188512;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect340"
+         width="28.291391"
+         height="5.4888587"
+         x="34.704113"
+         y="53.934441"
+         rx="0.40000001"
+         ry="0.40000001" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:0.99999994;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="35.50069"
+         y="57.522011"
+         id="text340"><tspan
+           sodipodi:role="line"
+           id="tspan340"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1;fill-opacity:0.99999994"
+           x="35.50069"
+           y="57.522011">Markov Models</tspan></text>
+    </g>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.223896;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect376"
+       width="40.16769"
+       height="5.4534755"
+       x="147.80855"
+       y="44.662365"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="149.04196"
+       y="48.234005"
+       id="text376"
+       inkscape:label="#text-depth-first-search"><title
+         id="title376">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan376"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="149.04196"
+         y="48.234005">Artificial Neural Networks</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.171027;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect377"
+       width="23.21266"
+       height="5.5063443"
+       x="170.68385"
+       y="50.86655"
+       rx="0.39999998"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="171.9437"
+       y="54.464626"
+       id="text377"
+       inkscape:label="#text-depth-first-search"><title
+         id="title377">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan377"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="171.9437"
+         y="54.464626">Deep Learning</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.24403;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect378"
+       width="47.893726"
+       height="5.433341"
+       x="147.81863"
+       y="57.807243"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="149.04198"
+       y="61.36882"
+       id="text378"
+       inkscape:label="#text-depth-first-search"><title
+         id="title378">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan378"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="149.04198"
+         y="61.36882">Convolutional Neural Networks </tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.229329;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect379"
+       width="42.182999"
+       height="5.4480419"
+       x="147.97969"
+       y="64.03051"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="149.21037"
+       y="67.599434"
+       id="text379"
+       inkscape:label="#text-depth-first-search"><title
+         id="title379">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan379"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="149.21037"
+         y="67.599434">Recurrent Neural Netowrks </tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.247766;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect380"
+       width="49.405544"
+       height="5.429605"
+       x="147.65208"
+       y="70.607147"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="148.87357"
+       y="74.166847"
+       id="text380"
+       inkscape:label="#text-depth-first-search"><title
+         id="title380">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan380"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="148.87357"
+         y="74.166847">Generative Adversarial Networks </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2b0000;fill-opacity:0.92;stroke-width:0.17021"
+       id="text3-1-1"
+       inkscape:label="text-symbolic"
+       x="6.5248909"
+       y="87.782219"
+       transform="scale(0.81193829,1.2316207)"
+       inkscape:transform-center-x="15.717672"
+       inkscape:transform-center-y="-2.1433189"><tspan
+         id="tspan3-3-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.17021">Notable Algorithms</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="121.87396"
+       y="94.103844"
+       id="text338-6"><tspan
+         sodipodi:role="line"
+         id="tspan338-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="121.87396"
+         y="94.103844">Unsupervised Learnining</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.179337;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect-a-search"
+       width="25.561882"
+       height="5.4980335"
+       x="6.1660533"
+       y="112.33488"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-a-search">
+      <desc
+         id="desc355">An optimization algorithm for graph traversal, using heuristics to guide the search.</desc>
+      <title
+         id="title355">A* Search</title>
+    </rect>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="7.4217377"
+       y="115.92881"
+       id="text-a-search"
+       inkscape:label="#text-a-search"><desc
+         id="desc354">An optimization algorithm for graph traversal, using heuristics to guide the search.</desc><title
+         id="title354">An optimization algorithm for graph traversal, using heuristics to guide the search.</title><tspan
+         sodipodi:role="line"
+         id="tspan344"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="7.4217377"
+         y="115.92881">A* Search</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.233755;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect-depth-first-search"
+       width="43.862522"
+       height="5.4436159"
+       x="5.6880765"
+       y="120.27666"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.9165525"
+       y="123.84338"
+       id="text-depth-first-search"
+       inkscape:label="#text-depth-first-search"><title
+         id="title356">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan345"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.9165525"
+         y="123.84338">Depth-first/Best-first Search</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.195382;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect-backward-chaining"
+       width="30.429293"
+       height="5.4819884"
+       x="4.9953108"
+       y="129.5192"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-backward-chaining" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.2429724"
+       y="133.1051"
+       id="text-backward-chaining"
+       inkscape:label="#text-backward-chaining"><title
+         id="title357">Backward Chaining</title><tspan
+         sodipodi:role="line"
+         id="tspan346"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.2429724"
+         y="133.1051">Backward Chaining</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.232437;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect347"
+       width="43.358658"
+       height="5.4449339"
+       x="5.3506284"
+       y="137.45229"
+       rx="0.39999998"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.5797625"
+       y="141.01967"
+       id="text-resolution-theorem-proving"
+       inkscape:label="#text-resolution-theorem-proving"><title
+         id="title358">Resolutoin Theorem Proving</title><tspan
+         sodipodi:role="line"
+         id="tspan347"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.5797625"
+         y="141.01967">Resolution Theorem Proving</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.253059;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect348"
+       width="51.58939"
+       height="5.4243112"
+       x="5.0241494"
+       y="144.19843"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.2429724"
+       y="147.75546"
+       id="text-constraint-satisfaction-algorithms"
+       inkscape:label="#text-constraint-satisfaction-algorithms"><title
+         id="title359">Constraint Satisfaction Algorithms</title><tspan
+         sodipodi:role="line"
+         id="tspan348"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.2429724"
+         y="147.75546">Constraint Satisfaction Algorithms</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.201118;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect349"
+       width="32.275902"
+       height="5.4762526"
+       x="5.3349676"
+       y="151.41342"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.5797615"
+       y="154.99644"
+       id="text-minimax-algorithm"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title360">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.5797615"
+         y="154.99644"
+         id="tspan353">Minimax Algorithm</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.179337;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect-symbolic-maths"
+       width="25.561882"
+       height="5.4980335"
+       x="36.645557"
+       y="129.34279"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="37.901241"
+       y="132.93672"
+       id="text350"><tspan
+         sodipodi:role="line"
+         id="tspan350"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="37.901241"
+         y="132.93672">Symbolic Maths</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.189464;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect351"
+       width="28.582867"
+       height="5.4879069"
+       x="33.787899"
+       y="112.00315"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="35.038525"
+       y="115.59201"
+       id="text-forward-chaining"
+       inkscape:label="#text-forward-chaining"><tspan
+         sodipodi:role="line"
+         id="tspan351"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="35.038525"
+         y="115.59201">Forward Chaining</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.155032;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect361"
+       width="19.01878"
+       height="5.5223379"
+       x="65.260551"
+       y="112.32273"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-a-search">
+      <desc
+         id="desc360">An optimization algorithm for graph traversal, using heuristics to guide the search.</desc>
+      <title
+         id="title361">A* Search</title>
+    </rect>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="66.528389"
+       y="115.92881"
+       id="text362"
+       inkscape:label="#text-a-search"><desc
+         id="desc361">An optimization algorithm for graph traversal, using heuristics to guide the search.</desc><title
+         id="title362">An optimization algorithm for graph traversal, using heuristics to guide the search.</title><tspan
+         sodipodi:role="line"
+         id="tspan362"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="66.528389"
+         y="115.92881">Q-Learning</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.217374;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect362"
+       width="37.816681"
+       height="5.4599967"
+       x="66.302094"
+       y="120.43686"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="67.538765"
+       y="124.01178"
+       id="text363"
+       inkscape:label="#text-depth-first-search"><title
+         id="title363">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan363"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="67.538765"
+         y="124.01178">Policy Gradient Methods</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.171027;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect363"
+       width="23.212662"
+       height="5.5063438"
+       x="65.605347"
+       y="129.67542"
+       rx="0.40000004"
+       ry="0.40000001"
+       inkscape:label="#rect-backward-chaining" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="66.865181"
+       y="133.2735"
+       id="text364"
+       inkscape:label="#text-backward-chaining"><title
+         id="title364">Backward Chaining</title><tspan
+         sodipodi:role="line"
+         id="tspan364"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="66.865181"
+         y="133.2735">Markov Chain</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.232437;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect364"
+       width="43.358658"
+       height="5.4449339"
+       x="65.972839"
+       y="137.62068"
+       rx="0.39999998"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="67.201973"
+       y="141.18806"
+       id="text365"
+       inkscape:label="#text-resolution-theorem-proving"><title
+         id="title365">Resolutoin Theorem Proving</title><tspan
+         sodipodi:role="line"
+         id="tspan365"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="67.201973"
+         y="141.18806">Resolution Theorem Proving</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.256655;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect365"
+       width="53.101349"
+       height="5.4207149"
+       x="65.479767"
+       y="160.02936"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="66.696785"
+       y="163.58459"
+       id="text366"
+       inkscape:label="#text-constraint-satisfaction-algorithms"><title
+         id="title366">Constraint Satisfaction Algorithms</title><tspan
+         sodipodi:role="line"
+         id="tspan366"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="66.696785"
+         y="163.58459">Expectation Maximizing Algorithm</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.190554;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect366"
+       width="28.918566"
+       height="5.4868164"
+       x="65.446709"
+       y="144.50395"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="66.696785"
+       y="148.09225"
+       id="text367"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title367">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="66.696785"
+         y="148.09225"
+         id="tspan367">Belief Propogation</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.17224;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect366-5"
+       width="23.548239"
+       height="5.5051308"
+       x="64.884003"
+       y="151.95879"
+       rx="0.40000004"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="66.143242"
+       y="155.55624"
+       id="text367-1"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title367-1">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="66.143242"
+         y="155.55624"
+         id="tspan367-4">Hypthesis Test</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.205184;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect367"
+       width="33.618996"
+       height="5.472187"
+       x="85.998222"
+       y="112.68461"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="87.240982"
+       y="116.26561"
+       id="text368"><tspan
+         sodipodi:role="line"
+         id="tspan368"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="87.240982"
+         y="116.26561">Genetic programming</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.194852;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect369"
+       width="30.261427"
+       height="5.4825187"
+       x="113.27306"
+       y="137.09673"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="114.52097"
+       y="140.68289"
+       id="text369"
+       inkscape:label="#text-depth-first-search"><title
+         id="title369">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan369"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="114.52097"
+         y="140.68289">K-means Clustering</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.217374;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect370"
+       width="37.816681"
+       height="5.4599967"
+       x="106.54852"
+       y="120.43686"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="107.78518"
+       y="124.01178"
+       id="text370"
+       inkscape:label="#text-depth-first-search"><title
+         id="title370">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan370"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="107.78518"
+         y="124.01178">Heirarchichal Clustering</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.236368;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect371"
+       width="44.870277"
+       height="5.4410028"
+       x="99.148643"
+       y="128.86612"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="100.3758"
+       y="132.43155"
+       id="text371"
+       inkscape:label="#text-depth-first-search"><title
+         id="title371">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan371"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="100.3758"
+         y="132.43155">Principal Component Analysis</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.192178;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect373"
+       width="29.422125"
+       height="5.4851933"
+       x="114.45049"
+       y="143.99957"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="115.69975"
+       y="147.58707"
+       id="text373"
+       inkscape:label="#text-depth-first-search"><title
+         id="title373">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan373"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="115.69975"
+         y="147.58707">Logistic Regression</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.217374;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect374"
+       width="37.816681"
+       height="5.4599967"
+       x="92.234932"
+       y="151.92673"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="93.471603"
+       y="155.50163"
+       id="text374"
+       inkscape:label="#text-depth-first-search"><title
+         id="title374">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan374"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="93.471603"
+         y="155.50163">Support Vector Machine</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.173444;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect375"
+       width="23.883823"
+       height="5.5039272"
+       x="121.1769"
+       y="113.00552"
+       rx="0.40000004"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="122.43555"
+       y="116.60238"
+       id="text375"
+       inkscape:label="#text-depth-first-search"><title
+         id="title375">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan375"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="122.43555"
+         y="116.60238">Random Forest</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.220194;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect381"
+       width="38.82423"
+       height="5.4571767"
+       x="147.8067"
+       y="77.160744"
+       rx="0.39999998"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="149.04196"
+       y="80.734253"
+       id="text381"
+       inkscape:label="#text-depth-first-search"><title
+         id="title381">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan381"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="149.04196"
+         y="80.734253">Variational Autoencoders</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.166083;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect382"
+       width="21.870443"
+       height="5.5112882"
+       x="147.61125"
+       y="51.032467"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="148.87357"
+       y="54.633022"
+       id="text382"
+       inkscape:label="#text-depth-first-search"><title
+         id="title382">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan382"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="148.87357"
+         y="54.633022">Transformers</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.186152;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect372"
+       width="27.575806"
+       height="5.4912186"
+       x="119.66771"
+       y="159.99408"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="121.42516"
+       y="163.4162"
+       id="text372"
+       inkscape:label="#text-depth-first-search"><title
+         id="title372">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan372"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="121.42516"
+         y="163.4162">Linear Regression</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.24403;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect385"
+       width="47.893726"
+       height="5.433341"
+       x="147.81863"
+       y="111.69366"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="149.04198"
+       y="115.25523"
+       id="text385"
+       inkscape:label="#text-depth-first-search"><title
+         id="title385">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan385"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="149.04198"
+         y="115.25523">Backprpagation</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.229329;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect386"
+       width="42.182999"
+       height="5.4480419"
+       x="147.97969"
+       y="117.91692"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="149.21037"
+       y="121.48585"
+       id="text386"
+       inkscape:label="#text-depth-first-search"><title
+         id="title386">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan386"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="149.21037"
+         y="121.48585">Stochastic Gradient Descent</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.247766;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect387"
+       width="49.405544"
+       height="5.429605"
+       x="147.65208"
+       y="124.49356"
+       rx="0.40000001"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="148.87357"
+       y="128.05325"
+       id="text387"
+       inkscape:label="#text-depth-first-search"><title
+         id="title387">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan387"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="148.87357"
+         y="128.05325">Dropout</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.220194;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect388"
+       width="38.82423"
+       height="5.4571767"
+       x="147.8067"
+       y="131.04715"
+       rx="0.39999998"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="149.04196"
+       y="134.62067"
+       id="text388"
+       inkscape:label="#text-depth-first-search"><title
+         id="title388">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan388"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="149.04196"
+         y="134.62067">Adam Optimizer</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.220194;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect389"
+       width="38.82423"
+       height="5.4571767"
+       x="147.8067"
+       y="138.11974"
+       rx="0.39999998"
+       ry="0.40000001"
+       inkscape:label="#rect-depth-first-search" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="149.04196"
+       y="141.69325"
+       id="text389"
+       inkscape:label="#text-depth-first-search"><title
+         id="title389">Depth-first / Best-first Search</title><tspan
+         sodipodi:role="line"
+         id="tspan389"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="149.04196"
+         y="141.69325">Attention Mechanism</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.503494;stroke-dasharray:none;stroke-opacity:0.5;marker-start:url(#SemiCircleFilled-8);marker-end:url(#Diamond-6)"
+       d="m 64.822076,175.97387 v 58.95001"
+       id="path392" />
+    <path
+       style="fill:#2b0000;fill-opacity:0.92;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:0.5"
+       d="M 202.91368,177.50564 H 6.469625 c -1.932011,0 -1.932011,0 -1.932011,0"
+       id="path394" />
+    <path
+       style="fill:#2b0000;fill-opacity:0.92;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:0.5"
+       d="M 203.13881,235.02054 H 6.6947518 c -1.932011,0 -1.932011,0 -1.932011,0"
+       id="path395" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2b0000;fill-opacity:0.92;stroke-width:0.17021"
+       id="text395"
+       inkscape:label="text-symbolic"
+       x="6.5248909"
+       y="142.68445"
+       transform="scale(0.81193829,1.2316207)"
+       inkscape:transform-center-x="15.717672"
+       inkscape:transform-center-y="-2.1433189"><tspan
+         id="tspan395"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.17021">Example Applications</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.174639;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect396"
+       width="24.219419"
+       height="5.5027318"
+       x="5.3217282"
+       y="184.57401"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.5797615"
+       y="188.17027"
+       id="text396"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title396">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.5797615"
+         y="188.17027"
+         id="tspan396">Expert Systems</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.210149;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect397"
+       width="35.297981"
+       height="5.4672213"
+       x="5.3394833"
+       y="192.67473"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.5797615"
+       y="196.25323"
+       id="text397"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title397">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.5797615"
+         y="196.25323"
+         id="tspan397">Symbolic Mathematics</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#483737;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       x="1.3471603"
+       y="53.21283"
+       id="text398"><tspan
+         sodipodi:role="line"
+         id="tspan398"
+         style="stroke-width:0.5"
+         x="1.3471603"
+         y="53.21283">s</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.150237;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect398"
+       width="17.84481"
+       height="5.5271339"
+       x="5.1411319"
+       y="199.54897"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.4113665"
+       y="203.15742"
+       id="text399"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title398">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.4113665"
+         y="203.15742"
+         id="tspan399">Ontologies</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.232436;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect399"
+       width="43.358654"
+       height="5.4449339"
+       x="5.1822319"
+       y="207.33623"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.4113665"
+       y="210.90359"
+       id="text400"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title399">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.4113665"
+         y="210.90359"
+         id="tspan400">Automated Theorem Provers</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.169191;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect400"
+       width="22.709312"
+       height="5.5081801"
+       x="5.150609"
+       y="214.2088"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.4113665"
+       y="217.80779"
+       id="text401"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title400">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.4113665"
+         y="217.80779"
+         id="tspan401">Semantic Web</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.192178;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect401"
+       width="29.422127"
+       height="5.4851928"
+       x="4.9937072"
+       y="221.29288"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.2429714"
+       y="224.88037"
+       id="text402"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title401">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.2429714"
+         y="224.88037"
+         id="tspan402">Knowledge Graphs</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.19432;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect401-0"
+       width="30.093565"
+       height="5.4830503"
+       x="5.3145242"
+       y="228.38513"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="6.562716"
+       y="231.97156"
+       id="text402-7"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title401-6">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="6.562716"
+         y="231.97156"
+         id="tspan402-6">Reasoning Systems</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.201118;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect403"
+       width="32.275902"
+       height="5.4762526"
+       x="168.67815"
+       y="178.86182"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="169.92294"
+       y="182.44484"
+       id="text404"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title403">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="169.92294"
+         y="182.44484"
+         id="tspan404">Text Generation</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.167955;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect404"
+       width="22.373758"
+       height="5.5094156"
+       x="171.69267"
+       y="186.7598"
+       rx="0.39999998"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="172.95406"
+       y="190.35941"
+       id="text405"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title404">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="172.95406"
+         y="190.35941"
+         id="tspan405">Text-to-Video</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.167333;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect405"
+       width="22.205984"
+       height="5.5100374"
+       x="172.02916"
+       y="193.49529"
+       rx="0.39999998"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="173.29085"
+       y="197.0952"
+       id="text406"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title405">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="173.29085"
+         y="197.0952"
+         id="tspan406">Video-to-Text</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.169805;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect406"
+       width="22.877092"
+       height="5.5075655"
+       x="172.70398"
+       y="208.31528"
+       rx="0.39999998"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="173.96443"
+       y="211.91394"
+       id="text407"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title406">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="173.96443"
+         y="211.91394"
+         id="tspan407">Text-to-Image</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.169191;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect407"
+       width="22.709312"
+       height="5.5081801"
+       x="173.20885"
+       y="216.39792"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="174.4696"
+       y="219.99692"
+       id="text408"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title407">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="174.4696"
+         y="219.99692"
+         id="tspan408">Image-to-Text</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.167955;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect409"
+       width="22.373758"
+       height="5.5094156"
+       x="68.97171"
+       y="185.91782"
+       rx="0.39999998"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="70.233086"
+       y="189.51743"
+       id="text410"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title409">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="70.233086"
+         y="189.51743"
+         id="tspan410">Game Playing</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.183345;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect410"
+       width="26.736639"
+       height="5.4940257"
+       x="68.979401"
+       y="192.66133"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="70.233086"
+       y="196.25323"
+       id="text411"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title410">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="70.233086"
+         y="196.25323"
+         id="tspan411">Risk Assessment</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.191638;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect411"
+       width="29.254271"
+       height="5.4857326"
+       x="68.815155"
+       y="199.56966"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="70.06469"
+       y="203.15742"
+       id="text412"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title411">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="70.06469"
+         y="203.15742"
+         id="tspan412">Drug Effectiveness</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.197488;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect412"
+       width="31.100767"
+       height="5.4798822"
+       x="68.818077"
+       y="207.31876"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="70.06469"
+       y="210.90359"
+       id="text413"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title412">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="70.06469"
+         y="210.90359"
+         id="tspan413">Image Compression</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.138629;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect413"
+       width="15.162097"
+       height="5.5387411"
+       x="96.237045"
+       y="221.77129"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="97.513084"
+       y="225.38556"
+       id="text414"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title413">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="97.513084"
+         y="225.38556"
+         id="tspan414">Robotics</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.194852;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect414"
+       width="30.261427"
+       height="5.4825187"
+       x="68.479965"
+       y="214.8952"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="69.727898"
+       y="218.48135"
+       id="text415"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title414">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="69.727898"
+         y="218.48135"
+         id="tspan415">Speech recognition</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.19001;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect415-6"
+       width="28.750713"
+       height="5.487361"
+       x="68.812889"
+       y="178.75362"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="70.06324"
+       y="182.34219"
+       id="text416-6"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title415-5">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="70.06324"
+         y="182.34219"
+         id="tspan416-3">Medical diagnosis</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.179915;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect416"
+       width="25.729698"
+       height="5.4974551"
+       x="137.17767"
+       y="178.68282"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="138.43307"
+       y="182.27644"
+       id="text417"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title416">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="138.43307"
+         y="182.27644"
+         id="tspan417">Object Detection</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.201118;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect417"
+       width="32.275902"
+       height="5.4762526"
+       x="103.34087"
+       y="186.1028"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="104.58567"
+       y="189.68582"
+       id="text418"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title417">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="104.58567"
+         y="189.68582"
+         id="tspan418">Text Classification</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.201118;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect418"
+       width="32.275902"
+       height="5.4762526"
+       x="137.01988"
+       y="186.27119"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="138.26468"
+       y="189.85422"
+       id="text419"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title418">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="138.26468"
+         y="189.85422"
+         id="tspan419">Audio Classification</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.201118;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect419"
+       width="32.275902"
+       height="5.4762526"
+       x="137.52507"
+       y="192.33342"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="138.76987"
+       y="195.91644"
+       id="text420"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title419">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="138.76987"
+         y="195.91644"
+         id="tspan420">Speech recognitions</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.206687;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect420"
+       width="34.122677"
+       height="5.4706841"
+       x="103.51205"
+       y="199.57716"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="104.75407"
+       y="203.15741"
+       id="text421"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title420">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="104.75407"
+         y="203.15741"
+         id="tspan421">Remaining Useful Life</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.17224;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect421"
+       width="23.548239"
+       height="5.5051308"
+       x="133.80592"
+       y="205.95895"
+       rx="0.40000004"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="135.06516"
+       y="209.55641"
+       id="text422"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title421">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="135.06516"
+         y="209.55641"
+         id="tspan422">Text-to-Speech</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.182209;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect422"
+       width="26.400984"
+       height="5.4951615"
+       x="67.446243"
+       y="221.98006"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="68.70047"
+       y="225.57254"
+       id="text423"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title422">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="68.70047"
+         y="225.57254"
+         id="tspan423">Survival analysis</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.201118;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect423"
+       width="32.275902"
+       height="5.4762526"
+       x="103.33942"
+       y="178.75917"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="104.58422"
+       y="182.34219"
+       id="text424"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title423">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="104.58422"
+         y="182.34219"
+         id="tspan424">Image classification</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.201118;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect424"
+       width="32.275902"
+       height="5.4762526"
+       x="103.34088"
+       y="192.33342"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="104.58568"
+       y="195.91644"
+       id="text425"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title424">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="104.58568"
+         y="195.91644"
+         id="tspan425">Anomaly DetectionS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#483737;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       x="174.12045"
+       y="199.71651"
+       id="text426"><tspan
+         sodipodi:role="line"
+         id="tspan426"
+         style="stroke-width:0.5"></tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.184473;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect426"
+       width="27.0723"
+       height="5.4928975"
+       x="139.2007"
+       y="199.06091"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="140.45381"
+       y="202.65225"
+       id="text427"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title426">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="140.45381"
+         y="202.65225"
+         id="tspan427">Churn Prediction</tspan></text>
+    <rect
+       style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.201118;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect427"
+       width="32.275902"
+       height="5.4762526"
+       x="168.17296"
+       y="200.07961"
+       rx="0.40000001"
+       ry="0.40000001" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+       x="169.41776"
+       y="203.66263"
+       id="text428"
+       inkscape:label="#text-minimax-algorithm"><title
+         id="title427">Minimax Algorithm</title><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+         x="169.41776"
+         y="203.66263"
+         id="tspan428">Text Summarization</tspan></text>
+    <path
+       style="fill:#916f6f;fill-opacity:1;stroke:#483737;stroke-width:2.79958;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       d="m 162.33282,239.45774 h 39.74122"
+       id="path428" />
+    <rect
+       style="fill:#916f6f;fill-opacity:1;stroke:#483737;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+       id="rect428"
+       width="40.07803"
+       height="13.639996"
+       x="159.97528"
+       y="236.76341"
+       rx="0"
+       ry="5.7202463" />
+  </g>
+</svg>

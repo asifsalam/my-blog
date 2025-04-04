@@ -10,21 +10,40 @@
 			<strong>Logic Programming:</strong> Encodes knowledge and inferences using formal logic.
 		</li>
 		<li>
-			<strong>Expert Systems:</strong> Rule-based systems that mimic domain-specific human expertise.
+			<strong>Semantic Networks:</strong> Represents knowledge as nodes (concepts) and edges (relationships).
 		</li>
+		<li>
+			<strong>Production Rules:</strong> Uses "if-then" rules to derive actions from conditions.
+		</li>
+		<li>
+			<strong>Knowledge Graphs:</strong> Graph-based data structure, using entities and their relationships
+			to analyze and reason about connections.
+		</li>
+		<li>
+			<strong>Dynamic Programming:</strong> Graph-based data structure, using entities and their relationships
+			to analyze and reason about connections.
+		</li>
+		<li>
+			<strong>Frames:</strong> Graph-based data structure, using entities and their relationships to
+			analyze and reason about connections.
+		</li>
+
 		<li>
 			<strong>Ontologies:</strong> Organizes knowledge hierarchically with defined relationships (e.g.,
 			taxonomies).
 		</li>
 		<li>
-			<strong>Semantic Networks:</strong> Represents knowledge as nodes (concepts) and edges (relationships).
-		</li>
-		<li>
-			<strong>Production Systems:</strong> Uses "if-then" rules to derive actions from conditions.
+			<strong>Reasoning Systems:</strong> Designed to make logical deductions and produce new knowledge
+			from provided facts.
 		</li>
 	</ul>
 	<h3>Notable algorithms</h3>
 	<ul>
+		<li>
+			<strong>Symbolic Mathematics:</strong> Manipulate mathematical expressions symbolically rather
+			than numerically.
+		</li>
+
 		<li>
 			<strong>A* Search:</strong> An optimization algorithm for graph traversal, using heuristics to
 			guide the search.
@@ -183,11 +202,11 @@
 </section>
 
 <section>
-	<h2>Everything in between &amp; outside</h2>
+	<h2>Other techniques</h2>
 	<p>
 		Other components of the AI Toolbox. Things that are part of machine learning and statistics, but
 		do not fit into either the Symbolic AI or Connectionist AI categories. There is a lot of overlap
-		in the tasks, but the techniques, algorithms, and scale are different.
+		in the tasks, but the techniques, algorithms, and scale can be different.
 	</p>
 	<h3>Representative Techniques</h3>
 	<ul>
@@ -196,12 +215,16 @@
 			learning to model uncertainty and analyze data distributions.
 		</li>
 		<li>
-			<strong>Statistical Inference:</strong> Using sample data to estimate population parameters and
-			make predictions.
+			<strong>Statistical Inference:</strong> Using sample data to estimate population parameters
+			and make predictions.
+			<a href="https://asifsalam.se/blog/pages/2023-11-15-al-kindi-cryptography"
+				>(See the post on Al-Kindi)</a
+			>
 		</li>
 		<li>
 			<strong>Markov Models:</strong> Models that assume the future state depends only on the current
-			state, commonly used for sequential data analysis.
+			state, ignoring previous events. This is for creating stochastic models of dynamic systems as state
+			changes.
 		</li>
 		<li>
 			<strong>Bayesian Networks:</strong> Graphical models that represent probabilistic relationships
