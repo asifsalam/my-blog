@@ -1,424 +1,445 @@
 <!-- AIAspects.svelte -->
 <script>
-	// Sample data - replace with your actual table data
+	import AIData from './ai-categorizations.json'; // Import your JSON data
+	import agentData from './ai-agents.json';
+	import AgentBox from './agent-box.svelte';
 
-	import AIData from './ai-categorizations-1.json'; // Import your JSON data
-	// let temp = "Symbolic": {
-	// "Unknown": {
-	//   "Unknown": {
-	//     "methodology": [
-	//       {
-	//         "id": "a001",
-	//         "name": "Logic Programming",
-	//         "description": "A programming paradigm based formal logic, representing knowledge as a set of facts and rules that define relationships among entities.",
-	//         "link": "https://en.wikipedia.org/wiki/Logic_programming"
-	//       }
-	console.log(AIData.Symbolic.methodology[1].id);
-	let x1 = Object.entries(AIData);
-	console.log(Object.entries(AIData));
-	let symbolicMethodology = AIData.Symbolic.methodology;
-	let connectionistMethodology = AIData.Connectionist.methodology;
-	let connectionistArchitecture = AIData.Connectionist.architecture;
-	let otherMethodology = AIData.Other.methodology;
-	console.log('symbolic-methodology-', symbolicMethodology);
-	export let aiData = [
-		{
-			id: 1,
-			ai_category: 'symbolic',
-			name: 'Logic Programming',
-			type: 'methodology',
-			description: 'Programming paradigm based on formal logic',
-			date: '1970s',
-			link: 'https://en.wikipedia.org/wiki/Logic_programming'
-		},
-		{
-			id: 2,
-			ai_category: 'symbolic',
-			name: 'Expert Systems',
-			type: 'application',
-			description: 'Computer system emulating decision-making of a human expert',
-			date: '1970s',
-			link: 'https://en.wikipedia.org/wiki/Expert_system'
-		},
-		{
-			id: 3,
-			ai_category: 'symbolic',
-			name: 'Rule-based Systems',
-			type: 'method',
-			description: 'System that uses rules to make decisions or classifications',
-			date: '1980s',
-			link: 'https://en.wikipedia.org/wiki/Rule-based_system'
-		},
-		{
-			id: 4,
-			ai_category: 'connectionist',
-			name: 'Neural Networks',
-			type: 'methodology',
-			description: 'Computing systems inspired by biological neural networks',
-			date: '1950s',
-			link: 'https://en.wikipedia.org/wiki/Neural_network'
-		},
-		{
-			id: 5,
-			ai_category: 'connectionist',
-			name: 'Deep Learning',
-			type: 'method',
-			description: 'Class of machine learning algorithms using multiple layers',
-			date: '2000s',
-			link: 'https://en.wikipedia.org/wiki/Deep_learning'
-		},
-		{
-			id: 6,
-			ai_category: 'connectionist',
-			name: 'Image Recognition',
-			type: 'application-type',
-			description: 'Technology to identify objects, places, people in images',
-			date: '2010s',
-			link: 'https://en.wikipedia.org/wiki/Computer_vision'
-		},
-		{
-			id: 7,
-			ai_category: 'connectionist',
-			name: 'Chatbots',
-			type: 'application',
-			description: 'Software applications that conduct conversations',
-			date: '2010s',
-			link: 'https://en.wikipedia.org/wiki/Chatbot'
-		},
-		{
-			id: 8,
-			ai_category: 'other',
-			name: 'Genetic Algorithms',
-			type: 'methodology',
-			description: 'Search heuristic inspired by natural selection',
-			date: '1970s',
-			link: 'https://en.wikipedia.org/wiki/Genetic_algorithm'
-		},
-		{
-			id: 9,
-			ai_category: 'other',
-			name: 'Fuzzy Logic',
-			type: 'method',
-			description: 'Form of many-valued logic for approximate reasoning',
-			date: '1960s',
-			link: 'https://en.wikipedia.org/wiki/Fuzzy_logic'
-		},
-		{
-			id: 10,
-			ai_category: 'other',
-			name: 'Robotics',
-			type: 'application-type',
-			description: 'Interdisciplinary branch of engineering and science',
-			date: '1980s',
-			link: 'https://en.wikipedia.org/wiki/Robotics'
-		},
-		{
-			id: 11,
-			ai_category: 'symbolic',
-			name: 'Automated Theorem Proving',
-			type: 'application',
-			description: 'Proving mathematical theorems by computer programs',
-			date: '1950s',
-			link: 'https://en.wikipedia.org/wiki/Automated_theorem_proving'
-		},
-		{
-			id: 12,
-			ai_category: 'connectionist',
-			name: 'Backpropagation',
-			type: 'method',
-			description: 'Algorithm for training feedforward neural networks',
-			date: '1980s',
-			link: 'https://en.wikipedia.org/wiki/Backpropagation'
-		}
-	];
-
-	// Group data by category and type
-	const groupedData = {
-		symbolic: {
-			methodology: [],
-			method: [],
-			'application-type': [],
-			application: [],
-			remove: []
-		},
-		other: {
-			methodology: [],
-			method: [],
-			'application-type': [],
-			application: []
-		},
-		connectionist: {
-			methodology: [],
-			method: [],
-			'application-type': [],
-			application: []
-		}
-	};
-
-	// Populate the grouped data
-	aiData.forEach((item) => {
-		const type = item.type.toLowerCase().replace(' ', '-');
-		if (groupedData[item.ai_category] && groupedData[item.ai_category][type]) {
-			groupedData[item.ai_category][type].push(item);
-		}
+	const x1 = Object.entries(AIData);
+	// console.log(Object.entries(AIData));
+	const symbolicMethodology = AIData.Symbolic.methodology;
+	const connectionistMethodology = AIData.Connectionist.methodology;
+	const connectionistArchitecture = AIData.Connectionist.architecture;
+	const otherMethodology = AIData.Other.methodology;
+	const statApplications = AIData.Other.application.filter((d) => {
+		return d.sub_cat2 == 'Unknown';
 	});
+	const mlApplications = AIData.Other.application.filter((d) => {
+		return d.sub_cat2 == 'discriminative_ai';
+	});
+	const genAiApplications = AIData.Connectionist.application;
+	const rlApplications = AIData.Other.application.filter(
+		(d) => d.sub_cat2 === 'reinforcement_learning'
+	);
+	// console.log('statApplications', statApplications, mlApplications);
 
+	const stanfordTitle = 'Stanford Artificial Intelligence Program';
+	const russellTitle = 'Russell & Norvig - Artificial Intelligence, A Modern Approach (3rd ed.)';
+	console.log(agentData);
 	// Section titles
 	const sectionTitles = {
-		methodology: 'Representative methodologies',
-		method: 'Notable methods',
+		methodology: 'Representative methodologies, techniques',
+		method: 'Notable methods, algorithms',
 		'application-type': 'Application types',
-		application: 'Applications',
+		application: 'Application examples',
 		architecture: 'Architecture',
 		remove: 'Remove'
 	};
 
 	// Category colors
 	const categoryColors = {
-		symbolic: '#ffd6e0',
+		symbolic: 'rgba(255, 205, 194, 0.5)',
 		other: '#d6f3ff',
 		connectionist: '#d6ffdf'
 	};
 </script>
 
-<div class="container">
-	<h1>The AI Landscape</h1>
-	<div class="columns-container">
-		<div class="category-column">
-			<h2 class="category-title">Symbolic</h2>
-			<div class="section-title">{sectionTitles['methodology']}</div>
-			<div class="item-container">
-				{#each Object.entries(symbolicMethodology) as [oneEntry, item]}
-					<a
-						href={item.link}
-						target="_blank"
-						class="item"
-						style="background-color: {categoryColors['symbolic']}"
-					>
-						{item.name}
-						<div class="tooltip">
-							{item.description}
-						</div>
-					</a>
-				{/each}
-			</div>
-			<!-- {#if items.length > 0}{/if} -->
-		</div>
-		<div class="category-column">
-			<h2 class="category-title">Other</h2>
-			<div class="section-title">{sectionTitles['methodology']}</div>
-			<div class="item-container">
-				{#each Object.entries(otherMethodology) as [oneEntry, item]}
-					<a
-						href={item.link}
-						target="_blank"
-						class="item"
-						style="background-color: {categoryColors['other']}"
-					>
-						{item.name}
-						<div class="tooltip">
-							{item.description}
-						</div>
-					</a>
-				{/each}
-			</div>
-			<!-- {#if items.length > 0}{/if} -->
-		</div>
-		<div class="category-column">
-			<h2 class="category-title">Connectionist</h2>
-			<div class="section-title">{sectionTitles['methodology']}</div>
-			<div class="item-container">
-				{#each Object.entries(connectionistMethodology) as [oneEntry, item]}
-					<a
-						href={item.link}
-						target="_blank"
-						class="item"
-						style="background-color: {categoryColors['connectionist']}"
-					>
-						{item.name}
-						<div class="tooltip">
-							{item.description}
-						</div>
-					</a>
-				{/each}
-				<br />
-				<p>Architectures</p>
-				{#each Object.entries(connectionistArchitecture) as [oneEntry, item]}
-					<a
-						href={item.link}
-						target="_blank"
-						class="item"
-						style="background-color: {categoryColors['connectionist']}"
-					>
-						{item.name}
-						<div class="tooltip">
-							{item.description}
-						</div>
-					</a>
-				{/each}
-			</div>
-			<!-- {#if items.length > 0}{/if} -->
-		</div>
-	</div>
+<div class="grid-container">
+	<h2 class="category-title">Symbolic</h2>
+	<h2 class="category-title">Other</h2>
+	<h2 class="category-title">Connectionist</h2>
 </div>
+<div class="grid-container">
+	<div class="section-title">{sectionTitles['methodology']}</div>
+</div>
+<div class="grid-container">
+	<div class="item-container grid-item">
+		{#each Object.entries(symbolicMethodology) as [oneEntry, item]}
+			<a href={item.link} target="_blank" class="item">
+				{item.name}
+				<div class="tooltip">
+					{item.description}
+				</div>
+			</a>
+		{/each}
+	</div>
 
-<div class="container">
-	<h1>The AI Landscape</h1>
+	<!-- style="background-color:#ffe4e1" -->
+	<div class="item-container grid-item">
+		{#each Object.entries(otherMethodology) as [oneEntry, item]}
+			<a href={item.link} target="_blank" class="item">
+				{item.name}
+				<div class="tooltip">
+					{item.description}
+				</div>
+			</a>
+		{/each}
+	</div>
 
-	<div class="columns-container">
-		{#each Object.entries(AIData) as [category, sections]}
-			<div class="category-column {category}">
-				<h2 class="category-title">{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
-
-				{#each Object.entries(sections) as [type, items]}
-					{#if items.length > 0}
-						<div class="section">
-							<div class="section-title">{sectionTitles[type]}</div>
-							<div class="item-container">
-								{#each items as item}
-									<a
-										href={item.link}
-										target="_blank"
-										class="item"
-										style="background-color: {categoryColors[category]}"
-									>
-										{item.name}
-										<div class="tooltip">
-											{item.description}
-										</div>
-									</a>
-								{/each}
-							</div>
-						</div>
-					{/if}
-				{/each}
-
-				{#if category !== 'connectionist'}
-					<div class="bottom-square" />
-				{/if}
-			</div>
+	<div class="item-container grid-item">
+		{#each Object.entries(connectionistMethodology) as [oneEntry, item]}
+			<a href={item.link} target="_blank" class="item">
+				{item.name}
+				<div class="tooltip">
+					{item.description}
+				</div>
+			</a>
+		{/each}
+		<p class="sub-section">Architectures</p>
+		{#each Object.entries(connectionistArchitecture) as [oneEntry, item]}
+			<a href={item.link} target="_blank" class="item">
+				{item.name}
+				<div class="tooltip">
+					{item.description}
+				</div>
+			</a>
 		{/each}
 	</div>
 </div>
+<div class="grid-container">
+	<div class="section-title">{sectionTitles['method']}</div>
+</div>
+<div class="grid-container">
+	<div class="item-container grid-item">
+		{#each Object.entries(AIData.Symbolic.method) as [oneEntry, item]}
+			<a href={item.link} target="_blank" class="item">
+				{item.name}
+				<div class="tooltip">
+					{item.description}
+				</div>
+			</a>
+		{/each}
+	</div>
 
-<div class="container">
-	<h1>AI Aspects Overview</h1>
+	<div class="item-container grid-item">
+		{#each Object.entries(AIData.Other.method) as [oneEntry, item]}
+			<a href={item.link} target="_blank" class="item">
+				{item.name}
+				<div class="tooltip">
+					{item.description}
+				</div>
+			</a>
+		{/each}
+	</div>
 
-	<div class="columns-container">
-		{#each Object.entries(groupedData) as [category, sections]}
-			<div class="category-column {category}">
-				<h2 class="category-title">{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
-
-				{#each Object.entries(sections) as [type, items]}
-					{#if items.length > 0}
-						<div class="section">
-							<div class="section-title">{sectionTitles[type]}</div>
-							<div class="item-container">
-								{#each items as item}
-									<a
-										href={item.link}
-										target="_blank"
-										class="item"
-										style="background-color: {categoryColors[category]}"
-									>
-										{item.name}
-										<div class="tooltip">
-											{item.description}
-											<br /><br />
-											Date: {item.date}
-										</div>
-									</a>
-								{/each}
-							</div>
-						</div>
-					{/if}
-				{/each}
-
-				{#if category !== 'connectionist'}
-					<div class="bottom-square" />
-				{/if}
-			</div>
+	<div class="item-container grid-item">
+		{#each Object.entries(AIData.Connectionist.method) as [oneEntry, item]}
+			<a href={item.link} target="_blank" class="item">
+				{item.name}
+				<div class="tooltip">
+					{item.description}
+				</div>
+			</a>
 		{/each}
 	</div>
 </div>
+<div class="grid-container">
+	<div class="section-title">{sectionTitles['application']}</div>
+</div>
+<div class="grid-container">
+	<div class="item-container grid-item">
+		{#each Object.entries(AIData.Symbolic.application) as [oneEntry, item]}
+			<a href={item.link} target="_blank" class="item">
+				{item.name}
+				<div class="tooltip">
+					{item.description}
+				</div>
+			</a>
+		{/each}
+	</div>
+	<div class="ml-container">
+		<div class="ml-item-container">
+			{#each statApplications as item}
+				<a href={item.link} target="_blank" class="item">
+					{item.name}
+					<div class="tooltip">
+						{item.description}
+					</div>
+				</a>
+			{/each}
+			{#each rlApplications as item}
+				<a href={item.link} target="_blank" class="item">
+					{item.name}
+					<div class="tooltip">
+						{item.description}
+					</div>
+				</a>
+			{/each}
+		</div>
+		<div class="ml-item-container">
+			{#each mlApplications as item}
+				<a href={item.link} target="_blank" class="item">
+					{item.name}
+					<div class="tooltip">
+						{item.description}
+					</div>
+				</a>
+			{/each}
+		</div>
+		<div class="ml-item-container">
+			{#each genAiApplications as item}
+				<a href={item.link} target="_blank" class="item">
+					{item.name}
+					<div class="tooltip">
+						{item.description}
+					</div>
+				</a>
+			{/each}
+		</div>
+	</div>
+</div>
+<div class="end-section" />
+<div class="grid-container">
+	<div class="ml-span-container">
+		<p class="discriminiative-ai-span ai-span">Discriminative AI</p>
+		<p class="generative-ai-span ai-span">Generative AI</p>
+	</div>
+</div>
+<div class="grid-container">
+	<div class="ml-span-container">
+		<p class="ml-span ai-span">Machine Learning</p>
+	</div>
+</div>
+<div class="grid-container">
+	<div class="hybrid-span">
+		<p class="ai-span">Hybrid, composite, integrated approaches & workflows</p>
+	</div>
+</div>
+
+<div class="other-categorizations">
+	<h2>Agent based categorizations</h2>
+</div>
+
+<div class="agents-section">
+	<h3 class="agents-title">Stanford Artificial Intelligence Program</h3>
+	<div class="agents-container">
+		{#each agentData.stanford as agent}
+			<AgentBox {agent} />
+		{/each}
+	</div>
+	<h3 class="agents-title">{russellTitle}</h3>
+	<div class="agents-container">
+		{#each agentData.russell as agent}
+			<AgentBox {agent} />
+		{/each}
+	</div>
+</div>
+<div class="end-section" />
+
+<div><p /></div>
 
 <style>
-	.container {
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	.agents-section {
 		margin: 0;
-		padding: 20px;
-		background-color: #f5f7fa;
-		color: #333;
+		padding: 10px;
+		background-color: #b29b9b;
+		background-color: #a1b5d875;
+		/* border-bottom: #4a6fa5 2px solid; */
+	}
+	.agents-title {
+		margin: 0px;
+		padding: 10px 5px 0px 5px;
+		background-color: none;
+		color: hsl(0deg 11.76% 18.45%);
 	}
 
+	.agents-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: center;
+		align-items: stretch;
+	}
+
+	.other-categorizations {
+		margin-top: 50px;
+		background-color: hsla(0, 13%, 87%, 0.09);
+		border-top: #4a6fa5 2px solid;
+		border-bottom: #4a6fa5 2px solid;
+	}
+	.hybrid-span {
+		grid-column: 1 / 13;
+	}
+
+	.ai-span {
+		text-align: center;
+		background-color: rgba(173, 216, 230, 0);
+		margin: 5px 0 5px 0;
+		padding: 2px;
+		border-bottom: indigo 5px solid;
+		border-left: indigo 5px solid;
+		border-right: indigo 5px solid;
+		font-size: 1em;
+		font-family: comfortaa;
+	}
+	.ml-span-container {
+		display: grid;
+		grid-column: span 6;
+		grid-template-columns: repeat(12, 1fr);
+		margin: 0;
+		padding: 0;
+		font-family: Comfortaa;
+	}
+	.discriminiative-ai-span {
+		grid-column: 7 / 11;
+	}
+	.generative-ai-span {
+		grid-column: 11 / 13;
+	}
+
+	.ml-span {
+		grid-column: 6 / 13;
+	}
 	h1 {
 		text-align: center;
 		color: #4a6fa5;
 		margin-bottom: 30px;
+		font-family: Flamenco;
+		font-size: 3rem;
 	}
 
-	.columns-container {
-		display: flex;
-
-		gap: 10px;
-		margin-bottom: 30px;
+	h2 {
+		padding: 10px;
+		margin: 0;
 	}
-
-	.category-column {
-		flex: 1;
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		column-gap: 5px;
+		margin: 0;
+		padding: 0;
+		background-color: rgba(230, 230, 230, 0);
+		/* align-items: start; */
+	}
+	.grid-item {
 		display: flex;
 		flex-direction: column;
-		position: relative;
+		/* height: 100%; */
+		background-color: #f0f0f0;
+		border: 0px solid #ccc;
+		padding: 0px;
+		/* text-align: center; */
+		grid-column-start: span 2;
 	}
 
-	.category-title {
-		background-color: #e8f4f8;
-		padding: 12px;
-		text-align: center;
-		font-weight: bold;
-		font-size: 18px;
-		border-radius: 5px 5px 0 0;
-		margin-bottom: 0;
-		color: #4a6fa5;
-	}
-
-	.section {
-		margin-bottom: 20px;
-		position: relative;
-	}
-
-	.section-title {
-		background-color: #f0f4f8;
-		padding: 8px;
-		text-align: center;
-		font-weight: bold;
-		font-size: 14px;
-		margin-bottom: 5px;
-		border-radius: 3px;
-	}
-
-	.item-container {
-		display: flex;
-		flex-wrap: wrap;
+	.ml-container {
+		grid-column: span 4;
+		display: grid;
+		grid-template-columns: 3fr 5fr 3fr;
 		gap: 8px;
-		padding: 5px;
+		padding: 10px 2px 10px 5px;
+		justify-items: start;
+		background-color: hsla(195, 92%, 85%, 0.5);
 	}
 
-	.item {
-		padding: 6px 10px;
-		border-radius: 4px;
-		border: 1px solid rgba(0, 0, 0, 0.1);
+	.ml-item-container {
+		display: flex;
+		word-break: keep-all;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: flex-start;
+		gap: 8px;
+		padding: 10px 2px 10px 5px;
+		background-color: hsla(195, 92%, 85%, 0);
+	}
+
+	.ml-item {
+		padding: 3px;
+		border-radius: 3px;
+		border: 0.5px solid hsla(216, 38%, 25%, 0.3);
 		cursor: pointer;
-		font-size: 13px;
+		font-size: 0.8em;
 		position: relative;
 		transition: all 0.2s ease;
 		text-decoration: none;
-		color: inherit;
+		color: hsla(251, 100%, 15%, 1);
+		background-color: hsl(190, 68%, 95%);
+	}
+
+	.category-title {
+		grid-column-start: span 2;
+		background-color: hsla(195, 92%, 85%, 0.5);
+		padding: 10px;
+		font-family: flamenco;
+		text-align: center;
+		font-weight: normal;
+		font-size: 2em;
+		border-radius: 5px 5px 0 0;
+		margin-bottom: 0;
+		color: hsl(216, 38%, 25%);
+	}
+	.section-title {
+		grid-column-start: span 6;
+		background-color: #9effe70e;
+		border-top: #4a6fa5 1px solid;
+		border-bottom: #4a6fa5 1px solid;
+		font-family: 'Scope One', galdeano;
+		font-style: normal;
+		font-size: 1.5em;
+		padding: 5px 0;
+		color: hsla(216.3, 37.5%, 25.1%, 0.75);
+		margin: 0;
+	}
+	.end-section {
+		grid-column-start: span 6;
+		background-color: #4a6ea583;
+		border-top: #4a6fa5 1px solid;
+		border-bottom: #4a6fa5 1px solid;
+		padding: 5px 0;
+		margin: 0;
+	}
+
+	.sub-section {
+		font-size: 1.3em;
+		margin-top: 15px;
+		margin-bottom: 5px;
+		padding: 0;
+		width: 100%;
+		border-bottom: 1px dashed hsl(216, 38%, 25%, 0.7);
+		color: hsl(216, 38%, 25%, 0.7);
+	}
+
+	.item-container {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: flex-start;
+		gap: 8px;
+		padding: 10px 2px 10px 5px;
+		/* background-color: hsl(263, 100%, 87%); */
+		/* background-color: hsla(195, 92%, 85%, 0.123); */
+		background-color: hsla(195, 92%, 85%, 0.5);
+		/* border-left: hsl(216, 38%, 47%) 1px solid;
+		border-right: hsl(216, 38%, 47%) 1px solid;
+		border-bottom: hsl(216, 38%, 47%) 1px solid; */
+	}
+
+	.item {
+		padding: 3px;
+		border-radius: 3px;
+		border: 0.5px solid hsla(216, 38%, 25%, 0.3);
+		cursor: pointer;
+		font-size: 0.8em;
+		position: relative;
+		transition: all 0.2s ease;
+		text-decoration: none;
+		/* color: rgb(0, 4, 66); */
+		/* color: #fffef5ff; */
+		/* color: hsla(216, 38%, 25%, 1); */
+		color: hsla(251, 100%, 15%, 1);
+		/* background-color: #fffef573; */
+		/* background-color: hsla(216, 38%, 25%, 0.1); */
+		background-color: hsl(190, 68%, 95%);
+		/* text-decoration: dashed; */
 	}
 
 	.item:hover {
 		transform: translateY(-2px);
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+		text-decoration: double;
 	}
 
 	.tooltip {
@@ -441,38 +462,5 @@
 
 	.item:hover .tooltip {
 		opacity: 1;
-	}
-
-	/* Vertical dividers with squares */
-	.category-column:not(:last-child)::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: -8px;
-		height: 100%;
-		width: 1px;
-		background-color: #ccc;
-	}
-
-	.category-column:not(:last-child)::before {
-		content: '';
-		position: absolute;
-		top: -5px;
-		right: -11px;
-		width: 10px;
-		height: 10px;
-		background-color: #ccc;
-		transform: rotate(45deg);
-	}
-
-	.category-column:not(:last-child) .bottom-square::after {
-		content: '';
-		position: absolute;
-		bottom: -5px;
-		right: -11px;
-		width: 10px;
-		height: 10px;
-		background-color: #ccc;
-		transform: rotate(45deg);
 	}
 </style>

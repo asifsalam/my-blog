@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.78560315"
-     inkscape:cx="504.70775"
-     inkscape:cy="388.23673"
-     inkscape:window-width="1920"
-     inkscape:window-height="1012"
-     inkscape:window-x="1600"
-     inkscape:window-y="0"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="351.07852"
+     inkscape:cy="838.62864"
+     inkscape:window-width="1600"
+     inkscape:window-height="900"
+     inkscape:window-x="0"
+     inkscape:window-y="180"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:connector-spacing="9"
@@ -457,7 +457,7 @@
     </g>
     <g
        id="g334"
-       transform="translate(-1.0693887,-9.1212793)">
+       transform="translate(-1.4061788,99.661911)">
       <rect
          style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.210142;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
          id="rect326-8"
@@ -481,16 +481,16 @@
     </g>
     <g
        id="g328"
-       transform="translate(0,-1.72547)">
+       transform="translate(-29.038657,5.5584291)">
       <rect
-         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.188512;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.223558;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
          id="rect327"
-         width="28.291391"
-         height="5.4888587"
-         x="34.704113"
-         y="53.934441"
-         rx="0.40000001"
-         ry="0.40000001" />
+         width="40.043999"
+         height="5.4538131"
+         x="34.721638"
+         y="53.951965"
+         rx="0.56616515"
+         ry="0.39744607" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
@@ -501,11 +501,11 @@
            id="tspan327"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
            x="35.50069"
-           y="57.522011">Knowledge Grahps</tspan></text>
+           y="57.522011">Knowledge Representation</tspan></text>
     </g>
     <g
        id="g335"
-       transform="translate(-0.50518511,-9.2328198)">
+       transform="translate(-14.931952,-16.655612)">
       <rect
          style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.123718;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
          id="rect328"
@@ -698,7 +698,7 @@
        inkscape:transform-center-x="15.717672"
        inkscape:transform-center-y="-2.1433189"><tspan
          id="tspan3-3-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.17021">Notable Algorithms</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2b0000;stroke-width:0.17021">Notable Algorithms &amp; Methods</tspan></text>
     <g
        id="g73"
        transform="translate(15.829133,-39.090732)">
@@ -1877,27 +1877,27 @@
        id="g129"
        transform="translate(0,2.8190441)">
       <rect
-         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.19432;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.238894;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
          id="rect401-0"
-         width="30.093565"
-         height="5.4830503"
-         x="5.6688571"
-         y="222.45554"
-         rx="0.40000001"
-         ry="0.40000001" />
+         width="45.855762"
+         height="5.4384766"
+         x="5.691144"
+         y="222.47783"
+         rx="0.60950923"
+         ry="0.39674824" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
-         x="7.1195755"
+         x="6.7714863"
          y="226.00316"
          id="text402-7"
          inkscape:label="#text-minimax-algorithm"><title
            id="title401-6">Minimax Algorithm</title><tspan
            sodipodi:role="line"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
-           x="7.1195755"
+           x="6.7714863"
            y="226.00316"
-           id="tspan402-6">Reasoning Systems</tspan></text>
+           id="tspan402-6">Automated Reasoning Systems</tspan></text>
     </g>
     <g
        id="g69"
@@ -2571,27 +2571,27 @@
          x="174.57661"
          y="290.13455"
          id="text13"
-         transform="matrix(0.74255528,0,0,1,-18.622448,-3.3679005)"><tspan
+         transform="matrix(0.77132599,0,0,1,-23.050945,-3.3679005)"><tspan
            x="174.57661"
            y="290.13455"
-           id="tspan5"><tspan
+           id="tspan16"><tspan
              style="font-size:4.0939px;-inkscape-font-specification:'Source Code Pro'"
-             id="tspan1">State-based </tspan><tspan
+             id="tspan13">State-based </tspan><tspan
              style="font-size:4.0939px;font-family:Sans;-inkscape-font-specification:'Sans, Normal'"
-             id="tspan2">models</tspan><tspan
-             style="line-height:1.25;text-align:center;text-anchor:middle"
-             id="tspan4">
+             id="tspan14">models</tspan><tspan
+             style="line-height:1.25"
+             id="tspan15">
 </tspan></tspan><tspan
            x="174.57661"
            y="294.89601"
-           id="tspan16"><tspan
-             style="font-size:3.73408px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan8">Where planning &amp; decision-</tspan></tspan><tspan
+           id="tspan18"><tspan
+             style="font-size:3.73408px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal'"
+             id="tspan17">Where planning &amp; decision-</tspan></tspan><tspan
            x="174.57661"
            y="299.0035"
-           id="tspan18"><tspan
-             style="font-size:3.73408px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan17">making is required</tspan></tspan></text>
+           id="tspan23"><tspan
+             style="font-size:3.73408px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal'"
+             id="tspan22">making is required</tspan></tspan></text>
     </g>
     <g
        id="g30"
@@ -2613,27 +2613,27 @@
          transform="matrix(0.72296983,0,0,1,-60.833116,-3.3679005)"><tspan
            x="174.57661"
            y="290.13455"
-           id="tspan21"><tspan
+           id="tspan26"><tspan
              style="font-size:4.14898px"
-             id="tspan19">Variable-based models</tspan><tspan
+             id="tspan24">Variable-based models</tspan><tspan
              style="line-height:1.25;text-align:center;text-anchor:middle"
-             id="tspan20">
+             id="tspan25">
 </tspan></tspan><tspan
            x="174.57661"
            y="294.89601"
-           id="tspan29"><tspan
+           id="tspan46"><tspan
              style="font-size:3.73408px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan28">Where the environment can </tspan></tspan><tspan
+             id="tspan27">Where the environment can </tspan></tspan><tspan
            x="174.57661"
            y="299.0035"
-           id="tspan31"><tspan
+           id="tspan48"><tspan
              style="font-size:3.73408px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan30">be defined through </tspan></tspan><tspan
+             id="tspan47">be defined through </tspan></tspan><tspan
            x="174.57661"
            y="303.11098"
-           id="tspan33"><tspan
+           id="tspan51"><tspan
              style="font-size:3.73408px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan32">variables &amp; mathematics</tspan></tspan></text>
+             id="tspan49">variables &amp; mathematics</tspan></tspan></text>
     </g>
     <g
        id="g31"
@@ -2655,34 +2655,34 @@
          transform="matrix(0.79072048,0,0,1,-127.10675,-3.5022679)"><tspan
            x="174.57661"
            y="290.13455"
-           id="tspan37"><tspan
+           id="tspan57"><tspan
              style="font-size:3.96725px;-inkscape-font-specification:'Source Code Pro'"
-             id="tspan34">Logic-based </tspan><tspan
+             id="tspan52">Logic-based </tspan><tspan
              style="font-size:3.96725px;font-family:Sans;-inkscape-font-specification:'Sans, Normal'"
-             id="tspan35">models</tspan><tspan
+             id="tspan53">models</tspan><tspan
              style="line-height:1.25;text-align:center;text-anchor:middle"
-             id="tspan36">
+             id="tspan56">
 </tspan></tspan><tspan
            x="174.57661"
            y="294.82534"
-           id="tspan39"><tspan
+           id="tspan61"><tspan
              style="font-size:3.65094px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan38">Where propositional &amp; </tspan></tspan><tspan
+             id="tspan60">Where propositional &amp; </tspan></tspan><tspan
            x="174.57661"
            y="298.84137"
-           id="tspan41"><tspan
+           id="tspan63"><tspan
              style="font-size:3.65094px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan40">first-order logic is used </tspan></tspan><tspan
+             id="tspan62">first-order logic is used </tspan></tspan><tspan
            x="174.57661"
            y="302.85739"
-           id="tspan43"><tspan
+           id="tspan65"><tspan
              style="font-size:3.65094px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan42">for reasoning &amp; decision-</tspan></tspan><tspan
+             id="tspan64">for reasoning &amp; decision-</tspan></tspan><tspan
            x="174.57661"
            y="306.87341"
-           id="tspan45"><tspan
+           id="tspan108"><tspan
              style="font-size:3.65094px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan44">making</tspan></tspan></text>
+             id="tspan66">making</tspan></tspan></text>
     </g>
     <g
        id="g43"
@@ -2716,37 +2716,37 @@
          transform="matrix(0.78977359,0,0,1,-26.71081,-3.3679005)"><tspan
            x="174.57661"
            y="290.13455"
-           id="tspan55"><tspan
+           id="tspan110"><tspan
              style="font-size:4.03104px"
-             id="tspan50">Model-based relfex </tspan></tspan><tspan
+             id="tspan109">Model-based relfex </tspan></tspan><tspan
            x="174.57661"
-           y="295.35034"
-           id="tspan67"><tspan
+           y="292.83096"
+           id="tspan113"><tspan
              style="font-size:4.03104px"
-             id="tspan58">agents</tspan><tspan
+             id="tspan111">agents</tspan><tspan
              style="line-height:1.25;text-align:center;text-anchor:middle"
-             id="tspan59">
+             id="tspan112">
 </tspan></tspan><tspan
            x="174.57661"
-           y="300.02158"
-           id="tspan69"><tspan
+           y="297.50221"
+           id="tspan115"><tspan
              style="font-size:3.62794px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan68">Manage partially </tspan></tspan><tspan
+             id="tspan114">Manage partially </tspan></tspan><tspan
            x="174.57661"
-           y="304.01231"
-           id="tspan71"><tspan
+           y="301.49293"
+           id="tspan117"><tspan
              style="font-size:3.62794px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan70">observable environments, </tspan></tspan><tspan
+             id="tspan116">observable environments, </tspan></tspan><tspan
            x="174.57661"
-           y="308.00303"
-           id="tspan73"><tspan
+           y="305.48365"
+           id="tspan119"><tspan
              style="font-size:3.62794px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan72">by maintaining internal </tspan></tspan><tspan
+             id="tspan118">by maintaining internal </tspan></tspan><tspan
            x="174.57661"
-           y="311.99375"
-           id="tspan75"><tspan
+           y="309.47437"
+           id="tspan121"><tspan
              style="font-size:3.62794px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan74">state</tspan></tspan></text>
+             id="tspan120">state</tspan></tspan></text>
       <text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,5.6131701,-42.772338)"
@@ -2773,22 +2773,22 @@
          transform="matrix(0.8044829,0,0,1,-76.186818,-3.1995055)"><tspan
            x="174.57661"
            y="290.13455"
-           id="tspan78"><tspan
+           id="tspan124"><tspan
              style="font-size:3.7165px"
-             id="tspan76">Goal-based agents</tspan><tspan
+             id="tspan122">Goal-based agents</tspan><tspan
              style="line-height:1.25;text-align:center;text-anchor:middle"
-             id="tspan77">
+             id="tspan123">
 </tspan></tspan><tspan
            x="174.57661"
            y="294.56517"
-           id="tspan80"><tspan
+           id="tspan126"><tspan
              style="font-size:3.34485px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan79">Add some goal information in </tspan></tspan><tspan
+             id="tspan125">Add some goal information in </tspan></tspan><tspan
            x="174.57661"
            y="298.24449"
-           id="tspan82"><tspan
+           id="tspan128"><tspan
              style="font-size:3.34485px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan81">addtion to internal state</tspan></tspan></text>
+             id="tspan127">addtion to internal state</tspan></tspan></text>
     </g>
     <g
        id="g53"
@@ -2810,29 +2810,29 @@
          transform="matrix(0.82749817,0,0,1,-135.12812,-3.5022679)"><tspan
            x="174.57661"
            y="290.13455"
-           id="tspan85"><tspan
+           id="tspan131"><tspan
              style="font-size:3.66445px;-inkscape-font-specification:'Source Code Pro'"
-             id="tspan83">Utility-based agents</tspan><tspan
+             id="tspan129">Utility-based agents</tspan><tspan
              style="line-height:1.25;text-align:center;text-anchor:middle"
-             id="tspan84">
+             id="tspan130">
 </tspan></tspan><tspan
            x="174.57661"
-           y="294.52535"
-           id="tspan87"><tspan
+           y="292.78038"
+           id="tspan133"><tspan
              style="font-size:3.298px"
-             id="tspan86">Enhanced agent,than </tspan></tspan><tspan
+             id="tspan132">Enhanced agent,than </tspan></tspan><tspan
            x="174.57661"
-           y="298.15315"
-           id="tspan89"><tspan
+           y="293.0142"
+           id="tspan135"><tspan
              style="font-size:3.298px"
-             id="tspan88">understands world states to </tspan></tspan><tspan
+             id="tspan134">understands world states to </tspan></tspan><tspan
            x="174.57661"
-           y="302.08096"
-           id="tspan92"><tspan
+           y="295.293"
+           id="tspan138"><tspan
              style="font-size:3.298px"
-             id="tspan90">make choice of degree</tspan><tspan
+             id="tspan136">make choice of degree</tspan><tspan
              style="font-size:3.65094px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan91"> </tspan></tspan></text>
+             id="tspan137"> </tspan></tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -2852,20 +2852,20 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.1;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect59);fill:#e3dbdb;fill-opacity:1;stroke:none;stroke-opacity:1"><tspan
          x="583.48759"
          y="1240.3825"
-         id="tspan94"><tspan
+         id="tspan140"><tspan
    style="font-size:13.442px"
-   id="tspan93">Simple reflex models</tspan>
+   id="tspan139">Simple reflex models</tspan>
 </tspan><tspan
          x="580.66477"
          y="1255.0818"
-         id="tspan96"><tspan
+         id="tspan142"><tspan
            style="font-size:12.0978px;font-family:FreeMono;-inkscape-font-specification:FreeMono"
-           id="tspan95">Select actions based on </tspan></tspan><tspan
+           id="tspan141">Select actions based on </tspan></tspan><tspan
          x="606.07017"
          y="1269.7484"
-         id="tspan98"><tspan
+         id="tspan144"><tspan
            style="font-size:12.0978px;font-family:FreeMono;-inkscape-font-specification:FreeMono"
-           id="tspan97">current percept.</tspan></tspan></text>
+           id="tspan143">current percept.</tspan></tspan></text>
     <g
        id="g65"
        transform="matrix(1,0,0,1.12,-2.3575304,58.271182)">
@@ -2886,27 +2886,27 @@
          transform="matrix(0.82749817,0,0,1,-135.12812,-3.5022679)"><tspan
            x="174.57661"
            y="290.13455"
-           id="tspan101"><tspan
+           id="tspan147"><tspan
              style="font-size:3.66445px;-inkscape-font-specification:'Source Code Pro'"
-             id="tspan99">Learning agents</tspan><tspan
+             id="tspan145">Learning agents</tspan><tspan
              style="line-height:1.25;text-align:center;text-anchor:middle"
-             id="tspan100">
+             id="tspan146">
 </tspan></tspan><tspan
            x="174.57661"
            y="294.52535"
-           id="tspan103"><tspan
+           id="tspan149"><tspan
              style="font-size:3.298px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan102">Enable agents to perform in </tspan></tspan><tspan
+             id="tspan148">Enable agents to perform in </tspan></tspan><tspan
            x="174.57661"
            y="298.15315"
-           id="tspan105"><tspan
+           id="tspan152"><tspan
              style="font-size:3.298px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan104">unknown environment going </tspan></tspan><tspan
+             id="tspan150">unknown environment going </tspan></tspan><tspan
            x="174.57661"
            y="301.78096"
-           id="tspan107"><tspan
+           id="tspan154"><tspan
              style="font-size:3.298px;line-height:1.1;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';text-align:center;text-anchor:middle"
-             id="tspan106">beyond initial knowledg</tspan></tspan></text>
+             id="tspan153">beyond initial knowledg</tspan></tspan></text>
     </g>
     <path
        style="opacity:0.97;fill:#dde9af;fill-opacity:0.992157;stroke:#6c6969;stroke-width:0.2;stroke-dasharray:0.2, 0.2;stroke-dashoffset:0;stroke-opacity:0.960784"
@@ -3012,6 +3012,30 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffe6d5;fill-opacity:0.92;stroke:none;stroke-width:0.264583"
            x="119.15512"
            y="262.82895">Machine Learning</tspan></text>
+    </g>
+    <g
+       id="g12"
+       transform="translate(-1.4061786,106.38549)">
+      <rect
+         style="font-variation-settings:'wght' 100;fill:#2c5aa0;fill-opacity:0.3;stroke:#483737;stroke-width:0.224902;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.8"
+         id="rect3"
+         width="40.536724"
+         height="5.4524693"
+         x="6.7530398"
+         y="68.784828"
+         rx="0.4594036"
+         ry="0.39892012" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:0.1"
+         x="7.6256657"
+         y="72.304817"
+         id="text12"><tspan
+           sodipodi:role="line"
+           id="tspan12"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Caladea;-inkscape-font-specification:'Caladea, @wght=100';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 100;fill:#000055;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-opacity:0.1"
+           x="7.6256657"
+           y="72.304817">Knowledge Graph Methods</tspan></text>
     </g>
   </g>
 </svg>

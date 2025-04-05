@@ -44,7 +44,7 @@
 {#key $page}
 	<div class="content">
 		<div class="heading">
-			<pre-title>What is Artificial Intelligence?</pre-title>
+			<pre-title>Fundamentals of Artificial Intelligence</pre-title>
 			<h1>1. The Origins of the Term</h1>
 		</div>
 		<div class="meta-info">

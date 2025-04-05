@@ -1,60 +1,60 @@
 {
-  "Stanford Artificial Intelligence Program": [
-    {
-      "id": "a01",
-      "model_type": "Reflex-based models",
-      "description": "Execute simple, reactive tasks",
-      "link": "https://stanford.edu/~shervine/teaching/cs-221/cheatsheet-reflex-models"
-    },
-    {
-      "id": "a02",
-      "model_type": "State-based models",
-      "description": "Where planning & decision-making is required",
-      "link": "https://stanford.edu/~shervine/teaching/cs-221/cheatsheet-states-models"
-    },
-    {
-      "id": "a03",
-      "model_type": "Variable-based models",
-      "description": "Where the environment can be defined through variables & mathematics",
-      "link": "https://stanford.edu/~shervine/teaching/cs-221/cheatsheet-variables-models"
-    },
-    {
-      "id": "a04",
-      "model_type": "Logic-based models",
-      "description": "Where propositional & first-order logic is used for reasoning & decision-making",
-      "link": "https://stanford.edu/~shervine/teaching/cs-221/cheatsheet-logic-models"
-    }
-  ],
-  "Russell & Norvig - Artificial Intelligence, A Modern Approach (3rd ed.)": [
-    {
-      "id": "a05",
-      "model_type": "Simple reflex agent",
-      "description": "Select actions based on current percept",
-      "link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
-    },
-    {
-      "id": "a06",
-      "model_type": "Model based-reflex agent",
-      "description": "Manage partially observable environments by maintaining internal state",
-      "link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
-    },
-    {
-      "id": "a07",
-      "model_type": "Goal-based agent",
-      "description": "Add some goal information in addition to internal state",
-      "link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
-    },
-    {
-      "id": "a08",
-      "model_type": "Utility-based agent",
-      "description": "Enhanced agent,that understands world states to make choice of degree",
-      "link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
-    },
-    {
-      "id": "a09",
-      "model_type": "General learning agent",
-      "description": "Agents that can perform in an unknown environment going beyond initial knowledge",
-      "link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
-    }
-  ]
+	"stanford": [
+		{
+			"id": "a01",
+			"model_type": "Reflex-based models",
+			"description": "Execute simple, reactive tasks",
+			"link": "https://stanford.edu/~shervine/teaching/cs-221/cheatsheet-reflex-models"
+		},
+		{
+			"id": "a02",
+			"model_type": "State-based models",
+			"description": "Where planning & decision-making is required",
+			"link": "https://stanford.edu/~shervine/teaching/cs-221/cheatsheet-states-models"
+		},
+		{
+			"id": "a03",
+			"model_type": "Variable-based models",
+			"description": "Where the environment can be defined through variables & mathematics",
+			"link": "https://stanford.edu/~shervine/teaching/cs-221/cheatsheet-variables-models"
+		},
+		{
+			"id": "a04",
+			"model_type": "Logic-based models",
+			"description": "Where propositional & first-order logic is used for reasoning & decision-making",
+			"link": "https://stanford.edu/~shervine/teaching/cs-221/cheatsheet-logic-models"
+		}
+	],
+	"russell": [
+		{
+			"id": "a05",
+			"model_type": "Simple reflex agent",
+			"description": "Select actions based on current percept",
+			"link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
+		},
+		{
+			"id": "a06",
+			"model_type": "Model based-reflex agent",
+			"description": "Manage partially observable environments by maintaining internal state",
+			"link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
+		},
+		{
+			"id": "a07",
+			"model_type": "Goal-based agent",
+			"description": "Add some goal information in addition to internal state",
+			"link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
+		},
+		{
+			"id": "a08",
+			"model_type": "Utility-based agent",
+			"description": "Enhanced agent,that understands world states to make choice of degree",
+			"link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
+		},
+		{
+			"id": "a09",
+			"model_type": "General learning agent",
+			"description": "Agents that can perform in an unknown environment going beyond initial knowledge",
+			"link": "https://cs.uml.edu/ecg/uploads/AIfall16/agents.pdf"
+		}
+	]
 }

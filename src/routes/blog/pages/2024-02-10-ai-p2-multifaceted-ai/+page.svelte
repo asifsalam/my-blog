@@ -10,7 +10,7 @@
 	import TopicListCard from '$lib/components/topic-list-card.svelte';
 	// import AILandscapeViz from './temp/ai-landscape-viz.svelte';
 
-	import AiLandscapeTable from './ai-landscape-table-2.svelte';
+	import AiLandscapeTable from './ai-landscape-table.svelte';
 
 	// console.log(AIData);
 
@@ -43,7 +43,7 @@
 {#key $page}
 	<div class="content">
 		<div class="heading">
-			<pre-title>What is Artificial Intelligence?</pre-title>
+			<pre-title>Fundamentals of Artificial Intelligence</pre-title>
 			<h1>2) The Multifaceted Landscape of Artificial Intelligence</h1>
 		</div>
 		<div class="meta-info">
@@ -55,18 +55,24 @@
 		<div class="main-content">
 			<p>
 				The breadth of methods and tools used for creating AI solutions and capabilities is vast.
-				Let's try to organize the techniques and components to create an overview of the
-				contemporary AI toolbox. While many of these methods overlap, and the boundaries between
-				them are often fluid, they can be broadly grouped into Symbolic AI (rule-based systems),
-				Connectionist AI (neural network-based approaches), and a supplementary "Other" category
-				(e.g., probabilistic models, evolutionary algorithms, and hybrid approaches).
+				This is my attempt to organize the techniques and components to create a rough guide to the
+				contemporary AI toolbox. The goal is not to create an exhaustive listing, but to create a
+				simple conceptual framework for understanding where the different components fit in the AI
+				landscape.
 			</p>
+			<p>
+				While many of these methods overlap, and the boundaries between them are often fluid, they
+				can be broadly grouped into Symbolic AI (rule-based systems), Connectionist AI (neural
+				network-based approaches), and a supplementary "Other" category (e.g., probabilistic models,
+				evolutionary algorithms, and hybrid approaches).
+			</p>
+			<br />
 			<AiLandscapeTable />
 
-			<div class="references">
+			<!-- <div class="references">
 				<p>References:</p>
 				Coming soon
-			</div>
+			</div> -->
 		</div>
 	</div>
 {/key}
