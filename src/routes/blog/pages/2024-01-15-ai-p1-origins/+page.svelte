@@ -326,7 +326,7 @@
 					>
 				</p>
 				<p>
-					The Shannon's work on Information Theory laid the foundations for the information age. He
+					Shannon's work on Information Theory laid the foundations for the information age. He
 					created a mathematical model of information which would be the basis for the modern
 					information theory, defined information entropy as a measure of information content, and
 					the term "bit", a shortening of "binary digit," as the smallest unit of information,
@@ -471,7 +471,7 @@
 				<p>
 					Nothing major was achieved during the workshop, but it was the event that launched
 					Artificial Intelligence as a distinct discipline. And the topics are key capabilities for
-					AI today.
+					AI even today.
 				</p>
 				<p>
 					During the workshop, Allen Newell, Herbert Simon and Cliff Shaw had presented “The Logic
@@ -595,7 +595,7 @@
 					</div>
 				</div>
 				<p>
-					Frank Rosenblatt invented what he called the Perceptron, “a hypothetical nervous system”
+					Frank Rosenblatt invented what he called the “Perceptron”, “a hypothetical nervous system”
 					that could learn from experience, in 1958, based on this concept. He used the McCulloch &
 					Pitts model of the neuron as the basis of his design.
 				</p>
@@ -771,13 +771,13 @@
 				</p>
 			</TimeBox>
 			<p>
-				This was a period of excitement, and the possibilities seemed endless, success guaranteed,
+				This was a period of excitement. The possibilities seemed endless and success guaranteed,
 				although there was unease about the consequence of this success.
 			</p>
 
 			<p class="quote-block">
 				The old idea that Man invented tools is...a misleading half-truth; it would be more accurate
-				to say that tools <em>invented Man.</em> They were primitive tools... yet they led to us-and
+				to say that tools <em>invented Man.</em> They were primitive tools...yet they led to us-and
 				to the eventual extinction of the apeman who first wielded then...The tools the apeman
 				invented caused them to evolve into their successor, <em>Homo Sapiens.</em> The tool we have
 				invented is our successor. Biological evolution has given way to a far more rapid
@@ -817,16 +817,11 @@
 			</p>
 			<h2>Next in this series</h2>
 			<p>
-				In Part 2 <del>(coming soon)</del> we take a cursory look at the broad range of components and
-				techniques that are part of the modern AI landscape, and attempt to organize these into a framework
-				around Symbolic AI, Connectionist AI, and a supplementary "Other" category.
-			</p>
-			<p>
-				While progress transcends definitions, they are useful for context and framing, so Part 3
-				will be a list of the various definitions of the term AI from a broad range of sources. The
-				debate around the definitions of AGI, AI, intelligence, and reasoning will continue, but it
-				is still useful to see how the definitions evolve as new capabilities are developed and the
-				impacts of the benefits and risks become visible.
+				In the next post <del>(coming soon)</del> I attempt to organize the broad range of components
+				and techniques that are part of the modern AI landscape, into a structure around Symbolic AI,
+				Connectionist AI, and a supplementary "Other" category. Another minor thing I am curious about
+				are the various definitions of the term "AI." A simple table, just to see how these evolve, should
+				suffice for now.
 			</p>
 
 			<div class="references">
